@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand*{\pointsize}{12pt}          %<Set the font size; make sure the size is correct
+\newcommand*{\pointsize}{11pt}          %_<Set the font size; make sure the size is correct
                                         %   for the font you will use
 \documentclass[letterpaper,             % Use US letter-size paper
                oneside,                 % No verso and recto differences
@@ -26,7 +26,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}                   % For importing image files
 \usepackage{etoolbox}                   % For advanced commands throughout preamble
-\usepackage{microtype}                  %~Improves kerning and protrusion (optional);
+\usepackage{microtype}                  %_~Improves kerning and protrusion (optional);
                                         %   See here for an introduction:
                                         %   http://www.khirevich.com/latex/microtype/
 
@@ -45,30 +45,31 @@
 % Title page, input
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \listadd{\titlelines}%
-  {First Line of the Title}             %<Enter the title of the dissertation
+  {Explorations in the Classical Double Copy (Working Title)}             %_<Enter the title of the dissertation
 \listadd{\titlelines}%
   {Second Line of the Title}            % If you want to
                                         %   split the title across lines,
                                         %   use another \listadd command for the
                                         %   second line
-\newcommand*\Author{Your Name}          %<Enter your name; must match official transcript
+\newcommand*\Author{Samarth Chawla}          %_<Enter your name; must match official transcript
 \newcommand*{\documentname}%
-  {Dissertation}                        %<Enter the type of document (capitalized)
+  {Dissertation}                        %_<Enter the type of document (capitalized)
 \newcommand*{\degreename}
-  {Doctor of Philosophy}                %<Enter the type of degree (capitalized)
-\newcommand*\defdate{Month Year}        %<Give month (written out fully) and year of
+  {Doctor of Philosophy}                %_<Enter the type of degree (capitalized)
+\newcommand*\defdate{January 2026}        %_<Give month (written out fully) and year of
                                         %   the oral defense
-\listadd{\committeechair}{Chair Name}   %<Enter committee chair name; use \listadd for
+\listadd{\committeechair}{Cynthia Keeler}   %_<Enter committee chair name; use \listadd for
 %\listadd{\committeechair}{Another name}%   for additional names
-\newcommand*{\chairlabel}{Chair}        %<If you have co-chairs, replace this text with
+\newcommand*{\chairlabel}{Chair}        %_<If you have co-chairs, replace this text with
                                         %   'Co-Chair'
-\listadd{\committeemember}{Member Name} %<Enter committee member names; use \listadd for
-\listadd{\committeemember}{Member Name} %   additional names
-\newcommand*{\gradmonth}{Month}         %<Enter the graduation date; month can only be:
+\listadd{\committeemember}{Damien Easson} %_<Enter committee member names; use \listadd for
+\listadd{\committeemember}{Maulik Parikh} %   additional names
+\listadd{\committeemember}{Tanmay Vachaspati} %   additional names
+\newcommand*{\gradmonth}{May}         %_<Enter the graduation date; month can only be:
                                         %  May, August, or December
-\newcommand*{\gradyear}{Year}           %<Enter the graduation year, e.g. 2014
+\newcommand*{\gradyear}{2026}           %_<Enter the graduation year, e.g. 2014
 
-\listadd{\keywords}{keyword 1}          %<Enter keywords; use \listadd for
+\listadd{\keywords}{keyword 1}          %_<Enter keywords; use \listadd for
 \listadd{\keywords}{keyword 2}          %   additional names (up to 6)
 \newcommand*{\graddate}{\gradmonth%     % Compose full graduation date
   \space\gradyear}
@@ -92,7 +93,7 @@
   {*}{*}                                %   letting margins set the width of the typeblock
 \setulmargins{1.0in}{*}{*}              % Set upper margin (\uppermargin, not \topmargin);
                                         %   calculate the bottom margin
-\setlrmarginsandblock{1.25in}{1.25in}{*}%~Set margins and calculate width of typeblock
+\setlrmarginsandblock{1.25in}{1.25in}{*}%_~Set margins and calculate width of typeblock
 \setheaderspaces{*}{0.5\baselineskip}{*}% Arguments: '\headdrop', '\headsep', and/or ratio
                                         %   Note: This is only used in the list of
                                         %   contents sections
