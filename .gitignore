@@ -1,3 +1,11 @@
+# Modifications by Samarth Chawla
+
+## MacOS config file
+.DS_Store
+
+## I don't want to sync the PDF with Git.
+*.pdf
+
 # source: https://github.com/github/gitignore/blob/master/TeX.gitignore
 
 ## Core latex/pdflatex auxiliary files:
