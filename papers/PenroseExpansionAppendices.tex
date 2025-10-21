@@ -1,0 +1,456 @@
+\begin{appendices}
+	%\addtocontents{toc}{\protect\setcounter{to depth}{2}}
+	
+	\section{Spinor conventions and Newman-Penrose formalism}\label{Expansion:app:NP}
+	
+	Our conventions are identical to those used in \cite{Chawla:2024mse} but we include them here to be
+	self-contained. We borrow our spinor conventions predominantly from \cite{Penrose:1985bww} and \cite{Stephani:2003tm}. Wherever the
+	two conflict, we use the spinor conventions from \cite{Penrose:1985bww}. 
+	
+	We work in mostly-minus signature $(+\ -\ -\ -)$ and we denote two-component spinor indices with capitalized symbols from beginning of the Latin alphabet ($A, B, \ldots$) while spacetime indices are taken from the Greek alphabet ($\alpha, \beta, \ldots$). We define the spinor antisymmetric product using the totally anti-symmetric spinor $\epsilon_{AB}$ for arbitrary two-spinors $\tau^{A}$ and $\kappa^{A}$  as
+	\begin{equation}  
+	\kappa_{A} \epsilon^{AB} \tau_{B} = \kappa_{A} \tau^{A} = \kappa^{A} \epsilon_{AB} \tau^{B}.
+	\end{equation}
+	This also encapsulates our convention for raising and lowering spinor indices. Explicitly, we use
+	\begin{equation}  
+	\kappa^{A} = \epsilon^{AB} \kappa_{B}, \qquad \kappa_{A} = \kappa^{B} \epsilon_{BA}.
+	\end{equation}
+	
+	The main higher-rank tensors we are concerned with are the Weyl tensor $C_{\alpha \beta \gamma \delta}$ and the Maxwell
+	field strength $F_{\alpha \beta}$. Their spinor counterparts can be expressed using the abstract index notation of
+	\cite{Penrose:1985bww} as 
+	\begin{equation} \label{Expansion:eqn:app:curvaturespinors} 
+	C_{\alpha \beta \gamma \delta} = \Psi_{ABCD} \overline{\epsilon}_{A' B'} \overline{\epsilon}_{C' D'} + \text{c.c.}, \quad
+	F_{\alpha \beta} = f_{AB} \overline{\epsilon}_{A'B'} + \text{c.c.},
+	\end{equation}
+	where ``c.c.'' is the complex conjugate of the preceding expression, and $f_{AB}$ as well as $\Psi_{ABCD}$ are
+	fully symmetric in their indices with no other constraints. Thus, the algebraically independent components of the
+	Maxwell and Weyl tensors are reorganized into fully symmetric spinor objects with no remaining algebraic
+	constraints.
+	
+	We use labels $(k, n, m, \overline{m})$ for the Newman-Penrose tetrad, where for a real spacetime
+	$k$ and $n$ are real, while $m$ and $\overline{m}$ are complex. The tetrad
+	members are all null, with a relative normalization given by
+	\begin{equation}  
+	g_{\alpha \beta} k^{\alpha} n^{\beta} = 1, \qquad g_{\alpha \beta} m^{\alpha} \overline{m}^{\beta} = -1.
+	\end{equation}
+	We have also used the real orthonormal spacelike vectors $E_{(a)}$ ($a = 1, 2$) in terms of which the
+	complex null vectors are given by
+	\begin{equation}  
+	m = -\frac{1}{\sqrt{2}} \left(E_{(1)} - i E_{(2)}\right), \qquad
+	\overline{m} = -\frac{1}{\sqrt{2}} \left(E_{(1)} + i E_{(2)}\right).
+	\end{equation}
+	
+	We use a spinor dyad denoted by $(o, \iota )$, which in the abstract index notation is
+	related to the Newman-Penrose tetrad via
+	\begin{equation}  
+	k_{\alpha} = o_{A} \overline{o}_{A'}, \quad  n_{\alpha} = \iota_{A} \overline{\iota}_{A'}, \quad  m_{\alpha} = o_{A}
+	\iota_{A'}, \quad  \overline{m}_{\alpha} = \iota_{A} \overline{o}_{A'}.
+	\end{equation}
+	We leave implicit the Infeld-Van der Waerden symbols.
+	
+	The normalization of the Newman-Penrose tetrad induces the spinor dyad normalization
+	\begin{equation}  
+	o_{A}\iota^{A} = 1 = -\iota_{A}o^{A}.
+	\end{equation}
+	We will henceforth call this spinor dyad the Newman-Penrose dyad. In this dyad, the spinors $f_{AB}$ and
+	$\Psi_{ABCD}$ have components $f_{i}$ and $\Psi_{i}$ defined by
+	\begin{subequations}
+		\begin{align}  
+		f_{AB} &= f_{0} \iota_{A} \iota_{B} - 2f_{1} \iota_{(A} o_{B)} + f_{2} o_{A} o_{B}, \label{Expansion:eqn:app:maxwellscalarfull} \\
+		\Psi_{ABCD} &= \Psi_{0} \iota_{A} \iota_{B} \iota_{C} \iota_{D} - 4 \Psi_{1} \iota_{(A} \iota_{B} \iota_{C}
+		o_{D)} + 6 \Psi_{2} \iota_{(A} \iota_{B} o_{C} o_{D)} \nonumber \\
+		&\phantom{=\ } - 4 \Psi_{3} \iota_{(A} o_{B} o_{C} o_{D)} + \Psi_{4}
+		o_{A} o_{B} o_{C} o_{D}.
+		\end{align}
+	\end{subequations}
+	The spinor components $f_{i}$ and $\Psi_{i}$ can be found using the corresponding tensors via
+	\begin{subequations}
+		\begin{align} 
+		f_{0} &= F_{\alpha \beta} k^{\alpha} m^{\beta}, \\
+		f_{1} &= \frac{1}{2} F_{\alpha \beta} \left( k^{\alpha} n^{\beta} - m^{\alpha} \overline{m}^{\beta}\right)
+		,\\
+		f_{2} &= F_{\alpha \beta} \overline{m}^{\alpha} n^{\beta} ,
+		\end{align}
+		\text{and}
+		\begin{align} 
+		\Psi_{0} &= -C_{\alpha \beta \gamma \delta} k^{\alpha} m^{\beta} k^{\gamma} m^{\delta}, \\
+		\Psi_{1} &= -C_{\alpha \beta \gamma \delta} k^{\alpha} n^{\beta} k^{\gamma} m^{\delta},\\
+		\Psi_{2} &= -C_{\alpha \beta \gamma \delta} k^{\alpha} m^{\beta} \overline{m}^{\gamma} n^{\delta}, \\
+		\Psi_{3} &= -C_{\alpha \beta \gamma \delta} k^{\alpha} n^{\beta} \overline{m}^{\gamma} n^{\delta}, \\
+		\Psi_{4} &= -C_{\alpha \beta \gamma \delta} n^{\alpha} \overline{m}^{\beta} n^{\gamma}
+		\overline{m}^{\delta}. \label{Expansion:eqn:app:Weylscalar4}
+		\end{align}
+	\end{subequations}
+	
+	Covariant derivatives of spinors can be written in terms of spin coefficients
+	\begin{equation}\label{Expansion:eqn:spinorspincoeffs}
+	\gamma_{AA' C}{}^{B} = \epsilon_{A}{}^B \nabla_{AA'}\epsilon_{C}{}^A \, ,
+	\end{equation}
+	such that
+	\begin{equation}
+	\begin{aligned}
+	\nabla_{\mu}\kappa^A &= \nabla_{\mu}\left(\kappa^o o^A + \kappa^{\iota}\iota^A\right) \\
+	&= \left(\partial_{\mu}\kappa^o  + \gamma_{\mu o}{}^{o}\kappa^o + \gamma_{\mu \iota}{}^{o}\kappa^{\iota}\right) o^A + \left(\partial_{\mu} \kappa^{\iota}+ \gamma_{\mu o}{}^{\iota}\kappa^o + \gamma_{\mu \iota}{}^{\iota}\kappa^{\iota} \right) \iota^A \, .
+	\end{aligned}
+	\end{equation}
+	To compute \eqref{eqn:spinorspincoeffs}, we will use the associated Newman-Penrose frame. Traditionally, names are
+	given to the individual components \cite{Penrose:1985bww}
+	\begin{alignat}{5}
+	\kappa &= m^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha}  , \, \,  \epsilon&=& \frac{1}{2}\left(n^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} k^{\mu} \nabla_{\mu} \overline{m}_{\alpha}\right)  , \, \, &\gamma'&= \frac{1}{2}\left(k^{\alpha} k^{\mu} \nabla_{\mu} n_{\alpha} + \overline{m}^{\alpha} k^{\mu} \nabla_{\mu} m_{\alpha}\right)  , \nonumber \\
+	\rho &= m^{\alpha} \overline{m}^{\mu} \nabla_{\mu} k_{\alpha}  , \, \, \alpha &=& \frac{1}{2}\left(n^{\alpha} \overline{m}^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} \overline{m}^{\mu} \nabla_{\mu} \overline{m}_{\alpha}\right)  , \, \, &\beta'&  = \frac{1}{2}\left(k^{\alpha} \overline{m}^{\mu} \nabla_{\mu} n_{\alpha} + \overline{m}^{\alpha} \overline{m}^{\mu} \nabla_{\mu} m_{\alpha}\right) , \nonumber \\
+	\sigma &= m^{\alpha} m^{\mu} \nabla_{\mu} k_{\alpha}  , \, \, \beta &=& \frac{1}{2}\left(n^{\alpha} m^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} m^{\mu} \nabla_{\mu} \overline{m}_{\alpha}\right) , \, \, &\alpha'&= \frac{1}{2}\left(k^{\alpha} m^{\mu} \nabla_{\mu} n_{\alpha} + \overline{m}^{\alpha} m^{\mu} \nabla_{\mu} m_{\alpha}\right) , \nonumber \\
+	\tau &= m^{\alpha} n^{\mu} \nabla_{\mu} k_{\alpha}  , \, \, \gamma&=& \frac{1}{2}\left(n^{\alpha} n^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} n^{\mu} \nabla_{\mu} \overline{m}_{\alpha}\right)  , \, \, &\epsilon'&= \frac{1}{2}\left(k^{\alpha} n^{\mu} \nabla_{\mu} n_{\alpha} + \overline{m}^{\alpha} n^{\mu} \nabla_{\mu} m_{\alpha}\right)  , \nonumber \\
+	\tau' &= \overline{m}^{\alpha} k^{\mu} \nabla_{\mu} n_{\alpha}  , \, \, \sigma' &=& \overline{m}^{\alpha} \overline{m}^{\mu} \nabla_{\mu} n_{\alpha}  , \, \, \rho'  = \overline{m}^{\alpha} m^{\mu} \nabla_{\mu} n_{\alpha}  , \, \, &\kappa'&  =\overline{m}^{\alpha} n^{\mu} \nabla_{\mu} n_{\alpha} \, . \label{Expansion:eqn:spincoeffssymbols}
+	\end{alignat}
+	We will also use the following notation to abbreviate directional derivatives in the Newman-Penrose basis,
+	\begin{subequations}\label{Expansion:eqn:directionalderivatives} 
+		\begin{align} 
+		D &\coloneqq k^{\alpha} \nabla_{\alpha} = -o^{A} \overline{o}^{B'} \nabla_{AB'}, \\
+		\Delta &\coloneqq n^{\alpha} \nabla_{\alpha} = - \iota^{A} \overline{\iota}^{B'} \nabla_{AB'}, \\
+		\delta &\coloneqq m^{\alpha} \nabla_{\alpha} = -o^{A} \overline{\iota}^{B'} \nabla_{AB'}, \\
+		\overline{\delta} &\coloneqq \overline{m}^{\alpha} \nabla_{\alpha} = -\iota^{A} \overline{o}^{B'} \nabla_{AB'}.
+		\end{align}
+	\end{subequations}
+	Using the above definitions of spin coefficients and the directional derivatives, the Maxwell equations,
+	\begin{equation}  
+	\nabla_{AB'} f^{AB} = 0,
+	\end{equation}
+	can be expanded in the Newman-Penrose dyad and expressed as
+	\begin{align}
+	D f_{1} - \overline{\delta} f_{0} &= -\left(-\tau' + 2 \beta'\right) f_{0} - 2 \rho f_{1} + \kappa f_{2}, \label{Expansion:eqn:app:maxwell1}\\
+	D f_{2} - \overline{\delta} f_{1} &= -\sigma' f_{0} + 2 \tau' f_{1} - \left(\rho - 2 \varepsilon\right) f_{2}, \\
+	\delta f_{1} - \Delta f_{0} &= -\left(-\rho' + 2 \varepsilon' \right) f_{0} - 2 \tau f_{1} + \sigma f_{2}, \\
+	\delta f_{2} - \Delta f_{1} &= -\kappa' f_{0}  + 2 \rho' f_{1} - \left(\tau - 2 \beta\right) f_{2}. \label{Expansion:eqn:app:maxwell4}
+	\end{align}
+	This general Newman-Penrose form is the starting point for the perturbative Penrose expansion \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert2} in the main text.
+	
+	\section{The Penrose expansion}\label{Expansion:app:Penroseexpansion}
+	
+	We discuss in this appendix the leading order scaling of various quantities when subject to the Penrose expansion
+	described in section \ref{eqn:curvedlocal}. The adapted coordinates $\left(U, V, X^{i}\right)$ are substituted by
+	scaled versions $\left(\epsilon^{0} U, \epsilon^{2} V, \epsilon^{1} X^{i}\right)$, which results in the scaled
+	metric in adapted coordinates,
+	\begin{equation} \label{Expansion:eqn:scaledmetric} 
+	ds^2 = 2 \epsilon^{2} dU dV + \epsilon^{4} D(x^{\mu}) dV^2 + 2 \epsilon^{3} B_i(x^{\mu}) dV dX^i - \epsilon^{2}
+	C_{ij}(x^{\mu})dX^i dX^j \ .
+	\end{equation}
+	The coordinate scaling implies that the Newman-Penrose tetrad from \eqref{eqn:adaptedframetransverse} and
+	\eqref{eqn:adaptedframe} scales as
+	\begin{equation}  
+	k^{\mu} \partial_{\mu} = \partial_{U}, \quad  n^{\mu} \partial_{\mu} = \epsilon^{-2} \partial_{V} + \epsilon^{-1}
+	B^{(a)} E_{(a)} - \frac{1}{2} \left( B_{(a)} B^{(a)} + D\right) \partial_{U}, \quad E_{(a)} = \epsilon^{-1}
+	E^{i}_{(a)} \partial_{i}.
+	\end{equation}
+	Thus the leading order scaling is $\left\lbrace k^{\mu}, n^{\mu},  E^{\mu}_{(a)} \right\rbrace \sim \left\lbrace
+	\epsilon^0, \epsilon^{-2},  \epsilon^{-1} \right\rbrace $. The leading order scaling of the metric itself is
+	$\epsilon^{2}$, thus
+	\begin{align}  
+	k_{\mu} &= g_{\mu \nu} k^{\nu} \sim \epsilon^{2} \\
+	n_{\mu} &= g_{\mu \nu} n^{\nu} \sim \epsilon^{0} \\
+	E_{\mu}^{i} &= g_{\mu \nu} E^{\nu}_{i} \sim \epsilon^{1}.
+	\end{align}
+	
+	The leading order scaling of the Newman-Penrose spin coefficients computed using \eqref{eqn:spincoeffssymbols} can now be read
+	off using the scalings of the tetrad computed above. Explicitly, we have
+	\begin{alignat}{4} 
+	\kappa& \sim \epsilon^{0} \quad & \sigma& \sim \epsilon^{0} \quad & \epsilon& \sim \epsilon^{0} \quad & \rho&
+	\sim \epsilon^{0} \nonumber \\
+	\tau'& \sim \epsilon^{1} \quad & \tau& \sim \epsilon^{1} \quad & \alpha& \sim \epsilon^{1} \quad & \beta& \sim
+	\epsilon^{1} \nonumber \\
+	\sigma'& \sim \epsilon^{2} \quad & \epsilon'& \sim \epsilon^{2} \quad & \rho'& \sim \epsilon^{2} \quad &
+	\kappa'& \sim \epsilon^{3} \nonumber \\
+	\alpha'& \sim \epsilon^{1} \quad & \beta'& \sim \epsilon^{1} \quad & \gamma& \sim \epsilon^{2} \quad & \gamma'&
+	\sim \epsilon^{2}. \label{Expansion:eqn:spincoeffsscaling}
+	\end{alignat}
+	These scalings match those found in \cite{Kunze:2004qd}, up to a change in convention for labeling the Newman-Penrose
+	tetrad. In order to compare with the aforementioned reference, relabel the spin coefficients according to the
+	tetrad relabeling $k \leftrightarrow l, m \leftrightarrow \overline{m}$. The directional derivatives in the
+	Newman-Penrose basis defined in \eqref{eqn:directionalderivatives} have the scaling
+	\begin{equation}  
+	D \sim \epsilon^{0}, \qquad \Delta \sim \epsilon^{-2}, \qquad \delta \sim \epsilon^{-1}, \qquad
+	\overline{\delta} \sim \epsilon^{-1}.
+	\end{equation}
+	
+	So far in this appendix we have merely performed a coordinate transformation by introducing scaled adapted
+	coordinates $\left(\epsilon^{0} U, \epsilon^{2} V, \epsilon^{1} X^{i}\right)$. In order to have a well-defined
+	Penrose limit, we will need to work with rescaled quantities. For instance, the $\epsilon \to 0$ limit of the
+	metric in scaled adapted coordinates is degenerate, as can be seen from \eqref{eqn:scaledmetric}. In this
+	appendix, we denote rescaled quantities with a circle above them. Thus, the rescaled metric is
+	\begin{equation}  
+	\mathring{ds}^{2} = \epsilon^{-2} ds^{2} = 2 dU dV + \epsilon^{2} D(x^{\mu}) dV^2 + 2 \epsilon^{1}
+	B_i(x^{\mu}) dV dX^i - C_{ij}(x^{\mu})dX^i dX^j \ .
+	\end{equation}
+	The Newman-Penrose tetrad corresponding to this rescaled metric is given by the rescaled version of the
+	Newman-Penrose tetrad $\left(k^{\mu}, n^{\mu}, E^{\mu}_{(a)}\right)$,
+	\begin{equation}  
+	\left( \mathring{k}^{\mu}, \mathring{n}^{\mu}, \mathring{E}^{\mu}_{(a)}\right) = \epsilon \left(
+	\epsilon^{-1} k^{\mu}, \epsilon n^{\mu}, E^{\mu}_{(a)}\right),
+	\end{equation}
+	where in addition to a $\sqrt{\epsilon^{2}}$ rescaling inherited from the (inverse) metric rescaling, we have applied a boost to $\left(k^{\mu}, n^{\mu}\right)$. This boost is done so that all elements of the rescaled tetrad
+	as well as the rescaled co-tetrad have a well-defined $\epsilon \to 0$ limit.
+	The leading order scaling of $\left(\mathring{k}^{\mu}, \mathring{n}^{\mu}, \mathring{E}^{\mu}_{(a)}\right)$, as
+	well as $\left(\mathring{k}_{\mu}, \mathring{n}_{\mu}, \mathring{E}_{\mu (a)}\right)$, is $\epsilon^{0}$
+	across the board, with subleading corrections containing only positive powers of  $\epsilon$. The same is
+	therefore true of the directional derivatives corresponding to this rescaled tetrad,
+	\begin{equation}  
+	\mathring{D} \sim \epsilon^{0}, \qquad \mathring{\Delta} \sim \epsilon^{0}, \qquad \mathring{\delta} \sim
+	\epsilon^{0}, \qquad \mathring{\overline{\delta}} \sim \epsilon^{0}.
+	\end{equation}
+	
+	When building up solutions to field equations perturbatively in $\epsilon$ starting from the Penrose limit, there is a definite advantage
+	to using rescaled quantities that remain well-defined in the $\epsilon \to 0$ limit. The price is that the scaling of the original spin coefficients defined in \eqref{eqn:spincoeffssymbols} is somewhat obscured. With the rescaled
+	tetrad, we would naively expect all spin coefficients to have a leading order term that scales as $\epsilon^{0}$.
+	Nevertheless, it turns out that for the chosen Newman-Penrose tetrad, several of the spin coefficients vanish in the
+	Penrose limit and, in fact, the vanishing spin coefficients are precisely those that scale with a positive
+	power of $\epsilon$ in the original Newman-Penrose tetrad. This pattern continues at subleading orders, with
+	nonvanishing spin coefficients appearing only at the $\epsilon$ order where they did for the original
+	Newman-Penrose tetrad. Thus, the leading order scalings for the spin coefficients laid out in
+	\eqref{eqn:spincoeffsscaling} continues to hold for the rescaled tetrad.
+	
+	\paragraph{Schwarzschild black hole in adapted coordinates} 
+	
+	We provide here some further details on the adapted coordinates and coordinate transformations that are discussed in section \ref{sec:example:Schwarzschild} in the main text, for the example of Schwarzschild black hole. We do so to be self-contained but a pedagogic derivation of the adapted coordinates is already given in \cite{blau2011plane} and most of the results below more generally, in the same conventions as ours, are already presented in \cite{Chawla:2024mse}. Therefore, we omit derivations of the results.
+	
+	First, we present the coordinate transformation between the Schwarzschild-Kerr-Schild metric 
+	\begin{equation}\label{Expansion:eqn:app:SmetricKS}
+	ds^2 = d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right) -\frac{2M}{r}(d\hat{t} + dr)^2  \, ,
+	\end{equation}
+	and the adapted coordinates \eqref{eqn:Sadapted}
+	\begin{equation}\label{Expansion:eqn:app:Sadapted}
+	\begin{aligned}
+	ds^2 =  
+	2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r}\right)\right)d\hat{t}_0^2 - r^2 \sin^2(\theta) d \phi_0^2  \\ &-\frac{r^2}{L^2} dV^2+2\hat{E} \frac{r^2}{L^2} dV d\hat{t}_0 \, .\\
+	\end{aligned}
+	\end{equation}
+	The coordinate transformation between \eqref{eqn:app:SmetricKS} and \eqref{eqn:app:Sadapted} is given by \cite{Chawla:2024mse}
+	\begin{equation}\label{Expansion:eqn:app:Schwarzschildadapted}
+	\begin{aligned}
+	U &= \int^{r(U)}_{r_{\rm ref}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)}   \, , \\ 
+	\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, , \\
+	\theta_0(V,\hat{t}_0) &= \frac{1}{L}\left(\hat{E}\hat{t}_0  - V\right) \, , \\
+	\theta(U,V, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
+	\phi(U,V,\phi_0,\hat{t}_0) &= \phi_0  \, ,
+	\end{aligned}
+	\end{equation}
+	where $r_{\rm ref}$ is an arbitrary constant while $r(U) = r(U;\hat{E},L^2)$ is a radial solution to the geodesic equations. Explicitly, $r(U)$ satisfies
+	\begin{equation}
+	\frac{dr}{dU} = \left(1-\frac{2M}{r(U)}\right)R'(r(U)) - \frac{2M \hat{E}}{r(U)} \, , 
+	\end{equation}
+	with initial condition $r(0) = r_{\rm ref}$ and where $R(r)$ satisfies
+	\begin{equation}\label{Expansion:eqn:uschwarzschild}
+	\begin{aligned}
+	-L^2 &= -r^2 \hat{E}^2+r^2 \left(R'(r)\right)^2-2 M r \left(R'(r)+\hat{E}\right)^2 \, . \\
+	\end{aligned}
+	\end{equation}
+	In addition, $\hat{E}$ is the energy of the geodesic with respect to Kerr-Schild time and $L$ is the total angular momentum. The coordinates \eqref{eqn:app:Sadapted} are adapted to a congruence of geodesics which have no angular momentum along the $\phi$-direction; $L_{\phi} = 0$.
+	
+	There are two branches of solution to \eqref{eqn:uschwarzschild}, 
+	\begin{equation}
+	R'(r) = \frac{2 \hat{E} M}{r-2M} \pm \frac{r}{r-2M} \sqrt{ \hat{E}^2-\frac{L^2}{r^2}(1-\frac{2M}{r})} \, , 
+	\end{equation}
+	corresponding respectively to an outgoing and an ingoing null geodesic congruence. Below, for definiteness, we consider the outgoing branch.
+	
+	Using the coordinate transformation \eqref{eqn:app:Schwarzschildadapted} on flat space in Kerr-Schild coordinates
+	\begin{equation}\label{Expansion:eqn:app:SmetricKSflat}
+	ds^2_{\flat} = d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right)  \, ,
+	\end{equation}
+	and taking the Penrose limit we find \eqref{eqn:Sadaptedpenroseflat}
+	\begin{equation}\label{Expansion:eqn:app:Sadaptedpenroseflat}
+	\begin{aligned}
+	ds^2_{\gamma,\flat} =  
+	2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-1\right)d\hat{t}_0^2 - r^2 \sin^2 \theta d \phi_0^2 \\ &+ \frac{4 M \hat{E}}{r\left(1-\frac{2M}{r}\right)}\left(1+\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)}\right)dU d\hat{t}_0 \\ &+ \frac{2M \hat{E}^2}{r\left(1-\frac{2M}{r}\right)}  \left(2-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)+2\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)}\right) dU^2 \, .
+	\end{aligned}
+	\end{equation}
+	
+	Finally, in the main text we have expressed \eqref{eqn:app:Sadaptedpenroseflat} in terms of the Brinkmann coordinates; we present the details here. The Penrose limit of \eqref{eqn:app:Sadapted}, which is given in Rosen coordinates by
+	\begin{equation}\label{Expansion:eqn:SchwarzschildPenrose}
+	\begin{aligned}
+	ds^2_{\gamma} =  
+	2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r}\right)\right)d\hat{t}_0^2 - r^2 \sin^2(\theta) d \phi_0^2   \, ,
+	\end{aligned}
+	\end{equation}
+	can be transformed to Brinkmann coordinates using \eqref{eqn:rosenBrinkmann} for the obvious choice of diagonal frame. We find 
+	\begin{equation}\label{Expansion:eqn:app:rosenBrinkmann}
+	\begin{aligned}
+	U &= u  , \\
+	\hat{t}_0 &= \frac{L x_1}{r \sqrt{ \hat{E}^2-\frac{L^2}{r^2}(1-\frac{2M}{r})}}  \, ,\\
+	\phi_0 &= \frac{x_2}{r \sin \theta} \, , \\
+	V &= v - \frac{1}{4}\partial_u \log\left(r^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r}\right)\right) x_1^2 - \frac{1}{4}\partial_u \log\left(r^2 \sin^2\theta\right)x_2^2 \, . 
+	\end{aligned}
+	\end{equation}
+	With this coordinate change, \eqref{eqn:SchwarzschildPenrose} becomes 
+	\begin{equation}\label{Expansion:eqn:brinkmann}
+	ds^2_{\gamma} = 2 du dv + \frac{3 L^2 M}{r^5}\left(x_2^2-x_1^2\right)du^2 - dx_1^2-dx_2^2 \, .
+	\end{equation}
+	On the other hand, performing the same change of coordinates for the Penrose limit of the ``Kerr-Schild flat space'':
+	\begin{equation}
+	ds^2_{\flat} = ds^2 - \phi k_{\mu} k_{\nu}dx^{\mu}dx^{\nu} \, .
+	\end{equation}
+	In adapted coordinates \eqref{eqn:app:Sadaptedpenroseflat}, we find
+	\begin{equation}\label{Expansion:eqn:app:Sadaptedpenroseflatbrinkmann}
+	\begin{aligned}
+	ds^2_{\gamma,\flat} &=  
+	2 du dv -dx^2_1 - dx_2^2\, \\
+	&+ 2 M x_1  \frac{2 L^2 (L^2 M - \hat{E}r^3) du dx_1}{r^{5/2} \left(2 L^2 M -L^2 r + \hat{E} r^3 \right)^{3/2}}  + \frac{2L^2 M}{2 L^2 M -L^2 r + \hat{E}^2 r^3} dx_1^2 \\
+	&+ \left( \frac{3 L^2 M x_2^2}{r^5} + \frac{2M \hat{E}^2}{r} X_0(u) + \frac{4 M L \hat{E} x_1}{r^3} X_1(u) + \frac{M L^2 x_1^2}{r^5} X_2(u) \right)du^2 \, ,
+	\end{aligned}
+	\end{equation}
+	which is \eqref{eqn:Sadaptedpenroseflatbrinkmann} in the main text with
+	\begin{equation}
+	\begin{aligned}
+	X_0(u)  &= \frac{L^2}{r \hat{E}^2(r-2M)}- \frac{2 r^2}{(r-2M)^2}+  \frac{2}{r (r-2M)^2}\sqrt{ 1-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)} \, ,\\
+	X_1(u)  &= \frac{\left(L^2 M-\hat{E}^2 r^3\right) \left(\sqrt{\hat{E}^2 r^3+2 L^2 M-L^2
+			r}+\hat{E} r^{3/2}\right)}{\hat{E} \sqrt{r} (r-2 M) \left(\hat{E}^2 r^3+2 L^2
+		M-L^2 r\right)} \, ,\\
+	X_2(u)  &= \frac{-r^2 \left(\hat{E}^2 r \left(\hat{E}^2 r^3+16 L^2 M-6 L^2 r\right)+3
+		L^4\right)-10 L^4 M^2+12 L^4 M r}{\left(\hat{E}^2 r^3+2 L^2 M-L^2 r\right)^2} \, .\\
+	\end{aligned}
+	\end{equation}
+	
+	\section{The Fackerell-Ipser equation}\label{Expansion:app:FIequation}
+	
+	In this appendix, we briefly discuss the Fackerell-Ipser equation and how it relates to \eqref{eqn:eomscalarcurved}
+	\begin{equation}\label{Expansion:eqn:app:eomscalarcurved}
+	\left(\square  +  \sqrt{2 \Psi_{ABCD} \Psi^{ABCD}/3}\right) S = 0\, .
+	\end{equation}
+	First let us note that the invariant
+	\begin{equation}
+	I = \frac{1}{2}\Psi_{ABCD} \Psi^{ABCD} \, , 
+	\end{equation}
+	is often introduced in the context of determining the Petrov classification of a spacetime \cite{Stephani:2003tm}. In terms of the Weyl scalars in an arbitrary frame we have
+	\begin{equation}\label{Expansion:eqn:IinWeyl}
+	\Psi_{ABCD} \Psi^{ABCD} = 2\Psi_0 \Psi_4 - 8\Psi_1 \Psi_3 + 6 \Psi_2^2 \, .
+	\end{equation}
+	Finally, in terms of the (bivector) eigenvalue problem (for say eigenvalue $\lambda$ and eigenbivector $X^{\alpha \beta}$) of the Weyl tensor
+	\begin{equation}
+	\frac{1}{2}C^{\mu \nu}{}_{\alpha \beta} X^{\alpha \beta} = \lambda X^{\mu \nu} \, ,
+	\end{equation}
+	whose eigenvalues are $\lambda_1$, $\lambda_2$, and $\lambda_3$, we have
+	\begin{equation}
+	\Psi_{ABCD} \Psi^{ABCD} = \lambda_1^2 + \lambda^2_2 + \lambda_3^2 \, .
+	\end{equation}
+	One can thus think of \eqref{eqn:app:eomscalarcurved} as a variation of the conformally coupled scalar but with a coupling to a type of matrix norm of the Weyl tensor instead of the Ricci scalar. 
+	
+	The Fackerell-Ipser equation was introduced in (and named after) \cite{Fackerell:1972hg}, in the context of electromagnetic perturbations of a Kerr black hole. Specifically, it is the single partial differential equation that governs the zero GHP-weight component ($f_1$) of these perturbations with respect to a principal null frame. In that context, unlike the Teukolsky equations for the extremal GHP-weight components \cite{Teukolsky:1973ha}, the Fackerell-Ipser equation is not separable.
+	
+	The derivation in \cite{Fackerell:1972hg}, starts from the general form of the Newman-Penrose Maxwell equations
+	\begin{align}
+	D f_{1} - \overline{\delta} f_{0} &= -\left(-\tau' + 2 \beta'\right) f_{0} - 2 \rho f_{1} + \kappa f_{2}, \label{Expansion:eqn:fpertgen1}\\
+	D f_{2} - \overline{\delta} f_{1} &= -\sigma' f_{0} + 2 \tau' f_{1} - \left(\rho - 2 \varepsilon\right) f_{2}, \label{Expansion:eqn:fpertgen2} \\
+	\delta f_{1} - \Delta f_{0} &= -\left(-\rho' + 2 \varepsilon' \right) f_{0} - 2 \tau f_{1} + \sigma f_{2}, \label{Expansion:eqn:fpertgen3} \\
+	\delta f_{2} - \Delta f_{1} &= -\kappa' f_{0}  + 2 \rho' f_{1} - \left(\tau - 2 \beta\right) f_{2}, \label{Expansion:eqn:fpertgen4}
+	\end{align}
+	which were also used to derive \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert4}. Then, using the further simplifications that occur for a Kerr spacetime using a principal null frame (which could be extended to generic vacuum type D spacetimes), \cite{Fackerell:1972hg} finds that, either by eliminating $f_{0}$ from the (Petrov D simplified) first two equations of \eqref{eqn:fpertgen1}-\eqref{eqn:fpertgen2} or by eliminating $f_{2}$ from the second two equations of \eqref{eqn:fpertgen3}-\eqref{eqn:fpertgen4}:
+	\begin{equation}\label{Expansion:eqn:FIequation}
+	\left(\square  + 2 \Psi_2 \right) (\zeta f_1) = \left(\square  +  \sqrt{2\Psi_{ABCD} \Psi^{ABCD}/3} \right) (\zeta f_1)   = 0\, ,
+	\end{equation}
+	where $\Psi_2$ is evaluated in the principal null frame, using \eqref{eqn:IinWeyl} for the first equality in this special frame. In addition, we can define $\zeta$ through 
+	\begin{equation}
+	\Psi_2 = -\frac{M}{\zeta^3} \, .
+	\end{equation}
+	Now it can be straightforwardly observed that with the Weyl double copy relation for a type D spacetime in the principal null frame (see \eqref{eqn:scalarsdcrelations} with only $\Psi_2$ non-zero)
+	\begin{equation}
+	\Psi_2 = \frac{2 (f_1)^2}{S} \, , 
+	\end{equation}
+	holds for \cite{Luna:2018dpt}
+	\begin{equation}
+	\Psi_2 = -\frac{M}{\zeta^3} \, , \quad  f_1 =  -\frac{M}{\zeta^2}, \quad S = -\frac{2 M}{\zeta}\, .
+	\end{equation}
+	Moreover\footnote{Different choices of normalizations exist, in which case \eqref{eqn:typeDftoS} would hold only up to a proportionality constant. Of course, the Fackerell-Ipser equation is linear so it would still hold for $S$.}, 
+	\begin{equation}\label{Expansion:eqn:typeDftoS}
+	2 \zeta f_1 = S \, ,
+	\end{equation}
+	satisfies \eqref{eqn:FIequation} on account of the fact that $f_I$ satisfy the Maxwell field equations, and thus $\zeta f_1$ satisfies the Fackerell-Ipser equation.
+	
+	We have thus shown that the Fackerell-Ipser equation holds for the zeroth copy scalar of Petrov type D spacetimes in the Weyl double copy. By contrast, such a zeroth copy scalar generically does not satisfy the curved massless wave equation. For type N spacetimes, the Fackerell-Ipser equation reduces to a massless wave equation; in that case there is no distinction. In addition, we can formulate the Fackerell-Ipser equation for any spacetime and it is invariant with respect to frame rotations connected to the identity. For all these reasons, we have proposed in the main text that it is the natural field equation satisfied by the zeroth copy. One remaining subtlety that would be interesting to clarify is about the complex nature of the equation, which as formulated is not real, and, relatedly, the branch-choice of the square root.
+	
+	\section{Field equations: solutions and effective sources}\label{Expansion:app:leadingequations}
+	
+	In Section \ref{eqn:curvedlocal}, we have discussed a particular class of solutions to the wave equations order-by-order on the leading order plane wave background. Specifically, we have made the ansatz \eqref{eqn:Sexpansion}-\eqref{eqn:fexpansion}, which is expected to arise from the Penrose expansion of a full solution. On the other hand, the plane wave equations of motion are simple enough to describe the full solutions which we will do here explicitly for the scalar equation, while indicating how a similar calculation would work for the Maxwell equations. We then give an example of the source terms at second subleading order. \\
+	
+	First, in order to describe the scalar wave equation in full generality it is useful to note that the inverse of \eqref{eqn:adapted} is given by
+	\begin{equation}
+	g^{\mu \nu}\partial_{\mu}\partial_{\nu} = 2 \partial_U \partial_V - \left(D + B_i C^{ij} B_j\right)\partial^2_U+ 2 B^i \partial_U \partial_i- C^{ij}\partial_i \partial_j \, .
+	\end{equation}
+	Expanding the associated d'Alembertian order-by-order in the Penrose limit, we obtain at order $k$ an equation of the form \eqref{eqn:Seqnspertexpl}
+	\begin{equation}
+	\begin{aligned}
+	\left( \frac{1}{\sqrt{C_{(\gamma)}}}\partial_U \sqrt{C_{(\gamma)}} \partial_V + \partial_V\partial_U  - C_{(\gamma)}^{ij}  \partial_i  \partial_j \right)S^{(k)} = J_S^{(k)} \, .
+	\end{aligned}
+	\end{equation}
+	with (formal) solutions
+	\begin{equation}\label{Expansion:eqn:adaptedscalarsolformal}
+	\begin{aligned}
+	S^{(i)} &= \int dk_V dk_i \, e^{i V k_V -i X^i k_i}\tilde{S}^{(i)}_{k_V, k_i}(U) \, , \quad J_S^{(i)} = \int dk_V dk_i \, e^{i V k_V -i X^i k_i}\tilde{J}^{(i)}_{k_V, k_i}(U) \\
+	\tilde{S}^{(i)}_{k_V, k_i}(U) &= \tilde{S}^{h \, (i)}_{k_V, k_i}(U) - \frac{i}{2 k_V} \int^U_{U_0} dU'' \left(\frac{C(U'')}{C(U)}\right)^{1/4} e^{\frac{i k_i k_j}{2 k_V } \int_{U''}^{U} dU' \, C^{ij}(U')} \tilde{J}_{k_V, k_i}^{(i)}(U'') \\
+	\tilde{S}^{h \, (i)}_{k_V, k_i}(U) &= c_{k_V, k_i} \frac{e^{\frac{i k_i k_j}{2 k_V} \int_{U_0}^U dU' \, C^{ij}(U')}}{C^{1/4}(U)} \, ,
+	\end{aligned}
+	\end{equation}
+	for (in principle) arbitrary $c_{k_V, k_i}$, fixed by, say, initial conditions for each $\tilde{S}^{(i)}_{k_V, k_i}(U)$. Naturally, the formal solution \eqref{eqn:adaptedscalarsolformal} could be ill-defined. Indeed, it is clear that $k_V \to 0$ will potentially be problematic and from the Penrose limit result, where $S^{(0)}(x^{\mu}) = S^{(0)}(U)$, this is in fact relevant. As a result, the full formal solution \eqref{eqn:adaptedscalarsolformal} is not particularly useful in the analysis in the main text. See \cite{Ward:1987ws} for a more thorough discussion of the
+	structure of solutions to the wave equation on plane wave backgrounds.
+	
+	For electro-magnetic perturbations, we instead wish to solve \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert4}
+	\begin{align}
+	\partial_U f^{(k)}_{1} + \frac{1}{\sqrt{2}}(E^i_{(1)}\partial_{X^1}+i E^i_{(2)} \partial_{X^i}) f^{(k)}_{0} + 2 \rho^{(0)} f^{(k)}_{1} &=  J^{(k)}_{f_1}[f^{0}_I, \ldots f^{k-1}_I],  \\
+	\partial_U f^{(k)}_{2}+ \frac{1}{\sqrt{2}}(E^i_{(1)}\partial_{X^1}+i E^i_{(2)} \partial_{X^i}) f^{(k)}_{1} +  \left(\rho^{(0)} - 2 \varepsilon^{(0)}\right) f^{(k)}_{2} &= J^{(i)}_{f_2}[f^{0}_I, \ldots f^{k-1}_I],  \\
+	\frac{1}{\sqrt{2}}(-E^i_{(1)}\partial_{X^1}+i E^i_{(2)} \partial_{X^i}) f^{(k)}_{1} - \partial_V f^{(k)}_{0}- \sigma^{(0)} f^{(k)}_{2}&=  J^{(k)}_{f_3}[f^{0}_I, \ldots f^{i-1}_I],  \\
+	\frac{1}{\sqrt{2}}(-E^i_{(1)}\partial_{X^1}+i E^i_{(2)} \partial_{X^i}) f^{(k)}_{2} - \partial_V f^{(k)}_{1} &=   J^{(k)}_{f_4}[f^{0}_I, \ldots f^{k-1}_I] . 
+	\end{align}
+	Here, we will not use the specific forms of the non-trivial (leading order) spin-coefficients $\rho^{(0)}$, $\epsilon^{(0)}$, and $\sigma^{(0)}$ but use that they are only functions of $U$. As a result, we will not write down solutions as explicitly as for the scalar case but it is still clear that after going to Fourier-space for $X^i$ and $V$, we are left with two  coupled first order linear ordinary differential equations in $\tilde{f}^{(k)}_{1,k_V,k_i}$ and $\tilde{f}^{(k)}_{2,k_V,k_i}$ together with two (algebraic) constraints. See for instance \cite{mason1989ward} for a more complete discussion on solutions to the wave equation on plane wave spacetimes, generalizing the scalar wave discussion in \cite{Ward:1987ws}.
+	
+	\paragraph{Second order source terms}
+	
+	We present explicitly the sources $T^{(1)}(U)$ as defined and discussed around \eqref{eqn:Meqns}
+	\begin{equation}\label{Expansion:eqn:app:Meqns}
+	\begin{aligned}
+	M^{(1)}(U)\begin{pmatrix}
+	a^{(1)}_{S,0, 1,0}(U) \\ a^{(1)}_{S,0, 0,1}(U) 
+	\end{pmatrix} = T^{(1)}(U)  \, . \quad	
+	\end{aligned}
+	\end{equation}
+	As noted in the main text, the expressions are not particularly insightful, but we present them here as they are important to our conclusion that we do not generically expect the double copy to hold to second order in the Penrose expansion.
+	
+	First, define the components of the vectors $T^{(1)}(U)$ 
+	\begin{equation}
+	T^{(1)}(U)  = \begin{pmatrix}
+	T_{1}^{(1)}(U)  \\ T_{2}^{(1)}(U) 
+	\end{pmatrix}  \, . 
+	\end{equation}
+	We find for $T^{(1)}(U)$
+	\begin{equation}
+	\begin{aligned}
+	T_{1}^{(1)}(U) &= \frac{a^{(0)}_{S,0,0,0}}{\sqrt{a^{(0)}_{\Psi_0,0,0,0} a^{(0)}_{S,0,0,0}}} \left( -\frac{da^{(1)}_{\Psi_1,0,0,0}}{dU}   -  a^{(1)}_{\Psi_1,0,0,0} \frac{d \log a^{(0)}_{S,0,0,0}}{2 dU}+a^{(1)}_{\Psi_1,0,0,0} \frac{d\log C}{2 dU} \right. \\ & \left. +\frac{i \overline{m}_{1} }{2 \sqrt{C}}  a^{(1)}_{\Psi_0,0,0,1}  -\frac{i \overline{m}_{2}}{2 \sqrt{C}}  a^{(1)}_{\Psi_0,0,1,0}+a^{(1)}_{\Psi_1,0,0,0}\frac{d \log a^{(0)}_{\Psi_0,0,0,0}}{2 dU}+\frac{i}{\sqrt{C}} (\partial_{1}\overline{m}_{2}-\partial_{2}\overline{m}_{1})a^{(0)}_{\Psi_0,0,0,0} \right)  \, ,
+	\end{aligned}
+	\end{equation}
+	and for $T_{2}^{(1)}(U)$
+	\begin{equation}
+	\begin{aligned}
+	T_{2}^{(1)}(U) &= \frac{i a^{(0)}_{S,0,0,0}}{\sqrt{C a^{(0)}_{\Psi_0,0,0,0} a^{(0)}_{S,0,0,0}}} \left\lbrack   \overline{m}_{1} a^{(2)}_{\Psi_1,0,0,1}-\overline{m}_{2} a^{(2)}_{\Psi_1,0,1,0} + a^{(2)}_{\Psi_2,0,0,0} \left(\overline{m}_{2}\partial_{U}m_{1} - \overline{m}_{1}\partial_{U}m_{2}\right) \right.  \\ &+ \frac{i a^{(1)}_{\Psi_1,0,0,0}}{\sqrt{C}}  \left(\overline{m}_{2} m_{1}-\overline{m}_{1} m_{2}\right)   \left(\overline{m}_{2} \partial_{U} B_1-\overline{m}_{1} \partial_{U} B_2\right) -2 i \sqrt{C} \frac{\partial_U (a^{(1)}_{\Psi_1,0,0,0})^2}{ a^{(0)}_{\Psi_0,0,0,0}}  \\ & +\frac{i \sqrt{C}}{2} \left(2  \partial_{U} a^{(2)}_{\Psi_2,0,0,0}{}+a^{(2)}_{\Psi_2,0,0,0} \partial_{U} \log a^{(0)}_{S,0,0,0}\right)  +  \frac{a^{(1)}_{\Psi_1,0,0,0}}{2 a^{(0)}_{\Psi_0,0,0,0}}   \left(\overline{m}_{1} a^{(1)}_{\Psi_0,0,0,1}-\overline{m}_{2} a^{(1)}_{\Psi_0,0,1,0}\right) \\ &+4 \frac{a^{(1)}_{\Psi_1,0,0,0}}{2 a^{(0)}_{\Psi_0,0,0,0}} (\partial_{U}m_{2} \overline{m}_{1}-\partial_{U}m_{1} \overline{m}_{2}) a^{(1)}_{\Psi_1,0,0,0}  - \frac{i \sqrt{C}a^{(2)}_{\Psi_2,0,0,0}}{2 a^{(0)}_{\Psi_0,0,0,0}}   \partial_U a^{(0)}_{\Psi_0,0,0,0} \\ &-2 i \sqrt{C} (a^{(1)}_{\Psi_1,0,0,0})^2 \partial_U \log a^{(0)}_{S,0,0,0} +\frac{3 i \sqrt{C} (a^{(1)}_{\Psi_1,0,0,0})^2}{a^{(0)}_{\Psi_0,0,0,0}} \partial_U \log a^{(0)}_{\Psi_0,0,0,0} \\ &  +\frac{a^{(0)}_{\Psi_0,0,0,0}}{C} \left(\overline{m}_{1} m_{2}-\overline{m}_{2} m_{1}\right)  \left(\overline{m}_{1}^2 \partial_{X^2} B_2-\overline{m}_{2} \overline{m}_{1} \left(\partial_{X^2} B_1+\partial_{X^1} B_2\right) +\overline{m}^2_{2} \partial_{X^1} B_1 \right) \\ & \left. + \frac{a^{(0)}_{\Psi_0,0,0,0}}{C} \left(\overline{m}_{1} m_{2}-\overline{m}_{2} m_{1}\right) (\overline{m}_{1} \partial_{V}\overline{m}_{2} - \overline{m}_{2}\partial_{V}\overline{m}_{1} ) (\overline{m}_{1} m_{2}-\overline{m}_{2} m_{1}) \right\rbrack \\ 
+	&+ \frac{\sqrt{a^{(0)}_{\Psi_0,0,0,0} a^{(0)}_{S,0,0,0}}}{C^{3/2}}   \left(t_{2,D}^{(1)} D(U) + \sum^2_{i=1}\left(t_{2,B_i}^{(1)} B_i+ \sum^2_{j=1} t_{2,B_i B_j }^{(1)} B_i B_j \right)\right)\, , 
+	\end{aligned}
+	\end{equation}
+	where
+	\begin{equation}
+	\begin{aligned}
+	t_{2,D}^{(1)} &= -\frac{i}{2} (\overline{m}_{1} \partial_{U}\overline{m}_{2} - \overline{m}_{2} \partial_{U}\overline{m}_{1} ) (\overline{m}_{2} m_{1}-\overline{m}_{1} m_{2})^2  \, , \\
+	%%%%%%%%%%%%%%%
+	t_{2,B_1}^{(1)} &=  \frac{\sqrt{C} a^{(1)}_{\Psi_1,0,0,0}}{a^{(0)}_{\Psi_0,0,0,0}} \left( \frac{m_{1}}{2} \partial_{U}\overline{m}^2_{2} -3 \overline{m}_{2} m_{2} \partial_{U}\overline{m}_{1}  +\overline{m}_{2}^2 \partial_{U}m_{1} + \overline{m}_{1} \left(2 m_{2} \partial_{U}\overline{m}_{2}- \overline{m}_{2}\partial_{U}m_{2}\right) \right) \\ &-i  \left( \overline{m}_{2}^2 m_{1} (\partial_{X^2}\overline{m}_{1}-\partial_{X^1}\overline{m}_{2})+ \overline{m}_{2}^2 \overline{m}_{1} (\partial_{X^1}m_{2}+\partial_{X^2}m_{1}) \right) \\ &-i \left(\overline{m}_{2}^2 \left( m_{2}\partial_{X^1}\overline{m}_{1} -\overline{m}_{2} \partial_{X^1}m_{1}\right)+ \overline{m}_{1}^2\left( m_{2}\partial_{X^2}\overline{m}_{2} - \overline{m}_{2}\partial_{X^2}m_{2} \right)-2 m_{2} \overline{m}_{2} \overline{m}_{1} \partial_{X^2}\overline{m}_{1} \right) \, , \\
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	t_{2,B_2}^{(1)} &= \frac{\sqrt{C} a^{(1)}_{\Psi_1,0,0,0}}{a^{(0)}_{\Psi_0,0,0,0}} \left(\frac{m_{2}}{2}\partial_{U}\overline{m}^2_{1} -3 \overline{m}_{1} m_{1} \partial_{U}\overline{m}_{2}+ \overline{m}_{1}^2\partial_{U}m_{2} + \overline{m}_{2}\left( 2 m_{1}  \partial_{U}\overline{m}_{1} -\overline{m}_{1}\partial_{U}m_{1}   \right) \right) \\ &- i \left( \overline{m}_{1}^2 m_{2} (\partial_{X^2}\overline{m}_{1}-\partial_{X^1}\overline{m}_{2})- \overline{m}_{1}^2 \overline{m}_{2} \left(\partial_{X^1}m_{2}+\partial_{X^2}m_{1}\right)\right) \\ &- i \left(\overline{m}_{1}^2 \left(\overline{m}_{1} \partial_{X^2}m_{2}- m_{1} \partial_{X^2}\overline{m}_{2} \right) + \overline{m}_{2}^2 \left(\overline{m}_{1} \partial_{X^1}m_{1}-  m_{1}\partial_{X^1}\overline{m}_{1} \right) + 2 \overline{m}_{2} \overline{m}_{1} m_{1}\partial_{X^1}\overline{m}_{2}\right)  \, , 
+	\end{aligned}
+	\end{equation}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{equation}
+	\begin{aligned}
+	t_{2,B_1 B_1}^{(1)} &=  i \overline{m}_{2} m_{2} (\partial_{U}\overline{m}_{2} \overline{m}_{1}-\partial_{U}\overline{m}_{1} \overline{m}_{2})  \, , \\
+	t_{2,B_1 B_2}^{(1)} = t_{2,B_2 B_1}^{(1)}  &= - \frac{i}{2} (\partial_{U}\overline{m}_{2} \overline{m}_{1}-\partial_{U}\overline{m}_{1} \overline{m}_{2}) (\overline{m}_{2} m_{1}+\overline{m}_{1} m_{2})  \, , \\
+	t_{2,B_2 B_2}^{(1)} &= i \overline{m}_{1}^2 \partial_{U}\overline{m}_{2}  m_{1} -2 i \overline{m}_{1} \overline{m}_{2} m_{1} \partial_{U}\overline{m}_{1} \, .
+	\end{aligned}
+	\end{equation}
+	Here, all quantities are implicitly evaluated at $X^i = V = 0$. For instance, $B_i = B_i(U,0,0,0)$ etc. Note that, despite the notation, $T_{2}^{(1)}(U)$ is a second order quantity. There is no obstruction to finding a first order solution to the equation involving $T_{1}^{(1)}(U)$ by itself. On the other hand, such solutions do not generically extend to higher orders. In that sense, this could be viewed as a ``linearization instability''.
+	
+	
+	
+\end{appendices}
+

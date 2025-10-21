@@ -1,0 +1,126 @@
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+\section{Little group structure of type D Weyl spinor} \label{5D:SpinorConventions} 
+%
+This brief appendix is a companion to section \ref{sec:ReviewSpinors5D} and gives details of calculations that
+use the spinor set-up used in this paper. As an illustrative exercise in the spinor conventions used, we will lay out an argument for why
+only $\Psi^{(2)} \neq 0$ for a type D spacetime.
+
+First, we describe how the spinor basis $(k^{A}_{a}, n^{A}_{a})$ can be used to give back members of the null
+frame \eqref{NullFrameMetric}. Effectively, this inverts the definition of the basis \eqref{SpinorBasisDefn} in
+terms of the null frame. The vectors $k^{\mu}$ and $n^{\mu}$ can be obtained by contracting two copies of
+$k^{A}_{a}$ and $n^{A}_{a}$ respectively with gamma matrices
+%
+\begin{equation} \label{5D:GammaContractionsPartOne} 
+    \begin{split}
+        k_{a}^{A} \gamma^{\mu}_{AB} k_{b}^{B} &= - \sqrt{2} k^{\mu} \epsilon_{ab}, \\
+        n_{a}^{A} \gamma^{\mu}_{AB} n_{b}^{B} &= - \sqrt{2} n^{\mu} \epsilon_{ab}.
+    \end{split}
+\end{equation}
+%
+The remaining contractions of $\gamma^{\mu}$ with the spinor basis produces the remaining members of the null frame
+%
+\begin{equation} \label{5D:GammaContractionsPartTwo} 
+    \begin{split}
+        k_{a}^{A} \gamma^{\mu}_{AB} n^{B}_{b} &= - n_{a}^{A} \gamma^{\mu}_{AB} k^{B}_{b} \\
+                                              &= 
+                                              \begin{pmatrix}
+                                                  \sqrt{2} m^{\mu} & i e_{0}^{\mu} \\
+                                                  i e_{0}^{\mu} & \sqrt{2}  \overline{m}^{\mu}
+                                              \end{pmatrix},
+    \end{split}
+\end{equation}
+which, following \cite{Monteiro:2018xev}, we dub the polarization tensor $\varepsilon^{\mu}_{ab}$.
+
+Next, we explain how to compute the components of the spinor Lorentz generators
+in the $(k^{A}_{a}, n^{A}_{a})$ basis. Take, as an example, the contraction
+$\sigma^{\mu \nu}_{AB} k^{A}_{a} k^{B}_{b}$. Noting the definition of the Lorentz generators in terms of gamma
+matrices \eqref{SpinorLorentzGeneratorsDefn}, we have
+%
+\begin{equation} \label{5D:SigmaComponentsStepOne} 
+        \sigma_{AB}^{\mu \nu} k^{A}_{a} k^{a}_{b} = \gamma^{[\mu}_{AE} \gamma^{\nu]}_{FB} \Omega^{EF}
+        k^{A}_{a} k^{B}_{b}.
+\end{equation}
+%
+The normalization of the spinor basis \eqref{SpinorBasisNormalization} is equivalent to the following
+expansion of $\Omega^{AB}$ 
+%
+\begin{equation} \label{5D:OmegaExpansion} 
+    \Omega^{AB} = \epsilon^{ab}\left(k^{A}_{a} n^{B}_{b} + n^{A}_{a} k^{B}_{b}\right).
+\end{equation}
+%
+Substituting this back in \eqref{SigmaComponentsStepOne}, and keeping in mind \eqref{GammaContractionsPartOne}
+and \eqref{GammaContractionsPartTwo} we obtain
+\begin{equation} \label{5D:SigmaComponentsPartOne} 
+    \begin{split}
+        \sigma_{AB}^{\mu \nu} k^{A}_{a} k^{B}_{b} &= \epsilon^{cd} \gamma^{[\mu}_{AE} \gamma^{\nu]}_{FB}
+        \left(k^{E}_{c} n^{F}_{d} + n^{E}_{c} k^{F}_{d}\right) k^{A}_{a} k^{B}_{b} \\
+                                                  &= \epsilon^{cd} \left(k^{A}_{a} \gamma^{[\mu|}_{AE}
+                                                  k^{E}_{c} n^{F}_{d} \gamma^{|\nu]}_{FB} k^{B}_{b} +
+                                              k^{A}_{a} \gamma^{[\mu |}_{AE} n^{E}_{c} k^{F}_{d} \gamma^{|
+                                          \nu]}_{FB} k^{B}_{b} \right) \\
+                                                  &= \epsilon^{cd} \left( \epsilon_{ac} (- \sqrt{2}
+                                                  k^{[\mu})(-\varepsilon^{\nu]}_{bd}) +
+                                          (\varepsilon^{[\mu}_{ac}) ( - \sqrt{2}
+                                  k^{\nu]}\epsilon_{db})\right) \\
+                                                  &= 2\sqrt{2} k^{[\mu} \varepsilon^{\nu]}_{ab}.
+   \end{split}
+\end{equation}
+%
+Similarly the other components are
+\begin{equation} \label{5D:SigmaComponentsPartTwo} 
+    \begin{split}
+        \sigma_{AB}^{\mu \nu} k^{A}_{a} n^{B}_{b} &= 2 k^{[\mu}n^{\nu]} \epsilon_{ab} +
+        \varepsilon^{[\mu}_{ac} \varepsilon^{\nu]}_{bd} \epsilon^{cd}, \\
+        \sigma_{AB}^{\mu \nu} n^{A}_{a} k^{A}_{a} &= 2 n^{[\mu} k^{\nu]} \epsilon_{ab} +
+        \varepsilon^{[\mu}_{ac} \varepsilon^{\nu]}_{bd} \epsilon^{cd}, \\
+        \sigma_{AB}^{\mu \nu} n^{A}_{a} n^{B}_{b} &= - 2\sqrt{2} n^{[\mu} \varepsilon^{\nu]}_{ab}.
+    \end{split}
+\end{equation}
+
+We are now prepared to tackle the little group structure of a type D Weyl spinor. Inverting the expansion of
+$\Psi_{ABCD}$ \eqref{WeylLittleGroupObjects}, we obtain
+%
+\begin{equation} 
+    \begin{split}
+        \Psi^{(0)}_{abcd} &= \Psi_{ABCD} n^{A}_{a} n^{B}_{b} n^{C}_{c} n^{D}_{d}, \\
+        \Psi^{(1)}_{abcd} &= \Psi_{ABCD} n^{a}_{a} n^{b}_{b} n^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(2)}_{abcd} &= \Psi_{ABCD} n^{a}_{a} n^{b}_{b} k^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(3)}_{abcd} &= \Psi_{ABCD} n^{a}_{a} k^{b}_{b} k^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(4)}_{abcd} &= \Psi_{ABCD} k^{a}_{a} k^{b}_{b} k^{c}_{c} k^{d}_{d}.
+    \end{split}
+\end{equation}
+%
+Next, we rewrite $\Psi_{ABCD}$ in terms of the Weyl tensor $W_{\mu \nu \rho \lambda}$ using \eqref{WeylSpinorDefn} 
+%
+\begin{equation} 
+    \begin{split}
+        \Psi^{(0)}_{abcd} &= W_{\mu \nu \rho \lambda} \sigma^{\mu \nu}_{AB} \sigma^{\rho \lambda}_{CD} n^{A}_{a} n^{B}_{b} n^{C}_{c} n^{D}_{d}, \\
+        \Psi^{(1)}_{abcd} &= W_{\mu \nu \rho \lambda} \sigma^{\mu \nu}_{AB} \sigma^{\rho \lambda}_{CD} n^{a}_{a} n^{b}_{b} n^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(2)}_{abcd} &= W_{\mu \nu \rho \lambda} \sigma^{\mu \nu}_{AB} \sigma^{\rho \lambda}_{CD} n^{a}_{a} n^{b}_{b} k^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(3)}_{abcd} &= W_{\mu \nu \rho \lambda} \sigma^{\mu \nu}_{AB} \sigma^{\rho \lambda}_{CD} n^{a}_{a} k^{b}_{b} k^{c}_{c} k^{d}_{d}, \\
+        \Psi^{(4)}_{abcd} &= W_{\mu \nu \rho \lambda} \sigma^{\mu \nu}_{AB} \sigma^{\rho \lambda}_{CD} k^{a}_{a} k^{b}_{b} k^{c}_{c} k^{d}_{d}.
+    \end{split}
+\end{equation}
+%
+Finally, substituting the components of $\sigma^{\mu \nu}_{AB}$ we just found in
+\eqref{SigmaComponentsStepOne}, \eqref{SigmaComponentsPartTwo},
+\begin{equation} 
+    \begin{split}
+        \Psi^{(0)}_{abcd} &= 8 W_{\mu \nu \rho \lambda} k^{\mu} \varepsilon^{\nu}_{ab} k^{\rho}
+        \varepsilon^{\lambda}_{cd}, \\
+        \Psi^{(1)}_{abcd} &= 2\sqrt{2} W_{\mu \nu \rho \lambda} k^{[\mu} \varepsilon^{\nu]}_{ab} \left( 2k^{[\rho}
+        n^{\lambda]} \epsilon_{cd} + \epsilon^{gh} \varepsilon^{[\rho}_{cg}
+    \varepsilon^{\lambda]}_{hd}\right), \\
+            \Psi^{(2)}_{abcd} &= -8 W_{\mu \nu \rho \lambda} k^{[\mu} \varepsilon^{\nu]}_{ab} n^{[\rho}
+            \varepsilon^{\lambda]}_{cd}, \\
+            \Psi^{(3)}_{abcd} &= -2 \sqrt{2}  W_{\mu \nu \rho \lambda} \left( 2k^{[\mu} n^{\nu]} \epsilon_{ab} +
+            \epsilon^{gh} \varepsilon^{[\mu}_{ag} \varepsilon^{\nu]}_{hb}\right) n^{[\rho}
+            \varepsilon^{\lambda]}_{cd}, \\
+                \Psi^{(4)}_{abcd} &= 8 W_{\mu \nu \rho \lambda} n^{\mu} \varepsilon^{\nu}_{ab} n^{\rho}
+                \varepsilon^{\lambda}_{cd}.
+    \end{split}
+\end{equation}
+Now, remembering that $\varepsilon^{\mu}_{ab}$ is orthogonal to both $k^{\mu}$ and $n^{\mu}$, a comparison with
+\eqref{TypeDConditions} shows that with a properly chosen null frame $\Psi^{(0)}, \Psi^{(1)}, \Psi^{(3)}$ and
+$\Psi^{(4)}$ all vanish for a type D spacetime.

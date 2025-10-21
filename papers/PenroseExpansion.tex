@@ -1,0 +1,532 @@
+\section{Introduction}
+
+
+The double copy has been a driving force in the study and calculation of amplitudes since the observation by
+\cite{Bern:2008qj} of a ``color-kinematics duality''; expressing how relations between gauge theory amplitudes due to the color structure can be mirrored in their kinematical pieces. In addition to allowing the calculation of gravitational amplitudes using tools
+developed for calculating Yang-Mills amplitudes
+\cite{Bern:2019nnu,Bern:2019crd,Bern:2020uwk,Bern:2021yeh,Bern:2022jvn}, the discovery of the double copy also led
+to a deeper examination of shared structure between various gauge and gravity theories that was previously unknown.
+See \cite{Bern:2019prr,Kosower:2022yvp,White:2024pve} for recent reviews.
+
+A deceptively simple question is whether or not the double copy structure of amplitudes can also be seen directly in the classical limit of field theories. Early attempts to relate the
+amplitudes double copy to classical solutions are summarized in chapter 8 of \cite{Bern:2019prr}. The
+first \textit{exact} formulation of the double copy for classical solutions was described in \cite{Monteiro:2014cda} for Kerr-Schild spacetimes. The Weyl double copy proposal for
+certain algebraically special spacetimes
+\cite{Luna:2018dpt} was another important milestone in the study of the exact classical double copy. This Weyl double copy proposal has the advantage of being formulated in terms of gauge-invariant objects. 
+
+A classical double copy structure has now been established for a large number of examples
+\cite{Luna:2015paa,Ridgway:2015fdl,CarrilloGonzalez:2018ejf,Ilderton:2018lsf,Berman:2018hwd,Lee:2018gxc,Bah:2019sda,Goldberger:2019xef,Kim:2019jwm,Lescano:2020nve,Alawadhi:2020jrv,Godazgar:2020zbv,Alfonsi:2020lub,Easson:2020esh,Adamo:2020qru,Lescano:2021ooe,Alkac:2021seh,Easson:2021asd,Mkrtchyan:2022ulc,Adamo:2022rob,Easson:2022zoh,Easson:2023dbk,Armstrong-Williams:2023ssz,Armstrong-Williams:2024bog,Kim:2024dxo}. However, it remains unclear how general these double copy descriptions of spacetime are and, often, to which, if any, amplitude double copy they are related. Moreover, while the amplitudes double copy began as a perturbative relation between scattering amplitudes on flat space there have since been further generalizations to all-order results and perturbative amplitudes on curved backgrounds \cite{Adamo:2017nia,Adamo:2023fbj,Sivaramakrishnan:2021srm,
+	Herderschee:2022ntr,Cheung:2022pdk,Ilderton:2024oly,Cheung:2022mix}. Correspondingly, the classical double copy has a growing
+body of examples where the various gauge theory fields are put on a curved spacetime instead of on an auxiliary flat space
+\cite{Bahjat-Abbas:2017htu,Carrillo-Gonzalez:2017iyj,Gurses:2018ckx,Prabhu:2020avf,Alkac:2021bav,Han:2022ubu,Han:2022mze,Didenko:2022qxq,He:2023iew,Kent:2024mow,Zhao:2024wtn}.
+
+A pressing question in relation to the momentum-space double copy for amplitudes is the mechanism by which they can give rise to a local position-space double copy of classical solutions. More generally, a double copy that
+is local in momentum space should lead to a convolutional double copy in position space
+\cite{Anastasiou:2014qba,LopesCardoso:2018xes,Anastasiou:2018rdx,Luna:2020adi,Godazgar:2022gfw}. As clarified in \cite{Luna:2022dxo} building on \cite{Monteiro:2021ztt}, a local,
+position-space double copy is possible as a consequence of the algebraic speciality of the known examples. This reliance on algebraic speciality raises doubts on the formulation of equally successful double copy relations for more general spacetimes. 
+
+Nevertheless there have been efforts to extend the scope of the classical double copy beyond special cases. One direction of research uses the Weyl double copy paradigm but finds a double copy structure in a
+term-by-term expansion for metrics that are of more general algebraic type \cite{Keeler:2020rcv,Keeler:2024bdt}. Other proposals embrace more directly the non-local nature of the double copy by a detour via twistor space, but still find a Weyl double copy at the linearized level
+\cite{White:2020sfn,Chacon:2021wbr,Chacon:2021lox} for general algebraic type. Alternatively, it is interesting to study the interface between algebraically special spacetimes and more general spacetimes by first
+reducing the metric to special submanifolds, where a double copy relation is known to hold, and subsequently examining the double copy
+structure as we move away from the submanifold.
+
+This last approach was taken in \cite{Godazgar:2021iae} for asymptotically flat metrics in Bondi coordinates. In an expansion around null infinity, the
+leading order pieces of the metric are of algebraic type N, to which the type N Weyl double
+copy proposal of \cite{Godazgar:2020zbv} applies. Instead, in certain non-radiative cases, the leading asymptotic spacetime is of type D and the Weyl double copy of \cite{Luna:2018dpt} applies. In the examples studied by \cite{Godazgar:2021iae}, this asymptotic double copy structure breaks down at next-to-leading order except for special cases.
+
+We propose a similar study of the double copy, expanding the metric around
+null geodesics instead. A natural leading order for such an expansion around a null geodesic is the Penrose limit  \cite{penrose1976any}. Moreover, for this Penrose limit of a metric with respect to a  null geodesic a double copy description is always possible \cite{Chawla:2024mse}. On the other hand, the Penrose limit can be embedded naturally within an expansion around a null geodesic analogous to the expansion in a Fermi normal coordinate system around a time-like geodesic \cite{Blau:2006ar}. Therefore, in this paper we go beyond the exact Penrose limit to look at the subleading terms in the normal coordinate expansion around a null geodesic, which we refer to as ``the Penrose expansion'', and explore how far into the
+expansion the double copy structure persists. We keep much of our discussion as general as possible, which means
+that our results may be applied near null geodesics in the interior of arbitrary spacetimes.
+
+The plan of the rest of the paper is as follows. We first lay out the necessary background concerning the formalism
+of the Weyl double copy in Section \ref{sec:background}. Section \ref{sec:overview} offers a high-level overview of our argument concerning the application of the Weyl double copy in a Penrose expansion around a null geodesic. Sections \ref{eqn:curvedlocal} and \ref{sec:normalneighborhoods} subsequently fill in all the technical details of the argument. Section
+\ref{sec:kerrschild} examines whether the Kerr-Schild double copy can also be formulated in such an expansion,
+primarily relying on the example of the Schwarzschild metric to illustrate the inherent complications of making a
+Kerr-Schild version of the double copy work.
+
+\paragraph{Conventions} We follow the conventions of Penrose and Rindler \cite{Penrose:1985bww}, except for the Riemann curvature which differs by a sign. We work in particular in mostly minus signature $(+\ -\ -\ -)$, $\left\lbrace A, B, C, \ldots \right\rbrace$ ($\left\lbrace A', B', C', \ldots \right\rbrace$) are (conjugate) two-spinor indices, and $\left\lbrace \alpha, \beta, \gamma, \ldots \right\rbrace$ are spacetime indices. See also the
+previous paper \cite{Chawla:2024mse} and Appendix \ref{app:NP} where we provide a brief overview of our conventions.
+
+\section{Weyl double copy in the Penrose expansion} 
+
+\subsection{Background}\label{Expansion:sec:background}
+The Weyl double copy relation between the Weyl spinor $\Psi_{ABCD}$, a Maxwell spinor $f_{AB}$, and a ``zeroth copy'' scalar field $S$ is given by \cite{Luna:2018dpt}\footnote{See Appendix \ref{app:NP} for an overview of our conventions. The Weyl spinor and Maxwell spinor in particular are defined in terms of their tensorial counterparts in \eqref{eqn:app:curvaturespinors}, while the Weyl and Maxwell scalars are defined in \eqref{eqn:app:maxwellscalarfull}-\eqref{eqn:app:Weylscalar4}. For indices, $(\ldots)$ denotes a symmetrization with unit weight.}
+\begin{equation} \label{Expansion:WeylDCRelation} 
+\Psi_{ABCD} = \frac{1}{S} f_{(AB} f_{CD)} \, .
+\end{equation}
+In terms of the Weyl and Maxwell scalars in an arbitrary frame, \eqref{WeylDCRelation} can be written as \cite{Godazgar:2021iae}
+\begin{equation}\label{Expansion:eqn:scalarsdcrelations}
+\begin{aligned}
+\Psi_0 = \, \frac{(f_0)^2}{S}\,, \quad
+%%
+\Psi_1 = \, \frac{f_0\,f_1}{S} \,, \quad
+%%
+\Psi_2 = \, \frac{f_0\, f_2 + 2 (f_1)^2}{S} \,, \quad
+%%
+\Psi_3 =  \,\frac{f_1\, f_2}{S} \,, \quad
+%%
+\Psi_4 = \, \frac{(f_2)^2}{S} \,.
+\end{aligned} 
+\end{equation}
+In addition to the algebraic relations \eqref{WeylDCRelation}, or \eqref{eqn:scalarsdcrelations}, the heart of the
+double copy proposal is that both the gravitational double copy as well as the electromagnetic and scalar single
+and zeroth copy satisfy appropriate field equations. Exactly which set of field equations should be satisfied is
+open to debate and various proposals have been made.
+
+In this section, we will consider $S$ and $f_{AB}$ to be solutions to a modified massless scalar and electromagnetic field equations on the \emph{curved} background associated to $\Psi_{ABCD}$\footnote{Even though the single and zeroth copy live on the curved background, they do not act as sources for the field equations satisfied by the geometry associated to $\Psi_{ABCD}$.}. In the next section, we will discuss and leverage an additional Kerr-Schild structure to analyze the possibility that $S$ and $f_{AB}$ are solutions to the scalar and electromagnetic field equations on an appropriately defined \emph{flat} spacetime\footnote{A double copy where the single copy satisfies curved field equations is sometimes referred as a ``type B'' double copy. In this terminology, when the gauge theory is defined on a flat background it is referred to as a ``type A'' double copy \cite{Bahjat-Abbas:2017htu,White:2024pve}.}. \\
+
+Explicitly, the field equations we will impose for the double copy and the single copy are
+\begin{equation}\label{Expansion:eqn:ZRMeqns}
+\nabla^{AA'}\Psi_{ABCD} = 0 \, , \quad \nabla^{AA'} f_{AB} = 0 \, ,
+\end{equation}
+where, as emphasized above, the covariant derivatives $\nabla$ refer to the curved spacetime in both cases. These are the
+``zero-rest-mass equations'' \cite{Penrose:1985bww} which (together with their conjugates) represent the usual vacuum field equations for a spin two and spin one massless field respectively. \\
+
+The scalar field equation is more subtle, because it is \emph{not} true in general that the zeroth copy satisfies the curved massless scalar field equation in the Weyl double copy for type D spacetimes. An alternative is proposed in \cite{Godazgar:2021iae} in terms of the same massless scalar field equation with a source depending on $\Psi_2$ in a principal null frame. Instead, we propose 
+\begin{equation}\label{Expansion:eqn:eomscalarcurved}
+\left(\square  +  \sqrt{2 \Psi_{ABCD} \Psi^{ABCD}/3}\right) S = 0\, .
+\end{equation}
+The scalar equation of motion \eqref{eqn:eomscalarcurved} is equivalent to the proposal of \cite{Godazgar:2021iae} for a Weyl double copy spacetime but has otherwise several advantages: (i) it is a homogeneous equation in $S$, (ii) it is independent of a preferred frame choice, and (iii) it readily reduces to the Fackerell-Ipser equation for a type D Weyl double copy spacetime \cite{Fackerell:1972hg}. We provide some details in appendix \ref{app:FIequation} but the upshot is that, for a type D spacetime, \eqref{eqn:eomscalarcurved} will be automatically satisfied if \eqref{WeylDCRelation} and \eqref{eqn:ZRMeqns} are satisfied. For a type N spacetime, \eqref{eqn:eomscalarcurved} just reduces to a massless scalar field equation and the original Weyl double copy proposal of \cite{Luna:2018dpt} applies.
+
+\subsection{Overview and strategy}\label{Expansion:sec:overview}
+Before going into the details let us outline our strategy. As we are interested in the double copy structure of generic spacetimes, we take the perspective that we are given a metric for which we then determine if the relations \eqref{eqn:scalarsdcrelations}, together with the relevant field equations \eqref{eqn:ZRMeqns} and \eqref{eqn:eomscalarcurved}, can be satisfied in a null Fermi coordinate expansion around a given null geodesic $\gamma$. By \cite{Chawla:2024mse}, we know that the leading order Penrose limit will have a double copy in arbitrary spacetimes that can be made consistent with an exact Weyl double copy if it is present. 
+
+On the other hand, we are not aware of general expressions to obtain the structure of the metric directly in null Fermi coordinates to arbitrary order. While it seems algorithmically possible to provide such extensions this is likely impractical \cite{li1979expansions}. Instead, Penrose's original construction of the Penrose limit starts from a coordinate system adapted to a null geodesic congruence \cite{penrose1976any}. This adapted coordinate system is still exact but has a straightforward Penrose expansion and leads to a Penrose limit in Rosen coordinates, which simplify the wave equations on the Penrose limit background compared to the Brinkmann coordinates that result from the Penrose limit in null Fermi coordinates. Moreover, an all-order transformation from adapted coordinates to null Fermi coordinates is (formally) known, extending the leading order relation between Rosen and Brinkmann coordinates \cite{Blau:2006ar}. Therefore, for convenience, we are led to start from adapted coordinates rather than null Fermi coordinates. 
+
+Starting from adapted coordinates, which exactly represent a patch of the full spacetime, we will readily find that if \eqref{eqn:scalarsdcrelations}, \eqref{eqn:ZRMeqns}, and \eqref{eqn:eomscalarcurved} are satisfied exactly, they will also be satisfied order-by-order. More interestingly, for an arbitrary spacetime which is not necessarily of the Weyl double copy form,  we can still try to solve  the relations \eqref{eqn:scalarsdcrelations}, \eqref{eqn:ZRMeqns}, and \eqref{eqn:eomscalarcurved} order-by-order from the bottom-up and we find that these equations can nevertheless be generically satisfied up to first order. After showing that the equations cannot be generically satisfied at second order beyond the Penrose limit, we briefly discuss third order as it is the first order at which \eqref{eqn:scalarsdcrelations} by itself imposes a constraint on the curvature. 
+
+Finally, adapted coordinates are not globally well-defined in a normal neighborhood around the geodesic $\gamma$, the natural spacetime patch described by null Fermi coordinates. Therefore, after analyzing in detail the double copy structure in a stretch of $\gamma$ free of conjugate points, where adapted coordinates are defined, we study the transition between such patches in order to show that our results on the double copy of the Penrose expansion can be established ``globally'' in null Fermi coordinates, on a null normal neighborhood of $\gamma$. 
+
+
+\subsection{Geodesic stretches free of conjugate points}\label{Expansion:eqn:curvedlocal}
+
+A stretch of the geodesic $\gamma$ free of conjugate points can be embedded into a twist-free, null geodesic congruence. For such a congruence, we can construct associated adapted coordinates, which we denote $x^{\mu} = \left\lbrace U, V, X^i \right\rbrace$, with indices $i$, $j$ running over two transverse directions ($i,j, \ldots \in \left\lbrace 1, 2 \right \rbrace$), with the property that the null geodesic congruence is generated by the coordinate vector field $\partial_U$. The requirement that the congruence be twist-free arises as an integrability condition for the congruence to be written as a coordinate vector field \cite{penrose1976any}. 
+
+The metric in adapted coordinates takes the form  \cite{penrose1976any}
+\begin{equation}\label{Expansion:eqn:adapted}
+ds^2 = 2 dU dV + D(x^{\mu}) dV^2 + 2 B_i(x^{\mu}) dV dX^i - C_{ij}(x^{\mu})dX^i dX^j \, .
+\end{equation}
+Here, $D(x^{\mu})$, $B_i(x^{\mu})$, and $C_{ij}(x^{\mu})$ are functions of all the coordinates. Without loss of generality we will assume the stretch of the null geodesic $\gamma$ captured by this coordinate system, and embedded into the integral curves of $\partial_U$, to be located at $X^i = V = 0$. 
+
+After choosing a transverse frame (for $(a)\in \left\lbrace 1, 2 \right \rbrace$)
+\begin{equation}\label{Expansion:eqn:adaptedframetransverse}
+E_{(a)} = E^{i}_{(a)} \partial_i \, , \quad E^{i}_{(a)} C_{ij} E^{j}_{(b)} = \delta_{ab} \, , \quad C^{ik}C_{kj} = \delta^i_{j} \, ,
+\end{equation}
+an example of a full pseudo-orthonormal frame for the metric \eqref{eqn:adapted} is given by $\left\lbrace k, n,  E_{(a)} \right\rbrace$  where
+\begin{equation}\label{Expansion:eqn:adaptedframe}
+\begin{aligned}
+k^{\mu}\partial_{\mu} = \partial_U \, , \quad n^{\mu}\partial_{\mu} = \partial_V + B^{(a)}  E_{(a)}- \frac{1}{2}(B_{(a)}  B^{(a)} +D)\partial_U \, .
+\end{aligned}
+\end{equation}
+with
+\begin{equation}
+B_{(a)} = B_i E^i_{(a)} \, , \quad B^{(a)} = B_i E^i_{(b)}\delta^{ab} \, .
+\end{equation}
+
+The adapted coordinates, or the underlying null geodesic congruence, single out the vector field $k$ by construction, otherwise our choice for \eqref{eqn:adaptedframe} was arbitrary. That is, the frame \eqref{eqn:adaptedframe} is only fixed up to spacetime-dependent Lorentz transformations preserving $k$. These transformations take the form
+\begin{equation}\label{Expansion:eqn:littlegroup}
+E_{(a)} \to O^b{}_{a} E_{(b)} + c_{(a)} k \, , \quad n \to n + c_{(a)} \delta^{ab} E_{(b)} + c_{(a)}\delta^{ab} c_{(b)} k \, ,
+\end{equation}
+where $c_{(a)}$ are scalar fields and $O^b{}_{a}$ is a field of orthogonal matrices. Together, these transformation generate the massless ``little group'' in four dimensions $O(2) \ltimes \mathbb{R}^2$. The little group action can be used to transform to a new frame $\left\lbrace k, \hat{n},  \hat{E}_{(a)} \right\rbrace$, which is parallel transported along the stretch of the null geodesic $\gamma$ captured by the coordinate system.
+
+The Penrose expansion corresponds to an expansion in the small parameter $\epsilon \ll 1$ after setting $(U,V,X^i) \sim (\epsilon^0, \epsilon^2, \epsilon)$. On the assumption that the functions $D$, $B_i$, and $C_{ij}$ are finite and smooth in this limit, it implies a leading order scaling of the metric as $ds^2 \sim \epsilon^2$ and of the above frame as $\left\lbrace k^{\mu}, n^{\mu},  E^{\mu}_{(a)} \right\rbrace \sim \left\lbrace \epsilon^0, \epsilon^{-2},  \epsilon^{-1} \right\rbrace $. Said differently, up to a uniform scaling, the frame scales as: $\left\lbrace k^{\mu}, n^{\mu},  E^{\mu}_{(a)} \right\rbrace \to \epsilon^{-1} \left\lbrace \epsilon k^{\mu}, \epsilon^{-1} n^{\mu},  E^{\mu}_{(a)} \right\rbrace $. The relative scalings will thus align with the weights in the Geroch-Held-Penrose (GHP) formalism \cite{geroch1973space}, which determine the behavior of Newman-Penrose quantities exactly under such transformations of the frame. For instance, the GHP-weights of the Weyl scalars and Maxwell scalars of a test field on the background imply the ``peeling''-behaviors 
+\begin{equation}\label{Expansion:eqn:peeling}
+\frac{\Psi_I}{\Psi_0} \sim \epsilon^I \, , \quad \frac{f_I}{f_0} \sim \epsilon^I \, ,
+\end{equation}
+where $I \in \left\lbrace 0,1, \ldots, 2s \right \rbrace$ with $s = 2$ for $\Psi_I$ and $s=1$ for $f_I$. See \cite{Kunze:2004qd} as well as Appendix \ref{app:Penroseexpansion} for more details on how the spin coefficients, Weyl scalars, and Maxwell scalars of a frame like \eqref{eqn:adaptedframe} scale in the Penrose expansion\footnote{Note that \cite{Kunze:2004qd} uses slightly different notation and conventions.}. 
+
+In order to have a well-defined tetrad in the plane wave limit $\epsilon \to 0$, the metric as well as the tetrad
+must be appropriately rescaled. It would be proper to distinguish the rescaled metric and tetrad by
+using different notation, such as
+\begin{align}  
+\mathring{ds}^{2} &= \epsilon^{-2} ds^{2} \\
+\left( \mathring{k}^{\mu}, \mathring{n}^{\mu}, \mathring{E}^{\mu}_{(a)}\right) &= \left(k^{\mu},
+\epsilon^2 n^{\mu}, \epsilon E^{\mu}_{(a)}\right),
+\end{align}
+and so on. We relegate such careful distinction and further explanation to appendix \ref{app:Penroseexpansion}, and for the rest of this section we will simply drop the ring diacritic with the understanding
+that all quantities have been appropriately rescaled.
+
+To leading order in $\epsilon$, only $\Psi_0$ and $f_0$ are non-vanishing and these Weyl and Maxwell scalars characterize a plane gravitational wave and electromagnetic wave respectively corresponding to the Penrose-G\"uven limit of the full fields \cite{penrose1976any,Gueven:2000ru}. Consider now the structure of the higher orders. Denote
+\begin{equation}\label{Expansion:eqn:pert}
+\Psi_I = \sum^{\infty}_{k=0} \epsilon^k \Psi^{(k)}_I \, , \quad f_I = \sum^{\infty}_{k=0} \epsilon^k f^{(k)}_I \, , \quad S = \sum^{\infty}_{k=0} \epsilon^k S^{(k)} \, ,
+\end{equation}
+such that a superscript ${}^{(0)}$ indicates the leading Penrose limit order, which is of the form \cite{Chawla:2024mse}
+\begin{equation}\label{Expansion:eqn:eqnpenroselimit}
+\Psi^{(0)}_{0} = 	\Psi^{(0)}_{0}(U) \, ,  \quad 	f^{(0)}_{0} = 	f^{(0)}_{0}(U) \, ,  \quad  S^{(0)} = S^{(0)}(U) \, , \quad	\Psi^{(0)}_{I>0} =  f^{(0)}_{I>0}  = 0 \, .
+\end{equation}
+Then, assuming the fields result from a smooth Penrose expansion of an exact set of fields, the  following polynomial form is expected at each order
+\begin{align}
+S^{(k)} &= \sum^{2n_v + \sum_i n_i =  k}_{n_i,n_v=0} a^{(k)}_{S,n_v, n_i}(U)  V^{n_v} \prod^2_{i=1} (X^i)^{n_i} \, , \label{Expansion:eqn:Sexpansion} \\
+f^{(k)}_I &= \sum^{2n_v + \sum_i n_i =  k-I}_{n_i,n_v=0} a^{(k)}_{f_I,n_v, n_i}(U)  V^{n_v} \prod^2_{i=1} (X^i)^{n_i} \, , \label{Expansion:eqn:fexpansion} \\
+\Psi^{(k)}_I &= \sum^{2n_v + \sum_i n_i =  k-I}_{n_i,n_v=0} a^{(k)}_{\Psi_I,n_v, n_i}(U)  V^{n_v} \prod^2_{i=1} (X^i)^{n_i} \, . \label{Expansion:eqn:Psiexpansion}
+\end{align}
+Using these expansions, we can now perturbatively solve \eqref{eqn:scalarsdcrelations} together with \eqref{eqn:ZRMeqns} and \eqref{eqn:eomscalarcurved} for $f_I$ and $S$. Unless stated otherwise, we assume the non-degenerate case $S^{(0)} , \, 	f^{(0)}_{0}  , \, \Psi^{(0)}_{0} \neq 0$. Note that, consistent with the above counting, for which the Penrose limit is the zeroth order, ``$n$th order'' should be read as $n$th order beyond the Penrose limit.  
+
+First, we find it useful to invert, at each order, the first three equations of \eqref{eqn:scalarsdcrelations} in order to express the Maxwell scalars $f^{(i)}_I$ in terms of the geometric data and the scalars  $S^{(i)}_I$, as well as lower order quantities\footnote{$f_0^{(k)}$ does not actually contribute to $f^{(k)}_1$ because $f^{(0)}_1 = 0$ and similarly, $f_0^{(k)}$ and $f_1^{(k)}$ do not contribute to $f_2^{(k)}$.}
+\begin{equation}\label{Expansion:eqn:fexpansiongeneral}
+\begin{aligned}
+f^{(k)}_0 &= \frac{1}{2f_0^{(0)}}\left(-\sum^{k-1}_{q=1}f^{(q)}_0f^{(k-q)}_0  +\sum^k_{q=0} S^{(q)}\Psi_0^{(k-q)}\right) \, ,\\
+f^{(k)}_1 &= \frac{1}{f_0^{(0)}}\left(-\sum^{k}_{q=1}f^{(q)}_0f^{(k-q)}_1 +\sum^k_{q=0} S^{(q)}\Psi_1^{(k-q)}\right) \, ,  \\ 
+f^{(k)}_2 &= \frac{1}{f_0^{(0)}}\left(-\sum^{k}_{q=1}f^{(q)}_0f^{(k-q)}_2-2\sum^k_{q=0}f^{(q)}_1f^{(k-q)}_1+\sum^k_{q=0} S^{(q)}\Psi_2^{(k-q)}\right) \, . \\ 
+\end{aligned}
+\end{equation}
+By the leading order scalings of $\Psi_3$ and $\Psi_4$ (and consistently $f_1$ and $f_2$), the last two equations of \eqref{eqn:scalarsdcrelations} only appear as additional consistency conditions on \eqref{eqn:fexpansiongeneral} starting respectively from the third and fourth order beyond the Penrose limit.
+
+Consider instead the equations of motion. After inserting \eqref{eqn:pert} and collecting order by order, we find the standard result that at each order the homogeneous equation for the relevant order is simply the zeroth order equation, but there is a source term depending on all lower orders. For the scalar equation of motion
+\begin{equation}\label{Expansion:eqn:Seqnspert}
+\begin{aligned}
+\square^{(0)}S^{(k)} = J_S^{(k)}[S^{(0)}, \ldots, S^{(k-1)}] \, ,
+\end{aligned}
+\end{equation}
+while for the Maxwell scalars in the Newman-Penrose notation (see Appendix \ref{app:NP} for a review\footnote{The derivatives with respect to the Newman-Penrose frame ($D, \Delta, \delta, \bar{\delta}$) are defined in \eqref{eqn:directionalderivatives} and  the spin coefficients ($\rho, \sigma, \epsilon, \ldots$) in \eqref{eqn:spincoeffssymbols}. The Maxwell equations in this notation are given for instance in \cite{Stephani:2003tm}.})
+\begin{align}
+D^{(0)} f^{(k)}_{1} - \overline{\delta}^{(0)} f^{(k)}_{0} + 2 \rho^{(0)} f^{(k)}_{1} &=  J^{(k)}_{f_1}[f^{0}_I, \ldots f^{k-1}_I], \label{Expansion:eqn:feqnspert1} \\
+D^{(0)} f^{(k)}_{2} - \overline{\delta}^{(0)} f^{(k)}_{1} +  \left(\rho^{(0)} - 2 \varepsilon^{(0)}\right) f^{(k)}_{2} &= J^{(i)}_{f_2}[f^{0}_I, \ldots f^{k-1}_I], \label{Expansion:eqn:feqnspert2} \\
+\delta^{(0)} f^{(k)}_{1} - \Delta^{(0)} f^{(k)}_{0}- \sigma^{(0)} f^{(k)}_{2}&=  J^{(k)}_{f_3}[f^{0}_I, \ldots f^{i-1}_I], \label{Expansion:eqn:feqnspert3} \\
+\delta^{(0)} f^{(k)}_{2} - \Delta^{(0)} f^{(k)}_{1} &=   J^{(k)}_{f_4}[f^{0}_I, \ldots f^{k-1}_I] . \label{Expansion:eqn:feqnspert4}
+\end{align}
+The implications of the structure of the equations \eqref{eqn:Seqnspert} and \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert4} are two-fold: (i) at each order we have in principle the freedom to add a homogeneous solution and (ii) at each order it is straightforward to find a solution. 
+
+Point (i) could complicate the analysis by the amount of freedom it provides in constructing solutions but this freedom is removed by the expected structure  \eqref{eqn:Sexpansion}-\eqref{eqn:Psiexpansion} of the solutions. Instead, point (ii) is just the statement that the zeroth order equations are the massless scalar and electromagnetic test field equations on a plane wave spacetime, which on account of its large isometry group has separable solutions to the wave equation.  
+
+Using the metric in adapted coordinates \eqref{eqn:adapted}, the order-by-order massless scalar field equation \eqref{eqn:Seqnspert} is given more explicitly by 
+\begin{equation}\label{Expansion:eqn:Seqnspertexpl}
+\begin{aligned}
+\left( \frac{1}{\sqrt{C_{(\gamma)}}}\partial_U \sqrt{C_{(\gamma)}} \partial_V + \partial_V\partial_U  - C_{(\gamma)}^{ij}  \partial_i  \partial_j \right)S^{(k)} = J_S^{(k)} \, , \quad C_{(\gamma)} = C|_{X^i=V=0} \, .
+\end{aligned}
+\end{equation}
+Here, it is important that $C_{(\gamma)}$ and $C_{(\gamma)}^{ij}$ depend only on $U$. For a general discussion of the formal solutions see Appendix \ref{app:leadingequations}. On the other hand, restricting to the ansatz \eqref{eqn:Sexpansion}, observe first that the zeroth order \eqref{eqn:eqnpenroselimit}, with $S^{(0)}(U)$ depending only on $U$, is indeed a solution. In addition, observe that at order $k$, the number of different functions of $U$ in the ansatz, $a^{(k)}_{S,n_v, n_i}(U)$, is given by
+\begin{equation}
+\#\left(a^{(k)}_{S,n_v, n_i}(U)\right) =\begin{cases}
+(1+r)^2  \quad \quad  & $k = 2r$ \\
+(2+r)(1+r)  \quad \quad  & $k = 2r+1$ \\
+\end{cases}  \, .
+\end{equation} 
+In particular, there are two functions $a^{(1)}_{S,n_v, n_i}(U)$ at order 1 and  four functions $a^{(2)}_{S,n_v, n_i}(U)$ at order 2.
+
+\paragraph{First subleading order} The two first order functions $a^{(1)}_{S,n_v, n_i}(U)$ are unconstrained by \eqref{eqn:Seqnspert} as polynomials of degree one in the transverse adapted coordinates $X^1$ and $X^2$, with coefficients depending only on $U$, are homogeneous solutions to the wave equation on the Penrose limit plane wave. Therefore, \eqref{eqn:Seqnspertexpl} cannot be satisfied by a solution of the form \eqref{eqn:Sexpansion} at first order beyond the Penrose limit unless there is no source, $J_S^{(1)} = 0$. Yet the source term at first subleading order is given by
+\begin{equation}\label{Expansion:eqn:source1}
+J_S^{(1)} =  -\square^{(1)}S^{(0)},
+\end{equation}
+where
+\begin{equation}
+\begin{aligned}
+\square^{(1)}  &=  X^i\left(\partial_U   \left(\frac{\left(\partial_i C\right)|_{\gamma}}{2C_{(\gamma)}}\right)\right)  \partial_V -\frac{C^{kj}_{(\gamma)} \left(\partial_k C\right)|_{\gamma}}{2C_{(\gamma)}}  \partial_j -   X^k (\partial_k C^{ij})|_{\gamma}\partial_i\partial_j   -   (\partial_k C^{kj})|_{\gamma}\partial_j  \\
+&+\frac{1}{\sqrt{C_{(\gamma)}}}\partial_U B^i_{(\gamma)} \sqrt{C_{(\gamma)}} \partial_i + B_{(\gamma)}^i \partial_i  \partial_U \, .
+\end{aligned}
+\end{equation}
+In \eqref{eqn:source1}, we have used that $\left(\Psi_{ABCD} \Psi^{ABCD}\right)^{1/2} \sim O(\epsilon^2)$. However, from $S^{(0)} = S^{(0)}(U)$, it now follows that indeed $J_S^{(1)} = 0$, as desired for the consistency of the ansatz \eqref{eqn:Seqnspertexpl}.
+
+For the Maxwell equations \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert4}, we first verify that the leading order of the ansatz \eqref{eqn:fexpansion}, \eqref{eqn:eqnpenroselimit}, is in fact a (source-free) solution. Next, contrary to the scalar case, \eqref{eqn:feqnspert1} does provide a constraint for the ansatz \eqref{eqn:fexpansion}; it is not automatically a source-free solution. On the other hand,   \eqref{eqn:feqnspert2}-\eqref{eqn:feqnspert4} are automatically satisfied at first order by the ansatz \eqref{eqn:fexpansion}, unless they have a source term in which case they are inconsistent (in the sense that they cannot be satisfied). However, with \eqref{eqn:eqnpenroselimit} as the zeroth order input in addition to the geometrical data from the metric \eqref{eqn:adapted} and the frame, we find that the sources for \eqref{eqn:feqnspert2}-\eqref{eqn:feqnspert4} indeed vanish at first order beyond the Penrose limit while $J^{(1)}_{f,1} = J^{(1)}_{f,1}(U)$ is just a function of $U$. The equation \eqref{eqn:feqnspert1} will thus generically fix one of the three free functions of $U$ in $f^{(1)}_I$.  \\
+
+Finally, consider the algebraic relations \eqref{eqn:scalarsdcrelations} at first subleading order. These equations can be used to fully fix the Maxwell scalars in terms of the geometric data in addition to $S^{(1)}$ and $S^{(0)}$
+\begin{equation}\label{Expansion:eqn:scalarsdcrelations1}
+\begin{aligned}
+f_0^{(1)} &= \frac{1}{ 2f_0^{(0)}}(S^{(0)}\Psi_0^{(1)}+\Psi_0^{(0)} S^{(1)})  \, , \\
+f^{(1)}_1 &= \frac{S^{(0)}}{f_0^{(0)}} \Psi_1^{(1)} \, , \quad f_2^{(1)} = 0 \, ,
+\end{aligned}
+\end{equation}
+which is just a special case of \eqref{eqn:fexpansiongeneral}. Moreover, from the Penrose expansions of the metric \eqref{eqn:adapted} and the tetrad \eqref{eqn:adaptedframe},  we can find the following structure for the Weyl scalars 
+\begin{equation}
+\Psi_1^{(1)}  = a^{(1)}_{\Psi_1,0, 0,0}(U) \, , \quad \Psi_0^{(1)} =  a^{(1)}_{\Psi_1,0, 1,0}(U)  X^1 + a^{(1)}_{\Psi_1,0, 0,1}(U)  X^2 \, ,
+\end{equation}
+also consistent with \eqref{eqn:Psiexpansion}.
+
+If we now try to impose \eqref{eqn:scalarsdcrelations1} together with the first order equations of motion for $S^{(1)}$ and $f^{(1)}_I$, we conclude from our discussion of these equations individually that only \eqref{eqn:feqnspert1} reduces to a non-trivial ordinary differential equation in $U$ but that, inserting \eqref{eqn:scalarsdcrelations1}, we have the two free functions of $U$ in $S^{(1)}$ to satisfy it. Therefore we are able to solve all the Weyl double copy equations but, at this order, these equations do not yet fully fix $S^{(1)}$ and, as a consequence, $f_0^{(1)}$. 
+
+In conclusion, the double copy relations to first order beyond the Penrose limit can always be satisfied.
+
+\paragraph{Second subleading order} At the next order, for the scalar equation of motion \eqref{eqn:Seqnspert}, we find a (generically) non-vanishing source term of the form
+\begin{equation}
+J_S^{(2)} =  -\square^{(2)}S^{(0)} + \square^{(1)}S^{(1)}+ \left[\left(\Psi_{ABCD} \Psi^{ABCD}\right)^{1/2}\right]^{(2)} \, .
+\end{equation}
+Contrary to the first order beyond the Penrose limit, each term potentially contributes. For instance
+\begin{equation}
+\begin{aligned}
+\sqrt{C_{(\gamma)}} &\square^{(2)}S^{(0)}(U) = \\ & \left\lbrace  \left(\frac{\left(\partial_V C\right)|_{\gamma}}{2\sqrt{C_{(\gamma)}}}\right) +\left. \left(\partial_i(B^i \sqrt{C})\right)\right|_{\gamma}  -  \partial_U \left(D_{(\gamma)} + B^{(\gamma)}_i C^{ij}_{(\gamma)} B^{((\gamma))}_j \right) \sqrt{C_{(\gamma)}} \right\rbrace \partial_U S^{(0)}(U) \, .
+\end{aligned}
+\end{equation}
+Nevertheless, say using the scalar field equation \eqref{eqn:Seqnspertexpl} at zeroth and first order, we find a (generically) non-zero source which is just a function of $U$; $J_s^{(2)} = J_s^{(2)}(U)$. From the ansatz \eqref{eqn:Sexpansion}, $S^{(2)}$ is a sum of polynomials of degree one in $V$ and degree two in $X^i$ with $U$-dependent coefficients. Acting with the zeroth order Laplacian on a function of this form simply yields a function of $U$. Therefore, of the four free functions of $U$ in $S^{(2)}$, one will be fixed by \eqref{eqn:Seqnspert} at second order. 
+
+For the single copy equations of motion, although more algebraically cumbersome to make explicit, the equations \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert3} yield constraints at second order. However, the Maxwell equation \eqref{eqn:feqnspert1} is now linear in the transverse coordinates $X^1$ and $X^2$ and the free functions of $U$ in \eqref{eqn:fexpansion} can only be chosen to make their coefficients vanish separately. Therefore, the three equations \eqref{eqn:feqnspert1}-\eqref{eqn:feqnspert3} impose \emph{four} relations on the seven coefficient functions of  \eqref{eqn:fexpansion} at second order.  The left-hand side of \eqref{eqn:feqnspert4} still vanishes identically on the ansatz \eqref{eqn:fexpansion} and, given \eqref{eqn:fexpansion} at lower orders, so does the source term  $J^{(2)}_{f_4}[f^{0}_I, f^{1}_I]$ on the right-hand side, as required for consistency.
+
+From the algebraic constraints \eqref{eqn:scalarsdcrelations}, we can again fix fully the single copy in terms of the geometry, the zeroth copy, and lower orders as (see \eqref{eqn:fexpansiongeneral})
+\begin{equation}\label{Expansion:eqn:fexpansion2}
+\begin{aligned}
+f_0^{(2)} &= -  \frac{f_0^{(1)} f_0^{(1)}}{2 f_0^{(0)}} + \frac{1}{ 2f_0^{(0)}}(S^{(0)}\Psi_0^{(2)}+\Psi_0^{(1)} S^{(1)}+\Psi_0^{(0)} S^{(2)})  \, , \\
+f^{(2)}_1 &= \frac{S^{(0)}}{f_0^{(0)}} \Psi_1^{(2)} +  \frac{S^{(1)}}{f_0^{(0)}} \Psi_1^{(1)}  - \frac{S^{(0)}}{(f_0^{(0)})^2} f_0^{(1)} \Psi_1^{(1)}  \, , \\  
+f_2^{(2)} &= \frac{1}{f_0^{(0)}}\left(S^{(0)}\Psi_2^{(2)}-2 (f_1^{(1)})^2\right) \, .
+\end{aligned}
+\end{equation}
+It is a good consistency check to verify that, for zeroth and double copy of the form \eqref{eqn:Sexpansion} and \eqref{eqn:Psiexpansion} respectively, \eqref{eqn:fexpansion2} yields a single copy of the form  \eqref{eqn:fexpansion}. 
+
+To combine all double copy constraints at second order, it is important to observe that $f^{(2)}_1$ and $f_2^{(2)}$ in \eqref{eqn:fexpansion2} are fully fixed in terms of just the geometry and lower order quantities. Specifically, they do not depend on $S^{(2)}$. Therefore inserting \eqref{eqn:fexpansion2} into \eqref{eqn:feqnspert2}, we find that this equation is just a single function of $U$, as expected, but we \emph{cannot} use one of the three free functions from $S^{(2)}$ to ensure it is satisfied. Nevertheless, one of the two free functions in $S^{(1)}$ was still unspecified and can thus in principle be used instead, leaving us with two constraints from \eqref{eqn:feqnspert1} and one from \eqref{eqn:feqnspert3}, where the three free functions of $U$ from $S^{(2)}$ do feature. Specifically, $\delta^{(0)}f_0^{(2)}$ will leave us able to solve \eqref{eqn:feqnspert3} using $a^{(2)}_{S,1, 0,0}(U)$.  The remaining $a^{(2)}_{S,0, 2,0}(U)$, $a^{(2)}_{S,0, 1,1}(U)$, and $a^{(2)}_{S,0, 0,2}(U)$ should then enable us to solve the two equations from \eqref{eqn:feqnspert1} together with the second order scalar wave equation. 
+
+At the level of counting free functions and equations, we would conclude from the previous that arbitrary spacetimes have a double copy at second order in the Penrose expansion. However, the argument hinges on the existence of solutions to linear systems of the form
+\begin{equation}\label{Expansion:eqn:Meqns}
+\begin{aligned}
+M^{(1)}(U)\begin{pmatrix}
+a^{(1)}_{S,0, 1,0}(U) \\ a^{(1)}_{S,0, 0,1}(U) 
+\end{pmatrix} = T^{(1)}(U)  \, , \quad	M^{(2)}(U)\begin{pmatrix}
+a^{(2)}_{S,0, 2,0}(U) \\ a^{(2)}_{S,0, 1,1}(U) \\  a^{(2)}_{S,0, 0,2}(U)
+\end{pmatrix} = T^{(2)}(U) \, .
+\end{aligned}
+\end{equation}
+where $M^{(1)}(U)$ is a  $2\times 2$ matrix, $M^{(2)}(U)$ a  $3\times 3$ matrix, and $T^{(1)}(U)$ and $T^{(2)}(U)$ are two-and three dimensional vectors. The naive counting argument will go through identically if $M^{(1)}(U)$ and $M^{(2)}(U)$ are invertible. If they are not, the conclusion fails; there is no double copy at second order if any of the sources ($T^{(1)}(U)$) or $T^{(2)}(U)$) falls outside the range of $M^{(1)}(U)$ or  $M^{(2)}(U)$. Even if the sources do fall inside the range, such that the equations can still be solved, the counting argument fails since there is residual freedom (associated to the kernels of $M^{(1)}(U)$ or $M^{(2)}(U)$), that a naive counting of free functions and equations does not account for.
+
+Consider first $M^{(1)}(U)$, which can be read-off from \eqref{eqn:feqnspert1} at first order and \eqref{eqn:feqnspert2} at second order. The only freedoms left in these equations when imposing the double copy relations \eqref{eqn:fexpansiongeneral} and the Penrose expansion ansatz \eqref{eqn:Sexpansion} are $a^{(1)}_{S,0, 1,0}(U)$ and $a^{(1)}_{S,0, 0,1}(U)$. We find
+\begin{equation}\label{Expansion:eqn:M1matrix}
+M^{(1)}(U) = \begin{pmatrix}
+\frac{\Psi^{(0)}_0}{2\sqrt{2} f_0^{(0)}} \left(E^1_{(1)}+i E^1_{(2)}\right) & \frac{\Psi^{(0)}_0}{2\sqrt{2} f_0^{(0)}} \left(E^2_{(1)}+i E^2_{(2)}\right) \\
+\frac{3\Psi^{(1)}_1}{2\sqrt{2} f_0^{(0)}}\left(E^1_{(1)}+i E^1_{(2)}\right) & \frac{3\Psi^{(1)}_1}{2\sqrt{2} f_0^{(0)}} \left(E^2_{(1)}+i E^2_{(2)}\right) 
+\end{pmatrix} \, ,
+\end{equation}
+where the $E^i_{(a)}$ should be evaluated at $\gamma$ ($V=X^i=0$) but we have dropped the subscripts ${}_{(\gamma)}$ (as used in \eqref{eqn:Seqnspertexpl}) here for notational simplicity. In addition, we have used the convention (as in \cite{Chawla:2024mse}) that
+\begin{equation}
+\overline{m} = -\frac{1}{\sqrt{2}}\left(E_{(1)}+i E_{(2)}\right)  \, .
+\end{equation}
+Clearly, $M^{(1)}(U)$ is not invertible. \\ 
+
+Similarly, from the field equations \eqref{eqn:Seqnspertexpl} and \eqref{eqn:feqnspert1} (together with \eqref{eqn:fexpansion2}) we read-off
+\begin{equation}\label{Expansion:eqn:Mmatrix}
+M^{(2)} = \begin{pmatrix}
+2 C^{11} & 2 C^{12} & 2 C^{22} \\
+\frac{\Psi^{(0)}_0}{\sqrt{2} f_0^{(0)}} \left(E^1_{(1)}+i E^1_{(2)}\right) & \frac{\Psi^{(0)}_0}{2\sqrt{2} f_0^{(0)}} \left(E^2_{(1)}+i E^2_{(2)}\right) & 0\\
+0 & \frac{\Psi^{(0)}_0}{2\sqrt{2} f_0^{(0)}}  \left(E^1_{(1)}+i E^1_{(2)}\right) &  	\frac{\Psi^{(0)}_0}{\sqrt{2} f_0^{(0)}}\left(E^2_{(1)}+i E^2_{(2)}\right)
+\end{pmatrix} \, ,
+\end{equation} 
+where $C^{ij}$ and $E^i_{(a)}$ should again be evaluated at $\gamma$ ($V=X^i=0$). As a starting observation regarding the invertibility of \eqref{eqn:Mmatrix}, we can at least make $C^{ij}_{(\gamma)}(U)$ diagonal at one instant of time, say $U_0$ (a more general attempt at diagonalization would not preserve the form \eqref{eqn:adapted}). For either this $U_0$ or the special case of a diagonalizable Penrose limit \cite{Tod:2019urw} such that we can take  $C^{12} = E^1_{(2)} = E^2_{(1)} = 0$, recalling also the frame \eqref{eqn:adaptedframetransverse}, we find
+\begin{equation}\label{Expansion:eqn:detMdiag}
+\begin{aligned}
+\text{det}(M_{\rm diag})
+&= \frac{1}{2}\left( -C^{11}\left(E^2_{(2)}\right)^2 + C^{22}\left(E^1_{(1)}\right)^2\right) = 0 \, .
+\end{aligned}
+\end{equation}
+In this special case, one can straightforwardly see that the range of $M$ will be two-dimensional. We have verified that, more generally, $\text{det}(M^{(2)}) = 0$ and that the range of $M^{(2)}$ is two dimensional\footnote{Multiply the second row in \eqref{eqn:Mmatrix} by $E^1_{(1)}-i E^1_{(2)}$ and the third by $E^2_{(1)}-i E^2_{(2)}$, and sum them to see that this sum is proportional to the first row using \eqref{eqn:adaptedframetransverse}.}.
+
+We have found that both $M^{(1)}$ and $M^{(2)}$ are not invertible. The result is that the specific forms of $T^{(1)}(U)$ and $T^{(2)}(U)$ will be important in order to decide if the double copy breaks down at second order in the Penrose expansion, and, if it does not, whether there is more residual freedom of $U$ left in  $S^{(1)}$ and $S^{(2)}$.
+
+The explicit expressions for $T^{(1)}(U)$ and $T^{(2)}(U)$, which we do not display as they are lengthy and not insightful, do not give indication that they should generically be in the range of $M^{(1)}$ and $M^{(2)}$. For instance, in order to be able to satisfy all the double copy relations at second order, the ratio of the two components of  $T^{(1)}(U)$ should equal the ratio of the two rows in $M^{(1)}$, which is $\Psi_0^{(0)}/3\Psi_1^{(1)}$. It is straightforward though tedious, at least without imposing Einstein's equations,  to check that this equality of ratios not in fact satisfied using simple polynomial functions in \eqref{eqn:adapted} with generic coefficients. Therefore, we expect the double copy in the Penrose expansion to generically break down at second subleading order.
+
+\paragraph{Third subleading order}
+
+At third subleading order, while we no longer write out the equivalents of the expression \eqref{eqn:fexpansiongeneral} for the Maxwell scalars $f^{(3)}_I$ explicitly, it is still true that only $f_0^{(3)}$ contains a contribution of $S^{(3)}$; $f^{(3)}_1$ and $f^{(3)}_2$ are fixed by lower orders. The same will be true at all orders, only $f_0^{(k)}$ contains $S^{(k)}$. Similarly, while $S^{(k-1)}$ does appear in $f_1^{(k)}$, it does not appear in $f_2^{(k)}$.  As an important consequence, we can only satisfy \eqref{eqn:feqnspert2} and \eqref{eqn:feqnspert4}, which do not involve $f_0^{(k)}$, at a given order by using freedom left from a previous order.
+
+At third order, with the double copy relations satisfied at lower orders, we generically have two degrees of freedom left, one in $S^{(1)}$ and one in $S^{(2)}$, related to the kernels of the matrices $M^{(1)}$ and $M^{(2)}$ defined in \eqref{eqn:M1matrix} and \eqref{eqn:Mmatrix}. Now \eqref{eqn:feqnspert2} constitutes two equations for functions of $U$ as coefficients to a linear function in $X^1$ and $X^2$, as was the case for \eqref{eqn:feqnspert1} at the previous order. However, \eqref{eqn:feqnspert4} is also non-trivial at third order and, based on the left-hand side, does not involve the remaining free function from $S^{(2)}$. Instead,  the equation \eqref{eqn:feqnspert4} at third order beyond the Penrose limit depends only on $a^{(2)}_{S,2, 0,0}(U)$, which is not involved in the previously mentioned remaining freedom, having been fixed simply by \eqref{eqn:feqnspert3}. In conclusion, further significant, non-trivial cancellations would be required in order for the double copy relations to be satisfiable at third order, even at the naive counting level, which, based on the second order discussion, will fail leading to additional constraints.  
+
+As a novelty at third order, we have for the first time an additional constraint from the double copy relation \eqref{eqn:scalarsdcrelations}, as opposed to just fixing $f^{(k)}_I$ in terms of $S^{(k)}_I$, $\Psi^{(k)}_I$, and lower orders:
+\begin{equation}\label{Expansion:eqn:algconstraint3}
+S^{(0)}_0 \Psi_3^{(3)} = f^{(1)}_1 f^{(2)}_2 \, .
+\end{equation}
+We do not have any freedom in the choice of zeroth copy in order to satisfy \eqref{eqn:algconstraint3} with 
+\begin{equation}
+f^{(1)}_1 = \frac{S^{(0)}}{f_0^{(0)}} \Psi_1^{(1)}  \, , \quad  f^{(2)}_2 = \frac{1}{f_0^{(0)}}\left(S^{(0)}\Psi_2^{(2)}-2 (f_1^{(1)})^2\right) \, .
+\end{equation}
+In fact, the relation \eqref{eqn:algconstraint3} seems to present a clear constraint on the underlying double copy geometry as it can be expressed entirely in terms of Weyl scalars as
+\begin{equation}\label{Expansion:eqn:algconstraint3psis}
+(\Psi_0^{(0)})^2 \Psi_3^{(3)} + 2 ( \Psi_1^{(1)})^3=   \Psi_0^{(0)} \Psi_1^{(1)} \Psi_2^{(2)}\, .
+\end{equation}
+On the other hand, the equation \eqref{eqn:algconstraint3psis} is not invariant under frame transformations, not even those of the little group, preserving $k$. Therefore, it may well be that \eqref{eqn:algconstraint3psis} can still be satisfied with an appropriate choice of frame, so it may not actually present an invariant geometric constraint. As a result, \eqref{eqn:algconstraint3psis} does not seem to coincide with a known constraint on the Petrov type of the spacetime.
+
+That being said, once a choice of adapted coordinates is made, we can always choose to fix a frame of the form $\left\lbrace k, n,  E_{(a)} \right\rbrace$ defined by \eqref{eqn:adaptedframetransverse} and \eqref{eqn:adaptedframe}. If we impose this specific form, in particular for $n$ in terms of the choice of adapted coordinates and the transverse frame $E_{(a)}$, as a type of gauge-fixing, the only freedom left is really in rotations of the transverse frame, which cannot be used to put \eqref{eqn:algconstraint3psis} to zero. 
+
+To summarize, we have found that in a Penrose expansion around a stretch of a null geodesic free of conjugate points, the Weyl double copy relations can always be satisfied up to first subleading order while they cannot generically be satisfied at second subleading order. At higher orders, the class of spacetimes that admits a perturbative Weyl double copy is restricted further still, as we have illustrated at third subleading order. 
+
+\subsection{Normal neighborhoods} \label{Expansion:sec:normalneighborhoods}
+
+So far, we have discussed the Penrose expansion and its double copy for a stretch of the target null geodesic $\gamma$ free of conjugate points. As a result, we could use the adapted coordinates \eqref{eqn:adapted} associated to the embedding of (this stretch of) $\gamma$ into a null geodesic congruence. Now, we show how to extend the double copy results to a full normal neighborhood of the null geodesic, which moreover does not depend on a choice of embedding into a geodesic congruence and is therefore more directly related to the underlying geometry. 
+
+In terms solely of contractions of the Riemann tensor along a parallel propagated frame along $\gamma$, the metric to second order in the Penrose expansion is given in null Fermi coordinates $y^{\mu} = (u,v,y^{a}) = (u, y^{\bar{a}})$ by \cite{Blau:2006ar}
+\begin{equation}\label{Expansion:eqn:ferminull2}
+\begin{aligned}
+ds^2 &= 2du dv-R_{a u b u}x^a x^b \, du^2 - \delta_{ab}dx^a dx^b \\
+&+ \left\lbrack +\left(2 R_{u a u v}x^a v + \frac{1}{3} (R_{a u b u;c})  x^a x^b x^c \right) du^2 +\frac{4}{3} R_{u b a c}x^b x^c (du dx^a)\right\rbrack  \\
+&+ \left[-R_{uvuv}v^2 (du)^2 
+-\frac{4}{3} R_{ubvc} x^b x^c (du dv) -\frac{4}{3} R_{uvac}  v
+x^c (du dx^a)\right. \\
+& -\frac{4}{3} R_{ubav}x^b v (du dx^a)
+-\frac{1}{3} R_{acbd} \ x^c x^d (dx^a dx^b) 
+-\frac{2}{3} R_{uauv;c} \ x^a x^- x^c (du)^2 \\
+& -\frac{1}{3} R_{uaub;v} \ x^a x^b v (du)^2  
+-\frac{1}{4} R_{ubac;d} \ x^b x^c x^d (du dx^a) \\
+&\left.+(\frac{1}{3} R_{uaAb} R^A_{\;cud} - \frac{1}{12} R_{uaub;cd})  x^a x^b
+x^c x^d (du)^2\right] \, .
+\end{aligned}
+\end{equation}
+As mentioned, one drawback of \eqref{eqn:ferminull2} is that, to the best of our knowledge, an all orders form of the type \eqref{eqn:ferminull2}  is not known.
+
+The coordinate transformation from adapted coordinates $x^{\mu} =(U,V,X^{i})$ to null Fermi coordinates  $y^{\mu} = (u,v,y^{a}) = (u, y^{\bar{a}})$ associated to the geodesic $\gamma$, as discussed in \cite{Blau:2006ar}, amounts to a transverse Taylor expansion 
+\begin{equation}\label{Expansion:eqn:tofermicoordinates}
+x^{\mu}(y^{\nu}) = x^{\mu}(y^{\nu})|_{\gamma} + (\hat{E}^{\mu}_{(\bar{a}_1)}|_{\gamma})y^{\bar{a}_1}-\sum^{\infty}_{n=2}\frac{(-1)^n}{n!}\left( \Gamma^{\mu}_{(\mu_1 \ldots \mu_n)}\hat{E}^{\mu_1}_{(\bar{a}_1)} \ldots \hat{E}^{\mu_n}_{(\bar{a}_n)}|_{\gamma}\right)y^{\bar{a}_1} \ldots y^{\bar{a}_n}  \, .
+\end{equation} 
+Here $\Gamma^{\mu}_{(\mu_1 \ldots \mu_n)}$ are generalized Christoffel symbols associated to the null Fermi coordinates $y^{\mu}$. For a single, arbitrary scalar function $P(x)$, a generalized Christoffel symbol can be defined as
+\begin{equation}\label{Expansion:eqn:genChristoffel}
+\Gamma[P(x)]_{(\mu_1 \ldots \mu_n)} = -\nabla_{(\mu_1} \ldots \nabla_{\mu_n)} P(x)   \, .
+\end{equation}
+Given a coordinate system, the generalized Christoffel symbols associated to the coordinate system are then defined as the collection of generalized Christoffel symbols \eqref{eqn:genChristoffel} evaluated on each of the coordinates, understood individually as scalar functions. By a conventional abuse of notation, which parallels that of the Christoffel symbols themselves, this is written as
+\begin{equation}
+\Gamma^{\mu}_{(\mu_1 \ldots \mu_n)} \coloneqq \Gamma[y^{\mu}]_{(\mu_1 \ldots \mu_n)} \, .
+\end{equation} 
+In \eqref{eqn:tofermicoordinates}, we are required to use the (extended\footnote{We refer to $y^a$ and $\hat{E}_{(a)}$ as respectively the transverse coordinates and frame while we refer to $y^{\bar{a}}$ and $\hat{E}^{\mu}_{(\bar{a})}$ as respectively the extended transverse coordinates and frame.}) transverse frame $\hat{E}^{\mu}_{(\bar{a})} = \left\lbrace \hat{n}, \hat{E}_{(a)} \right\rbrace$, parallel propagated on $\gamma$ ($V=X_1=X_2 = 0$). As discussed previously, such a frame can always be obtained from $\left\lbrace n, E_{(a)} \right\rbrace$ by frame rotations which leave $k$ invariant. Provided that the leading order scalings are unchanged, such that the frame can still be interpreted as a frame in the Penrose limit, the full analysis of the previous section goes through. Indeed, the explicit form of the frame \eqref{eqn:adaptedframetransverse}-\eqref{eqn:adaptedframe} was not used for the main argument, and was introduced mainly for definiteness and to be able to perform explicit checks.
+
+For convenience of readers less familiar with \cite{Blau:2006ar}, let us briefly illustrate how \eqref{eqn:tofermicoordinates} works for the leading order Penrose limit. In adapted coordinates $\gamma$ is located at $X^1 = X^2 = V = 0$. As a result, the first term in \eqref{eqn:tofermicoordinates} contributes only to $U(u,v,y^a)$. On the other hand, $\hat{E}^{\mu}_{(\bar{a})}$ have no $U$ components and $\Gamma^{U}_{(\mu_2 \ldots \mu_{n})}$ vanishes at the leading Penrose limit order, as $\Gamma^{U}_{\mu \nu}$ then vanishes identically. Thus, at the order of the Penrose limit, $U(u,v,y^a) = U(u)$. Although not strictly enforced by \eqref{eqn:tofermicoordinates}, we set $U = u$, for instance because the null Fermi coordinate $u$ should be affine along $\gamma$ and thus may as well be fixed to be equal to $U$. 
+
+Next, the sum in \eqref{eqn:tofermicoordinates} also does not contribute to $X^i(u,v,y^a)$ because the projections of the (generalized) Christoffel symbols $\Gamma^{i}_{(\mu_1 \ldots \mu_n)}$ onto the extended transverse frame vanish. As a result, from the second term in \eqref{eqn:tofermicoordinates}, one finds $X^i = \hat{E}^i_{(a)} y^a$. Finally, for $V(u,v,y^a)$, the second term in \eqref{eqn:tofermicoordinates} contributes a term $v$ but the $n=2$ term of the sum now also contributes through $\Gamma^{V}_{i j} = \frac{1}{2} \partial_U C_{ij}$. 
+
+In summary, 
+\begin{equation}\label{Expansion:eqn:rosenBrinkmann}
+\begin{aligned}
+U &= u + O(\epsilon)\, , \\
+X^i &= \hat{E}^i_{(a)} y^a + O(\epsilon) \, , \\
+V &= v - \frac{1}{4}\left(\partial_U C_{ij}\right) \hat{E}^i_{(a)}\hat{E}^j_{(b)} y^a y^b + O(\epsilon) \, . 
+\end{aligned}
+\end{equation}
+is the coordinate transformation between Rosen and Brinkmann coordinates of plane wave spacetimes, which is thus generalized by \eqref{eqn:tofermicoordinates} to all orders. Crucially the leading Penrose expansion scalings of the coordinates is not modified for $(u,v,y^a)$ as compared to $(U,V,X^i)$.
+
+Given the coordinate and frame invariance of the full set of double copy relations \eqref{eqn:scalarsdcrelations} and the field equations, we only need to argue that the coordinate transformation \eqref{eqn:tofermicoordinates} respects the order counting that was the organizing principle of Section \ref{eqn:curvedlocal}. Essentially, before rescaling such that the plane wave coordinates are finite, $(u,v,y^a) \sim (U,V,X^i) \sim (\epsilon^0, \epsilon^2, \epsilon)$, which is true on account of \eqref{eqn:rosenBrinkmann}. 
+
+In conclusion, following the steps outlined in Section \ref{sec:overview}, we have first considered a perturbative Weyl double copy in the Penrose expansion for local stretches of a null geodesic in adapted coordinates and subsequently argued that this local perturbative analysis can be extended to a region around the entire null geodesic in null Fermi coordinates. We find that in the Penrose expansion around an arbitrary null geodesic in an arbitrary spacetime, the Weyl double copy relations can always be satisfied up to first subleading order. However, only in special cases do we expect these relations to be satisfiable at higher order.
+
+\section{Kerr-Schild double copy in the Penrose expansion} \label{Expansion:sec:kerrschild}
+
+In the previous section, we discussed a version of the Weyl double copy in which the single and zeroth copy satisfy field equations on the curved (double copy) background. Here, we wish to consider the case where they are in fact defined on a flat background spacetime. The main new question is how to identify the flat space. Within the classical double copy, a clear prescription is available in the case of the Kerr-Schild double copy \cite{Monteiro:2014cda}. Therefore, we restrict ourselves to that case here.
+
+\subsection{Background}
+
+A Kerr-Schild metric takes the form
+\begin{equation}\label{Expansion:eqn:KS}
+g_{\mu \nu} = \eta_{\mu \nu} + \phi k_{\mu} k_{\nu},
+\end{equation}
+where $k$ is null with respect to both the curved metric $g$ and the flat metric $\eta$. The statement of the Kerr-Schild double copy is then that, if a Kerr-Schild metric \eqref{eqn:KS} satisfies the Einstein equations, then the gauge field
+\begin{equation}
+A_{\mu} = \phi k_{\mu} \, ,
+\end{equation}
+satisfies the Maxwell equations, on the flat space in Kerr-Schild coordinates with metric $\eta_{\mu \nu}$, and the scalar field $\phi(x)$ similarly satisfies the flat space massless scalar wave equation \cite{Monteiro:2014cda}.
+
+An important Kerr-Schild background for our purposes is the plane wave spacetime. The Kerr-Schild form \eqref{eqn:KS} is manifest in Brinkmann (null Fermi) coordinates
+\begin{equation}\label{Expansion:eqn:planewave}
+ds^2 = 2du dv - \delta_{ab}dx^a dx^b + H(u,x^a) du^2 \, .
+\end{equation}
+Moreover, the vector field associated to form $du$ is the four-fold repeated principal null direction $\partial_v$. As already emphasized in \cite{Chawla:2024mse}, while one could use the flat space suggested by \eqref{eqn:planewave} to identify a flat space consistent with the double copy of the Penrose limit proposed there, the double copy fields themselves are not the Kerr-Schild double copy as proposed in \cite{Monteiro:2014cda}. This difference can be seen directly from the fact that $H(u,x^a)$ is a quadratic form in $x^a$, while the Penrose limit expectation is that $\phi(x^{\mu}) = \phi(u) \neq  H(u,x^a)$.
+
+\subsection{Example: Schwarzschild}\label{Expansion:sec:example:Schwarzschild}
+
+Consider the Schwarzschild black hole with mass $M$ in Kerr-Schild coordinates
+\begin{equation}\label{Expansion:eqn:SmetricKS}
+ds^2 = d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right) -\frac{2M}{r}(d\hat{t} + dr)^2  \, .
+\end{equation}
+In adapted coordinates $\lbrace U,V,\hat{t}_0,\phi_0 \rbrace$ with respect to a null geodesic congruence consisting of geodesics with energy $\hat{E}$ and angular momentum $L$, we find
+\begin{equation}\label{Expansion:eqn:Sadapted}
+\begin{aligned}
+ds^2 =  
+2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r}\right)\right)d\hat{t}_0^2 - r^2 \sin^2(\theta) d \phi_0^2  \\ &-\frac{r^2}{L^2} dV^2+2\hat{E} \frac{r^2}{L^2} dV d\hat{t}_0 \, .\\
+\end{aligned}
+\end{equation}
+where $r = r(U;M)$ and $\theta = \theta(U,V,\hat{t}_0;M)$ are defined as functions of the adapted coordinates in more detail in Appendix \ref{app:Penroseexpansion}. We emphasize especially the dependence of these functions on $M$ (as opposed to the additional dependence on say $L/\hat{E}$) to distinguish $M=0$ versions of these functions if required in the single copy. 
+
+The adapted coordinates \eqref{eqn:Sadapted} can be defined for generic null geodesics. However, a special case, not captured by \eqref{eqn:Sadapted}, arises when the relevant null geodesic congruence is  generated by the Kerr-Schild vector field, for which the adapted and Kerr-Schild coordinates overlap. The Kerr-Schild vector field generates principal null geodesics for the Schwarzschild spacetime and the Penrose limit would accordingly be flat space. We restrict ourselves to the generic case in what follows.
+
+In adapted coordinates, the single copy gauge field takes the form
+\begin{equation}\label{Expansion:eqn:AKS}
+A = \frac{2M}{r}(d\hat{t} + dr) = \frac{2M}{r}\left(d\hat{t}_0 + \hat{E} dU \left(1+\frac{2 M r + r^2\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}(1-\frac{2M}{r})}}{r(r-2M)}\right) \right) \, .
+\end{equation}
+Importantly for the Penrose limit, and by extension the Penrose expansion, \eqref{eqn:AKS} is not in Penrose-G\"uven gauge; that is $A_U \neq 0$. Relatedly, going through the adapted coordinate transformation starting from the flat Kerr-Schild metric
+\begin{equation}\label{Expansion:eqn:SmetricKSflat}
+ds^2_{\flat} = d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right)  \, ,
+\end{equation} 
+we find a metric which is not in the adapted coordinate form; $g_{UU} \neq 0 \neq g_{Ui}$. Having a metric which is not in adapted coordinates is a problem from the perspective of taking the Penrose limit, as the leading order scaling would not be correct; there would be an $O(\epsilon^0)$ term, dropping all higher orders the metric would be degenerate, and the gauge field would be pure gauge. 
+
+Given that $r=r(U)$, we can readily shift the gauge to remove the second term in \eqref{eqn:AKS}. In fact, subsequently taking the Penrose limit for the gauge field yields a field strength
+\begin{equation}\label{Expansion:eqn:SFgamma}
+F^{(\gamma)} = -\frac{2M r'(U)}{r^2} dU \wedge d\hat{t}_0 = - \frac{2M L}{r^3} du \wedge dx_1 
+\end{equation}
+where in the second line we have gone to the Brinkmann coordinates using
+\begin{equation}
+\hat{t}_0= \frac{L x_1}{r \sqrt{ \hat{E}^2-\frac{L^2}{r^2}(1-\frac{2M}{r})}} \, , \quad r'(U) = r'(u) =  \sqrt{\hat{E}^2-\frac{L^2}{r^2}(1-\frac{2M}{r})} \, .
+\end{equation}
+The field strength \eqref{eqn:SFgamma} is the result consistent with the Weyl double copy as already discussed in the Penrose limit in \cite{Chawla:2024mse} \footnote{Note that an additional factor of $1/\sqrt{2}$ was included there in the definition of the Kerr-Schild vector $k_{\mu}$.}.
+
+On the other hand, consider how gauge transformations, such as those needed to go to Penrose-G\"uven gauge, affect the Kerr-Schild double copy. After a gauge transformation, the Kerr-Schild form \eqref{eqn:KS} looks like
+\begin{equation}\label{Expansion:eqn:KSgauge}
+g_{\mu \nu} = \left\lbrack \eta_{\mu \nu} + \frac{2 A_{(\nu} \partial_{\mu)} \Lambda}{\phi} + \frac{\partial_{\mu} \Lambda \partial_{\nu}\Lambda}{\phi} \right\rbrack + \frac{A_{\mu} A_{\nu}}{\phi}  \, .
+\end{equation}
+For instance, for Schwarzschild, it is fairly natural to perform a gauge transformation in order to put the single copy into the usual form of the electrostatic potential. That is, instead of \eqref{eqn:SmetricKS}, we write
+\begin{equation}\label{Expansion:eqn:SmetricKSstat}
+ds^2 = \left\lbrack d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right)  -\frac{4M}{r} dr d\hat{t} -\frac{2M}{r}dr^2 \right\rbrack -\frac{2M}{r}d\hat{t}^2  \, .
+\end{equation}
+This is exactly the same metric, we have just shuffled around the terms and called it a gauge transformation for the single copy but
+\begin{equation}\label{Expansion:eqn:SmetricKSstatnotflat}
+ds^2 =  \left\lbrack d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right)  -\frac{4M}{r} dr d\hat{t} -\frac{2M}{r}dr^2 \right\rbrack \, ,
+\end{equation}
+is not a flat metric. That the identification of the Kerr-Schild flat coordinates is gauge dependent is well-known, and not a surprise considering amplitude double copy relations. However, as we have illustrated, taking the Penrose limit through adapted coordinates generically involves an incompatible gauge choice.
+
+Let us nevertheless take the Penrose limit up to the usual order ($O(\epsilon)$ for the gauge field and $O(\epsilon^2)$ for the metric) for the flat space metric in adapted coordinates. We find
+\begin{equation}\label{Expansion:eqn:Sadaptedpenroseflat}
+\begin{aligned}
+ds^2_{\gamma,\flat} =  
+2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-1\right)d\hat{t}_0^2 - r^2 \sin^2 \theta d \phi_0^2 \\ &+ \frac{4 M \hat{E}}{r\left(1-\frac{2M}{r}\right)}\left(1+\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)}\right)dU d\hat{t}_0 \\ &+ \frac{2M \hat{E}^2}{r\left(1-\frac{2M}{r}\right)}  \left(2-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)+2\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}\left(1-\frac{2M}{r}\right)}\right) dU^2 \, ,
+\end{aligned}
+\end{equation}
+where we still have $r = r(U;M)$ and $\theta = \theta(U;M)$ depending on $M$ because, despite representing flat space, the mass was introduced into \eqref{eqn:Sadaptedpenroseflat} by following the exact coordinate transformations that were used for the curved metric, including this mass dependence.
+
+Similarly going through the coordinate transformation used for the curved metric to go to Brinkmann coordinates, we find
+\begin{equation}\label{Expansion:eqn:Sadaptedpenroseflatbrinkmann}
+\begin{aligned}
+ds^2_{\gamma,\flat} &=  
+2 du dv -dx^2_1 - dx_2^2\, \\
+&+ 2 M x_1  \frac{2 L^2 (L^2 M - \hat{E}r^3) du dx_1}{r^{5/2} \left(2 L^2 M -L^2 r + \hat{E} r^3 \right)^{3/2}}  + \frac{2L^2 M}{2 L^2 M -L^2 r + \hat{E}^2 r^3} dx_1^2 \\
+&+ \left( \frac{3 L^2 M x_2^2}{r^5} + \frac{2M \hat{E}^2}{r} X_0(u) + \frac{4 M L \hat{E} x_1}{r^3} X_1(u) + \frac{M L^2 x_1^2}{r^5} X_2(u) \right)du^2 \, ,
+\end{aligned}
+\end{equation}
+where the somewhat lengthy functions $X_0, X_1, X_2$, whose details we don't need, are given in  Appendix \ref{app:Penroseexpansion}. The metric \eqref{eqn:Sadaptedpenroseflatbrinkmann} is clearly not in the Brinkmann form for flat space, exactly because we used the coordinate transformation that brings the \emph{curved} spacetime into Brinkmann form. Of course, we still recover the usual flat space expression by setting $M = 0$. Although these $M = 0$ coordinates are consistent with the Penrose limit Weyl double copy single and zeroth copy satisfying the wave equation on them \cite{Chawla:2024mse}, they are thus not the same as what we find directly by mimicking identically every coordinate transformation needed to find the Penrose limit for the curved spacetime on the Kerr-Schild flat space.
+
+As an intermediate option between letting $M = 0$ in \eqref{eqn:Sadaptedpenroseflatbrinkmann} and taking the full $M \neq 0$ form, it seems natural, from the perspective of having a homogeneously $O(\epsilon^2)$ metric, to take $M \sim \epsilon^2$. With such a scaling, in adapted coordinates
+\begin{equation}\label{Expansion:eqn:Sadaptedpenroseflatscaling}
+\begin{aligned}
+ds^2_{\gamma,\flat} =  
+2 dU dV&- \left(r^2 \frac{\hat{E}^2}{L^2}-1\right)d\hat{t}_0^2 - r^2 \sin^2 \theta d \phi_0^2 \\  &+ \frac{2M \hat{E}^2}{r}  \left(2-\frac{L^2}{\hat{E}^2 r^2}+2\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}}\right) dU^2 \, ,
+\end{aligned}
+\end{equation}
+where now $r = r(U;0)$ and $\theta = \theta(U;0)$, while in Brinkmann coordinates
+\begin{equation}\label{Expansion:eqn:Sadaptedpenroseflatbrinkmannscaling}
+\begin{aligned}
+ds^2_{\gamma,\flat} &=  
+2 du dv -dx^2_1 - dx_2^2 + \frac{2M \hat{E}^2}{r} \left(2- \frac{L^2}{r^2 \hat{E}^2} +2\sqrt{1-\frac{L^2}{\hat{E}^2 r^2}}\right) du^2 \, .
+\end{aligned}
+\end{equation}
+Here, $M$ still appears non-trivially and we still do not find the flat space that would have been expected from the plane wave Kerr-Schild double copy. 
+
+Finally, we could choose $M \sim \epsilon^{2 + \delta}$ with $\delta > 0$. This choice absorbs a homogeneous $O(\epsilon^2)$ scaling of the metric. It does reduce to the natural plane wave flat space, and with the inclusion of all orders should nevertheless reproduce the full flat, Schwarzschild Kerr-Schild coordinates. It is not surprising that, for $M \sim \epsilon^{2 + \delta}$, the expected Kerr-Schild flat space emerges with respect to the leading order plane wave as well as with respect to the full black hole, as when setting $M=0$ identically in the black hole metric \eqref{eqn:SmetricKS} and the Penrose limit in Brinkmann coordinates \eqref{eqn:brinkmann}.
+
+However, if the original Kerr-Schild coordinates are to be identified between the curved and the flat space, the flat space coordinate transformations generically include non-trivial $M$-dependence in order to keep track of that flat space when going to adapted coordinates. Therefore, a prescription $M \sim \epsilon^{2 + \delta}$ must still be used instead of simply setting $M = 0$ identically in order not to lose track of the exact flat space identification. 
+
+Similar considerations related to identifying the appropriate flat space can be made for the asymptotic double copy. In particular, in \cite{Godazgar:2021iae}, both setting the curved space mass, and similar charges, to zero as well as going from Kerr-Schild coordinates to (flat space) Bondi coordinates are discussed. Nevertheless, an important difference is that the coordinate transformation from Kerr-Schild to adapted coordinates around arbitrary null geodesics could naturally depend on the mass in a more intricate way than the analogous transformation from Kerr-Schild to Bondi coordinates. On the other hand, the dependence of the coordinate transformation from the Kerr-Schild to adapted (or Bondi) coordinates is exactly how the prescription $M \sim \epsilon^{2 + \delta}$ will end up differing from setting $M = 0$ identically.
+
+In summary, the Schwarzschild example illustrates that, in trying to follow through what happens step-by-step with the Kerr-Schild flat space coordinates in the Penrose expansion, we are faced with the incompatibility of the Kerr-Schild gauge and the Penrose-G\"uven gauge. Three possible resolutions are (i) to not truncate at the superleading $O(\epsilon^0)$ but nevertheless going to $O(\epsilon^2)$, as usual, and declaring these combined three orders to be leading, (ii) taking $M \sim \epsilon^2$ in the construction of the flat space metric, or (iii) taking $M \sim \epsilon^{2 + \delta}$ with $\delta > 0$. In order to have a viable Penrose expansion (i) seems disfavored while, in order for the leading order to be the Kerr-Schild flat space of the plane wave (iii) seems desirable.
+
+
+\section{Conclusion and outlook}
+
+We have formulated a Weyl double copy on a curved background in the Penrose expansion. Exact Weyl double copy spacetimes preserve their double copy structure order-by-order in this expansion. On the other hand, we have argued that generic spacetimes, even without exact double copy structure, still have a double copy in the Penrose expansion to first subleading order. 
+
+As a result, we have established a precise new interface to study how the classical Weyl double copy breaks down for generic spacetimes. Our approach, using an expansion around null geodesics, is complementary to the asymptotic double copy, formulated perturbatively around null infinity \cite{Godazgar:2021iae,Adamo:2021dfg}. Advantages of the Penrose expansion compared to such an asymptotic approach include uses in non-asymptotically flat spaces as well as interesting spacetime regions such as light-rings, horizon, or near singularities of black holes to which the asymptotic expansion may not be sensitive.
+
+We have provided evidence that the double copy in the Penrose expansion will generically break down at second order. Nevertheless, a better understanding of the actual obstruction to the double copy at second order as well as higher orders would be desirable. One straightforward way forward could be to study what goes wrong in various examples that are not expected to have an all orders Weyl double copy. On the other hand, as such examples will have more generic Petrov types than type D and type N, the Penrose expansion may rapidly grow in complexity. Moreover, many interesting examples such as the family of STU black holes studied in the asymptotic double copy approach \cite{Godazgar:2021iae} or the FLRW spacetimes in an all-orders ``background field'' double copy \cite{Ilderton:2024oly} require (in principle) a treatment of additional field content or sources \cite{Cardoso:2016amd,LopesCardoso:2018xes,Easson:2021asd,Easson:2022zoh,Armstrong-Williams:2024bog}.
+
+In addition, while we are able to formulate an order-by-order Weyl double copy in the Penrose expansion on a curved background, we have not uniquely identified how to construct a flat spacetime with respect to which we can do the same. We have illustrated how to follow through in principle what is the relevant flat space inherited from an exact Kerr-Schild background order-by-order in the Penrose expansion, analogous to an approach suggested for the asymptotic double copy in \cite{Godazgar:2021iae}. However, this Penrose expanded flat space does not seem to have a clear structure in the Penrose expansion as a result of the (generic) incompatibility between the Kerr-Schild gauge and the Penrose-G\"uven gauge. Therefore, it remains an open problem to understand a constructive way to determine a suitable flat space without knowledge of the all-orders background. 
+
+A surprising feature of the Weyl classical double copy is that it is local in position space while double copy constructions in scattering amplitudes are local in momentum space \cite{Monteiro:2021ztt,Luna:2022dxo}. It would be interesting to also understand  the interplay between the Penrose expansion and versions of the double copy which are not generically local in position space such as the convolutional double copy \cite{Anastasiou:2014qba,Anastasiou:2018rdx,LopesCardoso:2018xes,Luna:2020adi} or the twistor double copy \cite{White:2020sfn,Chacon:2021wbr}. A first step in such a direction would likely need to be a clarification of what the Penrose expansion even means in such formulations and in flat space, momentum space scattering amplitudes themselves. The latter, if it can be made into a well-posed question, would likely involve a combination of techniques such as: obtaining classical spacetimes from amplitudes \cite{Boulware:1968zz,Duff:1973zz,Neill:2013wsa,Mougiakakos:2020laz}, eikonal methods \cite{DiVecchia:2023frv} and perhaps a suggestive relationship between perturbative expansions of plane wave background-field amplitudes and multicollinear limits of vacuum (flat space) amplitudes \cite{Adamo:2021hno}.
+
+Finally, the Penrose limit, null Fermi coordinates, and the Penrose expansion have been studied in various applications and a natural question for future work is relating these to what we have done here. One striking application of the Penrose expansion is in AdS/CFT, where string theories in the Penrose expanded backgrounds are dual to particular large charge expansions in a holographically dual field theory \cite{Berenstein:2002jq,Callan:2003xr,Callan:2004uv,McLoughlin:2004dh,Minahan:2005mx,Minahan:2005qj}. The context is very different from what we have discussed here but it should be worthwhile to connect to this AdS/CFT literature more closely, especially in light of the origins of the double copy in the KLT relations in string theory \cite{Kawai:1985xq}. Moreover, there is already a commonality in approach between our work and ways in which the Penrose expansion has been used to study loss of integrability \cite{Beisert:2010jr}, on both sides of the AdS/CFT duality, away from the most studied special limits and backgrounds \cite{Asano:2015qwa,Alencar:2021ljc,McLoughlin:2022jyt}. 
+
+As another example application, the Penrose limit of the light-ring captures properties of eikonal quasinormal modes \cite{Fransen:2023eqj,Kapec:2024lnr}. Higher orders in the Penrose expansion are similarly expected to map onto higher orders of the eikonal expansion. We have shown that the double copy structure of the four-dimensional black holes of general relativity in particular are reflected order-by-order in the Penrose expansion. Therefore, the double copy structure of these black holes should also be reflected order-by-order in their eikonal quasinormal modes spectrum. If so, then perhaps the full spectrum may also reflect the underlying double copy.  Such a structure might be apparent in future gravitational wave experiments  \cite{Bhagwat:2021kwv,Bhagwat:2023jwv,Pitte:2024zbi}.
+
+\acknowledgments
+
+We thank Ricardo Monteiro, Silvia Nagy, and Chris White for insightful discussions. S.~C. and C.~K. are supported by the U.S. Department of Energy under grant number DESC0019470 and by the Heising-Simons Foundation “Observational Signatures of Quantum
+Gravity” collaboration grants 2021-2818 and 2024-5305. This research was supported in part by grant NSF PHY-2309135 to the Kavli Institute for Theoretical Physics (KITP); C.~K. appreciates the support and hospitality of KITP during the finishing stages of this project.  C.~K. also acknowledges Queen Mary University and Caltech for hospitality during earlier stages of this work.
+K.~F. is supported by the Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2817, the U.S. Department of Energy, Office of Science, Office of High Energy Physics, under Award No. DE-SC0011632, and the Walter Burke Institute for Theoretical Physics. C.~K. and K.~F. acknowledge the Aspen Center for Physics, where part of this work was performed, which is supported by National Science Foundation grant PHY-2210452.
+
+\end{document}
