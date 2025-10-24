@@ -351,11 +351,11 @@ On the other hand, to understand how such results for plane waves inform more ge
 
 \begin{figure}[H]
 	\begin{tikzcd}
-            \makebox[\lenf em][c]{Double copy spacetime}  \arrow[r, leftrightarrow,shorten=-4mm, "\text{Weyl DC}"]
-        \arrow[dd,"\text{Penrose limit}{}_{\gamma}"]& \makebox[\lenf em][c]{single copy gauge field}
-        \arrow[dd,dashed,"\text{?}"] \\
+            \makebox[\lenf em][c]{Double copy spacetime}  \arrow[leftrightarrow,shorten=-4mm]{r}{\text{Weyl DC}}
+            \arrow{dd}{\text{Penrose limit}{}_{\gamma}}& \makebox[\lenf em][c]{single copy gauge field}
+            \arrow[dashed]{dd}{\text{?}} \\
 		& \\
-        \makebox[\lenf em][c]{plane wave spacetime}  \arrow[r,leftrightarrow,shorten=-4mm, "\text{Weyl DC}"] &  \makebox[\lenf em][c]{plane wave single copy} 
+            \makebox[\lenf em][c]{plane wave spacetime}  \arrow[leftrightarrow,shorten=-4mm]{r}{\text{Weyl DC}} &  \makebox[\lenf em][c]{plane wave single copy} 
 	\end{tikzcd}
 	\caption{To understand how double copy results on plane wave backgrounds can inform more general
 		backgrounds, from which the plane waves arise as Penrose limits, we complete the above diagram.}\label{Penrose:fig:schematicquestion}
@@ -798,9 +798,13 @@ If we now apply the proposal \eqref{Penrose:eqn:dcPenroselimit} for the Penrose 
 
 \begin{figure}[h]
 	\begin{tikzcd}
-		\makebox[\lenff em][c]{$\Psi_{ABCD} = S^5 \chi_{(AB} \chi_{CD)}$} \arrow[r,leftrightarrow,shorten=-3mm, "\text{Weyl DC}"] \arrow[dd,"\text{Penrose limit}{}_{\gamma}"]& \makebox[\lenf em][c]{$f_{AB} = S^3 \chi_{AB}$} \arrow[dd,"\text{Penrose limit}_{\gamma}"] \\
+		\makebox[\lenff em][c]{$\Psi_{ABCD} = S^5 \chi_{(AB} \chi_{CD)}$}
+                \arrow[leftrightarrow,shorten=-3mm]{r}{\text{Weyl DC}} \arrow{dd}{\text{Penrose limit}{}_{\gamma}}&
+                \makebox[\lenf em][c]{$f_{AB} = S^3 \chi_{AB}$} \arrow{dd}{\text{Penrose limit}_{\gamma}} \\
 		& \\
-			\makebox[\lenff em][c]{$\Psi^{(\gamma)}_{ABCD} = \left(S^5 |_{\gamma}\right) \beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D$} \arrow[r,leftrightarrow,shorten=-3mm, "\text{Weyl DC}"] & \makebox[\lenf em][c]{$f^{(\gamma)}_{AB} = \left(S^3 |_{\gamma}\right) \beta^{(\gamma)}_A \beta^{(\gamma)}_B$}
+			\makebox[\lenff em][c]{$\Psi^{(\gamma)}_{ABCD} = \left(S^5 |_{\gamma}\right)
+            \beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D$}
+                \arrow[leftrightarrow,shorten=-3mm]{r}{\text{Weyl DC}} & \makebox[\lenf em][c]{$f^{(\gamma)}_{AB} = \left(S^3 |_{\gamma}\right) \beta^{(\gamma)}_A \beta^{(\gamma)}_B$}
 	\end{tikzcd}
 	\caption{Schematic summary of the interplay between the Weyl double copy and the Penrose limit. The
         functional spacetime dependence is in some sense entirely controlled by the zeroth copy $S = -2M / r$ (for a Schwarzschild black hole) and its evaluation $S|_{\gamma}$ on the null geodesic $\gamma$, with respect to which the Penrose limit is taken. The spinorial structure on the other hand is fixed by the valence-2 Killing spinor $\chi_{AB}$ for the Petrov type D black hole while on the Petrov type N plane wave it is fixed by the Killing spinor $\beta^{(\gamma)}_A$.} \label{Penrose:fig:schematic}
@@ -1065,15 +1069,16 @@ From the plane wave perspective, one can absorb $\tilde{K}/\tilde{M}^2$ into the
 		 \makebox[\lenfff em][c]{$\begin{aligned}
 	\Psi_{ABCD} =  \frac{\chi_{(AB} \chi_{CD)}}{\left(\chi_{EF}\chi^{EF}\right)^{5/2}} 
 	 		\end{aligned}$}
- 		  \arrow[r,leftrightarrow, "\text{Weyl DC}"] \arrow[ddd,shorten=6mm,"\text{Penrose limit}{}_{\gamma}"]&  \makebox[\lenfff em][c]{$\begin{aligned}
+                        \arrow[leftrightarrow]{r}{\text{Weyl DC}} \arrow[shorten=6mm]{ddd}{\text{Penrose
+                            limit}{}_{\gamma}}&  \makebox[\lenfff em][c]{$\begin{aligned}
 	  S &=& \left(\chi_{EF}\chi^{EF}\right)^{-1/2} \\[0.5em] 
 	  f_{AB} &=& \frac{\chi_{AB}}{\left(\chi_{EF}\chi^{EF}\right)^{3/2}} \quad
-	 \end{aligned}$} 	\arrow[ddd,shorten=5mm,"\text{Penrose limit}_{\gamma}"]	  \,  \\
+  \end{aligned}$} 	\arrow[shorten=5mm]{ddd}{\text{Penrose limit}_{\gamma}}	  \,  \\
 &  \\ & \\
 		\makebox[\lenfff em][c]{$\begin{aligned}
 		 \Psi^{(\gamma)}_{ABCD} = \left(\frac{\tilde{K}}{\tilde{M}^2}\right)^2 \frac{\beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D}{\left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{5/2}\right\rbrack \right|_{\gamma}} 
 		 	\end{aligned}$}
-	 	 \arrow[r,leftrightarrow, "\text{Weyl DC}"] & \makebox[\lenfff em][c]{$\begin{aligned}
+                                \arrow[leftrightarrow]{r}{\text{Weyl DC}} & \makebox[\lenfff em][c]{$\begin{aligned}
 	 	 			 	S^{(\gamma)} &=&  \left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{-1/2}\right\rbrack\right|_{\gamma} \qquad \qquad \\[0.5em] 
 		 	f^{(\gamma)}_{AB} &=& - \left(\frac{\tilde{K}}{\tilde{M}^2}\right) \frac{\beta^{(\gamma)}_A \beta^{(\gamma)}_B}{ \left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{3/2}\right\rbrack \right|_{\gamma}}  
 		 \end{aligned}$}  
@@ -1215,14 +1220,14 @@ With the choice \eqref{Penrose:eqn:ppchoice} to fix the remaining functional amb
 		\begin{aligned}
 			\Psi_{ABCD} =  S^5 \iota_{(A} \iota_B \iota_C \iota_{D)}
 		\end{aligned}
-		\arrow[r,leftrightarrow, "\text{Weyl DC}"] \arrow[dd,"\text{Penrose limit}{}_{\gamma}"]&  \quad \begin{aligned}	
+                \arrow[leftrightarrow]{r}{\text{Weyl DC}} \arrow{dd}{\text{Penrose limit}{}_{\gamma}}&  \quad \begin{aligned}	
 			f_{AB} = S^3 \iota_{(A} \iota_{B)}
-		\end{aligned} \arrow[dd,"\text{Penrose limit}_{\gamma}"] \,  \\
+                    \end{aligned} \arrow{dd}{\text{Penrose limit}_{\gamma}} \,  \\
 		&   \\
 		\begin{aligned}
 			\Psi^{(\gamma)}_{ABCD} =  c^4 (S|_{\gamma})^5 \beta^{(\gamma)}_{(A} \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_{D)}
 		\end{aligned}
-		\arrow[r,leftrightarrow, "\text{Weyl DC}"] & \quad \begin{aligned}
+                    \arrow[leftrightarrow]{r}{\text{Weyl DC}} & \quad \begin{aligned}
 			f^{(\gamma)}_{AB} = c^2 (S|_{\gamma})^3  \beta^{(\gamma)}_{(A} \beta^{(\gamma)}_{B)} 
 		\end{aligned}  
 	\end{tikzcd}
