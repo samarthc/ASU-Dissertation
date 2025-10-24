@@ -6,6 +6,9 @@
 ## I don't want to sync the PDF with Git.
 *.pdf
 
+## Exclude folder containing Billy's dissertation
+Billy\ Dissertation/
+
 # source: https://github.com/github/gitignore/blob/master/TeX.gitignore
 
 ## Core latex/pdflatex auxiliary files:
