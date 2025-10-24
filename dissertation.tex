@@ -45,9 +45,9 @@
 % Title page, input
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \listadd{\titlelines}%
-  {Explorations in the Classical Double Copy (Working Title)}             %_<Enter the title of the dissertation
+  {Explorations in the Classical Double Copy}             %_<Enter the title of the dissertation
 \listadd{\titlelines}%
-  {Second Line of the Title}            % If you want to
+  {(Working Title)}            % If you want to
                                         %   split the title across lines,
                                         %   use another \listadd command for the
                                         %   second line
@@ -69,8 +69,12 @@
                                         %  May, August, or December
 \newcommand*{\gradyear}{2026}           %_<Enter the graduation year, e.g. 2014
 
-\listadd{\keywords}{keyword 1}          %_<Enter keywords; use \listadd for
-\listadd{\keywords}{keyword 2}          %   additional names (up to 6)
+\listadd{\keywords}{Classical Double Copy}          %_<Enter keywords; use \listadd for
+\listadd{\keywords}{Black Hole Spacetimes}          %   additional names (up to 6)
+\listadd{\keywords}{Black Hole Horizons}          %   additional names (up to 6)
+\listadd{\keywords}{Penrose limit}          %   additional names (up to 6)
+\listadd{\keywords}{Weyl Double Copy}          %   additional names (up to 6)
+\listadd{\keywords}{Kerr-Schild Spacetimes}          %   additional names (up to 6)
 \newcommand*{\graddate}{\gradmonth%     % Compose full graduation date
   \space\gradyear}
 
@@ -110,6 +114,7 @@
 \usepackage{amssymb,mathtools}          % For AMS-LaTeX, see here for more:
                                         %     http://www.ams.org/publications/authors/tex/amslatex
                                         % ('mathtools' loads and extends 'amsmath')
+\usepackage{bbm}                        % Needed for mathbbm fonts.
 \usepackage{ifxetex,ifluatex}           % Can check if XeTeX or LuaTeX was used to typeset
 \usepackage{fixltx2e}                   % Provides \textsubscript
 \IfFileExists{upquote.sty}%             % Use upquote if available, for
@@ -120,7 +125,7 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0   % If pdftex
   \usepackage[utf8]{inputenc}           %   'utf8' should match the encoding of this file
                                         %
-                                        %~Set up your font in pdftex here
+                                        %_~Set up your font in pdftex here
                                         %
 \else 									                % If xetex or luatex
   \ifxetex                              % If xetex
@@ -141,13 +146,24 @@
   %
   % Sometimes something simple like the following will work:
   %
-  %   \setmainfont{Garamond}
+  %  \setmainfont{Garamond}
   %
   % But often the easiest solution is to move font files (*.otf or *.ttf) into
   % a sub-directory and provide the direct path to them here.
   %
   % See `fontspec` documentation for more on using local font files.
   %
+  %\setmainfont{EBGaramond}[           %_<Set the main font; make sure the font is correct
+                                        %%%   for the font size (See ASU Style Guide)
+    %Path          = /Library/Fonts/,
+    %Extension     = .ttf,
+    %UprightFont   = *-Regular,
+    %ItalicFont    = *-Italic,
+    %BoldFont      = *-Bold,
+    %% Notice that bold is missing here because the Docker image does not have
+    %% a bold typeface for Garamond; it would probably be possible to find
+    %% one on your local system or online.
+  %]
   \setmainfont{EBGaramond12}[           %<Set the main font; make sure the font is correct
                                         %   for the font size (See ASU Style Guide)
     Path          = /usr/share/fonts/opentype/ebgaramond/,
@@ -757,7 +773,7 @@
 \counterwithout*{footnote}{chapter}     % Make footnote numbering continuous throughout
 
 \providetoggle{useendnotes}
-\settoggle{useendnotes}{true}           %<Set to 'true' if you want to use endnotes
+\settoggle{useendnotes}{false}           %_<Set to 'true' if you want to use endnotes
 \iftoggle{useendnotes}{%                % Use the command \pagenote to create endnotes
                                         %   in the running text. They will be collected
                                         %   and printed in a 'Notes' section at the end
@@ -776,28 +792,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\bibfilename}{%             %<Enter the name of the *.bib file containing the
-  src/sample/library%                   %   reference information for sources cited in
+\newcommand{\bibfilename}{%             %_<Enter the name of the *.bib file containing the
+  papers/PapersCombined%                %   reference information for sources cited in
 }%                                      %   the text. God help you if you're doing
                                         %   citations manually.
 
-\newcommand{\bibheading}{References}    %<Enter the heading for the references section:
+\newcommand{\bibheading}{References}    %_<Enter the heading for the references section:
                                         %   'References', 'Works Cited', or 'Bibliography'
 
 \providetoggle{usebiblatex}             % True = a biblatex package is being used;
                                         %   False = 'natbib' is being used
-\settoggle{usebiblatex}{true}           %~Set to 'false' to use 'natbib' intead of
+\settoggle{usebiblatex}{true}           %_~Set to 'false' to use 'natbib' intead of
                                         %   biblatex; I strongly recommend using biblatex
                                         %   because natbib is rather old and will break
                                         %   for innocuous things like underscores in URLs
 \iftoggle{usebiblatex}{%                % Settings for citation package
 %                                       % Settings for 'biblatex' or a version of
 %                                       %   'biblatex'
-  \usepackage[authordate,%
+  \usepackage[style=phys,%              % Style option for AIP style
+              %authordate,%
               backend=biber,%           % Recommend to use 'biber' instead of 'bibtex'
-              doi=only,%                % Avoid printing URLs
-              isbn=false]%              % Don't print ISBN numbers
-              {biblatex-chicago}        %~Other possibilities include: 'biblatex',
+              %doi=only,%               % Avoid printing URLs
+              biblabel=brackets,%       % Use brackets for inline citations instead of
+                                        % the default superscript option
+              %isbn=false               % Don't print ISBN numbers
+                        ]%              
+              {biblatex}                %_~Other possibilities include: 'biblatex',
                                         %   'biblatex-apa', and 'biblatex-mla'
   \bibliography{\bibfilename}
   \setlength{\bibitemsep}%              % Set vertical distance between
@@ -811,7 +831,7 @@
   \MakeOuterQuote{"}%                   %   error when used with natbib
 }{%                                     % Settings for 'natbib'
   \usepackage{natbib}%
-  \newcommand{\natbibstyle}{%           %~Enter the name of the *.bst file to use to
+  \newcommand{\natbibstyle}{%           %_~Enter the name of the *.bst file to use to
     src/asudis%                         %   format citations with natbib. Default is
   }%                                    %   'asudis'. I do not know where 'asudis' came
                                         %   from, but apparently it formats citations
@@ -822,7 +842,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Tables and figures
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\captiondelim{. }                       %~Use period (.) after caption number instead of
+\captiondelim{. }                       %_~Use period (.) after caption number instead of
                                         %   colon (:). Change according to style guide.
 \captionstyle[\raggedright]%            % Set justifcation for [one line captions]
   {\raggedright}                        %   and {multiple line captions}
@@ -1070,7 +1090,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Copyright page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\copyrightpageASU                       %~If you don't want to have a copyright page,
+%\copyrightpageASU                       %_~If you don't want to have a copyright page,
                                         %   comment out this line
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1085,15 +1105,15 @@
                                         %   your abstract or omit this line and type in
                                         %   your abstract here.
 
-\chapter*{Dedication}                   %~Dedication is optional
-%\clearpage                             %~If you don't wish to display the heading
+\chapter*{Dedication}                   %_~Dedication is optional
+%\clearpage                             %_~If you don't wish to display the heading
                                         %   'Dedication', comment out the previous line
                                         %   and use this one instead.
 \input{src/sample/dedication}           %<Enter the name of the .tex file containing your
                                         %   your dedication or omit this line and type in
                                         %   your dedication here.
 
-\chapter*{Acknowledgments}              %~Acknowledgments are optional
+\chapter*{Acknowledgments}              %_~Acknowledgments are optional
 \input{src/sample/acknowledgments}      %<Enter the name of the .tex file containing your
                                         %   acknowledgments or omit this line and type in
                                         %   your acknowledgments here.
@@ -1129,8 +1149,8 @@
 %\input{definitions}                    %<Enter the name of the .tex file or omit this
                                         %   line and type in here.
 
-%\chapter{Preface}                      %~PREFACE (optional, less than 10 pages)
-%\input{preface}                        %<Enter the name of the .tex file or omit this
+%\chapter{Preface}                      %_~PREFACE (optional, less than 10 pages)
+%\input{preface}                        %_<Enter the name of the .tex file or omit this
                                         %   line and type in here.
 
 \phantomsection                         % \phantomsection is needed before using
@@ -1174,6 +1194,8 @@
                                         % \subsubsection
                                         % \paragraph
                                         % \subparagraph
+\chapter{Aligned Fields Double Copy to Kerr-NUT-(A)dS}
+\input{papers/5D}
 \iftoggle{sample}{%
   \include{src/sample/chapter}%
 }{}
@@ -1268,6 +1290,7 @@
 %\input{appendix2}                       %   \input rather than \include for appendices.
 %\input{appendix3}% etc.                 %   All heading commands are the same as above,
                                          %   e.g., \chapter, \section, etc.
+\input{papers/5DAppendices}
 \iftoggle{sample}{%
   \input{src/sample/appendix}%
 }{}
@@ -1281,8 +1304,8 @@
   }
 \makeatother
 
-%\biographicalsketch{%                  %~Biographical Sketch is optional
-%  \input{biography}%                   %<Enter the name of the .tex file containing your
+%\biographicalsketch{%                  %_~Biographical Sketch is optional
+%  \input{biography}%                   %_<Enter the name of the .tex file containing your
 %}%                                     %   biography or omit this line and type in
                                         %   your biography here (1 paragraph)
 \end{document}
