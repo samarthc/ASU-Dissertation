@@ -171,7 +171,7 @@ class Page(object):
         # used for proofing the page
 
         # this approach does not account for the possibility of rotated pages:
-        return BoundingBox.from_rect(self.page.CropBox)
+        return BoundingBox.from_rect(self.page.cropbox)
 
     @cached_property
     def text_block_collection(self) -> Type[TextBlockCollection]:
@@ -180,7 +180,7 @@ class Page(object):
             text_blocks=list(
                 map(
                     lambda x: TextBlock.from_block(x),
-                    self.page.getTextPage().extractBLOCKS(),
+                    self.page.get_textpage().extractBLOCKS(),
                 )
             )
         )
@@ -194,7 +194,7 @@ class Page(object):
         spans = list()
 
         # https://pymupdf.readthedocs.io/en/latest/textpage.html#dictionary-structure-of-extractdict-and-extractrawdict
-        details = self.page.getTextPage().extractDICT()
+        details = self.page.get_textpage().extractDICT()
         for block in details["blocks"]:
             # skip image blocks
             if block["type"] == 1:

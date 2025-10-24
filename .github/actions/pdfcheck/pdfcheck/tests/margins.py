@@ -68,7 +68,7 @@ def test_paper_size(pdf_document, paper_size_coordinates):
 
         # this is just a warning for now; depending on use cases, it could
         # become an error in the future
-        if page.CropBox != page.MediaBox:
+        if page.cropbox != page.mediabox:
             message = (
                 f"Page {page_number} MediaBox does not match CropBox, "
                 "so it may appear differently when printed"
@@ -77,7 +77,7 @@ def test_paper_size(pdf_document, paper_size_coordinates):
 
         # this is just a warning for now; depending on use cases, it could
         # become an error in the future
-        if page.CropBoxPosition != fitz.Point(0, 0):
+        if page.cropbox_position != fitz.Point(0, 0):
             warnings.warn(f"Page {page_number} is displaced", UserWarning)
 
         # this is just a warning for now; depending on use cases, it could

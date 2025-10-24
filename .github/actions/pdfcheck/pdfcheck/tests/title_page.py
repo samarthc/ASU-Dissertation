@@ -18,7 +18,7 @@ def title_page(pdf_document):
     This fixture provides the title page as a
     :py:class:`pdfcheck.titlepage.TitlePage`
     """
-    return pdfcheck.titlepage.TitlePage(page=pdf_document.loadPage(page_id=0))
+    return pdfcheck.titlepage.TitlePage(page=pdf_document.load_page(page_id=0))
 
 
 def test_title(title_page):
