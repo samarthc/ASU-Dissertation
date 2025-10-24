@@ -1,11 +1,14 @@
 FROM debian:bullseye AS ASUDIS
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN echo "deb http://deb.debian.org/debian bullseye contrib" > /etc/apt/sources.list.d/contrib.list
+
 # From the old blang/latex:ubuntu
 RUN apt-get update -q && apt-get install -qy \
     texlive-full \
     python3-pygments gnuplot \
     make git \
+    ttf-mscorefonts-installer \
     && rm -rf /var/lib/apt/lists/*
 
 # install additional software

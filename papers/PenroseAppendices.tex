@@ -1,8 +1,4 @@
-\begin{appendices}
-%\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
-
-
-\section{Spinor identities and conventions}\label{Penrose:app:conventions}
+\chapter{Spinor identities and conventions}\label{Penrose:app:conventions}
 
 As much as possible, we will follow the conventions of Penrose and Rindler \cite{penrose1984spinors}. On matters of curvature however, we will deviate from \cite{penrose1984spinors} by a sign. The reason is that the definition of \cite{penrose1984spinors} for the curvature is equivalent to 
 \begin{equation}
@@ -41,7 +37,7 @@ Further implications of these spinor conventions are discussed in detail in \cit
 %\begin{equation}\label{Penrose:eqn:assocaiteNPframe}
 %k^{AA'} = o^A \bar{o}^{A'} \, , \quad   n^{AA'} = \iota^A \bar{\iota}^{A'} \, , \quad  m^{AA'} = o^A \bar{\iota}^{A'} \, , \quad  \bar{m}^{AA'} = \iota^A \bar{o}^{A'} \, .
 %\end{equation}
-%With the choice of basis \eqref{eqn:assocaiteNPframe}, meaning $\left\lbrace k^{AA'}, n^{AA'}, m^{AA'}, \bar{m}^{AA'} \right \rbrace$ for vectors and $\left\lbrace o^A, \iota^A \right \rbrace$  for two-spinors, or
+%With the choice of basis \eqref{Penrose:eqn:assocaiteNPframe}, meaning $\left\lbrace k^{AA'}, n^{AA'}, m^{AA'}, \bar{m}^{AA'} \right \rbrace$ for vectors and $\left\lbrace o^A, \iota^A \right \rbrace$  for two-spinors, or
 %\begin{equation}
 %o^A = \begin{pmatrix}
 %1 \\ 0
@@ -80,9 +76,9 @@ Further implications of these spinor conventions are discussed in detail in \cit
 %\end{pmatrix} \, , \quad 	\sigma^{z}_{AA'} = \frac{1}{\sqrt{2}}\begin{pmatrix} 1& 0 \\ 0 & -1
 %\end{pmatrix} \, ,
 %\end{equation}
-%where we have used $t$,$x$,$y$,$z$ instead of $0$,$1$,$2$,$3$ in the labels to avoid confusion with \eqref{eqn:IvWexplicitnull}.
+%where we have used $t$,$x$,$y$,$z$ instead of $0$,$1$,$2$,$3$ in the labels to avoid confusion with \eqref{Penrose:eqn:IvWexplicitnull}.
 %
-%Let us explicitly point out that if we desire, as in \eqref{eqn:complexz},
+%Let us explicitly point out that if we desire, as in \eqref{Penrose:eqn:complexz},
 %\begin{equation}
 %z = \frac{1}{\sqrt{2}}(x^1 + i x^2) =  \frac{1}{\sqrt{2}}(x + i y) \, ,
 %\end{equation}
@@ -94,11 +90,11 @@ Further implications of these spinor conventions are discussed in detail in \cit
 %\begin{equation}
 %m = \frac{1}{\sqrt{2}}(-\partial_x + i \partial_y) \, .
 %\end{equation}
-%Together with our choice to define, at the level of the vector field \eqref{eqn:vdefplanewave}
+%Together with our choice to define, at the level of the vector field \eqref{Penrose:eqn:vdefplanewave}
 %\begin{equation}
 %E_a = \partial_a \, ,
 %\end{equation}
-%this explains the signs in \eqref{eqn:mframechoice}.
+%this explains the signs in \eqref{Penrose:eqn:mframechoice}.
 %
 %Coming back to the Newman-Penrose frame $\left\lbrace k^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu} \right \rbrace$, note that it is a frame for a metric of the desired signature as
 %\begin{equation}
@@ -114,7 +110,7 @@ Further implications of these spinor conventions are discussed in detail in \cit
 %\end{equation}
 %Here $\left( \ldots \right)$ in indices denotes a symmetrization, which we take to be weighted by the appropriate permutation factor.
 
-%Instead of working from a dyad to a Newman-Penrose frame, we will usually work the other way around; starting from a Newman-Penrose frame to define a dyad. The latter dyad will not be uniquely specified by this frame choice but that (phase\footnote{The ambiguity in $\left\lbrace o^A, \iota^A \right \rbrace$ for a given Newman-Penrose frame is actually reduced to a sign taking into account that we impose \eqref{eqn:dyadnorm}.}) ambiguity will not be important for our purposes. Moreover, in the main text, there will generally be two preferred frames and associated dyads: one coming from a preferred frame attached to a general spacetime, and another related to a frame on a chosen null geodesic of such a spacetime. The latter will then subsequently play the role of the former for the Penrose limit plane wave spacetime. Throughout the main text, we will typically write the preferred dyad of a general spacetime as $\left\lbrace o^A, \iota^A \right \rbrace$ while reserving $\left\lbrace \alpha^A, \beta^A \right \rbrace$ or $\left\lbrace \alpha^{(\gamma)}{}^A, \beta^{(\gamma)}{}^A \right \rbrace$ for dyads attached to a null geodesic $\gamma$ of the related Penrose limit plane wave.
+%Instead of working from a dyad to a Newman-Penrose frame, we will usually work the other way around; starting from a Newman-Penrose frame to define a dyad. The latter dyad will not be uniquely specified by this frame choice but that (phase\footnote{The ambiguity in $\left\lbrace o^A, \iota^A \right \rbrace$ for a given Newman-Penrose frame is actually reduced to a sign taking into account that we impose \eqref{Penrose:eqn:dyadnorm}.}) ambiguity will not be important for our purposes. Moreover, in the main text, there will generally be two preferred frames and associated dyads: one coming from a preferred frame attached to a general spacetime, and another related to a frame on a chosen null geodesic of such a spacetime. The latter will then subsequently play the role of the former for the Penrose limit plane wave spacetime. Throughout the main text, we will typically write the preferred dyad of a general spacetime as $\left\lbrace o^A, \iota^A \right \rbrace$ while reserving $\left\lbrace \alpha^A, \beta^A \right \rbrace$ or $\left\lbrace \alpha^{(\gamma)}{}^A, \beta^{(\gamma)}{}^A \right \rbrace$ for dyads attached to a null geodesic $\gamma$ of the related Penrose limit plane wave.
 
 The decomposition of the Riemann tensor and anti-symmetric field strengths into spinor components plays an important role in the Weyl double copy and thus in the main text. For an anti-symmetric tensor field $F_{\alpha \beta}$, the main observation is that it can be decomposed into
 \begin{equation}\label{Penrose:eqn:Finspinors}
@@ -124,26 +120,26 @@ Similarly, the Weyl tensor can be decomposed into
 \begin{equation}\label{Penrose:eqn:Cinspinors}
 C_{\alpha \beta \gamma \delta} = \Psi_{ABCD}\bar{\epsilon}_{A' B'}  \bar{\epsilon}_{C' D'} + \bar{\Psi}_{A'B'C'D'} \epsilon_{A B}  \epsilon_{C D} \, . 
 \end{equation}
-The relation between the decompositions \eqref{eqn:Finspinors} and \eqref{eqn:Cinspinors} is key to the Weyl double copy which, given additionally the complex ``zeroth copy'' scalar $S$ gives a Weyl tensor \eqref{eqn:Cinspinors} in terms of a 2-form \eqref{eqn:Finspinors} as \eqref{WeylDCRelation}
+The relation between the decompositions \eqref{Penrose:eqn:Finspinors} and \eqref{Penrose:eqn:Cinspinors} is key to the Weyl double copy which, given additionally the complex ``zeroth copy'' scalar $S$ gives a Weyl tensor \eqref{Penrose:eqn:Cinspinors} in terms of a 2-form \eqref{Penrose:eqn:Finspinors} as \eqref{Penrose:WeylDCRelation}
 \begin{equation}
-C^{(\rm Weyl \, DC)}_{\alpha \beta \gamma \delta} = \frac{1}{S}f_{(AB} f_{CD)}\bar{\epsilon}_{A' B'}  \bar{\epsilon}_{C' D'} + \frac{1}{S^*}\bar{f}_{(A'B'} \bar{f}_{C'D')} \epsilon_{A B}  \epsilon_{C D} \, . 
+C^{(\mathrm{Weyl \, DC})}_{\alpha \beta \gamma \delta} = \frac{1}{S}f_{(AB} f_{CD)}\bar{\epsilon}_{A' B'}  \bar{\epsilon}_{C' D'} + \frac{1}{S^*}\bar{f}_{(A'B'} \bar{f}_{C'D')} \epsilon_{A B}  \epsilon_{C D} \, . 
 \end{equation}
 
 Various curvature and connection components with respect to a null basis have been conventionally associated to particular notations in what is usually called the Newman-Penrose formalism. While we will not lean on this heavily, we next summarize these symbols as used in the main text.
 
-\subsection{Newman-Penrose formalism}\label{Penrose:app:NP}
+\section{Newman-Penrose formalism}\label{Penrose:app:NP}
 
 We now introduce our conventions for the Newman-Penrose formalism, which is mostly an exercise in decomposing spinors into the dyad $\left\lbrace o^A, \iota^A \right \rbrace$ and tensors into the Newman-Penrose frame $\left\lbrace k^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu} \right \rbrace$. 
 
-Let us start with an anti-symmetric tensor field $F_{\alpha \beta}$, as decomposed into spinors in \eqref{eqn:Finspinors}. The Newman-Penrose field strength scalars $f_0$, $f_1$ and $f_2$ with respect to a dyad  $\left\lbrace o^A, \iota^A \right \rbrace$ can be defined in terms of the two-spinor formulation as
+Let us start with an anti-symmetric tensor field $F_{\alpha \beta}$, as decomposed into spinors in \eqref{Penrose:eqn:Finspinors}. The Newman-Penrose field strength scalars $f_0$, $f_1$ and $f_2$ with respect to a dyad  $\left\lbrace o^A, \iota^A \right \rbrace$ can be defined in terms of the two-spinor formulation as
 \begin{equation}
 f_{AB} = f_2 o_A o_B - 2 f_1 o_{(A} \iota_{B)} + f_0 \iota_A \iota_B \, .
 \end{equation}
-Using \eqref{eqn:Finspinors}, this is expressed in terms of the tensor itself with respect to the associated null frame $\left\lbrace k^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu} \right \rbrace$ as
+Using \eqref{Penrose:eqn:Finspinors}, this is expressed in terms of the tensor itself with respect to the associated null frame $\left\lbrace k^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu} \right \rbrace$ as
 \begin{equation}\label{Penrose:eqn:FinNP}
 F_{\alpha \beta} = 2 f_2 k_{[\alpha} m_{\beta]}- 2 f_1 \left(k_{[\alpha} n_{\beta]}-m_{[\alpha}\bar{m}_{\beta]}\right) + 2 f_0 \bar{m}_{[\alpha} n_{\beta]} +  cc  \, ,
 \end{equation}
-where we will use ``cc'' to abbreviate the complex conjugate piece of the expression. A consequence of \eqref{eqn:FinNP}, that we will regularly use for calculations, is
+where we will use ``cc'' to abbreviate the complex conjugate piece of the expression. A consequence of \eqref{Penrose:eqn:FinNP}, that we will regularly use for calculations, is
 \begin{equation}\label{Penrose:eqn:finFprojected}
 f_2 = - F_{\alpha \beta} n^{\alpha} \bar{m}^{\beta} \, , \quad f_1 = - \frac{1}{2}F_{\alpha \beta} \left(n^{\alpha} k^{\beta}+  m^{\alpha} \bar{m}^{\beta}\right) \, , \quad f_0 =  F_{\alpha \beta} k^{\alpha} m^{\beta} \, .
 \end{equation}
@@ -156,7 +152,7 @@ The analogous procedure for the Riemann tensor is somewhat more (algebraically) 
 %\bar{\Psi}_{A'B'C'D'} \epsilon_{AB}\epsilon_{CD} + \bar{\Phi}_{A'B'CD} \epsilon_{AB} \bar{\epsilon}_{C'D'}
 \end{aligned}
 \end{equation}
-Now, the Weyl and Ricci scalars are again essentially just components of $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ with respect to the dyad $\left\lbrace o^A, \iota^A \right \rbrace$, similar to \eqref{eqn:FinNP} for the Maxwell scalars\footnote{Let us emphasize again that these are identical to the definitions of \cite{penrose1984spinors}, given that we introduce an extra minus sign to correct for the different curvature convention (see (4.11.9) and (4.11.10)). On the other hand, these differ in sign from say \cite{Pound:2021qin}, where a mostly plus signature is used.}
+Now, the Weyl and Ricci scalars are again essentially just components of $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ with respect to the dyad $\left\lbrace o^A, \iota^A \right \rbrace$, similar to \eqref{Penrose:eqn:FinNP} for the Maxwell scalars\footnote{Let us emphasize again that these are identical to the definitions of \cite{penrose1984spinors}, given that we introduce an extra minus sign to correct for the different curvature convention (see (4.11.9) and (4.11.10)). On the other hand, these differ in sign from say \cite{Pound:2021qin}, where a mostly plus signature is used.}
 \begin{equation}\label{Penrose:eqn:psidefs}
 \begin{aligned}
 \Psi_0 &= \Psi_{ABCD} o^Ao^Bo^Co^D =- C_{\alpha \beta \gamma \delta} k^{\alpha}m^{\beta}k^{\gamma} m^{\delta} \, , \\
@@ -176,7 +172,7 @@ and
 \text{etc.}
 \end{aligned}
 \end{equation}
-We do not enumerate all of the $\Phi_{ABC'D'}$ components as we do not need most of them explicitly. On the other hand, the component $\Phi_{00}$ is important as it is the only (potentially) non-vanishing component of the Ricci spinor in a plane wave spacetime, as discussed around \eqref{eqn:Phi00penrose} in the main text. Similarly, the only non-vanishing Weyl scalar, in our convention, of a type N spacetime is $\Psi_0$.
+We do not enumerate all of the $\Phi_{ABC'D'}$ components as we do not need most of them explicitly. On the other hand, the component $\Phi_{00}$ is important as it is the only (potentially) non-vanishing component of the Ricci spinor in a plane wave spacetime, as discussed around \eqref{Penrose:eqn:Phi00penrose} in the main text. Similarly, the only non-vanishing Weyl scalar, in our convention, of a type N spacetime is $\Psi_0$.
 
 Given that the Weyl curvature $C_{\alpha \beta \gamma \delta}$ is given by
 \begin{equation}
@@ -186,26 +182,26 @@ Given that the Weyl curvature $C_{\alpha \beta \gamma \delta}$ is given by
 %\bar{\Psi}_{A'B'C'D'} \epsilon_{AB}\epsilon_{CD} + \bar{\Phi}_{A'B'CD} \epsilon_{AB} \bar{\epsilon}_{C'D'}
 \end{aligned}
 \end{equation}
-let us check some of the equalities in \eqref{eqn:psidefs}. In particular, for the main text, it is important that the null Fermi coordinate approach to the Penrose limit \eqref{eqn:penroseframe} \cite{Blau:2006ar,blau2011plane}
+let us check some of the equalities in \eqref{Penrose:eqn:psidefs}. In particular, for the main text, it is important that the null Fermi coordinate approach to the Penrose limit \eqref{Penrose:eqn:penroseframe} \cite{Blau:2006ar,blau2011plane}
 \begin{equation}\label{Penrose:eqn:appHPenrose}
 H_{ab}(u) = \left(R_{\mu \nu \alpha \beta} E^{\mu}_a u^{\nu} E^{\alpha}_b u^{\beta} \right)_{|\gamma} \, .
 \end{equation}
-is equivalent to the spinor prescription \eqref{eqn:penrosespinor} \cite{Tod:2019urw}
+is equivalent to the spinor prescription \eqref{Penrose:eqn:penrosespinor} \cite{Tod:2019urw}
 \begin{equation}\label{Penrose:eqn:app:penrosespinor}
 \Psi(u) = \left(\Psi_{ABCD}\alpha^A \alpha^B \alpha^C \alpha^D\right)_{|\gamma} \, , \quad \Phi(u) = \left(\Phi_{ABA'B'}\alpha^A \alpha^B \bar{\alpha}^{A'} \bar{\alpha}^{B'}\right)_{|\gamma} \, ,
 \end{equation}
-if we identify, from the plane wave, as in \eqref{eqn:HBrinkmannincomplex}
+if we identify, from the plane wave, as in \eqref{Penrose:eqn:HBrinkmannincomplex}
 \begin{equation}\label{Penrose:eqn:app:H}
 H_{ab} = - \begin{pmatrix}
 \frac{1}{2}\left(\Psi(u)+ 2 \Phi(u)  + \bar{\Psi}(u)\right) & 	\frac{i}{2}\left(\Psi(u) - \bar{\Psi}(u)\right)\\
 \frac{i}{2}\left(\Psi(u) - \bar{\Psi}(u)\right) 	&  \frac{1}{2}\left(-\Psi(u)+ 2 \Phi(u)  - \bar{\Psi}(u)\right) 
 \end{pmatrix}  \, ,
 \end{equation}
-with, on the plane wave (\eqref{eqn:NPsi} and \eqref{eqn:Phi00penrose})
+with, on the plane wave (\eqref{Penrose:eqn:NPsi} and \eqref{Penrose:eqn:Phi00penrose})
 \begin{equation}\label{Penrose:eqn:app:Psiplane}
 \Phi(u) = \Phi^{(\gamma)}_{00} \, , \quad \Psi(u) = \Psi^{(\gamma)}_0 \, ,
 \end{equation}
-and, as in \eqref{eqn:complextransversebasis}
+and, as in \eqref{Penrose:eqn:complextransversebasis}
 \begin{equation}\label{Penrose:eqn:app:uplane}
 u^{\delta} = \alpha^D \bar{\alpha}^{D'} \, , \quad M^{\delta} = -\frac{1}{\sqrt{2}}\left(E^{\delta}_1 - i E^{\delta}_2 \right) = \alpha^D \bar{\beta}^{D'} \, .
 \end{equation}
@@ -224,7 +220,7 @@ and
 &=  \Phi_{ABC'D'} \alpha^B  \alpha^A \bar{\alpha}^{C'} \bar{\alpha}^{D'}    \, .
 \end{aligned}
 \end{equation}
-\eqref{eqn:psi0proj} and \eqref{eqn:appHPenrose} imply in particular the traceless components of \eqref{eqn:app:H}
+\eqref{Penrose:eqn:psi0proj} and \eqref{Penrose:eqn:appHPenrose} imply in particular the traceless components of \eqref{Penrose:eqn:app:H}
 \begin{equation}
 \begin{aligned}
 C_{\alpha \beta \delta \gamma} E^{\alpha}_1 u^{\beta} E^{\delta}_1 u^{\gamma} &=   
@@ -233,7 +229,7 @@ C_{\alpha \beta \delta \gamma} E^{\alpha}_1 u^{\beta} E^{\delta}_2 u^{\gamma} &=
 C_{\alpha \beta \delta \gamma} E^{\alpha}_2 u^{\beta} E^{\delta}_2 u^{\gamma} &=   \frac{1}{2}\left(\Psi^{(\gamma)}_0  +\bar{\Psi}^{(\gamma)}_0\right)  \, ,
 \end{aligned}
 \end{equation}
-while the trace follow from  \eqref{eqn:app:checkHtrace}  and \eqref{eqn:appHPenrose}  by
+while the trace follow from  \eqref{Penrose:eqn:app:checkHtrace}  and \eqref{Penrose:eqn:appHPenrose}  by
 \begin{equation}
 \begin{aligned}
 H_{11}+H_{22} = R_{\alpha \beta \delta \gamma} u^{\beta} u^{\gamma} \delta^{ab} E_a^{\alpha} E_b^{\delta} &= R_{\alpha \beta \delta \gamma} u^{\beta} u^{\gamma} (-g^{\alpha \delta}) \\
@@ -244,7 +240,7 @@ Note that it was our choice to build the dyad $\left\lbrace \alpha^A, \beta^B \r
 \begin{equation}
 	\epsilon_{AB} \alpha^A \beta^B = 1 \, ,
 \end{equation}
-on the null geodesic together with \eqref{eqn:app:penrosespinor} and \eqref{eqn:psidefs} that led us to use the convention that type N spacetimes only have non-vanishing $\Psi_0$. 
+on the null geodesic together with \eqref{Penrose:eqn:app:penrosespinor} and \eqref{Penrose:eqn:psidefs} that led us to use the convention that type N spacetimes only have non-vanishing $\Psi_0$. 
 
 To take covariant derivatives of spinors in a dyad basis, we need the spin coefficients
 \begin{equation}\label{Penrose:eqn:spinorspincoeffs}
@@ -257,7 +253,7 @@ such that in particular
 &= \left(\partial_{\mu}\kappa^o  + \gamma_{\mu o}{}^{o}\kappa^o + \gamma_{\mu \iota}{}^{o}\kappa^{\iota}\right) o^A + \left(\partial_{\mu} \kappa^{\iota}+ \gamma_{\mu o}{}^{\iota}\kappa^o + \gamma_{\mu \iota}{}^{\iota}\kappa^{\iota} \right) \iota^A \, .
 \end{aligned}
 \end{equation}
-One way to compute \eqref{eqn:spinorspincoeffs} is using the associated Newman-Penrose frame. Introducing first the Newman-Penrose spin coefficient symbols of \cite{penrose1984spinors,Penrose:1986ca}, which give names to the individual components,
+One way to compute \eqref{Penrose:eqn:spinorspincoeffs} is using the associated Newman-Penrose frame. Introducing first the Newman-Penrose spin coefficient symbols of \cite{penrose1984spinors,Penrose:1986ca}, which give names to the individual components,
 \begin{alignat}{5}
 \kappa &= m^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha} \, , \quad \epsilon&=& \frac{1}{2}\left(n^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} k^{\mu} \nabla_{\mu} \bar{m}_{\alpha}\right) \, , \quad &\gamma'&= \frac{1}{2}\left(k^{\alpha} k^{\mu} \nabla_{\mu} n_{\alpha} + \bar{m}^{\alpha} k^{\mu} \nabla_{\mu} m_{\alpha}\right) \, , \nonumber \\
 \rho &= m^{\alpha} \bar{m}^{\mu} \nabla_{\mu} k_{\alpha} \, , \quad \alpha &=& \frac{1}{2}\left(n^{\alpha} \bar{m}^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} \bar{m}^{\mu} \nabla_{\mu} \bar{m}_{\alpha}\right) \, , \quad &\beta'&  = \frac{1}{2}\left(k^{\alpha} \bar{m}^{\mu} \nabla_{\mu} n_{\alpha} + \bar{m}^{\alpha} \bar{m}^{\mu} \nabla_{\mu} m_{\alpha}\right) \, , \nonumber \\
@@ -272,15 +268,14 @@ then
 \gamma_{o\iota' o}{}^{o} &= \beta \, , \quad \gamma_{o\iota' o}{}^{\iota} &=& -\sigma \, , \quad \gamma_{o\iota' \iota}{}^{o} &=& -\rho' \, , \quad \gamma_{o\iota' \iota}{}^{\iota} &=& \alpha'  \nonumber  \\
 \gamma_{\iota \iota' o}{}^{o} &= \gamma \, , \quad \gamma_{\iota \iota' o}{}^{\iota} &=& -\tau \, , \quad \gamma_{\iota \iota' \iota}{}^{o} &=& -\kappa' \, , \quad \gamma_{\iota \iota' \iota}{}^{\iota} &=& \epsilon'  \, .  \label{Penrose:eqn:spincoeffs}
 \end{alignat}
-Although we will not generally need the expressions \eqref{eqn:spincoeffs} and symbols \eqref{eqn:spincoeffssymbols} in the main text, they are useful performing explicit calculations for the examples. Moreover, the expressions above quoted from \cite{penrose1984spinors,Penrose:1986ca} retain the possibility to work with an unnormalized dyad, while we always impose \eqref{eqn:dyadnorm}. Therefore
+Although we will not generally need the expressions \eqref{Penrose:eqn:spincoeffs} and symbols \eqref{Penrose:eqn:spincoeffssymbols} in the main text, they are useful performing explicit calculations for the examples. Moreover, the expressions above quoted from \cite{penrose1984spinors,Penrose:1986ca} retain the possibility to work with an unnormalized dyad, while we always impose \eqref{Penrose:eqn:dyadnorm}. Therefore
 \begin{equation}
 \epsilon = - \gamma' \, , \quad \alpha = -\beta' \, , \quad \beta = - \alpha' \, , \quad \gamma = - \epsilon' \, .
 \end{equation}
 
+\chapter{Examples: further details}\label{Penrose:app:examples}
 
-\section{Examples: further details}\label{Penrose:app:examples}
-
-In this appendix, we gather some technical details that are used in Section \ref{sec:examples}. We start with a common problem one encounters in all the examples. This ends up being essentially a combination of simple algebraic problems and first order linear, ordinary differential equations. However, the solutions will generically still become rather intractable symbolically and may not have a very satisfying analytic form.
+In this appendix, we gather some technical details that are used in Section \ref{Penrose:sec:examples}. We start with a common problem one encounters in all the examples. This ends up being essentially a combination of simple algebraic problems and first order linear, ordinary differential equations. However, the solutions will generically still become rather intractable symbolically and may not have a very satisfying analytic form.
 
 The first of these problems is to express
 \begin{equation}\label{Penrose:eqn:uisalpha2}
@@ -310,7 +305,7 @@ In addition to $\alpha^A$, we often want to find a $\beta^A$ such that
 \begin{equation}
 \epsilon_{AB}\alpha^A \beta^B = 1 \, .
 \end{equation}
-For an $\alpha^A$ as in \eqref{eqn:alphadecomp}, such a $\beta^A$ can be given by
+For an $\alpha^A$ as in \eqref{Penrose:eqn:alphadecomp}, such a $\beta^A$ can be given by
 \begin{equation}\label{Penrose:eqn:betadecomp}
 \beta^A = \frac{e^{-i \delta-i S}}{2|\alpha^{\iota}| |\alpha^o|}\left( |\alpha^o| o^A - e^{i \delta} |\alpha^{\iota}| \iota^A\right)\, .
 \end{equation}
@@ -318,49 +313,49 @@ A fundamental ambiguity will always remain in the choice of $e^{i S}$, in the se
 \begin{equation}\label{Penrose:eqn:alphaode}
 u^{\mu}\nabla_{\mu} \alpha^A = 0 \, .
 \end{equation}
-Therefore this ambiguity cannot take an arbitrary functional form, as would be allowed by \eqref{eqn:uisalpha2}. Let $\tilde{\alpha}^A$ and $\tilde{\beta}^A$ be two-spinors constructed as in \eqref{eqn:alphadecomp} and \eqref{eqn:betadecomp} with $S = 0$. From \eqref{eqn:alphaode}, the appropriate choice of $S$ can be constructed by solving
+Therefore this ambiguity cannot take an arbitrary functional form, as would be allowed by \eqref{Penrose:eqn:uisalpha2}. Let $\tilde{\alpha}^A$ and $\tilde{\beta}^A$ be two-spinors constructed as in \eqref{Penrose:eqn:alphadecomp} and \eqref{Penrose:eqn:betadecomp} with $S = 0$. From \eqref{Penrose:eqn:alphaode}, the appropriate choice of $S$ can be constructed by solving
 \begin{equation}\label{Penrose:eqn:Seqn}
 u^{\mu} \nabla_{\mu} S  = i\epsilon_{AB}  \left(u^{\mu}\nabla_{\mu}\tilde{\alpha}^A\right)\tilde{\beta}^B \, .
 \end{equation}
-Note that by \eqref{eqn:uisalpha2}, \eqref{eqn:Seqn} can be written in terms of the spin-coefficient $\epsilon$  (see \eqref{eqn:spincoeffssymbols}) with respect to the dyad $\left\lbrace \tilde{\alpha}, \tilde{\beta} \right\rbrace$ (we therefore denote it $\tilde{\epsilon}$) as
+Note that by \eqref{Penrose:eqn:uisalpha2}, \eqref{Penrose:eqn:Seqn} can be written in terms of the spin-coefficient $\epsilon$  (see \eqref{Penrose:eqn:spincoeffssymbols}) with respect to the dyad $\left\lbrace \tilde{\alpha}, \tilde{\beta} \right\rbrace$ (we therefore denote it $\tilde{\epsilon}$) as
 \begin{equation}\label{Penrose:eqn:Seqn2}
 u^{\mu} \nabla_{\mu} S  - i \tilde{\epsilon} = 0\, .
 \end{equation}
 
-\subsection{The Schwarzschild black hole}\label{Penrose:app:Schwarzschild}
+\section{The Schwarzschild black hole}\label{Penrose:app:Schwarzschild}
 
-In this section, for completeness, we provide some additional details related to the Schwarzschild example in Section \ref{sec:Schwarzschild}. First, using the frame \eqref{eqn:SPNframe} and definitions \eqref{eqn:spincoeffssymbols}, the spin coefficients are given by 
+In this section, for completeness, we provide some additional details related to the Schwarzschild example in Section \ref{Penrose:sec:Schwarzschild}. First, using the frame \eqref{Penrose:eqn:SPNframe} and definitions \eqref{Penrose:eqn:spincoeffssymbols}, the spin coefficients are given by 
 \begin{alignat}{7}
 \kappa &= 0 \, ,  \quad \sigma &=& 0 \, , \quad &\rho& = \frac{1}{\sqrt{2} r} \, , \quad &\tau& = 0  \, , \nonumber \\
 \kappa' &= 0 \, ,  \quad \sigma' &=& 0 \, , \quad &\rho'& = -\frac{1}{\sqrt{2} r}(1-\frac{2M}{r}) \, , \quad &\tau'& = 0 \, , \nonumber  \\
 \epsilon &= 0 \, ,  \quad \epsilon' &=& \frac{M}{\sqrt{2}r^2} \, , \quad &\beta& = -\frac{\cot{\theta}}{2\sqrt{2}} \, , \quad &\beta'& = -\frac{\cot{\theta}}{2\sqrt{2}}  \, ,  \label{Penrose:eqn:Sspincoeffssymbols}
 \end{alignat}
-For comparisons, using instead the flat frame, given also in  \eqref{eqn:SPNframe}, on the flat background in
-Kerr-Schild coordinates, we of course just find \eqref{eqn:Sspincoeffssymbols} with $M \to 0$.
+For comparisons, using instead the flat frame, given also in  \eqref{Penrose:eqn:SPNframe}, on the flat background in
+Kerr-Schild coordinates, we of course just find \eqref{Penrose:eqn:Sspincoeffssymbols} with $M \to 0$.
 %\begin{alignat}{7}
 %\kappa &= 0 \, ,  \quad &\sigma& = 0 \, , \quad &\rho& = \frac{1}{\sqrt{2} r} \, , \quad &\tau& = 0  \, , \nonumber \\
 %\kappa' &= 0 \, ,  \quad &\sigma'& = 0 \, , \quad &\rho'& = -\frac{1}{\sqrt{2} r} \, , \quad &\tau'& = 0 \, , \nonumber  \\
 %\epsilon &= 0 \, ,  \quad &\epsilon'& = 0 \, , \quad &\beta& = -\frac{\cot{\theta}}{2\sqrt{2}} \, , \quad &\beta'& = -\frac{\cot{\theta}}{2\sqrt{2}} \label{Penrose:eqn:Sspincoeffssymbolsflat} \, .
 %\end{alignat}
 
-%\drafnote{KF} The flat space spin coefficients are just telling us that the null directions in flat space generate radially propagating null congruences. Compared to  \eqref{eqn:Sspincoeffssymbols}, the main difference is that the expansion of the outgoing congruence is reduced by the black hole. In the Geroch-Held-Penrose (or compacted spin coefficient) formalism \cite{geroch1973space}, $\beta$ and $\beta'$ act as gauge fields for rotations in the transverse planes, $m^{\mu} \to e^{i \varphi(x)} m^{\mu}$ for some function $\varphi(x)$. In this spherically symmetric Schwarzchild example these are related to the induced connection on the transverse spheres. $\epsilon$ and $\epsilon'$ play a similar role for the timelike surface spanned by the time and radial coordinates, $\hat{t}$ and $r$, and the transformations $k^{\mu} \to e^{ \varphi(x)} k^{\mu}$ and $n^{\mu} \to e^{-\varphi(x)} n^{\mu}$. In the flat case, this surface is just a flat plane, so $\epsilon$ and $\epsilon'$ vanish, but the plane is curved by the black hole inducing also a non-zero value for $\epsilon'$. The fact that, contrary to $\rho'$ and $\epsilon'$, $\rho$ and $\epsilon$ are unchanged between the black hole and the flat space is a consequence of the Kerr-Schild form of the metric and the frame.
+%\drafnote{KF} The flat space spin coefficients are just telling us that the null directions in flat space generate radially propagating null congruences. Compared to  \eqref{Penrose:eqn:Sspincoeffssymbols}, the main difference is that the expansion of the outgoing congruence is reduced by the black hole. In the Geroch-Held-Penrose (or compacted spin coefficient) formalism \cite{geroch1973space}, $\beta$ and $\beta'$ act as gauge fields for rotations in the transverse planes, $m^{\mu} \to e^{i \varphi(x)} m^{\mu}$ for some function $\varphi(x)$. In this spherically symmetric Schwarzchild example these are related to the induced connection on the transverse spheres. $\epsilon$ and $\epsilon'$ play a similar role for the timelike surface spanned by the time and radial coordinates, $\hat{t}$ and $r$, and the transformations $k^{\mu} \to e^{ \varphi(x)} k^{\mu}$ and $n^{\mu} \to e^{-\varphi(x)} n^{\mu}$. In the flat case, this surface is just a flat plane, so $\epsilon$ and $\epsilon'$ vanish, but the plane is curved by the black hole inducing also a non-zero value for $\epsilon'$. The fact that, contrary to $\rho'$ and $\epsilon'$, $\rho$ and $\epsilon$ are unchanged between the black hole and the flat space is a consequence of the Kerr-Schild form of the metric and the frame.
 
-In order to check the solution \eqref{eqn:Schi} to the valence-2 Killing spinor equations \eqref{eqn:valence2}, let us write out these equations explicitly for the ansatz
+In order to check the solution \eqref{Penrose:eqn:Schi} to the valence-2 Killing spinor equations \eqref{Penrose:eqn:valence2}, let us write out these equations explicitly for the ansatz
 \begin{equation}\label{Penrose:eqn:chiansatz}
 \chi_{AB} = 2 \chi_{01}(r) o_{(A} \iota_{B)} \, .
 \end{equation}
-When we evaluate the Killing spinor equations \eqref{eqn:valence2} on \eqref{eqn:chiansatz}, setting the vanishing spin coefficients in \eqref{eqn:Sspincoeffssymbols} to zero, we find
+When we evaluate the Killing spinor equations \eqref{Penrose:eqn:valence2} on \eqref{Penrose:eqn:chiansatz}, setting the vanishing spin coefficients in \eqref{Penrose:eqn:Sspincoeffssymbols} to zero, we find
 \begin{equation}\label{Penrose:eqn:S2killingeqn}
 \begin{aligned}
 \left(\frac{d}{dr} - \sqrt{2}\rho\right)\chi_{01} = 0  \, , \quad \left(\left(1-\frac{2M}{r}\right)\frac{d}{dr} + \sqrt{2} \rho'\right)\chi_{01} = 0 \, .
 \end{aligned}
 \end{equation}
-A solution to  \eqref{eqn:valence2} is thus given by $\chi_{01}(r) \propto r$. 
+A solution to  \eqref{Penrose:eqn:valence2} is thus given by $\chi_{01}(r) \propto r$. 
 %For the sake of comparison, let us do the same for the flat space. Say
 %\begin{equation}
 %\chi^{(\eta)}_{AB} = \chi^{(\eta)}_{01}(r) 2 o_{(A} \iota_{B)} \, ,
 %\end{equation}
-%We find that \eqref{eqn:valence2} of course yields the following conditions
+%We find that \eqref{Penrose:eqn:valence2} of course yields the following conditions
 %\begin{equation}
 %	\begin{aligned}
 %	\left(\frac{d}{dr} - \sqrt{2}\rho\right)\chi^{(\eta)}_{01} = 0  \, , \quad \left(\frac{d}{dr} + \sqrt{2} \rho'\right)\chi^{(\eta)}_{01} = 0 \, ,
@@ -368,11 +363,11 @@ A solution to  \eqref{eqn:valence2} is thus given by $\chi_{01}(r) \propto r$.
 %\end{equation}
 %and $\chi^{(\eta)}_{01}(r) \propto r$ is still a solution.
 
-Next, we provide a first step to check that the two-spinor $\alpha^A$, given in \eqref{eqn:alpha}, satisfies the
-parallel transport equation \eqref{eqn:Stangentspinor} along the null geodesic $\gamma$ with tangent $u^{\alpha} =
-\alpha^A \bar{\alpha}^{A'} $, given in Kerr-Schild coordinates in \eqref{eqn:Su} and \eqref{eqn:uschwarzschild}.
+Next, we provide a first step to check that the two-spinor $\alpha^A$, given in \eqref{Penrose:eqn:alpha}, satisfies the
+parallel transport equation \eqref{Penrose:eqn:Stangentspinor} along the null geodesic $\gamma$ with tangent $u^{\alpha} =
+\alpha^A \bar{\alpha}^{A'} $, given in Kerr-Schild coordinates in \eqref{Penrose:eqn:Su} and \eqref{Penrose:eqn:uschwarzschild}.
 Simply writing out the parallel transport equation while using that the components of $\alpha^A$ have no explicit
-dependence on $\hat{t}$ and $\phi$, and setting the vanishing spin coefficients in \eqref{eqn:Sspincoeffssymbols}
+dependence on $\hat{t}$ and $\phi$, and setting the vanishing spin coefficients in \eqref{Penrose:eqn:Sspincoeffssymbols}
 to zero already, we find,
 \begin{equation}\label{Penrose:eqn:Salphaequations}
 \begin{aligned}
@@ -382,17 +377,22 @@ o_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A &= \left\lbrack -\frac{1}{\s
 &+ \left\lbrack \alpha^o\bar{\alpha}^{\iota'} \left(-\frac{1}{\sqrt{2} r}\frac{\partial \alpha^{\iota}}{\partial \theta} -\beta \alpha^{\iota}\right)+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\frac{1}{\sqrt{2} r}\frac{\partial \alpha^{\iota}}{\partial \theta} -\beta' \alpha^{\iota} - \rho \alpha^o \right) \right\rbrack \, .
 \end{aligned}
 \end{equation}
-At this point we can just insert \eqref{eqn:alpha} and grind through the algebra, which we have done. Alternatively, we could pretend for a moment that we did not have or know of the Killing spinor $\chi_{AB}$ from which we could derive \eqref{eqn:alpha} by demanding \eqref{eqn:Skillingspinorconserved} is constant. Then, we would instead use the ansatz \eqref{eqn:spinorsfromu} together with  \eqref{eqn:alphadecomp} and solve for the unkown overall phase $S$. In that case, there is still a non-trivial partial differential equation to be solved, in stark contrast with the simple algebraic problem that results from demanding $\chi_{AB}\alpha^A \alpha^B$ is constant.
+At this point we can just insert \eqref{Penrose:eqn:alpha} and grind through the algebra, which we have done. Alternatively, we could pretend for a moment that we did not have or know of the Killing spinor $\chi_{AB}$ from which we could derive \eqref{Penrose:eqn:alpha} by demanding \eqref{Penrose:eqn:Skillingspinorconserved} is constant. Then, we would instead use the ansatz \eqref{Penrose:eqn:spinorsfromu} together with  \eqref{Penrose:eqn:alphadecomp} and solve for the unkown overall phase $S$. In that case, there is still a non-trivial partial differential equation to be solved, in stark contrast with the simple algebraic problem that results from demanding $\chi_{AB}\alpha^A \alpha^B$ is constant.
 
-Finally, let us indicate how to derive the adapted coordinates \eqref{eqn:Schwarzschildadapted}, although see also \cite{blau2011plane}. The general strategy is to first choose a hypersurface in spacetime which parameterizes the initial conditions for the null geodesics of fixed momenta $\hat{E}$, $L$, $L_{\phi} = 0$. A coordinate system on this initial condition hypersurface together with the affine time parameterizing the evolution along the geodesics is then almost in adapted form. To get a coordinate system into adapted form, we use that the action as one of the hypersurface coordinates. The reason this use of the action as a coordinate yields an adapted coordinate system is that the induced coordinate one-form of the action is the momentum of the congruence while the metrically dual vector field is the tangent vector field along the geodesic congruence, which by construction is the null coordinate vector field $\partial_U$ of the affine parameter $U$. Therefore $g_{UV}  =  1$ and $g_{UU} = 0$. Moreover, again by construction, the other transverse coordinate vector fields keep $V$ fixed such that $g_{Ui} = 0$. As a result, ``the gauge conditions'' for the adapted coordinates \eqref{eqn:adapted} are satisfied.
+Finally, let us indicate how to derive the adapted coordinates \eqref{Penrose:eqn:Schwarzschildadapted}, although see also \cite{blau2011plane}. The general strategy is to first choose a hypersurface in spacetime which parameterizes the initial conditions for the null geodesics of fixed momenta $\hat{E}$, $L$, $L_{\phi} = 0$. A coordinate system on this initial condition hypersurface together with the affine time parameterizing the evolution along the geodesics is then almost in adapted form. To get a coordinate system into adapted form, we use that the action as one of the hypersurface coordinates. The reason this use of the action as a coordinate yields an adapted coordinate system is that the induced coordinate one-form of the action is the momentum of the congruence while the metrically dual vector field is the tangent vector field along the geodesic congruence, which by construction is the null coordinate vector field $\partial_U$ of the affine parameter $U$. Therefore $g_{UV}  =  1$ and $g_{UU} = 0$. Moreover, again by construction, the other transverse coordinate vector fields keep $V$ fixed such that $g_{Ui} = 0$. As a result, ``the gauge conditions'' for the adapted coordinates \eqref{Penrose:eqn:adapted} are satisfied.
 
-There are many ways in which we could choose an initial condition hypersurface. One natural choice would be to take a slice of fixed Kerr-Schild time $\hat{t}$. On the other hand, it is usually simplest if the choice of hypersurface respects as many isometries as possible \cite{Papadopoulos:2020qik}. That means that it is in particular more convenient to parameterize the congruence on an initial condition hypersurface that is invariant under (spacetime) time translations. For Schwarzschild, the setup is simple enough that the choice makes little difference but it is for this isometry reason that we instead choose a constant radius $r = r_{\rm ref}$ hypersurface to parametrize the initial positions of the null geodesic congruence. With that choice the Kerr-Schild coordinates satisfy
+There are many ways in which we could choose an initial condition hypersurface. One natural choice would be to take
+a slice of fixed Kerr-Schild time $\hat{t}$. On the other hand, it is usually simplest if the choice of
+hypersurface respects as many isometries as possible \cite{Papadopoulos:2020qik}. That means that it is in
+particular more convenient to parameterize the congruence on an initial condition hypersurface that is invariant
+under (spacetime) time translations. For Schwarzschild, the setup is simple enough that the choice makes little
+difference but it is for this isometry reason that we instead choose a constant radius $r = r_{\mathrm{ref}}$ hypersurface to parametrize the initial positions of the null geodesic congruence. With that choice the Kerr-Schild coordinates satisfy
 \begin{equation}
-\hat{t}|_{U=0} = \hat{t}_0 \, , \quad r|_{U=0} = r_{\rm ref} \, , \quad 	\theta|_{U=0} = \theta_0 \, , \quad \phi|_{U=0} = \phi_0 \, .
+\hat{t}|_{U=0} = \hat{t}_0 \, , \quad r|_{U=0} = r_{\mathrm{ref}} \, , \quad 	\theta|_{U=0} = \theta_0 \, , \quad \phi|_{U=0} = \phi_0 \, .
 \end{equation}
-By our choice $L_{\phi} = 0$, the initial azimuthal angle is preserved such that even in general $\phi = \phi_0$. In addition, the radial null geodesic motion at fixed energy and angular momentum doesn't depend on any of the other coordinates. Therefore, using the radial geodesic equation \eqref{eqn:Srgeod}, we can find $r(U)$ by inverting 
+By our choice $L_{\phi} = 0$, the initial azimuthal angle is preserved such that even in general $\phi = \phi_0$. In addition, the radial null geodesic motion at fixed energy and angular momentum doesn't depend on any of the other coordinates. Therefore, using the radial geodesic equation \eqref{Penrose:eqn:Srgeod}, we can find $r(U)$ by inverting 
 \begin{equation}\label{Penrose:eqn:SrUapp}
-U = \int^{r(U)}_{r_{\rm ref}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, .
+U = \int^{r(U)}_{r_{\mathrm{ref}}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, .
 \end{equation}
 On the other hand, the solutions to the geodesic equations for $\theta$ and $\hat{t}$ do of course depend on $\theta_0$ and $\hat{t}_0$ in addition to radial motion, but simply as integration constants such that, from
 \begin{equation}
@@ -401,19 +401,19 @@ u^{\theta} = \frac{d\theta}{dU} = \frac{L}{r(U)^2} \, , \quad  	u^{\hat{t}} = \f
 with $R'(r)|_{r=r(U)}$, we find
 \begin{equation}\label{Penrose:eqn:StUapp}
 \begin{aligned}
-\theta(U, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
-\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, .
+\theta(U, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\mathrm{ref}}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
+\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\mathrm{ref}}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, .
 \end{aligned}
 \end{equation}
-Next, the action associated to the null geodesic congruence, from \eqref{eqn:Su}, is
+Next, the action associated to the null geodesic congruence, from \eqref{Penrose:eqn:Su}, is
 \begin{equation}
-V = \hat{E} \hat{t} - (R(r)-R(r_{\rm ref})) - L \theta \, ,
+V = \hat{E} \hat{t} - (R(r)-R(r_{\mathrm{ref}})) - L \theta \, ,
 \end{equation}
-which, when evaluated on \eqref{eqn:SrUapp} and \eqref{eqn:StUapp} gives
+which, when evaluated on \eqref{Penrose:eqn:SrUapp} and \eqref{Penrose:eqn:StUapp} gives
 \begin{equation}
 V = \hat{E} \hat{t}_0 - L \theta_0 \, .
 \end{equation}
-Specifically, as expected, $V$ does not depend on $U$ and can therefore be used as a coordinate for initial condition hypersurface. To see very explicitly how this happens, note that  using \eqref{eqn:uschwarzschild} 
+Specifically, as expected, $V$ does not depend on $U$ and can therefore be used as a coordinate for initial condition hypersurface. To see very explicitly how this happens, note that  using \eqref{Penrose:eqn:uschwarzschild} 
 \begin{equation}
 -L^2  +\rho^2 \hat{E}^2-\rho^2 (R'(\rho))^2 +2M \rho \left(\hat{E}+R'(\rho)\right)R'(\rho) +2M \rho \hat{E} \left(\hat{E}+ R'(\rho)\right) = 0 \, .
 \end{equation}
@@ -421,11 +421,11 @@ Our choice of adapted coordinates is to use $V$ instead of $\theta_0$
 \begin{equation}\label{Penrose:eqn:theta0app}
 \theta_0(V,\hat{t}_0) = \frac{1}{L}\left(\hat{E}\hat{t}_0  - V\right) \, .
 \end{equation}
-In summary, \eqref{eqn:SrUapp}, \eqref{eqn:StUapp}, and  \eqref{eqn:theta0app} together are presented as \eqref{eqn:Schwarzschildadapted} in the main text. 
+In summary, \eqref{Penrose:eqn:SrUapp}, \eqref{Penrose:eqn:StUapp}, and  \eqref{Penrose:eqn:theta0app} together are presented as \eqref{Penrose:eqn:Schwarzschildadapted} in the main text. 
 
-\subsection{The Kerr black hole}\label{Penrose:app:Kerr}
+\section{The Kerr black hole}\label{Penrose:app:Kerr}
 
-In this section, for completeness, we provide some additional details related to the Kerr example in Section \ref{sec:Kerr}. First, using the frame \eqref{eqn:Kerrframe} and definitions \eqref{eqn:spincoeffssymbols}, the spin coefficients are given by 
+In this section, for completeness, we provide some additional details related to the Kerr example in Section \ref{Penrose:sec:Kerr}. First, using the frame \eqref{Penrose:eqn:Kerrframe} and definitions \eqref{Penrose:eqn:spincoeffssymbols}, the spin coefficients are given by 
 \begin{alignat}{3}
 \kappa &= 0 \, ,  \quad &\sigma& = 0 \, , \nonumber \\  \rho& = \frac{1}{r-iy} \, , \quad  &\tau& = -i\frac{(r+iy)\sqrt{a^2-y^2}}{\sqrt{2}(r^2+y^2)^{3/2}}  \, , \nonumber \\
 \kappa' &= 0 \, ,  \quad &\sigma'& = 0  \, , \nonumber\\ 
@@ -434,11 +434,11 @@ In this section, for completeness, we provide some additional details related to
 \end{alignat}
 %\drafnoteKF{} The principal null congruences are still geodesic and twist-free but now additionally have some twist. The timelike surface-element\footnote{The presence of the twists of the principal null congruences and the analogous quantities in $\tau$, $\tau'$ prevent having actual embeddings. In fact, the absence of these orthogonal embedded 2-surfaces is arguably the most relevant, qualitative difference from Schwarzschild.} spanned by the null direction now is not flat, even if $M = 0$ while its transverse spatial counterpart (the 2-sphere for Schwarzschild) still does not depend on the mass $M$, so it is identical for flat space with the corresponding Kerr-Schild frames,  but now also depends on $r$. Notable, embeddable 2-surfaces orthonormal or along the principal null-frame directions are the equator at $y^2 = a^2$ and the horizon at $\Delta_r = 0$.
 
-The equations \eqref{eqn:S2killingeqn} for Schwarzschild, with the slightly more general ansatz,
+The equations \eqref{Penrose:eqn:S2killingeqn} for Schwarzschild, with the slightly more general ansatz,
 \begin{equation}\label{Penrose:eqn:Kchiansatz}
 \chi_{AB} = 2 \chi_{01}(r,y) o_{(A} \iota_{B)} \, ,
 \end{equation}
-and allowing for the additional, non-vanishing spin coefficients in \eqref{eqn:Kspincoeffssymbols} compared to \eqref{eqn:Sspincoeffssymbols}, generalizes to
+and allowing for the additional, non-vanishing spin coefficients in \eqref{Penrose:eqn:Kspincoeffssymbols} compared to \eqref{Penrose:eqn:Sspincoeffssymbols}, generalizes to
 \begin{equation}\label{Penrose:eqn:K2killingeqn}
 \begin{aligned}
 \left(\frac{d}{dr} - \rho\right)\chi_{01} &= 0  \, , \quad \left(\sqrt{\frac{a^2-y^2}{r^2+y^2}}\frac{d}{dy} + \sqrt{2} \tau'\right)\chi_{01} = 0 
@@ -448,7 +448,7 @@ and allowing for the additional, non-vanishing spin coefficients in \eqref{eqn:K
 \end{equation}
 As a result, $\chi_{01} \propto r-iy = \zeta$ as desired. \\
 
-Next, we will provide a first step in checking that the tangent two-spinor $\alpha^A$, given in \eqref{eqn:Kalpha}, is indeed parallel transported along the null geodesic with tangent given in \eqref{eqn:ukerr}.
+Next, we will provide a first step in checking that the tangent two-spinor $\alpha^A$, given in \eqref{Penrose:eqn:Kalpha}, is indeed parallel transported along the null geodesic with tangent given in \eqref{Penrose:eqn:ukerr}.
 \begin{equation}\label{Penrose:eqn:Kalphaequations}
 \begin{aligned}
 -\iota_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = \left\lbrack  |\alpha^o|^2  \left(-\frac{\partial \alpha^o}{\partial r} - \tau' \alpha^{\iota}+\epsilon \alpha^o \right) + |\alpha^{\iota}|^2 \left( \frac{\Delta_r}{2 (r^2+y^2)} \frac{\partial \alpha^{o}}{\partial r} - \epsilon' \alpha^{o} \right)\right \rbrack \\
@@ -457,12 +457,12 @@ o_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = \left\lbrack -|\alpha^o|^2
 + \left\lbrack \alpha^o\bar{\alpha}^{\iota'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^{\iota}}{\partial y} -\beta \alpha^{\iota}\right)+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^{\iota}}{\partial y} +\beta' \alpha^{\iota} - \rho \alpha^o \right) \right\rbrack \, .
 \end{aligned}
 \end{equation}
-At this point, it serves no purpose to continue to write down the calculation, which is uninformative. However, we have verified that the equations \eqref{eqn:Kalphaequations} are satisfied by \eqref{eqn:Kalpha}.
+At this point, it serves no purpose to continue to write down the calculation, which is uninformative. However, we have verified that the equations \eqref{Penrose:eqn:Kalphaequations} are satisfied by \eqref{Penrose:eqn:Kalpha}.
 
 
-\subsection{Vacuum Petrov type D spacetimes}\label{Penrose:app:PlebanskiDemianski}
+\section{Vacuum Petrov type D spacetimes}\label{Penrose:app:PlebanskiDemianski}
 
-In this section, we provide some additional details related to the vacuum Petrov type D spacetimes example in Section \ref{sec:typeD}. From the build-up towards this general case, it is clear that for the general structure of the double copy and the Penrose limit, the main ingredient that we need is the existence of the Killing spinor $\chi_{AB}$. On the other hand, in practice, one would still need to be more explicitly about, say, the Kerr-Schild form and geodesics. We will therefore present here for completeness the (uncharged) Plebanski-Demianski line element \cite{Kinnersley:1969zza,Plebanski:1976gy}, which is the most general Petrov type D solution of the vacuum Einstein equations. However, see \cite{Griffiths:2005qp} for more details.
+In this section, we provide some additional details related to the vacuum Petrov type D spacetimes example in Section \ref{Penrose:sec:typeD}. From the build-up towards this general case, it is clear that for the general structure of the double copy and the Penrose limit, the main ingredient that we need is the existence of the Killing spinor $\chi_{AB}$. On the other hand, in practice, one would still need to be more explicitly about, say, the Kerr-Schild form and geodesics. We will therefore present here for completeness the (uncharged) Plebanski-Demianski line element \cite{Kinnersley:1969zza,Plebanski:1976gy}, which is the most general Petrov type D solution of the vacuum Einstein equations. However, see \cite{Griffiths:2005qp} for more details.
 
 The (vacuum) Plebanski-Demianski line element, with vanishing cosmological constant, in complexified coordinates $\lbrace u,v,p,q \rbrace$ is given by
 \begin{equation}\label{Penrose:eqn:PDmetric}
@@ -475,16 +475,16 @@ P(p) &= \Gamma (1-p^4) +2 N p -\Xi p^2 + 2M p^3 \, ,  \\
 Q(q) &= \Gamma (1-q^4) -2 M q + \Xi q^2 - 2N q^3 \, , 
 \end{aligned}
 \end{equation}
-with free parameters $M$, $N$, $\Gamma$, and $\Xi$. We present the metric immediately in the complex form \eqref{eqn:PDmetric}, which is of the double Kerr-Schild form that was used in \cite{Luna:2018dpt} to connect to the single copy flat space.
+with free parameters $M$, $N$, $\Gamma$, and $\Xi$. We present the metric immediately in the complex form \eqref{Penrose:eqn:PDmetric}, which is of the double Kerr-Schild form that was used in \cite{Luna:2018dpt} to connect to the single copy flat space.
 
-The double Kerr-Schild form of \eqref{eqn:PDmetric} requires us to slightly modify parts of the discussion in the main text. First, instead of \eqref{eqn:KSmetric}, the metric is of the form
+The double Kerr-Schild form of \eqref{Penrose:eqn:PDmetric} requires us to slightly modify parts of the discussion in the main text. First, instead of \eqref{Penrose:eqn:KSmetric}, the metric is of the form
 \begin{equation}\label{Penrose:eqn:metricKSdouble}
 g_{\mu \nu} = \eta_{\mu \nu} + \phi_k k_{\mu} k_{\nu} + \phi_m m_{\nu} m_{\mu} \, .
 \end{equation}
 for null, geodesic vector fields $k$ and $m$, which are moreover orthogonal to each other\footnote{The fact that
 $k_{\mu}m^{\mu} = 0$ is our motivation to call the second null vector $m$ instead of $l$. Moreover, the requirement
 to have a double Kerr-Schild metric, which involves say $m$, explains why it was necessary to complexify the
-metric.}, as well as scalar functions $\phi_k$ and $\phi_m$. The mutual orthogonality of $m$ and $k$ implies first of all that one can unambiguously raise and lower their indices with either the flat or the curved metric. Moreover, the extension of the Kerr-Schild shift \eqref{eqn:frameshift} is given by
+metric.}, as well as scalar functions $\phi_k$ and $\phi_m$. The mutual orthogonality of $m$ and $k$ implies first of all that one can unambiguously raise and lower their indices with either the flat or the curved metric. Moreover, the extension of the Kerr-Schild shift \eqref{Penrose:eqn:frameshift} is given by
 \begin{equation}\label{Penrose:eqn:KSshiftdouble}
 \begin{aligned}
 n^{(g)}_{\mu} &= n^{(\eta)} + \frac{\phi_k}{2} k^{(\eta)}_{\mu} \, , \quad  k^{(g)}_{\mu} = k^{(\eta)}_{\mu} \\
@@ -495,12 +495,12 @@ where, as before
 \begin{equation}
 \eta_{\mu \nu} = 2 k^{(\eta)}_{(\mu} n^{(\eta)}_{\nu)} -  2 m^{(\eta)}_{(\mu} \tilde{m}^{(\eta)}_{\nu)} \, , \quad 	g_{\mu \nu} = 2 k^{(g)}_{(\mu} n^{(g)}_{\nu)} -  2 m^{(g)}_{(\mu} \tilde{m}^{(g)}_{\nu)} \, ,
 \end{equation}
-but we use $\tilde{m}$ instead of $\bar{m}$ to emphasize that these are not necessarily complex conjugate for the metric in its complex form. Note also that the vector fields $k$ and $m$ are identical on both flat and curved spacetime, so again unambiguously $k_{\mu} = k_{\mu}^{(\eta)} = k_{\mu}^{(g)}$ and $m_{\mu} = m_{\mu}^{(\eta)} = m_{\mu}^{(g)}$. Similarly, the shift in Infeld-van der Waerden symbols \eqref{eqn:IvW} is readily extended to 
+but we use $\tilde{m}$ instead of $\bar{m}$ to emphasize that these are not necessarily complex conjugate for the metric in its complex form. Note also that the vector fields $k$ and $m$ are identical on both flat and curved spacetime, so again unambiguously $k_{\mu} = k_{\mu}^{(\eta)} = k_{\mu}^{(g)}$ and $m_{\mu} = m_{\mu}^{(\eta)} = m_{\mu}^{(g)}$. Similarly, the shift in Infeld-van der Waerden symbols \eqref{Penrose:eqn:IvW} is readily extended to 
 \begin{equation}\label{Penrose:eqn:IvWdouble}
 \sigma^{(g)}{}{}^{AA'}_{\mu}   = \sigma^{(\eta)}{}{}^{AA'}_{\mu} + \frac{\phi_k}{2} k_{\mu} \sigma^{(\eta)}{}{}^{AA'}_{\nu} k^{\nu} + \frac{\phi_m}{2} m_{\mu} \sigma^{(\eta)}{}{}^{AA'}_{\nu} m^{\nu} \, .
 \end{equation}
 
-A principal null frame for the metric \eqref{eqn:PDmetric}, that takes the form \eqref{eqn:KSshiftdouble}, is given by
+A principal null frame for the metric \eqref{Penrose:eqn:PDmetric}, that takes the form \eqref{Penrose:eqn:KSshiftdouble}, is given by
 \begin{alignat}{1}
 k^{(g)}_{\mu}dx^{\mu} &= k^{(\eta)}_{\mu}dx^{\mu}  \, , \nonumber \\
 n^{(g)}_{\mu}dx^{\mu} &= n^{(\eta)}_{\mu}dx^{\mu} - \frac{q (M+Nq^2)}{(1-pq)^2 (p^2+q^2)}   k^{(\eta)}_{\mu}dx^{\mu}  \, , \nonumber \\
@@ -514,11 +514,11 @@ n^{(\eta)}_{\mu}dx^{\mu} &= \frac{\Gamma(1-q^4)+ \Xi q^2}{2 (1-pq)^2(p^2+q^2)} d
 m^{(\eta)}_{\mu}dx^{\mu} &= du +q^2 dv\, , \nonumber \\
 \tilde{m}^{(\eta)}_{\mu}dx^{\mu} &= \frac{\Gamma(1-p^4)+ \Xi p^2}{2 (1-pq)^2(p^2+q^2)} du + q^2\frac{\Gamma(1-p^4) - \Xi p^2 }{2 (1-pq)^2(p^2+q^2)} dv +\frac{i dp}{(1-pq)^2} \, . \label{Penrose:eqn:PDPNframeflat}
 \end{alignat}
-The scalar functions $\phi_k$ and $\phi_m$, in \eqref{eqn:metricKSdouble} and \eqref{eqn:KSshiftdouble}, are thus given by
+The scalar functions $\phi_k$ and $\phi_m$, in \eqref{Penrose:eqn:metricKSdouble} and \eqref{Penrose:eqn:KSshiftdouble}, are thus given by
 \begin{equation}
 \phi_k = - \frac{q (M+Nq^2)}{(1-pq)^2 (p^2+q^2)}  \, , \quad \phi_m  = \frac{p (N+Mp^2)}{(1-pq)^2 (p^2+q^2)} \, .
 \end{equation}
-Using the frame \eqref{eqn:PDPNframe}, we find
+Using the frame \eqref{Penrose:eqn:PDPNframe}, we find
 \begin{alignat}{3}
 \kappa &= 0 \, ,  \quad &\sigma& = 0 \, , \nonumber \\  
 \rho& = -\frac{(i + p^2)(1-pq)}{p+iq} \, , \quad  &\tau& =  \frac{(-i + q^2)(1-pq)}{p+iq}  \, , \nonumber \\
@@ -539,7 +539,7 @@ which is the quantity of relevance for the discussion of the Weyl double copy in
 %\begin{equation}\label{Penrose:eqn:Sachsflat}
 %	(k_{\mu}, n_{\mu},m_{\mu},\tilde{m}_{\mu}) \to 	(m_{\mu}, -\tilde{m}_{\mu},-k_{\mu},n_{\mu}) \, , 
 %\end{equation}
-%which is sometimes called the Sachs operation \cite{penrose1984spinors,BenTov:2017kyf}, acts on %the curved metric frame in the same way provided one also exchanges $M$ and $N$ as well as $p$,$u$ %and $q$, $v$ in a particular way. Explicitly, \eqref{eqn:Sachsflat} implies
+%which is sometimes called the Sachs operation \cite{penrose1984spinors,BenTov:2017kyf}, acts on %the curved metric frame in the same way provided one also exchanges $M$ and $N$ as well as $p$,$u$ %and $q$, $v$ in a particular way. Explicitly, \eqref{Penrose:eqn:Sachsflat} implies
 %\begin{equation}
 %(k^{(g)}_{\mu}, n^{(\eta)}_{\mu},m^{(g)}_{\mu},\tilde{m}^{(\eta)}_{\mu}) \to 	(m^{(g)}_{\mu}, %-\tilde{m}^{(g)}_{\mu},-k^{(g)}_{\mu},n^{(g)}_{\mu}) \, ,
 %\end{equation}
@@ -564,7 +564,7 @@ However, as was also pointed out by \cite{Luna:2018dpt},
 \begin{equation}
 \phi_k \not\propto  \frac{2 M^{(\eta)} q}{p^2 + q^2} \, , \quad \phi_m \not\propto \frac{2 N^{(\eta)} p}{p^2 + q^2} \, .
 \end{equation}
-Moreover, the prefactors of $k$ and $m$ in \eqref{eqn:APBsc} do not satisfy the flat space wave equation. However, a rescaling of the frames\footnote{The discussion of rescaling the frame vectors can also be usefully phrased in terms of the GHP-weight of the Kerr-Schild single and zeroth copy, which indeed have definite, non-zero weight. The requirement that the flat space field equations are satisfied generically fixes the GHP frame up to a constant.}
+Moreover, the prefactors of $k$ and $m$ in \eqref{Penrose:eqn:APBsc} do not satisfy the flat space wave equation. However, a rescaling of the frames\footnote{The discussion of rescaling the frame vectors can also be usefully phrased in terms of the GHP-weight of the Kerr-Schild single and zeroth copy, which indeed have definite, non-zero weight. The requirement that the flat space field equations are satisfied generically fixes the GHP frame up to a constant.}
 \begin{equation}
 \left(l,n,m,\tilde{m}\right) \to  \left(\frac{l}{1-pq}, \left(1-pq \right)n,\frac{m}{1-pq}, \left(1-pq \right)\tilde{m}\right) \, ,
 \end{equation}
@@ -572,7 +572,7 @@ together with
 \begin{equation}\label{Penrose:eqn:phishifts}
 \phi_k \to \left(1-pq\right)^2\phi_k \, , \quad  	\phi_m \to \left(1-pq\right)^2\phi_m \, , 
 \end{equation}
-leaves invariant the form of the flat Kerr-Schild metric as well as of $\Psi_2$ but it changes \eqref{eqn:APBsc} into
+leaves invariant the form of the flat Kerr-Schild metric as well as of $\Psi_2$ but it changes \eqref{Penrose:eqn:APBsc} into
 \begin{equation}\label{Penrose:eqn:APBscmod}
 A =  \frac{2 M^{(\eta)} q \left(1-pq\right)}{p^2 + q^2}k +  \frac{2 N^{(\eta)} p \left(1-pq\right)}{p^2 + q^2} m \, .  
 \end{equation}
@@ -580,22 +580,18 @@ while
 \begin{equation}\label{Penrose:eqn:KSphis}
 \phi_k = - \frac{q (M+Nq^2)}{p^2+q^2}  \, , \quad \phi_m  = \frac{p (N+Mp^2)}{p^2+q^2} \, .
 \end{equation}
-Obviously, $\phi_k$ and $\phi_m$ in this frame still do not correspond to the prefactors of $k$ and $m$ in \eqref{eqn:APBscmod}. On the other hand, those prefactors, denoted for convenience and to distinguish from \eqref{eqn:KSphis} as
+Obviously, $\phi_k$ and $\phi_m$ in this frame still do not correspond to the prefactors of $k$ and $m$ in \eqref{Penrose:eqn:APBscmod}. On the other hand, those prefactors, denoted for convenience and to distinguish from \eqref{Penrose:eqn:KSphis} as
 \begin{equation}\label{Penrose:eqn:KSphisKS}
 \phi^{(KS)}_k = \frac{2 M^{(\eta)} q \left(1-pq\right)}{p^2 + q^2} \, , \quad \phi^{(KS)}_m  = \frac{2 N^{(\eta)} p \left(1-pq\right)}{p^2 + q^2} \, .
 \end{equation}
 now at least also satisfy the flat space wave equation.
 
-Even if \eqref{eqn:KSphisKS} and \eqref{eqn:KSphis} are not quite the same, we would like to understand the relation to the Weyl zeroth copy
+Even if \eqref{Penrose:eqn:KSphisKS} and \eqref{Penrose:eqn:KSphis} are not quite the same, we would like to understand the relation to the Weyl zeroth copy
 \begin{equation}
 S = -2 \frac{(\tilde{M}^{(\eta)})^2}{\tilde{M}} \frac{1-pq}{q-ip} \, ,
 \end{equation}
-which of course also satisfies the flat space wave equation. In the earlier, ordinary Kerr-Schild backgrounds, the relation was that the Kerr-Schild zeroth copy is, up to a constant, the real part of the Weyl zeroth copy, see  \eqref{eqn:WeyltoKSrelation}. Here, taking for simplicity $\tilde{M}^{(\eta)} = \tilde{M}$, that gives
+which of course also satisfies the flat space wave equation. In the earlier, ordinary Kerr-Schild backgrounds, the relation was that the Kerr-Schild zeroth copy is, up to a constant, the real part of the Weyl zeroth copy, see  \eqref{Penrose:eqn:WeyltoKSrelation}. Here, taking for simplicity $\tilde{M}^{(\eta)} = \tilde{M}$, that gives
 \begin{equation}
 S + S^* = -2 \frac{1-pq}{p^2 + q^2}(N^{(\eta)} p + M^{(\eta)} q) = \phi^{(KS)}_k + \phi^{(KS)}_m \, .
 \end{equation}
 %On the other hand, it does not satisfy the wave equation on the curved background?
-
-
-\end{appendices}
-

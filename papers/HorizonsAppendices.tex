@@ -1,29 +1,27 @@
-\begin{appendices}
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
-\section{Calculation of curved spacetime expansions from flat spacetime expansions} \label{Horizons:app:ExpansionCalculation} 
-In this appendix we give a detailed derivation of our main result relating the expansions on the $\eta_{\mu \nu}$ and the $g_{\mu \nu}$ spacetimes \eqref{thetaFromTheta0} for a generic Kerr-Schild metric
-\eqref{kerrSchildMetric}
+\chapter{Calculation of curved spacetime expansions from flat spacetime expansions} \label{Horizons:app:ExpansionCalculation} 
+In this appendix we give a detailed derivation of our main result relating the expansions on the $\eta_{\mu \nu}$ and the $g_{\mu \nu}$ spacetimes \eqref{Horizons:thetaFromTheta0} for a generic Kerr-Schild metric
+\eqref{Horizons:kerrSchildMetric}
 \begin{equation}
     g_{\mu \nu} = \eta_{\mu \nu} + \Phi k_{\mu} k_{\nu}.
 \end{equation}
-We will use coordinate-basis methods throughout. Computing expansions is also possible in an orthonormal basis using the Newman-Penrose formalism, where the expansion appears as one of the various spin coefficients. Our main result \eqref{thetaFromTheta0} is corroborated by just such a calculation of ``shifted spin coefficients'' performed by \cite{BenTov:2017kyf} in a different context.
+We will use coordinate-basis methods throughout. Computing expansions is also possible in an orthonormal basis using the Newman-Penrose formalism, where the expansion appears as one of the various spin coefficients. Our main result \eqref{Horizons:thetaFromTheta0} is corroborated by just such a calculation of ``shifted spin coefficients'' performed by \cite{BenTov:2017kyf} in a different context.
 
 First, for notational simplicity, we define the vectors $l^{(0)\mu}$ and $l^{\mu}$, which live respectively on the $\eta_{\mu \nu}$ and $g_{\mu \nu}$ backgrounds,
 \begin{align}
     l^{(0) \mu} &\coloneqq \eta^{\mu \nu} l^{(0)}_{\nu} \\
     l^{\mu} &\coloneqq g^{\mu \nu} l_{\mu}.
 \end{align}
-Thus, including \eqref{lFroml0Down}, we have the relations
+Thus, including \eqref{Horizons:lFroml0Down}, we have the relations
 \begin{align}
     l^{\mu} &= l^{(0) \mu} + \frac{\Phi}{2} k^{\mu} \label{Horizons:lFroml0Up} \\
     l_{\mu} &= l^{(0)}_{\mu} - \frac{\Phi}{2} k_{\mu}.
 \end{align}
-In terms of $l^{\mu}$ and $l^{(0) \mu}$, we can write the induced (inverse) metrics $h^{\mu \nu}$ \eqref{flatInducedMetric} and $\mathring{h}^{\mu \nu}$ \eqref{curvedInducedMetric} more succinctly as
+In terms of $l^{\mu}$ and $l^{(0) \mu}$, we can write the induced (inverse) metrics $h^{\mu \nu}$ \eqref{Horizons:flatInducedMetric} and $\mathring{h}^{\mu \nu}$ \eqref{Horizons:curvedInducedMetric} more succinctly as
 \begin{align}
     h^{\mu \nu} &= g^{\mu \nu} + k^\mu l^\nu + l^\mu k^\nu \\
     \mathring{h}^{\mu \nu} &= \eta^{\mu \nu} + k^\mu l^{(0) \nu} + l^{(0) \mu} k^\nu.
 \end{align}
-Using the explicit inverse Kerr-Schild metric \eqref{kerrSchildMetricInverse} and the relation \eqref{lFroml0Up}, 
+Using the explicit inverse Kerr-Schild metric \eqref{Horizons:kerrSchildMetricInverse} and the relation \eqref{Horizons:lFroml0Up}, 
 \begin{equation}
     \begin{split}
         h^{\mu \nu}
@@ -34,7 +32,7 @@ Using the explicit inverse Kerr-Schild metric \eqref{kerrSchildMetricInverse} an
 \end{equation}
 We have thus found that the metric on $\mathcal{S}_\lambda$ induced from the flat and the curved background are equal. We henceforth drop the circular accent on $\mathring{h}^{\mu \nu}$.
 
-To relate the flat- and curved-spacetime expansions defined in \eqref{flatExpansions} and \eqref{curvedExpansions}, we will also need to relate the derivatives $\mathring{\nabla}_\mu$ and $\nabla_\mu$. It is a standard result in differential geometry that the difference between the action of any two covariant derivatives on a one-form is a linear map (see e.g. chapter 3 of \cite{Wald:1984rg}), 
+To relate the flat- and curved-spacetime expansions defined in \eqref{Horizons:flatExpansions} and \eqref{Horizons:curvedExpansions}, we will also need to relate the derivatives $\mathring{\nabla}_\mu$ and $\nabla_\mu$. It is a standard result in differential geometry that the difference between the action of any two covariant derivatives on a one-form is a linear map (see e.g. chapter 3 of \cite{Wald:1984rg}), 
 \begin{equation}
     \nabla_\mu V_\rho - \mathring{\nabla}_\mu V_\rho = -\Gamma_{\mu \rho}^{\sigma} V_{\sigma}.
 \end{equation}
@@ -56,7 +54,7 @@ We can thus write
         &= \mathring{\theta}^{(l^{(0)})} -  h^{\mu \nu} \Gamma_{\mu \nu}^\sigma l_\sigma - \frac{\Phi}{2}\mathring{\theta}^{(k)}.
     \end{split}
 \end{align}
-We demonstrated that the last equality holds in section \ref{sec:doubleCopyRelation}. Clearly, we will need the contractions $h^{\mu \nu} \Gamma_{\sigma \mu \nu} k^\sigma$ and $h^{\mu \nu} \Gamma_{\sigma \mu \nu} l^\sigma$.
+We demonstrated that the last equality holds in section \ref{Horizons:sec:doubleCopyRelation}. Clearly, we will need the contractions $h^{\mu \nu} \Gamma_{\sigma \mu \nu} k^\sigma$ and $h^{\mu \nu} \Gamma_{\sigma \mu \nu} l^\sigma$.
 
 First, from the metric compatibility of the two derivative operators with $g_{\mu \nu}$ and $\eta_{\mu \nu}$ respectively, we can write
 \begin{equation}
@@ -67,12 +65,12 @@ Let us simplify $h^{\mu \nu}\Gamma_{\sigma \mu \nu}$,
 \begin{equation} \label{Horizons:hGamma}
     h^{\mu \nu} \Gamma_{\sigma \mu \nu} = \eta^{\mu \nu} \Gamma_{\sigma \mu \nu} + 2 k^\mu l^{(0)\nu} \Gamma_{\sigma \mu \nu},
 \end{equation}
-where we used the index symmetry of $\Gamma_{\sigma \mu \nu}$. Using the metric compatibility of $\mathring{\nabla}$ with $\eta_{\mu \nu}$ and the nullness of $k_\mu$, the first term in \eqref{hGamma} simplifies as
+where we used the index symmetry of $\Gamma_{\sigma \mu \nu}$. Using the metric compatibility of $\mathring{\nabla}$ with $\eta_{\mu \nu}$ and the nullness of $k_\mu$, the first term in \eqref{Horizons:hGamma} simplifies as
 \begin{equation}
     \frac{1}{2} \eta^{\mu \nu}\left( \mathring{\nabla}_{\nu} \left[\Phi k_{\mu} k_{\sigma}\right] +
 \mathring{\nabla}_{\mu} \left[\Phi k_{\nu} k_{\sigma}\right] - \mathring{\nabla}_{\sigma}\left[\Phi k_{\mu} k_{\nu}\right]\right) = \mathring{\nabla}_\mu \left[ \Phi k^\mu k_\sigma \right].
 \end{equation}
-To simplify the second term of \eqref{hGamma}, we compute
+To simplify the second term of \eqref{Horizons:hGamma}, we compute
 \begin{equation}  
     \begin{split}
         k^{\mu} \Gamma_{\sigma \mu \nu} &= \frac{1}{2} k^{\mu} \mathring{\nabla}_{\mu} \left[\Phi k_{\nu} k_{\sigma}\right] + \frac{1}{2} k^{\mu}
@@ -88,11 +86,11 @@ To simplify the second term of \eqref{hGamma}, we compute
     \end{split}
 \end{equation}
 The last line here follows from the previous by observing that the nullness and geodeticity of $k_\mu$ forces all
-but the third term to vanish. The second term of \eqref{hGamma} is therefore
+but the third term to vanish. The second term of \eqref{Horizons:hGamma} is therefore
 \begin{equation}
     2 k^\mu l^{(0) \nu} \Gamma_{\sigma \mu \nu} = l^{(0) \nu}  k_\nu k_\sigma k^\mu \mathring{\nabla}_\mu \Phi = - k_\sigma k^\mu \mathring{\nabla}_\mu \Phi,
 \end{equation}
-where we used the normalization condition $l^{(0)\mu} k_\mu = -1$. We have thus simplified \eqref{hGamma} to
+where we used the normalization condition $l^{(0)\mu} k_\mu = -1$. We have thus simplified \eqref{Horizons:hGamma} to
 \begin{equation}
     \begin{split}
         h^{\mu \nu} \Gamma_{\sigma \mu \nu}
@@ -116,7 +114,7 @@ where the first term vanishes due to geodeticity and the second due to the nulln
     h^{\mu \nu} \Gamma_{\sigma \mu \nu} k^\sigma &= \Phi \left(k^\sigma k_\sigma\right) \mathring{\nabla}_\mu k^\mu = 0, \label{Horizons:hGammaK} \\
     h^{\mu \nu} \Gamma_{\sigma \mu \nu} l^\sigma &= \Phi \left(l^\sigma k_\sigma\right) \mathring{\nabla}_\mu k^\mu = -\Phi \mathring{\theta}^{(k)}. \label{Horizons:hGammaL}
 \end{align}
-Substituting \eqref{hGammaK} into \eqref{thetaKIntermediate} and \eqref{hGammaL} into \eqref{thetaLIntermediate},
+Substituting \eqref{Horizons:hGammaK} into \eqref{Horizons:thetaKIntermediate} and \eqref{Horizons:hGammaL} into \eqref{Horizons:thetaLIntermediate},
 \begin{align}
     \theta^{(k)} &= \mathring{\theta}^{(k)} - h^{\mu \nu}\Gamma_{\sigma \mu \nu} k^\sigma = \mathring{\theta}^{(k)}. \\
     \begin{split}
@@ -124,6 +122,3 @@ Substituting \eqref{hGammaK} into \eqref{thetaKIntermediate} and \eqref{hGammaL}
         &= \mathring{\theta}^{(l^{(0)})} + \frac{\Phi}{2}\mathring{\theta}^{(k)}.
     \end{split}
 \end{align}
-
-\end{appendices}
-

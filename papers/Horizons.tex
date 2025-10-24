@@ -1,3 +1,5 @@
+\chapter{Black Hole Horizons from the Double Copy}
+
 \section{Introduction} \label{Horizons:sec:intro} 
 
 The classical double copy, in its most straightforward formulation \cite{Monteiro:2014cda}, maps classical
@@ -27,22 +29,22 @@ is necessarily a null hypersurface and is termed the event horizon. While this d
 the notion of a black hole as a region of no escape, it is a highly non-local definition that relies on knowledge
 of the global structure of the metric all the way to asymptotic infinity. This non-locality presents a potential
 obstacle in finding event horizons from the double copy, which is a local map.\footnote{While the classical double copy in the formulations we have relied on is indeed local in position space, the double copy of amplitudes is local in momentum space. This raises the question of why the classical version is a local product rather than a convolution, a question addressed recently in \cite{Monteiro:2021ztt, Luna:2022dxo}.} The statement of the Kerr-Schild
-double copy \eqref{kerrSchildMetricFromA}, for instance, maps the gauge field $A_{\mu}$ at each point to the metric
+double copy \eqref{Horizons:kerrSchildMetricFromA}, for instance, maps the gauge field $A_{\mu}$ at each point to the metric
 $g_{\mu \nu}$ at the same point.
 
 Fortunately, several local definitions of horizons have been proposed in the literature. See
 \cite{Gourgoulhon:2008pu,Ashtekar:2004cn,Booth:2005qc,Senovilla:2011fk} for reviews of various local horizon
 definitions. All local horizons found therein have one feature in common: the horizon hypersurface must possess a
 foliation in terms of marginally trapped surfaces (we review the definition of trapped surfaces in section
-\ref{sec:localHorizonDefs}). Thus, to remain agnostic towards the various local horizon definitions, our general
+\ref{Horizons:sec:localHorizonDefs}). Thus, to remain agnostic towards the various local horizon definitions, our general
 discussion focuses primarily on deducing the existence of trapped surfaces in the double copy spacetime using only
 single- and zeroth-copy data. 
 
 In the following section, we review the Kerr-Schild formulation of the classical double copy and briefly survey a
-few local horizon definitions. Section \ref{sec:setup} builds up to a derivation of our main result: a prescription
+few local horizon definitions. Section \ref{Horizons:sec:setup} builds up to a derivation of our main result: a prescription
 for finding local horizons using only single- and zeroth-copy calculations on an auxiliary flat spacetime. We then
 illustrate the use of the general prescription by constructing the event horizons of the well-studied Schwarzschild
-and Myers-Perry solutions in section \ref{sec:examples}. Finally, in section \ref{sec:discussion} we discuss our
+and Myers-Perry solutions in section \ref{Horizons:sec:examples}. Finally, in section \ref{Horizons:sec:discussion} we discuss our
 result and directions for future work.
 
 \section{Review} \label{Horizons:sec:review} 
@@ -144,9 +146,9 @@ the notion of FOTH suffices.
 
 In this section we describe, for a Kerr-Schild spacetime, how to search for the existence of horizons using
 quantities calculated on a flat spacetime. We do so by foliating a given hypersurface into co-dimension $2$
-surfaces $\mathcal{S}_{\lambda}$ using the Kerr-Schild vector $k_{\mu}$ \eqref{kerrSchildMetric} and computing
+surfaces $\mathcal{S}_{\lambda}$ using the Kerr-Schild vector $k_{\mu}$ \eqref{Horizons:kerrSchildMetric} and computing
 their null expansions, again using only flat spacetime quantities. This auxiliary flat spacetime is precisely the
-one that appears in \eqref{kerrSchildMetric} and serves as the background spacetime for the single and zeroth copy
+one that appears in \eqref{Horizons:kerrSchildMetric} and serves as the background spacetime for the single and zeroth copy
 theories.
 
 \subsection{The geometry of hypersurface foliations}
@@ -155,15 +157,15 @@ We will foliate $\mathcal{H}$ into spacelike surfaces $\mathcal{S}_{\lambda}$ pa
 leaf of the foliation of co-dimension $2$ with respect to the background spacetime. At every point on a
 co-dimension $2$ spacelike surface there are two independent future-directed null normals. We pick the foliation of
 $\mathcal{H}$ such that $k_{\mu}$ can always be chosen as one of the two null normals. We also assume that $k^\mu$
-is infalling, so that in the convention established in section \ref{sec:localHorizonDefs}, we
-set $n^\mu = k^\mu.$ See figure \ref{figGeneric} for an illustration of the foliation picked out by $k^{\mu}$.
+is infalling, so that in the convention established in section \ref{Horizons:sec:localHorizonDefs}, we
+set $n^\mu = k^\mu.$ See figure \ref{Horizons:figGeneric} for an illustration of the foliation picked out by $k^{\mu}$.
 \begin{figure}[h]
     \centering
     \begin{subfigure}[t]{0.55\textwidth}
         \centering
         %\includegraphics[width=\textwidth]{GenericPenrose.jpg}
         \def\svgwidth{\columnwidth}
-        \input{GenericPenrose.pdf_tex}
+        \input{img/GenericPenrose.pdf_tex}
         \caption{Penrose diagram for an asymptotically flat spacetime, with a one-parameter family of hypersurfaces
         $\mathcal{H}_{(\xi)}$. Trajectories in green are integral curves of $k^{\mu}$. $\mathcal{S}_{1}$ and
     $\mathcal{S}_{2}$ are leaves of the foliation normal to $k^{\mu}$ on $\mathcal{H}_{1}$ and $\mathcal{H}_{2}$.}
@@ -171,7 +173,7 @@ set $n^\mu = k^\mu.$ See figure \ref{figGeneric} for an illustration of the foli
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
         \def\svgwidth{\columnwidth}
-        \input{GenericCylinderFoliation.pdf_tex}
+        \input{img/GenericCylinderFoliation.pdf_tex}
         \caption{Diagram of $\mathcal{H}_{1}$ and $\mathcal{H}_{2}$ with one angular direction restored.
         Schematically shows the evolution from $\mathcal{S}_{1}$ to $\mathcal{S}_{2}$ along $k^{\mu}$.}
     \end{subfigure}
@@ -187,7 +189,7 @@ looking for vectors in the span of $k_{\mu}$ and $\tilde{H}_{\mu}$ which satisfy
 \end{equation}
 The flat metric $\eta^{\mu \nu}$ is used to contract indices here since we are constructing the null normal
 $l^{(0)}_{\mu}$ in flat spacetime. Note that since the Kerr-Schild vector $k_{\mu}$ satisfies $g^{\mu \nu} k_{\mu}
-= \eta^{\mu \nu} k_{\mu}$, in all that follows we raise and lower indices on $k$ with impunity. The two conditions \eqref{l0Conditions} are enough to specify $l^{(0)}_{\mu}$ uniquely:
+= \eta^{\mu \nu} k_{\mu}$, in all that follows we raise and lower indices on $k$ with impunity. The two conditions \eqref{Horizons:l0Conditions} are enough to specify $l^{(0)}_{\mu}$ uniquely:
 \begin{equation}  
     l^{(0)}_{\mu} = \frac{\tilde{H}_{\rho} \tilde{H}_{\sigma} \eta^{\rho \sigma}}{2 (k^{\rho}
     \tilde{H}_{\rho})^{2}} k_{\mu} - \frac{\tilde{H}_{\mu}}{k^{\rho} \tilde{H}_{\rho}}.
@@ -214,7 +216,7 @@ The intrinsic geometry of each $\mathcal{S}_{\lambda}$, inherited from $\eta_{\m
 where we use a circular accent to denote quantities defined on flat spacetime.
 
 We now need to map $\mathcal{H}$ and its chosen foliation to the Kerr-Schild spacetime with metric $g_{\mu \nu}$
-\eqref{kerrSchildMetric}. Since $\mathcal{H}$ and its foliation $\mathcal{S}_{\lambda}$ are described in terms of
+\eqref{Horizons:kerrSchildMetric}. Since $\mathcal{H}$ and its foliation $\mathcal{S}_{\lambda}$ are described in terms of
 the differential forms $H_{\mu}$ and $k_{\mu}$, they are in fact independent of the metric. Thus we can use the
 same hypersurface $\mathcal{H}$ and its foliation $\mathcal{S}_{\lambda}$ with metric $g_{\mu \nu}$.
 However, with a different metric the null normals of $\mathcal{S}_{\lambda}$ may no longer be the same.
@@ -224,14 +226,14 @@ normals. As in the previous case, the second null normal $l_{\mu}$ can be found 
 \begin{equation} \label{Horizons:lConditions} 
     l_{\mu} l_{\nu} g^{\mu \nu} = 0, \qquad l_{\mu} k_{\nu} g^{\mu \nu} = -1.
 \end{equation}
-Using the relation \eqref{kerrSchildMetricInverse} between $g^{\mu \nu}$ and $\eta^{\mu \nu}$, these conditions
+Using the relation \eqref{Horizons:kerrSchildMetricInverse} between $g^{\mu \nu}$ and $\eta^{\mu \nu}$, these conditions
 specify $l_{\mu}$ uniquely as
 \begin{equation} \label{Horizons:lFroml0Down} 
     l_{\mu} = l^{(0)}_{\mu} - \frac{\Phi}{2} k_{\mu}.
 \end{equation}
 The intrinsic geometry of $\mathcal{S}_{\lambda}$ inherited from the metric $g_{\mu \nu}$ is given by the
 induced metric and its inverse\footnote{Interestingly, owing to the
-definition of $l_{\mu}$ in terms of $l^{(0)}_{\mu}$ \eqref{lFroml0Down} and the form of the metric \eqref{kerrSchildMetric}, it turns
+definition of $l_{\mu}$ in terms of $l^{(0)}_{\mu}$ \eqref{Horizons:lFroml0Down} and the form of the metric \eqref{Horizons:kerrSchildMetric}, it turns
 out that $h_{\mu \nu} = \mathring{h}_{\mu \nu}$.}
 \begin{equation} \label{Horizons:curvedInducedMetric} 
     \begin{split}
@@ -242,8 +244,8 @@ out that $h_{\mu \nu} = \mathring{h}_{\mu \nu}$.}
 
 \subsection{The dynamics of hypersurface foliations}
 Having described the choice of foliation, we now examine how each leaf $\mathcal{S}_{\lambda}$ evolves along its 
-null normals. We specifically look at the expansion, defined as in \eqref{expansionDefn}.
-Using the induced metric from \eqref{flatInducedMetric} we can write the expansions as
+null normals. We specifically look at the expansion, defined as in \eqref{Horizons:expansionDefn}.
+Using the induced metric from \eqref{Horizons:flatInducedMetric} we can write the expansions as
 \begin{equation} \label{Horizons:flatExpansions} 
     \mathring{\theta}^{(k)} = \mathring{h}^{\mu \nu} \mathring{\nabla}_{\mu} k_{\nu}, \qquad
     \mathring{\theta}^{(l^{(0)})} = \mathring{h}^{\mu \nu} \mathring{ \nabla}_{\mu} l^{(0)}_{\nu}.
@@ -253,7 +255,7 @@ picked the convention that $k^{\mu}$ is ingoing and $l^{\mu}$ is outgoing, $\mat
 $\mathring{\theta}^{(l^{0})} \geq 0$. In other words, $k_{\mu}$ describes a converging null congruence and
 $l^{(0)}_{\mu}$ describes a diverging null congruence.
 
-In curved spacetime with metric $g_{\mu \nu}$, we use the induced metric \eqref{curvedInducedMetric} to calculate
+In curved spacetime with metric $g_{\mu \nu}$, we use the induced metric \eqref{Horizons:curvedInducedMetric} to calculate
 the expansions as
 \begin{equation} \label{Horizons:curvedExpansions} 
     \theta^{(k)} = h^{\mu \nu} \nabla_{\mu} k_{\nu}, \qquad \theta^{(l)} = h^{\mu \nu} \nabla_{\mu} l_{\nu}.
@@ -263,8 +265,8 @@ $\theta^{(l)} \geq 0$ near asymptotic infinity. Regions where $\theta^{(l)} < 0$
 such regions, where $\theta^{(l)} = 0$, are trapping horizons.
 
 \subsection{The double copy relation} \label{Horizons:sec:doubleCopyRelation}
-An explicit computation of the expansions using the metric \eqref{kerrSchildMetric} (outlined in appendix
-\ref{app:ExpansionCalculation}) shows that for Kerr-Schild spacetimes the expansions on the $\eta_{\mu \nu}$ and
+An explicit computation of the expansions using the metric \eqref{Horizons:kerrSchildMetric} (outlined in appendix
+\ref{Horizons:app:ExpansionCalculation}) shows that for Kerr-Schild spacetimes the expansions on the $\eta_{\mu \nu}$ and
 the $g_{\mu \nu}$ background are related via
 \begin{equation} \label{Horizons:thetaFromTheta0} 
     \theta^{(k)} = \mathring{\theta}^{(k)}, \qquad \theta^{(l)} = \mathring{\theta}^{(l^{(0)})} + \frac{\Phi}{2}
@@ -298,14 +300,14 @@ To summarize, our findings here constitute a diagnostic test for the presence of
 space computations, provided the existence of a classical double copy (in the Kerr-Schild sense) for fields
 $A_{\mu}$ and $\Phi$. The test proceeds as follows: first pick a hypersurface $\mathcal{H}$ to test. Foliate it by
 spacelike slices normal to $k_{\mu} = \frac{1}{\Phi} A_{\mu}$, and find the complementary null normal $l^{(0)}$ as
-in \eqref{l0FromH}. Compute the expansions $\mathring{\theta}^{(k)}$ and $\mathring{\theta}^{(l^{(0)})}$. If the
+in \eqref{Horizons:l0FromH}. Compute the expansions $\mathring{\theta}^{(k)}$ and $\mathring{\theta}^{(l^{(0)})}$. If the
 combination $\mathring{\theta}^{(l^{(0)})} + \frac{\Phi}{2} \mathring{\theta}^{(k)}$ vanishes all along
 $\mathcal{H}$, it is a trapping horizon.
 
 \section{Examples} \label{Horizons:sec:examples}
 We now demonstrate how the approach outlined in the previous section applies to black holes whose horizon structure
 as well as double copy description are already known. A large class of stationary black hole spacetimes whose metric can be put in the Kerr-Schild form
-\eqref{kerrSchildMetric} is the Myers-Perry class. The double copy construction of the Myers-Perry metric in
+\eqref{Horizons:kerrSchildMetric} is the Myers-Perry class. The double copy construction of the Myers-Perry metric in
 general dimensions is given in \cite{Monteiro:2014cda}. We first demonstrate the double copy description of the
 Schwarzschild horizon, which we hope illustrates our approach more transparently than the somewhat messier
 expressions which arise in our analysis of the more general Myers-Perry metric.
@@ -316,7 +318,7 @@ We write the Schwarzschild metric in Kerr-Schild coordinates as
     ds^{2} = -d\tau^{2} + dr^{2} + r^{2}d\theta^{2} + r^{2}\sin^{2}\theta d\phi^{2} + \frac{2M}{r} \left(-d\tau
     - dr\right)^{2}.
 \end{equation}
-The first four terms in \eqref{SchMetricKerrSchild} constitute the flat metric $\eta_{\mu \nu}$ in spherical polar
+The first four terms in \eqref{Horizons:SchMetricKerrSchild} constitute the flat metric $\eta_{\mu \nu}$ in spherical polar
 coordinates. The zeroth copy $\Phi$ and the Kerr-Schild vector $k_{\mu}$ are
 \begin{equation}  
     \Phi = \frac{2M}{r}, \qquad k_{\mu} dx^{\mu} = -d\tau - dr,
@@ -338,7 +340,7 @@ patch, which is obtained by one further coordinate transformation from $\tau$ to
 
 The event horizon $\mathcal{H}$ for the Schwarzschild black hole in Kerr-Schild coordinates is at $r = 2M$. We thus
 look at the family of hypersurfaces $\mathcal{H}_{(r)}$ at constant $r$. The normals to these surfaces are along
-the one-form $dr$. Normalizing the one-form as described in \eqref{HNorm}, we find that 
+the one-form $dr$. Normalizing the one-form as described in \eqref{Horizons:HNorm}, we find that 
 \begin{equation}  
     H_{\mu}dx^{\mu} = dr.
 \end{equation}
@@ -352,7 +354,7 @@ surfaces $\mathcal{S}_{\lambda}$ normal to $k_{\mu}$ and to $l^{(0)}_{\mu}$, whi
         &= \frac{1}{2} \left(-d\tau + dr\right).
     \end{split}
 \end{equation}
-The null normal on Schwarzschild, from the general form \eqref{lFroml0Down}, is 
+The null normal on Schwarzschild, from the general form \eqref{Horizons:lFroml0Down}, is 
 \begin{equation} 
     \begin{split}
         l_{\mu} dx^{\mu}
@@ -361,7 +363,7 @@ The null normal on Schwarzschild, from the general form \eqref{lFroml0Down}, is
         &= - \frac{1}{2} \left(1 - \frac{2M}{r}\right) d\tau + \frac{1}{2} \left(1 + \frac{2M}{r}\right) dr.
     \end{split}
 \end{equation}
-See figure \ref{figSchw} for an illustration of the hypersurfaces $\mathcal{H}_{(r)}$ and their foliation on the
+See figure \ref{Horizons:figSchw} for an illustration of the hypersurfaces $\mathcal{H}_{(r)}$ and their foliation on the
 Schwarzschild background.
 %
 \begin{figure}[h]
@@ -370,7 +372,7 @@ Schwarzschild background.
         \centering
         %\includegraphics[width=\textwidth]{SchwPenrose.jpg}
         \def\svgwidth{\columnwidth}
-        \input{SchwPenrose.pdf_tex}
+        \input{img/SchwPenrose.pdf_tex}
         \caption{Penrose diagram for the infalling coordinate patch of the Schwarzschild solution. Blue curves
         represent the family of test hypersurfaces $\mathcal{H}_{(r)}$ at constant $r$, green lines are the
     integral curves of $k^{\mu}$. $\mathcal{S}_{1}$ and $\mathcal{S}_{2}$ are leaves of the foliation of
@@ -380,7 +382,7 @@ $\mathcal{H}_{1}$ and $\mathcal{H}_{2}$ normal to $k^{\mu}$.}
         \centering
         %\includegraphics[scale=0.15]{SchwCylinderFoliation.jpg}
         \def\svgwidth{\columnwidth}
-        \input{SchwCylinderFoliation.pdf_tex}
+        \input{img/SchwCylinderFoliation.pdf_tex}
         \caption{Two of the constant $r$ hypersurfaces with one angular direction
         restored, showing the evolution from $\mathcal{S}_{1}$ to $\mathcal{S}_{2}$ along $k^{\mu}$.}
     \end{subfigure}
@@ -391,7 +393,7 @@ In Schwarzschild spacetime, the vectors $l^{\mu}$ and $l^{(0)\mu}$ are parallel 
 respect to $g_{\mu \nu}$ and $\eta_{\mu \nu}$ respectively. In fact, $l^{\mu}$ lies along the generators of the
 horizon at $r = 2M$.
 
-Thus, in this case our prescription \eqref{lFroml0Down} for relating $l_{\mu}$ and $l_{\mu}^{(0)}$ maps a family of
+Thus, in this case our prescription \eqref{Horizons:lFroml0Down} for relating $l_{\mu}$ and $l_{\mu}^{(0)}$ maps a family of
 null geodesics in flat spacetime to null geodesics on Schwarzschild. This map, however, is distinct from the one
 proposed in \cite{Gonzo:2021drq}, which does not map freely-falling trajectories. Instead, it maps
 on-shell trajectories of a test charge in the single copy gauge field to geodesics of a test particle in the double
@@ -401,7 +403,7 @@ Writing out the induced metric and computing expansions, we find on the flat spa
 \begin{equation}  
     \mathring{\theta}^{(k)} = -\frac{2}{r}, \qquad \mathring{\theta}^{(l^{(0)})} = \frac{1}{r},
 \end{equation}
-and thus from our general result \eqref{thetaFromTheta0}
+and thus from our general result \eqref{Horizons:thetaFromTheta0}
 \begin{equation} \label{Horizons:schwExpansionsFromFlatExpansions} 
     \theta^{(k)} = - \frac{2}{r}, \qquad \theta^{(l)} = \frac{1}{r} + \frac{M}{r} \left(- \frac{2}{r}\right)
     = \frac{r-2M}{r^{2}}.
@@ -419,12 +421,12 @@ outside the horizon at $r = 2M$ and negative inside. We can also explicitly chec
 Thus, the surface $r = 2M$ is a future-outer trapping horizon \cite{Hayward:1993wb}.
 From the perspective of the double copy construction we have
 described, the change in sign of $\theta^{(l)}$ is a consequence of the interplay between
-$\mathring{\theta}^{(l^{(0)})}, \mathring{\theta}^{(k)}$ and $\Phi$ as in \eqref{thetaFromTheta0}. As the horizon
+$\mathring{\theta}^{(l^{(0)})}, \mathring{\theta}^{(k)}$ and $\Phi$ as in \eqref{Horizons:thetaFromTheta0}. As the horizon
 $\Phi = 1$ is approached from the outside, the term $\frac{\Phi}{2} \mathring{\theta}^{(k)}$ starts to dominate over
 $\mathring{\theta}^{(l^{(0)})}$.  
 
-As noted in section \ref{sec:doubleCopyRelation}, the second term in our expression for $\theta^{(l)}$
-\eqref{schwExpansionsFromFlatExpansions} can be equivalently written as $1 / 2$ the expansion of the single copy
+As noted in section \ref{Horizons:sec:doubleCopyRelation}, the second term in our expression for $\theta^{(l)}$
+\eqref{Horizons:schwExpansionsFromFlatExpansions} can be equivalently written as $1 / 2$ the expansion of the single copy
 field $A_{\mu}$. The expansion of the outgoing null vector $l^{\mu}$ with respect to $g_{\mu \nu}$ is thus related
 to the expansion of $l^{(0) \mu}$ with respect to $\eta_{\mu \nu}$ via
 \begin{equation}  
@@ -498,7 +500,7 @@ one-form $dr$, which in Kerr-Schild coordinates is
     dr = \frac{V}{U} \left( \sum_{i=1}^{m} \frac{r\left(x_{i}\, dx_{i} + y_{i} \, dy_{i}\right)}{r^{2} +
     a_{i}^{2}} + \left(1-\varepsilon\right) \frac{z\,dz}{r}\right).
 \end{equation}
-Normalizing using \eqref{HNorm}, we find $H_{\mu}dx^{\mu} = dr$. 
+Normalizing using \eqref{Horizons:HNorm}, we find $H_{\mu}dx^{\mu} = dr$. 
 
 The foliation of $\mathcal{H}_{(r)}$ in flat spacetime is given by the null normals $k_{\mu}$ and $l^{(0)}_{\mu}$,
 \begin{equation}  
@@ -509,7 +511,7 @@ The foliation of $\mathcal{H}_{(r)}$ in flat spacetime is given by the null norm
     \end{split}
 \end{equation}
 Similar to the Schwarzschild case, we can find the corresponding null normal on the Myers-Perry background using
-\eqref{lFroml0Down},
+\eqref{Horizons:lFroml0Down},
 \begin{equation}  
     l_{\mu} dx^{\mu} = \frac{V - 2M}{2U} k_{\mu} dx^{\mu} + dr.
 \end{equation}
@@ -522,7 +524,7 @@ We calculate the flat space expansions,
             \mathring{\theta}^{(l^{(0)})} &= - \frac{V}{2U} \mathring{\theta}^{(k)},
     \end{split}
 \end{equation}
-from which we obtain using \eqref{thetaFromTheta0},
+from which we obtain using \eqref{Horizons:thetaFromTheta0},
 \begin{equation}  
     \begin{split}
         \theta^{(k)} &= \frac{\varepsilon}{r} - \frac{2}{r} \sum_{i = 1}^{m} \left[
@@ -554,9 +556,7 @@ Our work does extend to non-vacuum Kerr-Schild spacetimes; as an example, it is 
 
 For the vacuum Schwarzschild, Kerr, and Myers-Perry black holes we investigated, the $k^\mu$ in the Kerr-Schild coordinates is also a (doubled) principal null vector of the Weyl tensor.  These spacetimes are Petrov type D, so their Weyl tensor should have two doubled principal null vectors. When we have correctly chosen the $\mathcal{H}$ surface to be along the horizon, then $l^\mu$ actually turns out to be exactly this second doubled principal null vector.  So far we have investigated horizons only for single Kerr-Schild spacetimes, but the classical double copy extends to multi-Kerr-Schild \cite{Chawla:2022ogv, Luna:2015paa} as well as Weyl formalisms \cite{Luna:2018dpt,Godazgar:2020zbv}. We defer further investigations of the relationship between local horizon definitions and these more general classical double copy formalisms to future work.
 
-\acknowledgments
-The authors thank Kwinten Fransen, Damien Easson, Tucker Manton, and Raphaela Wutte for helpful discussions.
-The authors are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the
-Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2818.
-
-
+%\acknowledgments
+\textit{The authors thank Kwinten Fransen, Damien Easson, Tucker Manton, and Raphaela Wutte for helpful discussions.
+        The authors are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the
+        Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2818.}

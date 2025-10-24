@@ -1,0 +1,75 @@
+%% Creator: Inkscape 1.2.2 (732a01da63, 2022-12-09), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SchwPenrose.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{417.66424942bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.73738444)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SchwPenrose.pdf}}%
+    \put(0.78349489,0.3831782){\color[rgb]{0.13333333,0.4627451,0.07843137}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k^\mu$\end{tabular}}}}%
+    \put(0.78948531,0.56274829){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr{I}^+$\end{tabular}}}}%
+    \put(0.78948531,0.18272634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr{I}^-$\end{tabular}}}}%
+    \put(0.38450357,0.3831782){\color[rgb]{0.08627451,0.2745098,0.44313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathcal{H}_{(r)}$\end{tabular}}}}%
+    \put(0.62787224,0.00178994){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i^-$\end{tabular}}}}%
+    \put(0.97183106,0.36929972){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i^0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SchwPenrose.pdf}}%
+    \put(0.62787224,0.72436138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i^+$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SchwPenrose.pdf}}%
+    \put(-0.00062302,0.72436138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i^+$\end{tabular}}}}%
+    \put(0.2657863,0.72991279){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r = 0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SchwPenrose.pdf}}%
+    \put(0.11082356,0.53053881){\color[rgb]{0.06666667,0,0.07058824}\rotatebox{-45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r = 2M$\end{tabular}}}}}%
+    \put(0.55604425,0.42807068){\color[rgb]{0.91764706,0.08235294,0.17254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathcal{S}_1$\end{tabular}}}}%
+    \put(0.45728074,0.46398484){\color[rgb]{0.99215686,0.05490196,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathcal{S}_2$\end{tabular}}}}%
+    \put(0.33158162,0.44602779){\color[rgb]{0.06666667,0,0.07058824}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r = 2M$\end{tabular}}}}}%
+    \put(0.36222166,0.27914071){\color[rgb]{0.06666667,0,0.07058824}\rotatebox{-45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r = 2M$\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%

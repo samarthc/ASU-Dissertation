@@ -1,25 +1,12 @@
 \usepackage{amsmath,physics}
-\usepackage{comment}
+\usepackage{bbm}                        % Needed for mathbbm fonts.
 \usepackage{tikz-cd}
-\usepackage[toc,page]{appendix}
-\usepackage{etoolbox}
-\usepackage{tabularx}
-\usepackage{graphicx,float,caption,subcaption,xcolor}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdftitle={Penrose limits and Double Copies},
-    pdfpagemode=FullScreen,
-    }
+\usepackage{float,caption,subcaption,xcolor}
 
-\urlstyle{same}
-\graphicspath{{./img/}} 
 \usepackage[percent]{overpic}
 \usepackage{multirow}
 
+\graphicspath{{img/}}
 %From https://castel.dev/post/lecture-notes-2/#including-inkscape-figures-in-a-latex-document.
 \usepackage{transparent} %Required by inkscape figures exported as pdf_tex
 %\newcommand{\incfig}[1]{%
@@ -27,3 +14,7 @@
     %\input{#1.pdf_tex}
 %}
 \usepackage{mathrsfs} %\mathscr{} font
+
+\newcommand{\lenf}{15}
+\newcommand{\lenff}{19}
+\newcommand{\lenfff}{18}

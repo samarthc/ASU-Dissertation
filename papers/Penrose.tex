@@ -1,3 +1,5 @@
+\chapter{The Penrose Limit of the Weyl Double Copy}
+
 \section{Introduction}
 Gravity and gauge theory are related in surprising ways. Among these connections is BCJ duality (or
 color-kinematics duality), which provides a map between scattering amplitudes of gravitational and Yang-Mills
@@ -45,16 +47,16 @@ allow us to study the double copy structure of an arbitrary spacetime, in an exp
 
 In this paper, we take a step towards this understanding by first studying how the procedure of taking a Penrose
 limit interacts with the classical double copy structure of the full spacetime (where one is available). In section
-\ref{sec:background} we provide a quick review of relevant material from the literature on the classical double
-copy and on the Penrose limit. Our main results are contained in section \ref{sec:dcandPenrose}, in which we
+\ref{Penrose:sec:background} we provide a quick review of relevant material from the literature on the classical double
+copy and on the Penrose limit. Our main results are contained in section \ref{Penrose:sec:dcandPenrose}, in which we
 outline the general procedure for taking a Penrose limit of a gravitational solution, along with the gauge theory
 and scalar solutions that are associated to it via its double copy structure. We illustrate our approach in detail for the
-Schwarzschild and Kerr solutions in sections \ref{sec:Schwarzschild} and \ref{sec:Kerr}, which has a
-straightforward generalization to the generic vacuum type D (Plebanski-Demianski) metric in section \ref{sec:typeD}. We
-also examine type N spacetimes in \ref{sec:typeN}. Detailed computations for the examples can be found in appendix
-\ref{app:examples}.
+Schwarzschild and Kerr solutions in sections \ref{Penrose:sec:Schwarzschild} and \ref{Penrose:sec:Kerr}, which has a
+straightforward generalization to the generic vacuum type D (Plebanski-Demianski) metric in section \ref{Penrose:sec:typeD}. We
+also examine type N spacetimes in \ref{Penrose:sec:typeN}. Detailed computations for the examples can be found in appendix
+\ref{Penrose:app:examples}.
 
-\paragraph{Conventions} We will generally follow the conventions of Penrose and Rindler \cite{penrose1984spinors, Penrose:1986ca}. An important exception is the Riemann curvature which differs by a sign from that reference. See also Appendix \ref{app:conventions}.
+\paragraph{Conventions} We will generally follow the conventions of Penrose and Rindler \cite{penrose1984spinors, Penrose:1986ca}. An important exception is the Riemann curvature which differs by a sign from that reference. See also Appendix \ref{Penrose:app:conventions}.
 
 \section{Background}\label{Penrose:sec:background}
 
@@ -78,7 +80,7 @@ whether as a test field or as coupled self-consistently to the metric.} via
 \begin{equation} \label{Penrose:eqn:KSgauge} 
     A_{\mu} = \phi k_{\mu}.
 \end{equation}
-The Kerr-Schild form \eqref{eqn:KSmetric}, along with the affineness of $k_{\mu}$, fixes the ``single copy'' gauge
+The Kerr-Schild form \eqref{Penrose:eqn:KSmetric}, along with the affineness of $k_{\mu}$, fixes the ``single copy'' gauge
 potential $A_{\mu}$ and the ``zeroth copy'' scalar $\phi$ at most up to a constant scaling as one can always shift $(\phi, k_{\mu}) \to
 (c^{-2} \phi, c k_{\mu})$ without changing the metric for a constant $c$. 
 
@@ -94,7 +96,7 @@ gravity side, and of working with the gauge-invariant field strength on the gaug
     (as was initially the case in the double copy literature), we need a well-defined map from the curved
     spacetime to a flat spacetime. In the case of pp-waves, which are type N, and the most general vacuum type D
 solution (Plebanski-Demianski), \cite{Luna:2018dpt} uses the fact that a (double-)Kerr-Schild form is available to
-obtain such a map.}. Moreover, it was argued in \cite{Luna:2018dpt} that whenever a Kerr-Schild double copy exists in addition to the Weyl double copy, both formulations are compatible. When appropriately scaled, the relation between the Weyl double copy $f_{AB}$, $S$ satisfying \eqref{WeylDCRelation} and the Kerr-Schild double copy $A_{\mu}$, $\phi$ satisfying \eqref{eqn:KSmetric} and \eqref{eqn:KSgauge} is simply
+obtain such a map.}. Moreover, it was argued in \cite{Luna:2018dpt} that whenever a Kerr-Schild double copy exists in addition to the Weyl double copy, both formulations are compatible. When appropriately scaled, the relation between the Weyl double copy $f_{AB}$, $S$ satisfying \eqref{Penrose:WeylDCRelation} and the Kerr-Schild double copy $A_{\mu}$, $\phi$ satisfying \eqref{Penrose:eqn:KSmetric} and \eqref{Penrose:eqn:KSgauge} is simply
 \begin{equation}\label{Penrose:eqn:WeyltoKSrelation}
 	(dA)_{AA' BB'} = f_{AB} \bar{\epsilon}_{A'B'} + \bar{f}_{A'B'} \epsilon_{AB} \, , \quad \phi = S + S^* \, .
 \end{equation}
@@ -104,7 +106,7 @@ fully symmetric spinorial objects can always be written as the symmetrized outer
 \begin{equation} \ 
     \Psi_{ABCD} = \alpha_{(A} \beta_{B} \gamma_{C} \delta_{D)}.
 \end{equation}
-Clearly, if \eqref{WeylDCRelation} holds, the spinors $\alpha_{A}$, $\beta_{A}$, $\gamma_{A}$ and $\delta_{D}$
+Clearly, if \eqref{Penrose:WeylDCRelation} holds, the spinors $\alpha_{A}$, $\beta_{A}$, $\gamma_{A}$ and $\delta_{D}$
 cannot be distinct. Indeed, they must either match up in pairs
 \begin{equation} \label{Penrose:eqn:spinortypeD} 
     \Psi_{ABCD} = \alpha_{(A} \alpha_{B} \beta_{C} \beta_{D)},
@@ -115,11 +117,11 @@ known in the Petrov classification as a type D solution, or must in fact be the 
 \end{equation}
 which is a type N solution.
 
-The black hole solutions of vacuum general relativity fall into the type D class with \eqref{eqn:spinortypeD} while radiative spacetimes, such as the plane waves obtained from the Penrose limit, will be of type N \eqref{eqn:spinortypeN}. Our focus in this paper will thus be on the interplay between the Weyl double copy for type D and type N solutions. However, plane waves are only a very special class of type N solutions, so we will also discuss the relation between the double copy of these plane waves and more generic type N spacetimes. 
+The black hole solutions of vacuum general relativity fall into the type D class with \eqref{Penrose:eqn:spinortypeD} while radiative spacetimes, such as the plane waves obtained from the Penrose limit, will be of type N \eqref{Penrose:eqn:spinortypeN}. Our focus in this paper will thus be on the interplay between the Weyl double copy for type D and type N solutions. However, plane waves are only a very special class of type N solutions, so we will also discuss the relation between the double copy of these plane waves and more generic type N spacetimes. 
 
-For type N spacetimes, neither the Weyl nor the Kerr-Schild classical double copies are unique up to constant scaling. For plane wave spacetimes, the remaining freedom is particularly large but, as was already noted in \cite{Luna:2018dpt}, it is natural to additionally impose that a gravitational plane wave maps to a gauge theory plane wave.  Even with this additional constraint for plane waves, generic type N spacetimes have single copy field strengths and scalars that can be scaled by an arbitrary function of some of the coordinates such that the double copy relation as well as the equations of motion are maintained \cite{Godazgar:2020zbv}. We will discuss this issue further in section \ref{sec:ambiguity}.
+For type N spacetimes, neither the Weyl nor the Kerr-Schild classical double copies are unique up to constant scaling. For plane wave spacetimes, the remaining freedom is particularly large but, as was already noted in \cite{Luna:2018dpt}, it is natural to additionally impose that a gravitational plane wave maps to a gauge theory plane wave.  Even with this additional constraint for plane waves, generic type N spacetimes have single copy field strengths and scalars that can be scaled by an arbitrary function of some of the coordinates such that the double copy relation as well as the equations of motion are maintained \cite{Godazgar:2020zbv}. We will discuss this issue further in section \ref{Penrose:sec:ambiguity}.
 
-While we have just argued that the form \eqref{WeylDCRelation} with identical field strength spinors $f_{AB}$
+While we have just argued that the form \eqref{Penrose:WeylDCRelation} with identical field strength spinors $f_{AB}$
 imposes the double copy spacetime to be Petrov type D or Petrov type N, one can also consider using two different
 Maxwell spinors $f^{(1)}_{AB}$ and $f^{(2)}_{AB}$, which would allow extending the Weyl double copy to more general
 Petrov type. The possibility of such a ``mixed'' double copy was considered already in \cite{Luna:2018dpt}, and
@@ -138,7 +140,7 @@ ds^2 = 2 dU dV + D(x^{\mu}) dV^2 + B_i(x^{\mu}) dV dX^i - C_{ij}(x^{\mu})dX^i dX
 \end{equation}
 with $D(x^{\mu})$, $B_i(x^{\mu})$, and $C_{ij}(x^{\mu})$ functions of all the coordinates $x^{\mu} = \left\lbrace U, V, X^i \right\rbrace$ and with indices $i$, $j$ running over the $d-2$  ``transverse'' directions ($i,j, \ldots \in \left\lbrace 1, \ldots, d-2 \right \rbrace$). Note that $C_{ij}(x^{\mu})$ is symmetric and positive definite. The null coordinate vector field $\partial_U$ is geodesic and it is in this sense that the coordinates are ``adapted'' to the null geodesic congruence generated by $\partial_U$. 
 
-The requirement that the geodesic congruence is twist-free arises as an integrability condition for it to be written as a coordinate vector field. On the other hand, any geodesic can locally be embedded in a twist-free geodesic congruence. More precisely, given any reference geodesic $\gamma$, a coordinate system can be found in a neighborhood of a portion of $\gamma$ free of conjugate points\footnote{Conjugate points (or focal points) are a pair of points such that there exists a Jacobi vector field (or equivalently here: a non-trivial solution to the geodesic deviation equation) vanishing at both points. Conjugate points are sometimes referred to as caustics but, more commonly, caustics are the geometric locus of conjugate points for a family of geodesics \cite{Hawking:1973uf}.} such that the metric takes the form \eqref{eqn:adapted} with (the conjugate point-free portion of) $\gamma$ corresponding to the geodesic at $X^i = V = 0$ \cite{penrose1972techniques}.
+The requirement that the geodesic congruence is twist-free arises as an integrability condition for it to be written as a coordinate vector field. On the other hand, any geodesic can locally be embedded in a twist-free geodesic congruence. More precisely, given any reference geodesic $\gamma$, a coordinate system can be found in a neighborhood of a portion of $\gamma$ free of conjugate points\footnote{Conjugate points (or focal points) are a pair of points such that there exists a Jacobi vector field (or equivalently here: a non-trivial solution to the geodesic deviation equation) vanishing at both points. Conjugate points are sometimes referred to as caustics but, more commonly, caustics are the geometric locus of conjugate points for a family of geodesics \cite{Hawking:1973uf}.} such that the metric takes the form \eqref{Penrose:eqn:adapted} with (the conjugate point-free portion of) $\gamma$ corresponding to the geodesic at $X^i = V = 0$ \cite{penrose1972techniques}.
 
 Having constructed the adapted coordinates  $\left\lbrace U, V, X^i \right\rbrace$ associated to $\gamma$, the
 Penrose limit amounts to the leading order of an expansion in $\epsilon \to 0$ where $\left\lbrace U, V, X^i
@@ -146,7 +148,7 @@ Penrose limit amounts to the leading order of an expansion in $\epsilon \to 0$ w
 the scalings is by considering the combination of an ordinary expansion around a point but simultaneously boosting
 along the null geodesic direction $\left\lbrace U, V, X^i \right\rbrace \sim \epsilon \times \left\lbrace
 \epsilon^{-1}, \epsilon, 1 \right\rbrace$. With these scalings, on the assumption that $D(x^{\mu})$,
-$B_i(x^{\mu})$, and $C_{ij}(x^{\mu})$ are smooth,\footnote{The smoothness assumption is made by \cite{penrose1976any} but can be somewhat relaxed. We will not attempt a precise formulation of weaker assumptions here but ideally shockwaves and other weak solutions to the Einstein equations would be included where possible.} the metric scales as $ds^2 = O(\epsilon^2)$ and the Penrose limit line element $ds_{\gamma}^2$ is thus given by only keeping the terms in \eqref{eqn:adapted} scaling as $\epsilon^2$. Explicitly, the Penrose limit of \eqref{eqn:adapted} with respect to the null geodesic $\gamma$ at $V=X^i=0$ yields
+$B_i(x^{\mu})$, and $C_{ij}(x^{\mu})$ are smooth,\footnote{The smoothness assumption is made by \cite{penrose1976any} but can be somewhat relaxed. We will not attempt a precise formulation of weaker assumptions here but ideally shockwaves and other weak solutions to the Einstein equations would be included where possible.} the metric scales as $ds^2 = O(\epsilon^2)$ and the Penrose limit line element $ds_{\gamma}^2$ is thus given by only keeping the terms in \eqref{Penrose:eqn:adapted} scaling as $\epsilon^2$. Explicitly, the Penrose limit of \eqref{Penrose:eqn:adapted} with respect to the null geodesic $\gamma$ at $V=X^i=0$ yields
 \begin{equation}\label{Penrose:eqn:Rosen}
 ds_{\gamma}^2 = 2 dU dV - C_{ij}\left(U\right)dX^i dX^j  \, , \quad C_{ij}\left(U\right) = C_{ij}\left(x^{\mu}\right)|_{(V=0, X^i=0)} \, ,
 \end{equation}
@@ -161,15 +163,15 @@ $u = U$ and introduce a parallel propagated, transverse frame $E^{(\gamma)}{}^i{
 \begin{equation}\label{Penrose:eqn:frame}
 X^i = E^{(\gamma)}{}^i{}_a x^a \, , \quad  C_{ij} E^{(\gamma)}{}^i{}_a  E^{(\gamma)}{}^j{}_b \equiv E^{(\gamma)}{}^i{}_a  E^{(\gamma)}{}_{ib} = \delta_{ab}\, ,
 \end{equation}
-and\footnote{For the condition \eqref{eqn:Esymm}, it is important to note the distinction from the identity
+and\footnote{For the condition \eqref{Penrose:eqn:Esymm}, it is important to note the distinction from the identity
 	\begin{equation}\label{Penrose:eqn:notEsymm}
 	E^{(\gamma)}{}^i{}_a  \dot{E}^{(\gamma)}{}_{ib} = - \dot{E}^{(\gamma)}{}^i{}_a  E^{(\gamma)}{}_{ib}  \, .
 	\end{equation}
-	In particular, \eqref{eqn:Esymm} and \eqref{eqn:notEsymm} are not in contradiction because the latin ``Rosen'' indices are raised and lowered by $C_{ij}$, which is time-dependent.}
+	In particular, \eqref{Penrose:eqn:Esymm} and \eqref{Penrose:eqn:notEsymm} are not in contradiction because the latin ``Rosen'' indices are raised and lowered by $C_{ij}$, which is time-dependent.}
 \begin{equation}\label{Penrose:eqn:Esymm}
 E^{(\gamma)}{}^i{}_a  \dot{E}^{(\gamma)}{}_{ib} = E^{(\gamma)}{}^i{}_b  \dot{E}^{(\gamma)}{}_{ia} \, ,
 \end{equation} 
-where a dot, such as in $\dot{E}^{(\gamma)}{}^i{}_a$, denotes a derivative with respect to $u=U$. Equation \eqref{eqn:frame} is simply the condition on $E^{(\gamma)}{}^i{}_a(u)$ to form an orthonormal transverse frame while \eqref{eqn:Esymm} ensures parallel transport along $\partial_U$. The full change of coordinates from Rosen to Brinkmann coordinates is then given by
+where a dot, such as in $\dot{E}^{(\gamma)}{}^i{}_a$, denotes a derivative with respect to $u=U$. Equation \eqref{Penrose:eqn:frame} is simply the condition on $E^{(\gamma)}{}^i{}_a(u)$ to form an orthonormal transverse frame while \eqref{Penrose:eqn:Esymm} ensures parallel transport along $\partial_U$. The full change of coordinates from Rosen to Brinkmann coordinates is then given by
 %compare to (2.10) and (2.11) of \cite{Adamo:2017nia} whose coventions we adopt
 \begin{equation}\label{Penrose:eqn:RtoB}
 \begin{aligned}
@@ -191,11 +193,11 @@ frame\footnote{We will refer to a null frame (sometimes called a pseudo-orthonor
 	to an orthonormal basis for the transverse directions. We will reserve the terminology Newman-Penrose frame for a
 	four-dimensional frame where the transverse directions are also spanned by (complexified) complementary null
 	vectors.} $\left\lbrace u^{\mu}, v^{\mu}, E^{\mu}_a \right \rbrace$ on $\gamma$, where $u^{\mu}$ is tangent to
-$\gamma$ (affinely parameterized). Then, the wave profile $H_{ab}$ of the Penrose limit plane wave in Brinkmann coordinates \eqref{eqn:Brinkmann} can be identified as \cite{Blau:2006ar,blau2011plane}
+$\gamma$ (affinely parameterized). Then, the wave profile $H_{ab}$ of the Penrose limit plane wave in Brinkmann coordinates \eqref{Penrose:eqn:Brinkmann} can be identified as \cite{Blau:2006ar,blau2011plane}
 \begin{equation}\label{Penrose:eqn:penroseframe}
 H_{ab}(u) = \left(R_{\mu \nu \alpha \beta} E^{\mu}_a u^{\nu} E^{\alpha}_b u^{\beta} \right)|_{\gamma} \, .
 \end{equation}
-From the perspective of the Penrose limit metric in Brinkmann coordinates \eqref{eqn:Brinkmann}, \eqref{eqn:penroseframe} is consistent with the relation between the Riemann tensor $R^{(\gamma)}_{\mu \nu \alpha \beta}$ of the Penrose limit plane wave and its wave profile, given by
+From the perspective of the Penrose limit metric in Brinkmann coordinates \eqref{Penrose:eqn:Brinkmann}, \eqref{Penrose:eqn:penroseframe} is consistent with the relation between the Riemann tensor $R^{(\gamma)}_{\mu \nu \alpha \beta}$ of the Penrose limit plane wave and its wave profile, given by
 \begin{equation}\label{Penrose:eqn:HRplanewave}
 H_{ab}(u) = R^{(\gamma)}_{\mu \nu \alpha \beta} \left(\partial_a\right)^{\mu} (\partial_u)^{\nu}  \left(\partial_b\right)^{\alpha} (\partial_u)^{\beta}   \, .
 \end{equation}
@@ -209,20 +211,20 @@ which together with the coordinate vector fields
 v^{(\gamma)} = \partial_v \, , \quad E^{(\gamma)}_a = \partial_a \, ,
 \end{equation}
 forms a null frame $\left\lbrace u^{(\gamma)}{}^{\mu}, v^{(\gamma)}{}^{\mu}, E^{(\gamma)}{}^{\mu}_a \right \rbrace$
-for the plane wave. From $R^{(\gamma)}_{\mu \nu \alpha \beta}v^{(\gamma)}{}^{\mu} = 0$, it follows that \eqref{eqn:HRplanewave} is unchanged by replacing $\partial_u$ with $u^{(\gamma)}$. In addition, note the difference between $E^{(\gamma)}{}^{\mu}_a$ and the previously introduced transverse frame $E^{(\gamma)}{}^{i}_a$ relating Rosen and Brinkmann coordinates in \eqref{eqn:RtoB}. These transverse frames are related by
+for the plane wave. From $R^{(\gamma)}_{\mu \nu \alpha \beta}v^{(\gamma)}{}^{\mu} = 0$, it follows that \eqref{Penrose:eqn:HRplanewave} is unchanged by replacing $\partial_u$ with $u^{(\gamma)}$. In addition, note the difference between $E^{(\gamma)}{}^{\mu}_a$ and the previously introduced transverse frame $E^{(\gamma)}{}^{i}_a$ relating Rosen and Brinkmann coordinates in \eqref{Penrose:eqn:RtoB}. These transverse frames are related by
 \begin{equation}
 E^{(\gamma)}{}_a = E^{(\gamma)}{}^i_{a}\partial_i + \dot{E}^{(\gamma)}{}^i_a E^{(\gamma)}{}_{ib} x^b 	\partial_V \, .
 \end{equation}
 
-In four dimensions, an equivalent two-spinor approach to \eqref{eqn:penroseframe} was suggested in \cite{Tod:2019urw}. This two-spinor approach will be very useful in conjunction with the Weyl double copy so we will review it in some detail. First, introduce the complex coordinate $z$ for the two transverse directions of the four-dimensional plane wave in Brinkmann coordinates
+In four dimensions, an equivalent two-spinor approach to \eqref{Penrose:eqn:penroseframe} was suggested in \cite{Tod:2019urw}. This two-spinor approach will be very useful in conjunction with the Weyl double copy so we will review it in some detail. First, introduce the complex coordinate $z$ for the two transverse directions of the four-dimensional plane wave in Brinkmann coordinates
 \begin{equation}\label{Penrose:eqn:complexz}
 z = \frac{1}{\sqrt{2}}\left(x^1 + i x^2\right) \, , \quad \bar{z} = \frac{1}{\sqrt{2}}\left(x^1 - i x^2\right)  \, ,
 \end{equation}
-such that \eqref{eqn:Brinkmann} with $a,b \in \left\lbrace  1,2\right \rbrace$ becomes
+such that \eqref{Penrose:eqn:Brinkmann} with $a,b \in \left\lbrace  1,2\right \rbrace$ becomes
 \begin{equation}\label{Penrose:eqn:Brinkmannc}
 ds_{\gamma}^2 = 2 du dv + \left(\Psi(u) z^2 + 2 \Phi(u) z \bar{z} + \bar{\Psi}(u) \bar{z}^2\right) du^2 - 2 dz d\bar{z}  \, .
 \end{equation}
-$\Psi(u)$ and $\Phi(u)$ in \eqref{eqn:Brinkmannc} are related to $H_{ab}(u)$ in \eqref{eqn:Brinkmann} through
+$\Psi(u)$ and $\Phi(u)$ in \eqref{Penrose:eqn:Brinkmannc} are related to $H_{ab}(u)$ in \eqref{Penrose:eqn:Brinkmann} through
 \begin{equation}\label{Penrose:eqn:HBrinkmannincomplex}
 H_{ab} = - \begin{pmatrix}
 \frac{1}{2}\left(\Psi(u)+ 2 \Phi(u)  + \bar{\Psi}(u)\right) & 	\frac{i}{2}\left(\Psi(u) - \bar{\Psi}(u)\right)\\
@@ -245,23 +247,23 @@ H_{ab} =  \begin{pmatrix}
 \end{equation}
 The trace, $2\Phi$, will vanish by the vacuum Einstein equations and therefore will not play a significant role in much of the main text\footnote{Although we discuss only the classical double copy for vacuum spacetimes, see \cite{Easson:2021asd,Easson:2022zoh} for extensions to include matter.}. However, we do not need to impose vacuum Einstein equations to take the Penrose limit so we will not impose $\Phi(u)$ to vanish here.
 
-To take the Penrose limit along a null geodesic $\gamma$ in four dimensions, instead of using the tangent vector $u^{\mu}$ and a null frame $\left\lbrace u^{\mu}, v^{\mu}, E^{\mu}_a \right \rbrace$ as in \eqref{eqn:penroseframe}, we can use a tangent, parallel propagated two-spinor $\alpha^{A}$. Explicitly, $\alpha^{A}$ and its complex conjugate $\bar{\alpha}^{A'}$ are chosen to satisfy
+To take the Penrose limit along a null geodesic $\gamma$ in four dimensions, instead of using the tangent vector $u^{\mu}$ and a null frame $\left\lbrace u^{\mu}, v^{\mu}, E^{\mu}_a \right \rbrace$ as in \eqref{Penrose:eqn:penroseframe}, we can use a tangent, parallel propagated two-spinor $\alpha^{A}$. Explicitly, $\alpha^{A}$ and its complex conjugate $\bar{\alpha}^{A'}$ are chosen to satisfy
 \begin{equation}\label{Penrose:eqn:tangentspinor}
 u^{\alpha} = \sigma^{\alpha}_{AA'} \alpha^{A}\bar{\alpha}^{A'} \, , \quad	u^{\mu}\nabla_{\mu} \alpha^A = 0 \, , \quad u^{\mu}\nabla_{\mu} \bar{\alpha}^{A'} = 0 \, ,
 \end{equation}
-where $\sigma^{\alpha}_{AA'}$ are the Infeld-Van der Waerden symbols. See Appendix \ref{app:conventions} for more details and our spinor conventions. Using $\alpha^{A}$, we can obtain the Penrose limit in terms of the curvature spinors by computing \cite{Tod:2019urw}
+where $\sigma^{\alpha}_{AA'}$ are the Infeld-Van der Waerden symbols. See Appendix \ref{Penrose:app:conventions} for more details and our spinor conventions. Using $\alpha^{A}$, we can obtain the Penrose limit in terms of the curvature spinors by computing \cite{Tod:2019urw}
 \begin{equation}\label{Penrose:eqn:penrosespinor}
 \Psi(u) = \left(\Psi_{ABCD}\alpha^A \alpha^B \alpha^C \alpha^D\right)|_{\gamma} \, , \quad \Phi(u) = \left(\Phi_{ABA'B'}\alpha^A \alpha^B \bar{\alpha}^{A'} \bar{\alpha}^{B'}\right)|_{\gamma} \, .
 \end{equation}
-Here, $\Psi_{ABCD}$ and $\Phi_{ABA'B'}$ are respectively the Weyl spinor and Ricci curvature spinor of the original spacetime while $\Psi$ and $\Phi$ are the functions determining the plane wave spacetime in (complex) Brinkmann coordinates by \eqref{eqn:Brinkmannc}. 
+Here, $\Psi_{ABCD}$ and $\Phi_{ABA'B'}$ are respectively the Weyl spinor and Ricci curvature spinor of the original spacetime while $\Psi$ and $\Phi$ are the functions determining the plane wave spacetime in (complex) Brinkmann coordinates by \eqref{Penrose:eqn:Brinkmannc}. 
 
-In order to derive the expression for the wave profile \eqref{eqn:penroseframe} from \eqref{eqn:penrosespinor}, introduce a complementary, parallel propagated spinor $\beta^A$ to $\alpha^A$ to have a two-spinor basis (or dyad) $\left\lbrace \alpha^A, \beta^A\right\rbrace$ along the null geodesic. Then, after constructing the Newman-Penrose frame $\left\lbrace u^{\mu}, v^{\mu}, m^{\mu},\bar{m}^{\mu}  \right \rbrace$ from the dyad $\left\lbrace \alpha^A, \beta^A\right\rbrace$, \eqref{eqn:penrosespinor} can be derived directly from \eqref{eqn:penroseframe} with
+In order to derive the expression for the wave profile \eqref{Penrose:eqn:penroseframe} from \eqref{Penrose:eqn:penrosespinor}, introduce a complementary, parallel propagated spinor $\beta^A$ to $\alpha^A$ to have a two-spinor basis (or dyad) $\left\lbrace \alpha^A, \beta^A\right\rbrace$ along the null geodesic. Then, after constructing the Newman-Penrose frame $\left\lbrace u^{\mu}, v^{\mu}, m^{\mu},\bar{m}^{\mu}  \right \rbrace$ from the dyad $\left\lbrace \alpha^A, \beta^A\right\rbrace$, \eqref{Penrose:eqn:penrosespinor} can be derived directly from \eqref{Penrose:eqn:penroseframe} with
 \begin{equation}\label{Penrose:eqn:complextransversebasis}
 m^{\mu} = -\frac{1}{\sqrt{2}}\left(E^{\mu}_1 - i E^{\mu}_2 \right) \, , \quad 	\bar{m}^{\mu} = -\frac{1}{\sqrt{2}}\left(E^{\mu}_1 + i E^{\mu}_2 \right) \, .
 \end{equation} 
-See Appendix \ref{app:NP} for the explicit calculation.
+See Appendix \ref{Penrose:app:NP} for the explicit calculation.
 
-From the perspective of the Penrose limit metric in (complex) Brinkmann coordinates \eqref{eqn:Brinkmannc}, we similarly first go from the null frame $\left\lbrace u^{(\gamma)}{}^{\mu}, v^{(\gamma)}{}^{\mu}, E^{(\gamma)}{}^{\mu}_1 , E^{(\gamma)}{}^{\mu}_2 \right \rbrace$ to the Newman-Penrose frame $\left\lbrace u^{(\gamma)}{}^{\mu}, v^{(\gamma)}{}^{\mu}, m^{(\gamma)}{}^{\mu}_1 , \bar{m}^{(\gamma)}{}^{\mu}_2 \right \rbrace$ with
+From the perspective of the Penrose limit metric in (complex) Brinkmann coordinates \eqref{Penrose:eqn:Brinkmannc}, we similarly first go from the null frame $\left\lbrace u^{(\gamma)}{}^{\mu}, v^{(\gamma)}{}^{\mu}, E^{(\gamma)}{}^{\mu}_1 , E^{(\gamma)}{}^{\mu}_2 \right \rbrace$ to the Newman-Penrose frame $\left\lbrace u^{(\gamma)}{}^{\mu}, v^{(\gamma)}{}^{\mu}, m^{(\gamma)}{}^{\mu}_1 , \bar{m}^{(\gamma)}{}^{\mu}_2 \right \rbrace$ with
 \begin{equation}\label{Penrose:eqn:mdefplanewave}
 m^{(\gamma)}{}^{\mu} = -\frac{1}{\sqrt{2}}\left(E^{(\gamma)}{}^{\mu}_1 - i E^{(\gamma)}{}^{\mu}_2 \right) \, , \quad 	\bar{m}^{(\gamma)}{}^{\mu} = -\frac{1}{\sqrt{2}}\left(E^{(\gamma)}{}^{\mu}_1 + i E^{(\gamma)}{}^{\mu}_2 \right) \, ,
 \end{equation} 
@@ -281,12 +283,12 @@ On the other hand, the only independent Ricci spinor is
 \begin{equation}\label{Penrose:eqn:Phi00penrose}
 \Phi^{(\gamma)}_{00} = \Phi^{(\gamma)}_{ABC'D'}\alpha^{(\gamma)}{}^A \alpha^{(\gamma)}{}^B \bar{\alpha}^{(\gamma)}{}^{C'} \bar{\alpha}^{(\gamma)}{}^{D'} = \frac{1}{2}R^{(\gamma)}_{\alpha \beta} u^{(\gamma)}{}^{\alpha} u^{(\gamma)}{}^{\beta} = \Phi(u) \, .
 \end{equation}
-When evaluated at the origin of the transverse plane $z = \bar{z} = 0$, the expressions \eqref{eqn:NPsi} and
-\eqref{eqn:Phi00penrose} are the plane wave version of the two-spinor prescription to take the Penrose limit \eqref{eqn:penrosespinor}. Moreover, the resulting $\Psi(u) $ and $\Phi(u)$ fully specify the four-dimensional plane wave.
+When evaluated at the origin of the transverse plane $z = \bar{z} = 0$, the expressions \eqref{Penrose:eqn:NPsi} and
+\eqref{Penrose:eqn:Phi00penrose} are the plane wave version of the two-spinor prescription to take the Penrose limit \eqref{Penrose:eqn:penrosespinor}. Moreover, the resulting $\Psi(u) $ and $\Phi(u)$ fully specify the four-dimensional plane wave.
 
 The Penrose limit was originally proposed in the context of pure pseudo-Riemannian geometry, that is including only a metric. However the Penrose limit has since been generalized to include various types of matter, specifically the massless matter fields of the supergravity theories arising from the low-energy limit of the perturbative string theories  \cite{Gueven:2000ru}.  The generalized Penrose limit including extra matter is sometimes referred to as the Penrose-G\"uven limit. Importantly for our purposes, there is a Penrose-G\"uven limit for massless scalars $S(x)$ and gauge fields $A_{\mu}(x)$. 
 
-For a massless scalar field, after going to adapted coordinates in general dimension $d$ \eqref{eqn:adapted}, the Penrose-G\"uven limit is trivially 
+For a massless scalar field, after going to adapted coordinates in general dimension $d$ \eqref{Penrose:eqn:adapted}, the Penrose-G\"uven limit is trivially 
 \begin{equation}
 S(x) \to S^{(\gamma)}\left(U\right) = S|_{V=0, X^i=0} \, .
 \end{equation}
@@ -294,11 +296,11 @@ On the other hand, for the gauge fields, in addition to the adapted coordinates,
 \begin{equation}\label{Penrose:eqn:adaptedgauge}
 A_{U}(x) = 0 \, .
 \end{equation}
-With this choice of gauge in the adapted coordinates, the gauge field is $O(\epsilon)$ to leading order with the Penrose limit scaling $\left\lbrace U, V, X^i \right\rbrace \sim \left\lbrace \epsilon^0, \epsilon^2, \epsilon^1 \right\rbrace$. An argument for \eqref{eqn:adaptedgauge}, given by G\"uven \cite{Gueven:2000ru}, is that the $O(\epsilon)$ scaling of the gauge field and an $O(\epsilon^0)$ scaling of the scalar together with the $O(\epsilon^2)$ scaling of the metric both imply a $O(\epsilon^{d-2})$ scaling similarity of the action. Such scaling similarities are not true symmetries of the theory but they can nevertheless be very useful, see for instance \cite{Biggs:2023sqw} and references therein.
+With this choice of gauge in the adapted coordinates, the gauge field is $O(\epsilon)$ to leading order with the Penrose limit scaling $\left\lbrace U, V, X^i \right\rbrace \sim \left\lbrace \epsilon^0, \epsilon^2, \epsilon^1 \right\rbrace$. An argument for \eqref{Penrose:eqn:adaptedgauge}, given by G\"uven \cite{Gueven:2000ru}, is that the $O(\epsilon)$ scaling of the gauge field and an $O(\epsilon^0)$ scaling of the scalar together with the $O(\epsilon^2)$ scaling of the metric both imply a $O(\epsilon^{d-2})$ scaling similarity of the action. Such scaling similarities are not true symmetries of the theory but they can nevertheless be very useful, see for instance \cite{Biggs:2023sqw} and references therein.
 %More generally, a $p$-form potential would scale as $O(\epsilon^p)$. 
 %The scaling similarity of the action in the Penrose limit makes it a (simple) example of what is sometimes called a ``hyperscaling violation''. See for instance \cite{Fisher:1986zz, Huijse:2011ef, Dong:2012se} and in particular \cite{Biggs:2023sqw}\footnote{In \cite{Biggs:2023sqw}, scaling similarities are investigated in the context of a duality between the BFSS matrix model and D0-brane near-horizon geometries. While not the regime of interest of that work, In a particular strongly coupling regime of the parameter space of this duality ...}
 
-Taking the Penrose limit with the gauge condition \eqref{eqn:adaptedgauge}, the ``Rosen-gauge'' Penrose limit gauge field is
+Taking the Penrose limit with the gauge condition \eqref{Penrose:eqn:adaptedgauge}, the ``Rosen-gauge'' Penrose limit gauge field is
 \begin{equation}\label{Penrose:eqn:ARosen}
 A^{(\gamma)}_{\mu} dx^{\mu} = A_i|_{V=0, X^i=0}  dX^i  \, .
 \end{equation}
@@ -310,22 +312,22 @@ results in the ``Brinkmann-gauge'' field
 \begin{equation}\label{Penrose:eqn:Abrinkmann}
 A^{(\gamma)}_{\mu} dx^{\mu} = -x^a \dot{A}_a du \, , \quad  F^{(\gamma)}_{\nu \mu} dx^{\nu} \wedge dx^{\mu} =  \dot{A}_a du \wedge dx^a\, .
 \end{equation}
-$E^{(\gamma)}{}^i_a$ here is the frame that was introduced to go from Rosen to Brinkmann coordinates in \eqref{eqn:RtoB}. 
+$E^{(\gamma)}{}^i_a$ here is the frame that was introduced to go from Rosen to Brinkmann coordinates in \eqref{Penrose:eqn:RtoB}. 
 
-As for the metric, there is a more direct way to obtain the Penrose-G\"uven limit of a gauge field in Brinkmann coordinates from a Fermi null coordinate expansion. Analogous to \eqref{eqn:penroseframe}, using again a parallel propagated null frame $\left\lbrace u^{\mu}, v^{\mu}, E^{\mu}_a \right \rbrace$ on the reference geodesic $\gamma$
+As for the metric, there is a more direct way to obtain the Penrose-G\"uven limit of a gauge field in Brinkmann coordinates from a Fermi null coordinate expansion. Analogous to \eqref{Penrose:eqn:penroseframe}, using again a parallel propagated null frame $\left\lbrace u^{\mu}, v^{\mu}, E^{\mu}_a \right \rbrace$ on the reference geodesic $\gamma$
 \begin{equation}\label{Penrose:eqn:penroseframeF}
 \dot{A}_a(u) = \left(F_{\mu \nu} u^{\nu}  E^{\mu}_a \right)|_{\gamma} \, .
 \end{equation}
 
-In four dimensions, \eqref{eqn:penroseframeF} can also be expressed in terms of the parallel propagated dyad  $\left\lbrace \alpha^A, \beta^A\right\rbrace$ analogously to \eqref{eqn:penrosespinor} for the metric. First, in terms of the complex Brinkmann coordinates \eqref{eqn:complexz},  \eqref{eqn:Abrinkmann} is given by 
+In four dimensions, \eqref{Penrose:eqn:penroseframeF} can also be expressed in terms of the parallel propagated dyad  $\left\lbrace \alpha^A, \beta^A\right\rbrace$ analogously to \eqref{Penrose:eqn:penrosespinor} for the metric. First, in terms of the complex Brinkmann coordinates \eqref{Penrose:eqn:complexz},  \eqref{Penrose:eqn:Abrinkmann} is given by 
 \begin{equation}
 F^{(\gamma)}_{\nu \mu} dx^{\nu} \wedge dx^{\mu} =  \bar{\mathcal{A}} \,  d\bar{z} \wedge du   + \mathcal{A}  \, dz   \wedge du \, ,  \quad  \mathcal{A} = -\frac{1}{\sqrt{2}}\left(\dot{A}_1 - i \dot{A}_2\right) \, .
 \end{equation}
-Now, we use the Newman-Penrose frame \eqref{eqn:complextransversebasis} in \eqref{eqn:penroseframeF}, instead of the real orthonormal transverse basis, and write this Newman-Penrose frame in terms of the associated dyad \eqref{eqn:NPindyad}. Finally, we write the field strength in terms of spinors
+Now, we use the Newman-Penrose frame \eqref{Penrose:eqn:complextransversebasis} in \eqref{Penrose:eqn:penroseframeF}, instead of the real orthonormal transverse basis, and write this Newman-Penrose frame in terms of the associated dyad \eqref{Penrose:eqn:NPindyad}. Finally, we write the field strength in terms of spinors
 \begin{equation}
 F_{AA' BB'} = f_{AB}\epsilon_{A'B'} + \bar{f}_{A'B'}\epsilon_{AB} \, ,
 \end{equation}
-and find that the expression for Penrose-G\"uven limit  \eqref{eqn:penroseframeF} in terms of two-spinors becomes
+and find that the expression for Penrose-G\"uven limit  \eqref{Penrose:eqn:penroseframeF} in terms of two-spinors becomes
 \begin{equation}\label{Penrose:eqn:penrosespinF}
 \begin{aligned}
 \mathcal{A} =  \left(f_{CD} \alpha^C \alpha^D \right)|_{\gamma}\, .
@@ -335,7 +337,7 @@ Similar to the Penrose limit metric, this field is ``type N'' in the sense that,
 \begin{equation}
 f^{(\gamma)}_{AB} = f_2  \alpha^{(\gamma)}{}_A   \alpha^{(\gamma)}{}_B - 2 f_1    \alpha^{(\gamma)}{}_{(A}  \beta^{(\gamma)}{}_{B)} + f_0 \beta^{(\gamma)}{}_A   \beta^{(\gamma)}{}_B = \mathcal{A} \beta^{(\gamma)}{}_A   \beta^{(\gamma)}{}_B\, ,
 \end{equation}
-only $f_0$ is non-vanishing and it is given by \eqref{eqn:penrosespinF}.
+only $f_0$ is non-vanishing and it is given by \eqref{Penrose:eqn:penrosespinF}.
 
 To conclude this brief review of the Penrose limit, let us emphasize that the Penrose limit is only the leading order of an expansion around a reference null geodesic. Higher orders of such a ``Penrose expansion'', interpreted in terms of a Fermi null coordinate system, moreover exhibit a ``peeling'' behavior of the curvature analogous to expansions around asymptotically flat space \cite{Blau:2006ar}. Nevertheless, it is interesting that even the leading order of the Penrose expansion, the Penrose limit itself is not just flat space. The Penrose limit isometry group is thus not the Poincar\'e group but there are still at least $2d+1$ Killing vectors in $d$-dimensions \cite{blau2011plane}.
 
@@ -343,35 +345,37 @@ We will not review the isometry group of plane wave spacetimes here in detail, b
 
 \section{The classical double copy of the Penrose limit}\label{Penrose:sec:dcandPenrose}
 
-Plane wave spacetimes are an excellent testing ground for going beyond flat space both on account of their simplicity and because, as just reviewed in Section \ref{sec:Penrosereview}, any curved spacetime is approximated by a plane wave around null geodesics. In the introduction, we have mentioned for instance prominent applications in string theory \cite{Horowitz:1989bv,Horowitz:1990sr,Kiritsis:1993jk,Russo:2002rq,Papadopoulos:2002bg,Berenstein:2002jq,Eberhardt:2018exh}, which make use of plane waves as a bridge to more complicated background geometries, but the same logic has recently been fruitful in the context of the double copy \cite{Adamo:2017nia,Adamo:2018mpq,Adamo:2020qru}, where plane waves have been one of the first examples where one can double copy both the non-perturbative backgrounds and amplitudes on top of them. 
+Plane wave spacetimes are an excellent testing ground for going beyond flat space both on account of their simplicity and because, as just reviewed in Section \ref{Penrose:sec:Penrosereview}, any curved spacetime is approximated by a plane wave around null geodesics. In the introduction, we have mentioned for instance prominent applications in string theory \cite{Horowitz:1989bv,Horowitz:1990sr,Kiritsis:1993jk,Russo:2002rq,Papadopoulos:2002bg,Berenstein:2002jq,Eberhardt:2018exh}, which make use of plane waves as a bridge to more complicated background geometries, but the same logic has recently been fruitful in the context of the double copy \cite{Adamo:2017nia,Adamo:2018mpq,Adamo:2020qru}, where plane waves have been one of the first examples where one can double copy both the non-perturbative backgrounds and amplitudes on top of them. 
 
-On the other hand, to understand how such results for plane waves inform more general spacetimes, one must know the interplay between the double copy and the Penrose limit. It is for this reason that we now investigate the interplay between the classical Weyl double copy and the Penrose limit. Specifically, this means we first need to complete the diagram in Figure \ref{fig:schematicquestion}.
+On the other hand, to understand how such results for plane waves inform more general spacetimes, one must know the interplay between the double copy and the Penrose limit. It is for this reason that we now investigate the interplay between the classical Weyl double copy and the Penrose limit. Specifically, this means we first need to complete the diagram in Figure \ref{Penrose:fig:schematicquestion}.
 
 \begin{figure}[H]
 	\begin{tikzcd}
-		\makebox[\lenf em][c]{Double copy spacetime}  \arrow[r,leftrightarrow,shorten=-4mm, "\text{Weyl DC}"] \arrow[dd,"\text{Penrose limit}{}_{\gamma}"]& \makebox[\lenf em][c]{single copy gauge field} \arrow[dd,dashed,"\text{?}"] \\
+            \makebox[\lenf em][c]{Double copy spacetime}  \arrow[r, leftrightarrow,shorten=-4mm, "\text{Weyl DC}"]
+        \arrow[dd,"\text{Penrose limit}{}_{\gamma}"]& \makebox[\lenf em][c]{single copy gauge field}
+        \arrow[dd,dashed,"\text{?}"] \\
 		& \\
-		\makebox[\lenf em][c]{plane wave spacetime}  \arrow[r,leftrightarrow,shorten=-4mm, "\text{Weyl DC}"] &  \makebox[\lenf em][c]{plane wave single copy} 
+        \makebox[\lenf em][c]{plane wave spacetime}  \arrow[r,leftrightarrow,shorten=-4mm, "\text{Weyl DC}"] &  \makebox[\lenf em][c]{plane wave single copy} 
 	\end{tikzcd}
 	\caption{To understand how double copy results on plane wave backgrounds can inform more general
 		backgrounds, from which the plane waves arise as Penrose limits, we complete the above diagram.}\label{Penrose:fig:schematicquestion}
 \end{figure}
 
-Combining the Weyl double copy prescription in two-spinor language \eqref{WeylDCRelation} with the two-spinor Penrose limit curvatures \eqref{eqn:penrosespinor}, a natural proposal for the Penrose limit on the single and zeroth copy is
+Combining the Weyl double copy prescription in two-spinor language \eqref{Penrose:WeylDCRelation} with the two-spinor Penrose limit curvatures \eqref{Penrose:eqn:penrosespinor}, a natural proposal for the Penrose limit on the single and zeroth copy is
 \begin{equation}\label{Penrose:eqn:dcPenroselimit}
 f^{(\gamma)}_{AB} = \left(f_{CD}\alpha^C \alpha^D \right)|_{\gamma} \beta^{(\gamma)}_A  \beta^{(\gamma)}_B   \, , \quad S^{(\gamma)} = S|_{\gamma} \, .
 \end{equation}
-Then, if by the Weyl double copy \eqref{WeylDCRelation}
+Then, if by the Weyl double copy \eqref{Penrose:WeylDCRelation}
 \begin{equation}
 \psi_{ABCD} = \frac{1}{S} f_{(AB} f_{CD)} \, ,
 \end{equation}
-it follows immediately from the two-spinor Penrose limit \eqref{eqn:penrosespinor} that
+it follows immediately from the two-spinor Penrose limit \eqref{Penrose:eqn:penrosespinor} that
 \begin{equation}
 \psi^{(\gamma)}_{ABCD} = \frac{1}{S^{(\gamma)}} f^{(\gamma)}_{(AB} f^{(\gamma)}_{CD)}  \, .
 \end{equation}
-When $f_{AB}$ and $S$ are interpreted as living on the curved background, \eqref{eqn:dcPenroselimit} is simply the spinorial formulation of the Penrose-G\"uven limit. The single and zeroth Weyl copy satisfy the Maxwell and massless free scalar wave equation on the curved background with curvature set by $\Psi_{ABCD}$, and so do their Penrose-G\"uven limits with respect to the Penrose limit of the background with curvature $\Psi^{(\gamma)}_{ABCD}$. The single copy Penrose limit \eqref{eqn:dcPenroselimit} is thus perfectly consistent and well-known as the Penrose-G\"uven limit. However, to interpret $f_{AB}$ and $S$ as living on a Minkowski background in line with the original double copy, the meaning of the reference null geodesic $\gamma$ and its associated spinor $\alpha^A$ in \eqref{eqn:dcPenroselimit} requires further clarification. 
+When $f_{AB}$ and $S$ are interpreted as living on the curved background, \eqref{Penrose:eqn:dcPenroselimit} is simply the spinorial formulation of the Penrose-G\"uven limit. The single and zeroth Weyl copy satisfy the Maxwell and massless free scalar wave equation on the curved background with curvature set by $\Psi_{ABCD}$, and so do their Penrose-G\"uven limits with respect to the Penrose limit of the background with curvature $\Psi^{(\gamma)}_{ABCD}$. The single copy Penrose limit \eqref{Penrose:eqn:dcPenroselimit} is thus perfectly consistent and well-known as the Penrose-G\"uven limit. However, to interpret $f_{AB}$ and $S$ as living on a Minkowski background in line with the original double copy, the meaning of the reference null geodesic $\gamma$ and its associated spinor $\alpha^A$ in \eqref{Penrose:eqn:dcPenroselimit} requires further clarification. 
 
-We use superscripts, e.g. $\gamma^{(g)}$ and $\gamma^{(\eta)}$, to denote respectively structures on the curved and flat backgrounds. As pointed out in the original construction of the Weyl double copy \cite{Luna:2018dpt}, to say more about the single copy on the flat background we need some input from the Kerr-Schild double copy. Specifically, the coordinate map between the curved and the flat spacetime comes from Kerr-Schild coordinates. Thus, $\gamma^{(\eta)}$ can be identified in the Minkowski background in terms of its expression in Kerr-Schild coordinates. That is, if there exists a Kerr-Schild double copy prescription, we can write the metric in the form \eqref{eqn:KSmetric}
+We use superscripts, e.g. $\gamma^{(g)}$ and $\gamma^{(\eta)}$, to denote respectively structures on the curved and flat backgrounds. As pointed out in the original construction of the Weyl double copy \cite{Luna:2018dpt}, to say more about the single copy on the flat background we need some input from the Kerr-Schild double copy. Specifically, the coordinate map between the curved and the flat spacetime comes from Kerr-Schild coordinates. Thus, $\gamma^{(\eta)}$ can be identified in the Minkowski background in terms of its expression in Kerr-Schild coordinates. That is, if there exists a Kerr-Schild double copy prescription, we can write the metric in the form \eqref{Penrose:eqn:KSmetric}
 \begin{equation}
 g_{\mu \nu} = \eta_{\mu \nu} + \phi k_{\mu} k_{\nu} \, , \quad  g^{\mu \nu} = \eta^{\mu \nu} - \phi k^{\mu} k^{\nu}  \, ,
 \end{equation}
@@ -381,7 +385,7 @@ On the other hand, a null geodesic  $\gamma^{(g)}$ in the curved background will
 \begin{equation}\label{Penrose:eqn:flatmass}
 \eta_{\mu \nu} u^{(\eta)}{}^{\mu} u^{(\eta)}{}^{\nu} = - \phi \left(k_{\mu} u^{(\eta)}{}^{\mu}\right)^2 \, .
 \end{equation}
-As a result, no flat space spinor $\alpha^{(\eta)}{}^A$ can square to the tangent vector as in curved spacetime because\footnote{Recall that $\sigma^{\alpha}_{AA'}$ are the Infeld-Van der Waerden symbols and further details on the two-spinor conventions can be found in Appendix \ref{app:conventions}.} $\alpha^{(\eta)}{}^A \bar{\alpha}^{(\eta)}{}^{A'} \neq \sigma^{(\eta)}{}{}^{AA'}_{\mu} u^{(\eta)}{}^{\mu}$ for any non-null $u^{(\eta)}{}^{\mu}$. We will thus need to find a natural null vector that can be used to identify, from the single copy perspective in flat space, the two-spinor in the single copy Penrose limit \eqref{eqn:dcPenroselimit}. To do so, we will first establish a relation between spinors on the curved and flat spacetimes under the Kerr-Schild map.
+As a result, no flat space spinor $\alpha^{(\eta)}{}^A$ can square to the tangent vector as in curved spacetime because\footnote{Recall that $\sigma^{\alpha}_{AA'}$ are the Infeld-Van der Waerden symbols and further details on the two-spinor conventions can be found in Appendix \ref{Penrose:app:conventions}.} $\alpha^{(\eta)}{}^A \bar{\alpha}^{(\eta)}{}^{A'} \neq \sigma^{(\eta)}{}{}^{AA'}_{\mu} u^{(\eta)}{}^{\mu}$ for any non-null $u^{(\eta)}{}^{\mu}$. We will thus need to find a natural null vector that can be used to identify, from the single copy perspective in flat space, the two-spinor in the single copy Penrose limit \eqref{Penrose:eqn:dcPenroselimit}. To do so, we will first establish a relation between spinors on the curved and flat spacetimes under the Kerr-Schild map.
 
 One way to understand the Kerr-Schild map is in terms of a shift of an appropriate null frame; there exist frames $\left\lbrace  k^{(g)},  n^{(g)}, m^{(g)}, \bar{m}^{(g)}\right \rbrace$ and $\left\lbrace  k^{(\eta)},  n^{(\eta)}, m^{(\eta)}, \bar{m}^{(\eta)}\right \rbrace$ with
 \begin{equation}\label{Penrose:eqn:NPframemetric}
@@ -396,24 +400,24 @@ Some care is needed with raising and lowering, which can differ between the curv
 n^{(g)}{}^{\mu}= n^{(\eta)}{}^{\mu} - \frac{\phi}{2} k^{(\eta)}{}^{\mu} \, , \quad  k^{(g)}{}^{\mu} = k^{(\eta)}{}^{\mu} = k^{\mu} \, , \quad m^{(g)}{}^{\mu} = m^{(\eta)}{}^{\mu} \, , \quad \bar{m}^{(g)}{}^{\mu} = \bar{m}^{(\eta)}{}^{\mu}   \, .
 \end{equation}
 
-To express \eqref{eqn:NPframemetric} and \eqref{eqn:frameshift} on the level of two-spinors,   define the Infeld-Van der Waerden symbols $\sigma{}{}^{AA'}_{\mu}$ in both the flat and curved spacetime implicitly by the choice of a compatible dyad basis $\left\lbrace o^A,\iota^A \right \rbrace$ such that
+To express \eqref{Penrose:eqn:NPframemetric} and \eqref{Penrose:eqn:frameshift} on the level of two-spinors,   define the Infeld-Van der Waerden symbols $\sigma{}{}^{AA'}_{\mu}$ in both the flat and curved spacetime implicitly by the choice of a compatible dyad basis $\left\lbrace o^A,\iota^A \right \rbrace$ such that
 \begin{equation}\label{Penrose:eqn:associateddyad}
 o^A\bar{o}^{A'} = \sigma{}^{AA'}_{\mu}k^{\mu} \, , \quad o^A\bar{\iota}^{A'} = \sigma{}^{AA'}_{\mu}m^{\mu} \, , \quad \iota^A\bar{o}^{A'} = \sigma{}^{AA'}_{\mu}\bar{m}^{\mu} \, , \quad \iota^A\bar{\iota}^{A'} = \sigma{}^{AA'}_{\mu}n^{\mu} \, .
 \end{equation}
 Then, we can identify the spinors $\left\lbrace o^{(\eta)}{}^A,\iota^{(\eta)}{}^A \right \rbrace$ and $\left\lbrace
-o^{(g)}{}^A,\iota^{(g)}{}^A \right \rbrace$ under the double copy, despite \eqref{eqn:frameshift}, on the condition
+o^{(g)}{}^A,\iota^{(g)}{}^A \right \rbrace$ under the double copy, despite \eqref{Penrose:eqn:frameshift}, on the condition
 that the flat and curved spinors connect differently to their respective spacetime tangent spaces. Specifically,
 just like the Newman-Penrose frames, the Infeld-van der Waerden symbols shift in the map from the curved to the
 flat spacetime  \cite{Lobo:2017bfh} 
 \begin{equation}\label{Penrose:eqn:IvW}
 \sigma^{(g)}{}{}^{AA'}_{\mu}   = \sigma^{(\eta)}{}{}^{AA'}_{\mu} + \frac{\phi}{2} k_{\mu} \sigma^{(\eta)}{}{}^{AA'}_{\nu} k^{\nu} \, .
 \end{equation}
-This relation between Infeld-van der Waerden symbols exactly ensures \eqref{eqn:associateddyad} is consistent with \eqref{eqn:KSmap} when we identify the flat and curved spinors. For instance
+This relation between Infeld-van der Waerden symbols exactly ensures \eqref{Penrose:eqn:associateddyad} is consistent with \eqref{Penrose:eqn:KSmap} when we identify the flat and curved spinors. For instance
 \begin{equation}
 \sigma^{(g)}{}{}^{AA'}_{\mu} n^{(g)}{}^{\mu} = \left(\sigma^{(\eta)}{}{}^{AA'}_{\mu} + \frac{\phi}{2} k_{\mu} \sigma^{(\eta)}{}{}^{AA'}_{\nu} k^{\nu}\right)\left(n^{(\eta)}{}^{\mu} - \frac{\phi}{2} k^{(\eta)}{}^{\mu}\right) = \sigma^{(\eta)}{}{}^{AA'}_{\mu} n^{(\eta)}{}^{\mu}  \, .
 \end{equation}
 
-Now we have established that the flat space, single copy tangent $u^{(\eta)}{}^{\mu}$ to $\gamma^{(\eta)}$ cannot directly be used to define the relevant two-spinor appearing in \eqref{eqn:dcPenroselimit}. On the other hand, we have shown that we can identify spinors between the flat and curved spacetimes in the dyads \eqref{eqn:associateddyad} on the condition that we shift the Infeld-Van der Waerden symbols. Therefore, we can identify $\alpha^{(\eta)}{}^A$ by $\alpha^{(\eta)}{}^A=\alpha^{(g)}{}^A$ and find that the associated flat space null vector $p^{(\eta)}{}^{\mu}$ is given by
+Now we have established that the flat space, single copy tangent $u^{(\eta)}{}^{\mu}$ to $\gamma^{(\eta)}$ cannot directly be used to define the relevant two-spinor appearing in \eqref{Penrose:eqn:dcPenroselimit}. On the other hand, we have shown that we can identify spinors between the flat and curved spacetimes in the dyads \eqref{Penrose:eqn:associateddyad} on the condition that we shift the Infeld-Van der Waerden symbols. Therefore, we can identify $\alpha^{(\eta)}{}^A$ by $\alpha^{(\eta)}{}^A=\alpha^{(g)}{}^A$ and find that the associated flat space null vector $p^{(\eta)}{}^{\mu}$ is given by
 \begin{equation}\label{Penrose:eqn:pflat}
 p^{(\eta)}{}^{\mu}  =  u^{(\eta)}{}^{\mu}+ \frac{\phi}{2} \left(k_{\nu} u^{(\eta)}{}^{\nu}\right) k^{\mu} \, ,
 \end{equation}
@@ -422,11 +426,11 @@ such that
 p^{(\eta)}{}^{\mu} \sigma^{(\eta)}{}^{AA'}_{\mu}  = \alpha^{(\eta)}{}^A \alpha^{(\eta)}{}^{A'} = \alpha^{(g)}{}^A \alpha^{(g)}{}^{A'} = u^{(g)}{}^{\mu} \sigma^{(g)}{}^{AA'}_{\mu} \, .
 \end{equation}
 
-Moreover, as a consistency check, from \eqref{eqn:pflat} and \eqref{eqn:flatmass} it follows immediately that $\eta_{\mu \nu} p^{(\eta)}{}^{\mu}p^{(\eta)}{}^{\nu} = 0$. In addition, as the notation suggests, $p^{(\eta)}{}^{\mu}$ has a natural physical interpretation as a momentum. On the gravity side, $u^{(g)}{}^{\mu}$ plays the roles of both the kinematical velocity as well as the dynamical momentum. That is no longer true for $u^{(\eta)}{}^{\mu}$ on the gauge theory side. It is thus rather unexpected that a momentum-type object such as $p^{(\eta)}{}^{\mu}$ appears to play an important role in addition to the velocity $u^{(\eta)}{}^{\mu}$. Specifically, it is in terms of this momentum that $\alpha^{(\eta)}{}^A$ can be independently understood for the single copy.
+Moreover, as a consistency check, from \eqref{Penrose:eqn:pflat} and \eqref{Penrose:eqn:flatmass} it follows immediately that $\eta_{\mu \nu} p^{(\eta)}{}^{\mu}p^{(\eta)}{}^{\nu} = 0$. In addition, as the notation suggests, $p^{(\eta)}{}^{\mu}$ has a natural physical interpretation as a momentum. On the gravity side, $u^{(g)}{}^{\mu}$ plays the roles of both the kinematical velocity as well as the dynamical momentum. That is no longer true for $u^{(\eta)}{}^{\mu}$ on the gauge theory side. It is thus rather unexpected that a momentum-type object such as $p^{(\eta)}{}^{\mu}$ appears to play an important role in addition to the velocity $u^{(\eta)}{}^{\mu}$. Specifically, it is in terms of this momentum that $\alpha^{(\eta)}{}^A$ can be independently understood for the single copy.
 
-In the above, following \cite{Luna:2018dpt}, our starting point to understand the proposed single copy Penrose limit \eqref{eqn:dcPenroselimit} on a flat background was the Kerr-Schild map of \cite{Monteiro:2014cda}. Specifically, \eqref{eqn:dcPenroselimit} required the single copy of the null geodesic $\gamma^{(g)}$ and its tangent spinor $\alpha^{(g)}{}^A$. On the other hand, a ``geodesic'' double copy was already proposed in \cite{Gonzo:2021drq} by relating conserved charges between the double copy geodesic equations and the single copy Wong equations, which govern a test charge in a Yang-Mills field  (generalizing the Lorenz force law). This ``geodesic'' double copy was further developed in \cite{Ball:2023xnr} with an emphasis on the hidden symmetry.
+In the above, following \cite{Luna:2018dpt}, our starting point to understand the proposed single copy Penrose limit \eqref{Penrose:eqn:dcPenroselimit} on a flat background was the Kerr-Schild map of \cite{Monteiro:2014cda}. Specifically, \eqref{Penrose:eqn:dcPenroselimit} required the single copy of the null geodesic $\gamma^{(g)}$ and its tangent spinor $\alpha^{(g)}{}^A$. On the other hand, a ``geodesic'' double copy was already proposed in \cite{Gonzo:2021drq} by relating conserved charges between the double copy geodesic equations and the single copy Wong equations, which govern a test charge in a Yang-Mills field  (generalizing the Lorenz force law). This ``geodesic'' double copy was further developed in \cite{Ball:2023xnr} with an emphasis on the hidden symmetry.
 
-The mapping of conserved charges proposed in \cite{Gonzo:2021drq} implies in particular that the mass of test-particles is preserved and null trajectories on the gravity side are mapped to null trajectories on the gauge theory side. This contrasts with our ``local'' application of the Kerr-Schild map where \eqref{eqn:flatmass} implied that massless geodesics on the gravity side would not (generically) map to massless worldlines for gauge theories on flat space. The local nature of the Kerr-Schild double copy is a strange feature compared to the traditional double copy on the level of amplitudes, which may not hold beyond special background field configurations \cite{Luna:2022dxo}.  The identification  of $\gamma^{(\eta)}$ with $\gamma^{(g)}$ in Kerr-Schild coordinates may thus be questioned in favor of an identification of conserved charges as in \cite{Gonzo:2021drq,Luna:2022dxo}. However, for the zeroth copy scalar in particular, it is hard to see an alternative for $S^{(\gamma)} = S|_{\gamma}$. 
+The mapping of conserved charges proposed in \cite{Gonzo:2021drq} implies in particular that the mass of test-particles is preserved and null trajectories on the gravity side are mapped to null trajectories on the gauge theory side. This contrasts with our ``local'' application of the Kerr-Schild map where \eqref{Penrose:eqn:flatmass} implied that massless geodesics on the gravity side would not (generically) map to massless worldlines for gauge theories on flat space. The local nature of the Kerr-Schild double copy is a strange feature compared to the traditional double copy on the level of amplitudes, which may not hold beyond special background field configurations \cite{Luna:2022dxo}.  The identification  of $\gamma^{(\eta)}$ with $\gamma^{(g)}$ in Kerr-Schild coordinates may thus be questioned in favor of an identification of conserved charges as in \cite{Gonzo:2021drq,Luna:2022dxo}. However, for the zeroth copy scalar in particular, it is hard to see an alternative for $S^{(\gamma)} = S|_{\gamma}$. 
 
 As we will discuss next, in plane wave spacetimes, this zeroth copy scalar is highly ambiguous within the classical
 double copy but, as we will discuss in the examples, up to conserved quantities, the entire functional dependence
@@ -436,17 +440,17 @@ believe that within a philosophy of mapping between conserved charges as in \cit
 without a relation $\gamma^{(\eta)} = \gamma^{(g)}$ under a suitable coordinate identification, no single copy
 Penrose limit exists compatible with the original background and plane wave classical double copy. We will thus
 proceed with the ``local'' identifications of the Kerr-Schild map \cite{Monteiro:2014cda}, where we have argued
-\eqref{eqn:dcPenroselimit} is consistent. This identification, using the map between the null frames
-\eqref{eqn:frameshift}, is also the approach taken by \cite{Chawla:2023bsu,He:2023iew} to argue
+\eqref{Penrose:eqn:dcPenroselimit} is consistent. This identification, using the map between the null frames
+\eqref{Penrose:eqn:frameshift}, is also the approach taken by \cite{Chawla:2023bsu,He:2023iew} to argue
 for a double copy interpretation of apparent horizons.  
 
 \subsection{On the type N ambiguity}\label{Penrose:sec:ambiguity}
 
-The ambiguity in the Weyl double copy for type N spacetimes identified in \cite{Luna:2018dpt}, which amounts to changing the zeroth copy $S^{(\gamma)}$ by an arbitrary function of $u$, obviously applies to the special case of plane waves. On the other hand, if the plane wave is obtained from a Penrose limit of a spacetime where no such ambiguity is present, \eqref{eqn:dcPenroselimit} implies a natural choice. However, this is \emph{not} the ``natural'' choice suggested by \cite{Luna:2018dpt}. If we denote for the single copy of a type N spacetime
+The ambiguity in the Weyl double copy for type N spacetimes identified in \cite{Luna:2018dpt}, which amounts to changing the zeroth copy $S^{(\gamma)}$ by an arbitrary function of $u$, obviously applies to the special case of plane waves. On the other hand, if the plane wave is obtained from a Penrose limit of a spacetime where no such ambiguity is present, \eqref{Penrose:eqn:dcPenroselimit} implies a natural choice. However, this is \emph{not} the ``natural'' choice suggested by \cite{Luna:2018dpt}. If we denote for the single copy of a type N spacetime
 \begin{equation}
 	f_{AB} = \mathcal{A}^{(\gamma)}\beta^{(\gamma)}_A \beta^{(\gamma)}_B \, ,
 \end{equation}
-analogous to \eqref{eqn:NPsi} for the plane wave, whose Weyl spinor we write here as
+analogous to \eqref{Penrose:eqn:NPsi} for the plane wave, whose Weyl spinor we write here as
 \begin{equation}
 \Psi_{ABCD} = \Psi^{(\gamma)}  \beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D \, ,
 \end{equation}
@@ -458,7 +462,7 @@ We find instead
 \begin{equation}\label{Penrose:eqn:typeNscaling}
 \Psi^{(\gamma)} = \left(\mathcal{A}^{(\gamma)}\right)^{5/3} = (S^{(\gamma)})^5 \, .
 \end{equation}
-Motivated by the type D Weyl double copy, \cite{Luna:2018dpt} argues \eqref{eqn:oldtypeNscaling} is natural by first rewriting the type D Weyl spinor and the single copy fields in terms of the valence-2 Killing spinor $\chi_{CD}$ 
+Motivated by the type D Weyl double copy, \cite{Luna:2018dpt} argues \eqref{Penrose:eqn:oldtypeNscaling} is natural by first rewriting the type D Weyl spinor and the single copy fields in terms of the valence-2 Killing spinor $\chi_{CD}$ 
 \begin{equation}\label{Penrose:eqn:Cvalence2decomposition}
 C_{ABCD} = [\chi]^{-5} \chi_{(AB} \chi_{CD)} \, , \quad  f_{AB} = [\chi]^{-3}  \chi_{AB} \, ,\quad [\chi] = S^{-1} = (\chi_{AB}\chi^{AB})^{1/2} \, .
 \end{equation}
@@ -466,11 +470,11 @@ The logic is then that
 \begin{equation}
 C_{ABCD} \sim [\chi]^{-3} \sim  (f_{AB})^{3/2} \sim S^3 \, ,
 \end{equation}
-which are the scalings of \eqref{eqn:oldtypeNscaling}.
+which are the scalings of \eqref{Penrose:eqn:oldtypeNscaling}.
 
-On the other hand, from a Penrose limit perspective $\chi_{AB}\alpha^A \alpha^B$ is a conserved quantity, so just a constant evaluated on a null geodesic, while $\chi_{AB}\alpha^A \alpha^B/[\chi]$ is not. Therefore, we believe it is more natural to consider the unnormalized valence-2 Killing spinors as the fundamental invariant spinorial building blocks and letting the $u$-dependent scalings of $\Psi^{(\gamma)}$, $\mathcal{A}^{(\gamma)}$, and $S^{(\gamma)}$ be determined simply by the prefactors $[\chi]^{-5}$, $[\chi]^{-3}$, $[\chi]^{-1}$ of these Killing spinors in \eqref{eqn:Cvalence2decomposition}, implying the scalings \eqref{eqn:typeNscaling}. \\
+On the other hand, from a Penrose limit perspective $\chi_{AB}\alpha^A \alpha^B$ is a conserved quantity, so just a constant evaluated on a null geodesic, while $\chi_{AB}\alpha^A \alpha^B/[\chi]$ is not. Therefore, we believe it is more natural to consider the unnormalized valence-2 Killing spinors as the fundamental invariant spinorial building blocks and letting the $u$-dependent scalings of $\Psi^{(\gamma)}$, $\mathcal{A}^{(\gamma)}$, and $S^{(\gamma)}$ be determined simply by the prefactors $[\chi]^{-5}$, $[\chi]^{-3}$, $[\chi]^{-1}$ of these Killing spinors in \eqref{Penrose:eqn:Cvalence2decomposition}, implying the scalings \eqref{Penrose:eqn:typeNscaling}. \\
 
-Nevertheless, we should concede here that perhaps both \eqref{eqn:oldtypeNscaling} and \eqref{eqn:typeNscaling} are reasonable choices. Indeed, in some sense it is the freedom in parameterization of the null geodesic that seems to give rise to the ambiguity in the plane wave double copy from the Penrose limit perspective. Consider a variant of the adapted coordinates 
+Nevertheless, we should concede here that perhaps both \eqref{Penrose:eqn:oldtypeNscaling} and \eqref{Penrose:eqn:typeNscaling} are reasonable choices. Indeed, in some sense it is the freedom in parameterization of the null geodesic that seems to give rise to the ambiguity in the plane wave double copy from the Penrose limit perspective. Consider a variant of the adapted coordinates 
 \begin{equation}\label{Penrose:eqn:adaptedmod}
 ds^2 = 2 Z(x^{\mu}) dU dV + A(x^{\mu}) dV^2 + B_i(x^{\mu}) dV dX^i - C_{ij}(x^{\mu})dX^i dX^j \, ,
 \end{equation}
@@ -478,25 +482,25 @@ such that the vector field $\partial_U$ satisfies
 \begin{equation}
 \nabla_{\partial_U}\partial_U = \frac{d\left(\log Z\right)}{dU} \partial_U \, .
 \end{equation}
-In words, \eqref{eqn:adaptedmod} represents an adapted coordinate system for a non-affinely parameterized geodesic congruence. Now, going through the same steps to take the Penrose limit as in \cite{penrose1976any} (reviewed below \eqref{eqn:adapted}), we obtain the Penrose limit plane wave in Rosen coordinates with a ``rescaled'' $U$
+In words, \eqref{Penrose:eqn:adaptedmod} represents an adapted coordinate system for a non-affinely parameterized geodesic congruence. Now, going through the same steps to take the Penrose limit as in \cite{penrose1976any} (reviewed below \eqref{Penrose:eqn:adapted}), we obtain the Penrose limit plane wave in Rosen coordinates with a ``rescaled'' $U$
 \begin{equation}\label{Penrose:eqn:Rosenmod}
 ds_{\gamma}^2 = 2 Z(U)dU dV - C_{ij}(U)dX^i dX^j  \, ,
 \end{equation}
 with $Z(U) = Z(x^{\mu})|_{V=0,X^i=0}$. Going to affine coordinates at this point is a rather trivial operation, which also readily translates between Rosen and Brinkmann coordinates. The Kerr-Schild form of the latter is clearly independent of such changes, hence the ambiguity. 
 
-It is of course natural to choose an affine parameterization, in which case $\chi_{AB} \alpha^A \alpha^B$ is conserved and \eqref{eqn:typeNscaling} is appropriate. However, other parametrizations also appear naturally in the algebraically special types of spacetimes for which the Weyl double copy works. Indeed, the choice where $\chi_{AB} \alpha^A \alpha^B \sim [\chi]$ is closely related to Mino time, which is arguably a better choice than affine time. Specifically, to obtain the metric in the form \eqref{eqn:adaptedmod} with $U$ in Mino time is drastically easier than to try to obtain a metric of the form of the adapted coordinates \eqref{eqn:adapted}.
+It is of course natural to choose an affine parameterization, in which case $\chi_{AB} \alpha^A \alpha^B$ is conserved and \eqref{Penrose:eqn:typeNscaling} is appropriate. However, other parametrizations also appear naturally in the algebraically special types of spacetimes for which the Weyl double copy works. Indeed, the choice where $\chi_{AB} \alpha^A \alpha^B \sim [\chi]$ is closely related to Mino time, which is arguably a better choice than affine time. Specifically, to obtain the metric in the form \eqref{Penrose:eqn:adaptedmod} with $U$ in Mino time is drastically easier than to try to obtain a metric of the form of the adapted coordinates \eqref{Penrose:eqn:adapted}.
 
 In light of the previous, it is unsurprising that the above mentioned choices are not the only ones discussed in
 the literature. For instance, one option for plane waves suggested in \cite{Godazgar:2020zbv}, who discuss in
 detail the freedom in different type N solutions, is to make a choice such that the zeroth copy scalar field is a
 constant. From a different point of view, from the twistor constructions of \cite{White:2020sfn, Chacon:2021wbr}
-one also seems to land more generically on the choice \eqref{eqn:typeNscaling}, which is what we will use in the remainder. 
+one also seems to land more generically on the choice \eqref{Penrose:eqn:typeNscaling}, which is what we will use in the remainder. 
 
-However, importantly, in \cite{Godazgar:2020zbv} it has been argued that one can't actually impose choices such as \eqref{eqn:typeNscaling} and \eqref{eqn:oldtypeNscaling} for more general type N spacetimes with a double copy than pp-waves. Nevertheless, as we illustrate in more detail in Section \ref{sec:typeN}, the discussion in \cite{Godazgar:2020zbv} does not account for the full functional freedom we have to rescale $\beta_A^{(\gamma)}$. Indeed, while the Killing spinor in pp-waves implies an obvious choice to (partially) fix that frame ambiguity, for more general type N spacetimes there is an additional freedom to be accounted for. In that case, $\mathcal{A}^{(\gamma)}$ and $\Psi^{(\gamma)}$ by themselves carry little invariant content.
+However, importantly, in \cite{Godazgar:2020zbv} it has been argued that one can't actually impose choices such as \eqref{Penrose:eqn:typeNscaling} and \eqref{Penrose:eqn:oldtypeNscaling} for more general type N spacetimes with a double copy than pp-waves. Nevertheless, as we illustrate in more detail in Section \ref{Penrose:sec:typeN}, the discussion in \cite{Godazgar:2020zbv} does not account for the full functional freedom we have to rescale $\beta_A^{(\gamma)}$. Indeed, while the Killing spinor in pp-waves implies an obvious choice to (partially) fix that frame ambiguity, for more general type N spacetimes there is an additional freedom to be accounted for. In that case, $\mathcal{A}^{(\gamma)}$ and $\Psi^{(\gamma)}$ by themselves carry little invariant content.
 
 \section{Examples} \label{Penrose:sec:examples}
 
-We will consider two types of examples. First we will discuss vacuum (with or without cosmological constant) Petrov type D spacetimes, whose Weyl double copy was discussed in \cite{Luna:2018dpt}. Specifically, we present the construction of Section \ref{sec:dcandPenrose} for Schwarzschild as a simple illustrative example, then we move on to Kerr as the main example of astrophysical interest, and finally we present the general result for the full class of Petrov type D vacuum metrics. Second we turn to some examples of type N spacetimes whose Weyl double copy is discussed in \cite{Godazgar:2020zbv}. Further technical details related to the examples are relegated to Appendix \ref{app:examples}.
+We will consider two types of examples. First we will discuss vacuum (with or without cosmological constant) Petrov type D spacetimes, whose Weyl double copy was discussed in \cite{Luna:2018dpt}. Specifically, we present the construction of Section \ref{Penrose:sec:dcandPenrose} for Schwarzschild as a simple illustrative example, then we move on to Kerr as the main example of astrophysical interest, and finally we present the general result for the full class of Petrov type D vacuum metrics. Second we turn to some examples of type N spacetimes whose Weyl double copy is discussed in \cite{Godazgar:2020zbv}. Further technical details related to the examples are relegated to Appendix \ref{Penrose:app:examples}.
 
 \subsection{The Schwarzschild black hole}\label{Penrose:sec:Schwarzschild}
 
@@ -508,7 +512,7 @@ Let
 \begin{equation}
 d\hat{t} =  dt + \frac{2M}{r}\frac{dr}{f(r)} \, ,
 \end{equation}
-then the line element takes the Kerr-Schild form \eqref{eqn:KSmetric}
+then the line element takes the Kerr-Schild form \eqref{Penrose:eqn:KSmetric}
 \begin{equation}\label{Penrose:eqn:SmetricKS}
 ds^2 = d\hat{t}^2- dr^2-r^2 \left(d\theta^2 + \sin^2\theta d \phi^2\right) -\frac{2M}{r}(d\hat{t} + dr)^2  \, .
 \end{equation}
@@ -520,21 +524,23 @@ m^{(g)}_{\mu}dx^{\mu} &= m^{(\eta)}_{\mu}dx^{\mu} &=& \quad \frac{r}{\sqrt{2}} \
 \bar{m}^{(g)}_{\mu}dx^{\mu} &= \bar{m}^{(\eta)}_{\mu}dx^{\mu} &=& \quad \frac{r}{\sqrt{2}} \left(d\theta -i \sin{\theta}d\phi\right) \, . \label{Penrose:eqn:SPNframe}
 \end{alignat}
 
-As first shown in \cite{Monteiro:2014cda}, the general discussion of the Kerr-Schild double copy, reviewed in Section \ref{sec:dc}, will thus go through for the Schwarzschild black hole with\footnote{We use here $\phi^{(\rm KS)}$ instead of the $\phi$ from the previous subsection to avoid confusion with the conventional use of $\phi$ as the angular coordinate.}
+As first shown in \cite{Monteiro:2014cda}, the general discussion of the Kerr-Schild double copy, reviewed in
+Section \ref{Penrose:sec:dc}, will thus go through for the Schwarzschild black hole with\footnote{We use here
+$\phi^{(\mathrm{KS})}$ instead of the $\phi$ from the previous subsection to avoid confusion with the conventional use of $\phi$ as the angular coordinate.}
 \begin{equation}\label{Penrose:eqn:SKSsinglecopy}
-k_{\mu} = k^{(g)}_{\mu} = k^{(\eta)}_{\mu} = \frac{1}{\sqrt{2}}\left(d\hat{t} +dr\right) \, , \quad \phi^{(\rm KS)} =  -\frac{4M}{r}  \, .
+k_{\mu} = k^{(g)}_{\mu} = k^{(\eta)}_{\mu} = \frac{1}{\sqrt{2}}\left(d\hat{t} +dr\right) \, , \quad \phi^{(\mathrm{KS})} =  -\frac{4M}{r}  \, .
 \end{equation}
 %
-In the two-spinor discussion, we will use the dyad $\left\lbrace o^A, \iota^A \right\rbrace$, with complex conjugate $\left\lbrace \bar{o}^{A'}, \bar{\iota}^{A'} \right\rbrace$, associated to the principle null frames defined in \eqref{eqn:SPNframe} as described for the general case in \eqref{eqn:associateddyad}.
+In the two-spinor discussion, we will use the dyad $\left\lbrace o^A, \iota^A \right\rbrace$, with complex conjugate $\left\lbrace \bar{o}^{A'}, \bar{\iota}^{A'} \right\rbrace$, associated to the principle null frames defined in \eqref{Penrose:eqn:SPNframe} as described for the general case in \eqref{Penrose:eqn:associateddyad}.
 
-A key geometrical observation is that the only (independent\footnote{Naturally, such statements are always up to symmetry and complex conjugation.}) non-trivial curvature projection on the frame \eqref{eqn:SPNframe} is given by
+A key geometrical observation is that the only (independent\footnote{Naturally, such statements are always up to symmetry and complex conjugation.}) non-trivial curvature projection on the frame \eqref{Penrose:eqn:SPNframe} is given by
 \begin{equation}\label{Penrose:eqn:SPsi2}
 \Psi_2 = -C_{\mu \nu \alpha \beta} k^{(g)}{}^{\mu} m^{(g)}{}^{\nu}\bar{m}^{(g)}{}^{\alpha} n^{(g)}{}^{\beta}= -\frac{M}{r^3} \, .
 \end{equation}
 The other curvature scalars vanish because the Schwarzschild black hole is of Petrov type D and
-\eqref{eqn:SPNframe} is a principal null frame. The general form of a Petrov type D Weyl spinor
-\eqref{eqn:spinortypeD} together with \eqref{eqn:SPsi2} implies that this Weyl spinor for a Schwarzschild black
-hole is given in terms of the principal dyad $\left\lbrace o^A, \iota^A \right\rbrace$ by\footnote{In the spinor version of \eqref{eqn:SPsi2} there are $4$ contributing contractions out of the $24$ permutations, which results in the overall factor $6$ in \eqref{eqn:SPsiABCDpre}.}
+\eqref{Penrose:eqn:SPNframe} is a principal null frame. The general form of a Petrov type D Weyl spinor
+\eqref{Penrose:eqn:spinortypeD} together with \eqref{Penrose:eqn:SPsi2} implies that this Weyl spinor for a Schwarzschild black
+hole is given in terms of the principal dyad $\left\lbrace o^A, \iota^A \right\rbrace$ by\footnote{In the spinor version of \eqref{Penrose:eqn:SPsi2} there are $4$ contributing contractions out of the $24$ permutations, which results in the overall factor $6$ in \eqref{Penrose:eqn:SPsiABCDpre}.}
 \begin{equation}\label{Penrose:eqn:SPsiABCDpre}
 \Psi_{ABCD} = -6 \frac{M}{r^3} o_{(A} o_B \iota_C \iota_{D)} \, .
 \end{equation}
@@ -547,12 +553,12 @@ For the Schwarzschild black hole in particular, such a Killing spinor is given b
 \begin{equation}\label{Penrose:eqn:Schi}
 	 \chi_{AB} =  -\frac{\sqrt{2} r}{M^2} o_{(A} \iota_{B)} \, .
 \end{equation}
-We will find it useful to write the Weyl spinor \eqref{eqn:SPsiABCDpre} in terms of the Killing spinor \eqref{eqn:Schi} as
+We will find it useful to write the Weyl spinor \eqref{Penrose:eqn:SPsiABCDpre} in terms of the Killing spinor \eqref{Penrose:eqn:Schi} as
 \begin{equation}\label{Penrose:eqn:SPsiABCD}
 \Psi_{ABCD} = -\frac{3 M^5}{r^5} \chi_{(AB}\chi_{CD)} \, . 
 \end{equation}
 
-For the convenience of the reader, we will next summarize some facts about the null geodesics and Penrose limits of this spacetime, with a focus on the perhaps less familiar spinor formulation. On the other hand, the results are well-known \cite{blau2011plane} so we omit several intermediate derivations and the reader familiar with these results can skip to \ref{sec:SdcPenrose}.
+For the convenience of the reader, we will next summarize some facts about the null geodesics and Penrose limits of this spacetime, with a focus on the perhaps less familiar spinor formulation. On the other hand, the results are well-known \cite{blau2011plane} so we omit several intermediate derivations and the reader familiar with these results can skip to \ref{Penrose:sec:SdcPenrose}.
 
 \subsubsection{Null geodesics and Penrose limits}
 
@@ -574,38 +580,38 @@ We will take both $\hat{E}$ and $L_{\phi}$ to be positive. Consistency of course
 %\end{equation}
 
 
-The fundamental equations that the tangent spinors $\alpha^A$ and $\bar{\alpha}^{A'}$ to $u^{\mu}$  should satisfy are given in \eqref{eqn:tangentspinor}, which we repeat here for convenience
+The fundamental equations that the tangent spinors $\alpha^A$ and $\bar{\alpha}^{A'}$ to $u^{\mu}$  should satisfy are given in \eqref{Penrose:eqn:tangentspinor}, which we repeat here for convenience
 \begin{equation}\label{Penrose:eqn:Stangentspinor}
 u^{\mu} \sigma_{\mu}^{AA'} = \alpha^A \bar{\alpha}^{A'} \, , \quad u^{\mu} \nabla_{\mu} \alpha^A = 0 \, .
 \end{equation}
-A solution of \eqref{eqn:Stangentspinor} in terms of the dyad $\left\lbrace o^A , \iota^A \right\rbrace$ compatible with the null frame $\left\lbrace  k^{(g)},  n^{(g)}, m^{(g)}, \bar{m}^{(g)}\right \rbrace$ (as in \eqref{eqn:associateddyad}) is given by
+A solution of \eqref{Penrose:eqn:Stangentspinor} in terms of the dyad $\left\lbrace o^A , \iota^A \right\rbrace$ compatible with the null frame $\left\lbrace  k^{(g)},  n^{(g)}, m^{(g)}, \bar{m}^{(g)}\right \rbrace$ (as in \eqref{Penrose:eqn:associateddyad}) is given by
 \begin{equation}\label{Penrose:eqn:alpha}
 \begin{aligned}
 \alpha^A = & \left(\frac{\Theta'-i \frac{L_{\phi}}{\sin{\theta}}}{\Theta'+i \frac{L_{\phi}}{\sin{\theta}}}\right)^{1/4}\left(\sqrt{\left|\frac{1}{\sqrt{2}}\left(\hat{E} - R'\right)+ \frac{1}{2}\frac{4M}{r}\frac{1}{\sqrt{2}}\left(\hat{E} + R'\right)\right|}o^A  \right. \\  &- \left.\sqrt{\frac{1}{\sqrt{2}}\left|\hat{E} + R'\right|} \left(\Theta'+i \frac{L_{\phi}}{\sin{\theta}}\right)\frac{\iota^A}{L}  \right)\, .
 \end{aligned}
 \end{equation}
-The relation $u^{\mu} \sigma_{\mu}^{AA'} = \alpha^A \bar{\alpha}^{A'}$ is just algebraic and is readily checked (see \eqref{eqn:alphadecomp} and \eqref{eqn:alphainu} for a general solution). On the other hand, this algebraic relation leaves the freedom to rescale with a general spacetime dependent phase $\alpha^A \to e^{i S(x^{\mu})} \alpha^A$, which however is constrained by the differential equation $u^{\mu} \nabla_{\mu} \alpha^A = 0$. We verify in the Appendix \ref{app:examples} explicitly that this differential equation is solved by \eqref{eqn:alpha}. Here  instead, we will simply point out a trick that will also be very useful in more complicated cases. 
+The relation $u^{\mu} \sigma_{\mu}^{AA'} = \alpha^A \bar{\alpha}^{A'}$ is just algebraic and is readily checked (see \eqref{Penrose:eqn:alphadecomp} and \eqref{Penrose:eqn:alphainu} for a general solution). On the other hand, this algebraic relation leaves the freedom to rescale with a general spacetime dependent phase $\alpha^A \to e^{i S(x^{\mu})} \alpha^A$, which however is constrained by the differential equation $u^{\mu} \nabla_{\mu} \alpha^A = 0$. We verify in the Appendix \ref{Penrose:app:examples} explicitly that this differential equation is solved by \eqref{Penrose:eqn:alpha}. Here  instead, we will simply point out a trick that will also be very useful in more complicated cases. 
 
-The trick to verify that $\alpha^A $ given by \eqref{eqn:alpha} is parallel propagated exploits the existence of the valence-2 Killing spinor and can thus be used for general vacuum type D spacetimes \cite{Walker:1970un}. We simply observe that \eqref{eqn:valence2} and \eqref{eqn:Stangentspinor} imply that $\chi_{AB} \alpha^A \alpha^B$ should be a constant of motion of the null geodesic with tangent $u^{\mu}$. On the other hand, this contraction of the tangent spinor with the Killing spinor is obviously no longer constant when we shift $\alpha^A \to e^{i S(x^{\mu})} \alpha^A$ for a non-constant function $S(x)$. Using \eqref{eqn:alpha} and \eqref{eqn:Schi}, we find
+The trick to verify that $\alpha^A $ given by \eqref{Penrose:eqn:alpha} is parallel propagated exploits the existence of the valence-2 Killing spinor and can thus be used for general vacuum type D spacetimes \cite{Walker:1970un}. We simply observe that \eqref{Penrose:eqn:valence2} and \eqref{Penrose:eqn:Stangentspinor} imply that $\chi_{AB} \alpha^A \alpha^B$ should be a constant of motion of the null geodesic with tangent $u^{\mu}$. On the other hand, this contraction of the tangent spinor with the Killing spinor is obviously no longer constant when we shift $\alpha^A \to e^{i S(x^{\mu})} \alpha^A$ for a non-constant function $S(x)$. Using \eqref{Penrose:eqn:alpha} and \eqref{Penrose:eqn:Schi}, we find
 \begin{equation}\label{Penrose:eqn:Skillingspinorconserved}
 \chi_{AB} \alpha^A \alpha^B =  -\frac{r}{\sqrt{2} M^2} 2 o_{(A} \iota_{B)}\alpha^A \alpha^B = - \frac{L}{M^2} \, ,
 \end{equation}
 which is a constant, as desired for $\alpha^A$ to be parallel propagated. 
 
-Now, using the form of the Weyl spinor \eqref{eqn:SPsiABCD} and the spinor prescription to take the Penrose limit \eqref{eqn:penrosespinor}, we immediately find that the Penrose limit of the Schwarzschild black hole with respect to the null geodesic $\gamma$ generated by \eqref{eqn:Su} is given by
+Now, using the form of the Weyl spinor \eqref{Penrose:eqn:SPsiABCD} and the spinor prescription to take the Penrose limit \eqref{Penrose:eqn:penrosespinor}, we immediately find that the Penrose limit of the Schwarzschild black hole with respect to the null geodesic $\gamma$ generated by \eqref{Penrose:eqn:Su} is given by
 \begin{equation}\label{Penrose:eqnS:Brinkmannc}
 ds_{\gamma}^2 = 2 du dv - \frac{3 M^5}{r(u)^5} \frac{L^2}{M^4}\left(z^2 + \bar{z}^2\right) du^2 - 2 dz d\bar{z}  \, ,
 \end{equation}
-where $r(u) = r|_{\gamma}$ satisfies the radial geodesic equation. Explicitly, using a solution $R'(r)$ to the (separated) Hamilton-Jacobi equations \eqref{eqn:uschwarzschild} and with $u^{\mu}$ given by \eqref{eqn:Su}, the function $r(u)$ in \eqref{eqnS:Brinkmannc} satisfies
+where $r(u) = r|_{\gamma}$ satisfies the radial geodesic equation. Explicitly, using a solution $R'(r)$ to the (separated) Hamilton-Jacobi equations \eqref{Penrose:eqn:uschwarzschild} and with $u^{\mu}$ given by \eqref{Penrose:eqn:Su}, the function $r(u)$ in \eqref{Penrose:eqnS:Brinkmannc} satisfies
 \begin{equation}\label{Penrose:eqn:Srgeod}
 u^r = \frac{dr}{du} = \left(1-\frac{2M}{r(u)}\right)R'(r(u)) - \frac{2M \hat{E}}{r(u)} \, .
 \end{equation}
-More generally, when the coordinates of the original spacetime (here Schwarzschild \eqref{eqn:SmetricKS}) show up in the Penrose limit metric, we interpret these coordinates as being evaluated along the null geodesic $\gamma$, with respect to which the Penrose limit was taken.
+More generally, when the coordinates of the original spacetime (here Schwarzschild \eqref{Penrose:eqn:SmetricKS}) show up in the Penrose limit metric, we interpret these coordinates as being evaluated along the null geodesic $\gamma$, with respect to which the Penrose limit was taken.
 
 %\begin{equation}
 %z = \frac{1}{\sqrt{2}}\left(x^1 + i x^2\right) \, , \quad \bar{z} = \frac{1}{\sqrt{2}}\left(x^1 - i x^2\right)  \, .
 %\end{equation}
-In terms of the real transverse variables \eqref{eqn:complexz}, the metric \eqref{eqnS:Brinkmannc} becomes the familiar Schwarzschild Penrose limit in Brinkmann coordinates \cite{blau2011plane}
+In terms of the real transverse variables \eqref{Penrose:eqn:complexz}, the metric \eqref{Penrose:eqnS:Brinkmannc} becomes the familiar Schwarzschild Penrose limit in Brinkmann coordinates \cite{blau2011plane}
 \begin{equation}\label{Penrose:eqnS:Brinkmann}
 ds_{\gamma}^2 = 2 du dv - \frac{3 M^5}{r(u)^5} \frac{L^2}{M^4}\left(x_1^2-x_2^2\right) du^2 - dx_1^2 - dx_2^2 \, .
 \end{equation}
@@ -615,15 +621,15 @@ First, let us construct a two-spinor $\beta^A$ to complete $\left\lbrace \alpha^
 \begin{equation}\label{Penrose:eqn:betadef}
 \epsilon_{AB} \alpha^A \beta^B = 1 \, , \quad \alpha_B u^{\mu}\nabla_{\mu}\beta^B = 0 \, . 
 \end{equation}
-In Appendix \ref{app:examples}, we discuss how to construct such a $\beta^A$ from $\alpha^A$, see specifically \eqref{eqn:betadecomp}. Here we simply quote the result:
+In Appendix \ref{Penrose:app:examples}, we discuss how to construct such a $\beta^A$ from $\alpha^A$, see specifically \eqref{Penrose:eqn:betadecomp}. Here we simply quote the result:
 \begin{equation}\label{Penrose:eqn:beta}
 \begin{aligned}
 \beta^A = & \frac{r}{\sqrt{2} L}\left(\frac{\Theta'+i \frac{L_{\phi}}{\sin{\theta}}}{\Theta'-i \frac{L_{\phi}}{\sin{\theta}}}\right)^{1/4} \left(\sqrt{\left|\frac{1}{2}\left(\hat{E} - R'\right)+ \frac{1}{2}\frac{2M}{r} \left(\hat{E} + R'\right)\right|}o^A \right. \\ &+ \left. \sqrt{\left|\hat{E} + R'\right|} \left(\Theta'+i \frac{L_{\phi}}{\sin{\theta}}\right)\frac{\iota^A}{L} \right)\, .
 \end{aligned}
 \end{equation}
-The second equation in \eqref{eqn:betadef} , $\alpha_B u^{\mu}\nabla_{\mu}\beta^B = 0$, is simply a consequence of $\epsilon_{AB} \alpha^A \beta^B = 1$ because $\alpha^A$ is parallel transported along the geodesic, as imposed in \eqref{eqn:Stangentspinor}, and $\epsilon_{AB}$ is compatible with the covariant derivative. 
+The second equation in \eqref{Penrose:eqn:betadef} , $\alpha_B u^{\mu}\nabla_{\mu}\beta^B = 0$, is simply a consequence of $\epsilon_{AB} \alpha^A \beta^B = 1$ because $\alpha^A$ is parallel transported along the geodesic, as imposed in \eqref{Penrose:eqn:Stangentspinor}, and $\epsilon_{AB}$ is compatible with the covariant derivative. 
 
-We can complete the tangent vector field $u^{\mu}$ to a full Newman-Penrose frame $\left\lbrace u^{\mu}, v^{\mu} , m^{\mu} , \bar{m}^{\mu}  \right\rbrace$ associated to the dyad $\left\lbrace \alpha^A, \beta^A \right\rbrace$  (again this means imposing a relation like \eqref{eqn:NPindyad}):
+We can complete the tangent vector field $u^{\mu}$ to a full Newman-Penrose frame $\left\lbrace u^{\mu}, v^{\mu} , m^{\mu} , \bar{m}^{\mu}  \right\rbrace$ associated to the dyad $\left\lbrace \alpha^A, \beta^A \right\rbrace$  (again this means imposing a relation like \eqref{Penrose:eqn:NPindyad}):
 \begin{equation}\label{Penrose:eqn:Sframec}
 \begin{aligned}
 u_{\mu}dx^{\mu} &= \hat{E}d\hat{t} - R' dr - \Theta' d\theta -L_{\phi} d\phi \, , \\
@@ -635,7 +641,7 @@ m_{\mu}dx^{\mu} &= \frac{r}{\sqrt{2} L}\left\lbrack -\left( R' -\frac{2M}{r}\lef
 %\begin{equation}
 %z^{\mu} = \frac{1}{\sqrt{2}}\left(E^{\mu}_1 + i E^{\mu}_2\right) \, , \quad \bar{z}^{\mu} = \frac{1}{\sqrt{2}}\left(E_1^{\mu} - i E_2^{\mu}\right)  \, ,
 %\end{equation}
-After making the transverse directions into a real orthonormal frame, as in \eqref{eqn:complextransversebasis}, we recover \eqref{eqnS:Brinkmann} from \eqref{eqn:penroseframe}, that is
+After making the transverse directions into a real orthonormal frame, as in \eqref{Penrose:eqn:complextransversebasis}, we recover \eqref{Penrose:eqnS:Brinkmann} from \eqref{Penrose:eqn:penroseframe}, that is
 \begin{equation}\label{Penrose:eqn:SHframe}
 H_{ab}(u) = \left(R_{\mu \nu \alpha \beta} E^{\mu}_a u^{\nu} E^{\alpha}_b u^{\beta} \right)_{|\gamma} = \begin{pmatrix}
 \frac{3L^2 M}{r^5} & 0 \\
@@ -649,9 +655,9 @@ E_1{}_{\mu}dx^{\mu} &= \frac{r}{L} \left\lbrack \left( R'(r) -\frac{2M}{r}\left(
 E_2{}_{\mu}dx^{\mu} &= \frac{r}{L}\left(-\frac{L_{\phi}}{\sin{\theta}} d\theta +  \sin\theta \Theta'(\theta)d\phi \right)\, .   \\
 \end{aligned}
 \end{equation}
-As a check of the signs, note the ``unstable'' transverse direction (in the harmonic oscillator equation \eqref{eqn:HOframe}) is associated to the $\hat{t}$, $r$ motion while the ``stable'' transverse dimension is in the angular $\theta$, $\phi$ directions.
+As a check of the signs, note the ``unstable'' transverse direction (in the harmonic oscillator equation \eqref{Penrose:eqn:HOframe}) is associated to the $\hat{t}$, $r$ motion while the ``stable'' transverse dimension is in the angular $\theta$, $\phi$ directions.
 
-Note that the frame $\left\lbrace u^{\mu}, v^{\mu} , m^{\mu} , \bar{m}^{\mu}  \right\rbrace$, given in \eqref{eqn:Sframec}, is in fact not parallel propagated, while \eqref{eqn:penroseframe} as described in Section \ref{sec:Penrosereview} required a parallel propagated null frame. However, it turns out that this did not affect the result \eqref{eqn:SHframe}. To see why, first observe that the frame \eqref{eqn:Sframec} constructed from the dyad $\left\lbrace \alpha^A, \beta^A \right\rbrace$ was not automatically parallel propagated because we did not impose that $\beta^A$ was parallel propagated, instead $\beta^A$ satisfies the weaker condition \eqref{eqn:betadef}. On the other hand, given $\beta^A$  as in \eqref{eqn:beta}, and a solution $I_{\beta}(u)$ to
+Note that the frame $\left\lbrace u^{\mu}, v^{\mu} , m^{\mu} , \bar{m}^{\mu}  \right\rbrace$, given in \eqref{Penrose:eqn:Sframec}, is in fact not parallel propagated, while \eqref{Penrose:eqn:penroseframe} as described in Section \ref{Penrose:sec:Penrosereview} required a parallel propagated null frame. However, it turns out that this did not affect the result \eqref{Penrose:eqn:SHframe}. To see why, first observe that the frame \eqref{Penrose:eqn:Sframec} constructed from the dyad $\left\lbrace \alpha^A, \beta^A \right\rbrace$ was not automatically parallel propagated because we did not impose that $\beta^A$ was parallel propagated, instead $\beta^A$ satisfies the weaker condition \eqref{Penrose:eqn:betadef}. On the other hand, given $\beta^A$  as in \eqref{Penrose:eqn:beta}, and a solution $I_{\beta}(u)$ to
 \begin{equation}\label{Penrose:eqn:Idef}
 u^{\mu}\nabla_{\mu} I_{\beta}(u) = \beta_B u^{\mu}\nabla_{\mu}\beta^B  \, ,
 \end{equation}
@@ -662,64 +668,74 @@ along the null geodesic $\gamma$, we can readily construct $\tilde{\beta}^B$ sat
 \begin{equation}\label{Penrose:eqn:ppdyad}
 \tilde{\beta}^B =  \beta^B +  I_{\beta}(u) \alpha^B \, .
 \end{equation}
-Then $\lbrace \alpha^A,\tilde{\beta}^B\rbrace$, as well as the associate Newman-Penrose frame, are parallel transported along $\gamma$. On the other hand, the shift that $\beta^A \to \tilde{\beta}^A$ induces into the frame \eqref{eqn:Sframec}, specifically a shift of the transverse basis proportional to $u^{\mu}$, does not contribute to \eqref{eqn:penroseframe} by the antisymmetry of the Riemann tensor. Therefore, while it is formally important to have a parallel propagated dyad to take the Penrose limit using the associated parallel propagated frame with \eqref{eqn:penroseframe}, in practice the result is the same here. As is clear from the spinorial approach \eqref{eqn:penrosespinor}, the Penrose limit in the end does not depend on the choice of $\beta^B$. 
-%However, we can shift the transverse directions proportional to $u^{\mu}$ ($m\to m - \frac{\hat{E}}{\sqrt{2} L} u u^{\mu}$, $\bar{m}\to \bar{m} - \frac{\hat{E}}{\sqrt{2} L} u u^{\mu}$), which makes the frame parallel propagated but does not contribute to \eqref{eqn:penroseframe}. The related shift in $v^{\mu}$, necessary to ensure continued orthogonality also does not enter into \eqref{eqn:penroseframe}. These shifts would effectively correspond to working with $\tilde{\beta}^A$ instead of $\beta^A$.}
-%On the other hand, in relating the two-spinor Penrose limit \eqref{eqn:penrosespinor} to the approach based on a parallel propagated null frame \eqref{eqn:penroseframe}, we required a $\tilde{\beta}^B$ that was itself fully parallel propagated along the null geodesic $\gamma$, generated by $u^{\mu}$. That is, in the general discussion of Section \ref{sec:Penrosereview}, instead of \eqref{eqn:betadef} we used a $\tilde{\beta}^B$ that satisfies
+Then $\lbrace \alpha^A,\tilde{\beta}^B\rbrace$, as well as the associate Newman-Penrose frame, are parallel transported along $\gamma$. On the other hand, the shift that $\beta^A \to \tilde{\beta}^A$ induces into the frame \eqref{Penrose:eqn:Sframec}, specifically a shift of the transverse basis proportional to $u^{\mu}$, does not contribute to \eqref{Penrose:eqn:penroseframe} by the antisymmetry of the Riemann tensor. Therefore, while it is formally important to have a parallel propagated dyad to take the Penrose limit using the associated parallel propagated frame with \eqref{Penrose:eqn:penroseframe}, in practice the result is the same here. As is clear from the spinorial approach \eqref{Penrose:eqn:penrosespinor}, the Penrose limit in the end does not depend on the choice of $\beta^B$. 
+%However, we can shift the transverse directions proportional to $u^{\mu}$ ($m\to m - \frac{\hat{E}}{\sqrt{2} L} u u^{\mu}$, $\bar{m}\to \bar{m} - \frac{\hat{E}}{\sqrt{2} L} u u^{\mu}$), which makes the frame parallel propagated but does not contribute to \eqref{Penrose:eqn:penroseframe}. The related shift in $v^{\mu}$, necessary to ensure continued orthogonality also does not enter into \eqref{Penrose:eqn:penroseframe}. These shifts would effectively correspond to working with $\tilde{\beta}^A$ instead of $\beta^A$.}
+%On the other hand, in relating the two-spinor Penrose limit \eqref{Penrose:eqn:penrosespinor} to the approach based on a parallel propagated null frame \eqref{Penrose:eqn:penroseframe}, we required a $\tilde{\beta}^B$ that was itself fully parallel propagated along the null geodesic $\gamma$, generated by $u^{\mu}$. That is, in the general discussion of Section \ref{Penrose:sec:Penrosereview}, instead of \eqref{Penrose:eqn:betadef} we used a $\tilde{\beta}^B$ that satisfies
 
-Finally, in order to connect to Penrose's original construction, consider the following change of coordinates  from the Kerr-Schild  $\lbrace \hat{t},r,\phi,\theta \rbrace$  to $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$: \footnote{See Appendix \ref{app:examples} for a derivation.}
+Finally, in order to connect to Penrose's original construction, consider the following change of coordinates  from the Kerr-Schild  $\lbrace \hat{t},r,\phi,\theta \rbrace$  to $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$: \footnote{See Appendix \ref{Penrose:app:examples} for a derivation.}
 \begin{equation}\label{Penrose:eqn:Schwarzschildadapted}
 \begin{aligned}
-U &= \int^{r(U)}_{r_{\rm ref}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)}   \, , \\ 
-\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, , \\
+U &= \int^{r(U)}_{r_{\mathrm{ref}}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)}   \, , \\ 
+\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\mathrm{ref}}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, , \\
 \theta_0(V,\hat{t}_0) &= \frac{1}{L}\left(\hat{E}\hat{t}_0  - V\right) \, , \\
-\theta(U,V, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
+\theta(U,V, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\mathrm{ref}}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
 \phi(U,V,\phi_0,\hat{t}_0) &= \phi_0  \, .
 \end{aligned}
 \end{equation}
-Here, $r_{\rm ref}$ is an arbitrarily chosen constant while $r(U) = r(U;\hat{E},L^2)$ is a radial solution to the geodesic equations on a Schwarzschild spacetime, which in particular satisfies \eqref{eqn:Srgeod} in terms of an affine parameter $U$ with initial condition $r(0) = r_{\rm ref}$. In deriving \eqref{eqn:Schwarzschildadapted}, we have used the spherical symmetry to take $L_{\phi} = 0$ without loss of generality. 
+Here, $r_{\mathrm{ref}}$ is an arbitrarily chosen constant while $r(U) = r(U;\hat{E},L^2)$ is a radial solution to
+the geodesic equations on a Schwarzschild spacetime, which in particular satisfies \eqref{Penrose:eqn:Srgeod} in
+terms of an affine parameter $U$ with initial condition $r(0) = r_{\mathrm{ref}}$. In deriving \eqref{Penrose:eqn:Schwarzschildadapted}, we have used the spherical symmetry to take $L_{\phi} = 0$ without loss of generality. 
 
-The Schwarzschild metric in the coordinates $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$, defined in \eqref{eqn:Schwarzschildadapted}, takes the form
+The Schwarzschild metric in the coordinates $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$, defined in \eqref{Penrose:eqn:Schwarzschildadapted}, takes the form
 \begin{equation}\label{Penrose:eqn:Sadapted}
 \begin{aligned}
 ds^2 =  
 2 dU dV&- \left(r(U)^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r(U)}\right)\right)d\hat{t}_0^2 - r(U)^2 \sin^2\left\lbrack\theta(U,V,\hat{t}_0)\right\rbrack d \phi_0^2  \\ &-\frac{r(U)^2}{L^2} dV^2+2\hat{E} \frac{r(U)^2}{L^2} dV d\hat{t}_0 \, .\\
 \end{aligned}
 \end{equation}
-We should stress that this metric is still the exact Schwarzschild black hole metric; we have only made a change of coordinates. No approximations have been made so far, although the new adapted coordinates may not chart as much of the spacetime as the Kerr-Schild coordinates\footnote{As a consistency check, we have verified for instance that \eqref{eqn:Sadapted} is still a solution to the vacuum Einstein equations. In addition, we have computed several scalars such as $R_{\mu \nu \alpha \beta}R^{\mu \nu \alpha \beta} = \frac{48 M^2}{r(U)^6}$ etc.}.
+We should stress that this metric is still the exact Schwarzschild black hole metric; we have only made a change of coordinates. No approximations have been made so far, although the new adapted coordinates may not chart as much of the spacetime as the Kerr-Schild coordinates\footnote{As a consistency check, we have verified for instance that \eqref{Penrose:eqn:Sadapted} is still a solution to the vacuum Einstein equations. In addition, we have computed several scalars such as $R_{\mu \nu \alpha \beta}R^{\mu \nu \alpha \beta} = \frac{48 M^2}{r(U)^6}$ etc.}.
 
-Our motivation to introduce the coordinates $\lbrace U,V,\hat{t}_0,\hat{\phi}_0\rbrace$ was to put the Schwarzschild metric in the adapted coordinate form \eqref{eqn:adapted} and the line element \eqref{eqn:Sadapted} therefore justifies the choice \eqref{eqn:Schwarzschildadapted}. Nevertheless, let us briefly interpret the definitions in \eqref{eqn:Schwarzschildadapted} to clarify their origin. First, the coordinates $\lbrace U,\hat{t}_0,\theta_0,\hat{\phi}_0 \rbrace$ were constructed such that at $U = 0$, $\lbrace\hat{t}_0,\theta_0,\hat{\phi}_0\rbrace$ simply parameterizes the $r = r_{\rm ref}$ hypersurface in the Kerr-Schild coordinates $\lbrace\hat{t},\theta,\hat{\phi} \rbrace$. Now, at non-zero $U$, the point $p =( U,\hat{t}_0,\theta_0,\hat{\phi}_0)$ is such that a null geodesic with energy $\hat{E}$ and total angular momentum $L$ ($L_{\phi} = 0$) reaches $p$ from the point $p_0 = ( \hat{t}_0 , r_{\rm ref},\theta_0,\hat{\phi}_0 )$ in Kerr-Schild coordinates in affine time $U$. $\lbrace\hat{t}_0,\theta_0,\hat{\phi}_0 \rbrace$ thus parameterize a null geodesic congruence. The only remaining step to get to $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$ is to appreciate that we can use the action of the null geodesics as one of the coordinates in order to obtain the form \eqref{eqn:adapted} \cite{Patricot:2003dh, blau2011plane}. For the chosen null geodesic congruence, the action is simply $V = \hat{E}\hat{t}_0 - L \theta_0$ and, as an example, we have thus chosen to replace $\theta_0$ by $L \theta_0= \hat{E}\hat{t}_0  - V$.  
+Our motivation to introduce the coordinates $\lbrace U,V,\hat{t}_0,\hat{\phi}_0\rbrace$ was to put the
+Schwarzschild metric in the adapted coordinate form \eqref{Penrose:eqn:adapted} and the line element
+\eqref{Penrose:eqn:Sadapted} therefore justifies the choice \eqref{Penrose:eqn:Schwarzschildadapted}. Nevertheless,
+let us briefly interpret the definitions in \eqref{Penrose:eqn:Schwarzschildadapted} to clarify their origin.
+First, the coordinates $\lbrace U,\hat{t}_0,\theta_0,\hat{\phi}_0 \rbrace$ were constructed such that at $U = 0$,
+$\lbrace\hat{t}_0,\theta_0,\hat{\phi}_0\rbrace$ simply parameterizes the $r = r_{\mathrm{ref}}$ hypersurface in the
+Kerr-Schild coordinates $\lbrace\hat{t},\theta,\hat{\phi} \rbrace$. Now, at non-zero $U$, the point $p =(
+U,\hat{t}_0,\theta_0,\hat{\phi}_0)$ is such that a null geodesic with energy $\hat{E}$ and total angular momentum
+$L$ ($L_{\phi} = 0$) reaches $p$ from the point $p_0 = ( \hat{t}_0 , r_{\mathrm{ref}},\theta_0,\hat{\phi}_0 )$ in Kerr-Schild coordinates in affine time $U$. $\lbrace\hat{t}_0,\theta_0,\hat{\phi}_0 \rbrace$ thus parameterize a null geodesic congruence. The only remaining step to get to $\lbrace U,V,\hat{t}_0,\hat{\phi}_0 \rbrace$ is to appreciate that we can use the action of the null geodesics as one of the coordinates in order to obtain the form \eqref{Penrose:eqn:adapted} \cite{Patricot:2003dh, blau2011plane}. For the chosen null geodesic congruence, the action is simply $V = \hat{E}\hat{t}_0 - L \theta_0$ and, as an example, we have thus chosen to replace $\theta_0$ by $L \theta_0= \hat{E}\hat{t}_0  - V$.  
 
-From the Schwarzschild metric  in adapted coordinates \eqref{eqn:Sadapted}, we find the Penrose limit in Rosen coordinates
+From the Schwarzschild metric  in adapted coordinates \eqref{Penrose:eqn:Sadapted}, we find the Penrose limit in Rosen coordinates
 \begin{equation}\label{Penrose:eqn:Sadaptedlimit}
 \begin{aligned}
 ds^2_{\gamma} =  
 2 dU dV&- \left(r(U)^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r(U)}\right)\right)d\hat{t}_0^2 - r(U)^2 \sin^2\theta(U) d \phi_0^2  \, ,
 \end{aligned}
 \end{equation}
-where $\theta(U) = \theta(U,V,\hat{t}_0)|_{V=\hat{t}_0=0}$ is a solution to the geodesic equation which, analogously to the radial equation \eqref{eqn:Srgeod} and using \eqref{eqn:Su} and \eqref{eqn:uschwarzschild} (with $L_{\phi} = 0$), can be expressed as
+where $\theta(U) = \theta(U,V,\hat{t}_0)|_{V=\hat{t}_0=0}$ is a solution to the geodesic equation which, analogously to the radial equation \eqref{Penrose:eqn:Srgeod} and using \eqref{Penrose:eqn:Su} and \eqref{Penrose:eqn:uschwarzschild} (with $L_{\phi} = 0$), can be expressed as
 \begin{equation}
 u^{\theta} = \frac{d\theta}{dU} = \frac{L}{r(U)^2} \, .
 \end{equation}
 
-For more general black holes, the approach to the Penrose limit through adapted coordinates is a lot more complicated. Therefore, in this simple setting, we would like to illustrate why it is nevertheless useful. The key point is that we now have a version of \eqref{eqnS:Brinkmann} in Rosen coordinates. Therefore, by constructing a frame $E^{(\gamma)}{}^i_{a}$, as in \eqref{eqn:frame} and \eqref{eqn:Esymm}, such that
+For more general black holes, the approach to the Penrose limit through adapted coordinates is a lot more complicated. Therefore, in this simple setting, we would like to illustrate why it is nevertheless useful. The key point is that we now have a version of \eqref{Penrose:eqnS:Brinkmann} in Rosen coordinates. Therefore, by constructing a frame $E^{(\gamma)}{}^i_{a}$, as in \eqref{Penrose:eqn:frame} and \eqref{Penrose:eqn:Esymm}, such that
 \begin{equation}
 C_{ij} = E^{(\gamma)}{}_i{}^{a} \delta_{ab} E^{(\gamma)}{}_i{}^{b} =\begin{pmatrix}
 \sqrt{r(U)^2 \frac{\hat{E}^2}{L^2}-\left(1-\frac{2M}{r(U)}\right)} &  0 \\
 0 & r(U) \sin \theta(U)  
 \end{pmatrix}^2 \, ,
 \end{equation} 
-by \eqref{eqn:HOframe}, we have that $E^{(\gamma)}{}^1_{1}$ and $E^{(\gamma)}{}^2_{2}$ respectively solve 
+by \eqref{Penrose:eqn:HOframe}, we have that $E^{(\gamma)}{}^1_{1}$ and $E^{(\gamma)}{}^2_{2}$ respectively solve 
 \begin{equation}\label{Penrose:eqn:HOS}
 \frac{d^2f_1}{dU^2} = \frac{3 M L^2}{\left(r(U)\right)^5}f_1 \, ,  \quad  	\frac{d^2f_2}{dU^2} = -\frac{3 M L^2}{\left(r(U)\right)^5}f_2\, .
 \end{equation}
-Such solutions are an essential input to any physical process on the plane wave background, determining the Killing vectors and solutions to the wave equations. They would have been hard to find in such an elegant form from directly solving \eqref{eqn:HOS}.
+Such solutions are an essential input to any physical process on the plane wave background, determining the Killing vectors and solutions to the wave equations. They would have been hard to find in such an elegant form from directly solving \eqref{Penrose:eqn:HOS}.
 
 
 \subsubsection{The double copy}\label{Penrose:sec:SdcPenrose}
 
-We first recall explicitly the double copy constructions for the Schwarzschild black hole \eqref{eqn:Smetric} and the plane wave \eqref{eqnS:Brinkmann} independently of each other to then show that the spinor Penrose limit proposal \eqref{eqn:dcPenroselimit} holds.
+We first recall explicitly the double copy constructions for the Schwarzschild black hole \eqref{Penrose:eqn:Smetric} and the plane wave \eqref{Penrose:eqnS:Brinkmann} independently of each other to then show that the spinor Penrose limit proposal \eqref{Penrose:eqn:dcPenroselimit} holds.
 
-First, for the black hole, from the Weyl spinor \eqref{eqn:SPsiABCD}
+First, for the black hole, from the Weyl spinor \eqref{Penrose:eqn:SPsiABCD}
 \begin{equation}\label{Penrose:eqn:Spsidc}
 \Psi_{ABCD} = -\frac{3 M^5}{r^5} \chi_{(AB}\chi_{CD)} \, ,
 \end{equation}
@@ -727,42 +743,43 @@ it follows that the Weyl single copy and zeroth copy of the Schwarzschild black 
 \begin{equation}\label{Penrose:eqn:Ssingle}
 f_{AB} =   -\frac{2 M^3}{r^3} \chi_{AB} \, , \quad S = -\frac{2M}{r} \, . 
 \end{equation}
-We have slightly deviated from \eqref{WeylDCRelation} here in favor of keeping $S$, which is only defined up to a constant, free of combinatorial factors. As shown in \cite{Luna:2018dpt}, the above Weyl double copy is consistent with the Kerr-Schild approach. Explicitly, the Kerr-Schild single copy can be derived from \eqref{eqn:SKSsinglecopy} to be
+We have slightly deviated from \eqref{Penrose:WeylDCRelation} here in favor of keeping $S$, which is only defined up to a constant, free of combinatorial factors. As shown in \cite{Luna:2018dpt}, the above Weyl double copy is consistent with the Kerr-Schild approach. Explicitly, the Kerr-Schild single copy can be derived from \eqref{Penrose:eqn:SKSsinglecopy} to be
 \begin{equation}\label{Penrose:eqn:SKSsingle}
 A =  -\frac{2 \sqrt{2} M}{r}\left(d\hat{t} +dr\right) \, , \quad F =   \frac{2 \sqrt{2} M}{r^2}    dr \wedge d\hat{t} \, .
 \end{equation} 
-The Maxwell spinor \eqref{eqn:Ssingle} can then be found from \eqref{eqn:SPsiABCD} and
+The Maxwell spinor \eqref{Penrose:eqn:Ssingle} can then be found from \eqref{Penrose:eqn:SPsiABCD} and
 \begin{equation}
 \frac{F_{\mu \nu}}{2} \left(k^{(\eta)}{}^{\mu} n^{(\eta)}{}^{\nu} - m^{(\eta)}{}^{\mu}\bar{m}^{(\eta)}{}^{\nu}\right) =  -\frac{\sqrt{2} M}{r^2} \, , \quad	0 = F_{\mu \nu} k^{(\eta)}{}^{\mu} m^{(\eta)}{}^{\nu} =  F_{\mu \nu} n^{(\eta)}{}^{\mu} \bar{m}^{(\eta)}{}^{\nu} \, ,
 \end{equation}
 while the relation between the Kerr-Schild and Weyl zeroth copy is given by
 \begin{equation}
-S + S^* = \phi^{(\rm KS)} \, ,
+S + S^* = \phi^{(\mathrm{KS})} \, ,
 \end{equation}
 as suggested in \cite{Luna:2018dpt}.
 
-For the plane wave \eqref{eqnS:Brinkmannc}, it follows from \eqref{eqn:NPsi} that the Weyl spinor is given by
+For the plane wave \eqref{Penrose:eqnS:Brinkmannc}, it follows from \eqref{Penrose:eqn:NPsi} that the Weyl spinor is given by
 \begin{equation}\label{Penrose:eqn:Sgammapsidc}
 \Psi^{(\gamma)}_{ABCD} = -\frac{3 M^5}{r(u)^5}  \frac{L^2}{M^4}  \beta^{(\gamma)}_A \beta^{(\gamma)}_B  \beta^{(\gamma)}_C  \beta^{(\gamma)}_D   \, .
 \end{equation}
-As emphasized in the discussion around \eqref{eqnS:Brinkmannc}, for the plane wave, the function $r(u) = r|_\gamma$ here satisfies the geodesic equation \eqref{eqn:Srgeod} of the reference null geodesic. The Weyl double copy with our choice  \eqref{eqn:typeNscaling} to fix the (functional) type N ambiguity then implies\footnote{In \eqref{eqn:Sppscweyl}, we are treating the numerical prefactors in the same way as in the black hole case.}
+As emphasized in the discussion around \eqref{Penrose:eqnS:Brinkmannc}, for the plane wave, the function $r(u) = r|_\gamma$ here satisfies the geodesic equation \eqref{Penrose:eqn:Srgeod} of the reference null geodesic. The Weyl double copy with our choice  \eqref{Penrose:eqn:typeNscaling} to fix the (functional) type N ambiguity then implies\footnote{In \eqref{Penrose:eqn:Sppscweyl}, we are treating the numerical prefactors in the same way as in the black hole case.}
 \begin{equation}\label{Penrose:eqn:Sppscweyl}
 f^{(\gamma)}_{AB} =   \frac{M^3}{r(u)^3}  \frac{L}{M^2} 2 \beta^{(\gamma)}_A \beta^{(\gamma)}_B  \, , \quad S^{(\gamma)} = -\frac{2M}{r(u)} \, . 
 \end{equation}
 
 The connection to the Kerr-Schild construction is more subtle than in the black hole case. Following the original Kerr-Schild double copy proposal of \cite{Monteiro:2014cda} yields
 \begin{equation}\label{Penrose:eqn:KSplanewaveoriginal}
-\phi_{(\gamma)}^{(\rm KS)} = -\frac{3 M^5}{ r(u)^5}  \frac{L^2}{M^4} (x_1^2 - x_2^2) \, , \quad A_{(\gamma)}^{(\rm KS)} = 	\phi_{(\gamma)}^{(\rm KS)}  du \, .
+\phi_{(\gamma)}^{(\mathrm{KS})} = -\frac{3 M^5}{ r(u)^5}  \frac{L^2}{M^4} (x_1^2 - x_2^2) \, , \quad
+A_{(\gamma)}^{(\mathrm{KS})} = 	\phi_{(\gamma)}^{(\mathrm{KS})}  du \, .
 \end{equation}
-However, this construction of the single copy for the plane wave is not consistent with \eqref{eqn:Sppscweyl}. As discussed in \cite{Ilderton:2018lsf, Luna:2018dpt}, the identification \eqref{eqn:KSplanewaveoriginal} will not relate a gravitational plane wave with a gauge theory plane wave\footnote{Rather, \eqref{eqn:KSplanewaveoriginal} relates a gravitational plane wave to the gauge theory ``vortex'' solutions of \cite{Bialynicki-Birula:2004bvr}.}. Following \cite{Luna:2018dpt} and \cite{Adamo:2017nia}, we will take another approach which does impose that a gravitational plane wave is related by the double copy to a gauge theory plane wave. If we additionally fix the remaining type N ambiguity with \eqref{eqn:typeNscaling}, we find
+However, this construction of the single copy for the plane wave is not consistent with \eqref{Penrose:eqn:Sppscweyl}. As discussed in \cite{Ilderton:2018lsf, Luna:2018dpt}, the identification \eqref{Penrose:eqn:KSplanewaveoriginal} will not relate a gravitational plane wave with a gauge theory plane wave\footnote{Rather, \eqref{Penrose:eqn:KSplanewaveoriginal} relates a gravitational plane wave to the gauge theory ``vortex'' solutions of \cite{Bialynicki-Birula:2004bvr}.}. Following \cite{Luna:2018dpt} and \cite{Adamo:2017nia}, we will take another approach which does impose that a gravitational plane wave is related by the double copy to a gauge theory plane wave. If we additionally fix the remaining type N ambiguity with \eqref{Penrose:eqn:typeNscaling}, we find
 \begin{equation}\label{Penrose:eqn:SKS0matchingWeyl}
-\phi_{(\gamma)}^{(\rm KS)} = -\frac{4M}{r(u)} \, ,
+\phi_{(\gamma)}^{(\mathrm{KS})} = -\frac{4M}{r(u)} \, ,
 \end{equation}
 and the (Kerr-Schild) single copy becomes
 \begin{equation}\label{Penrose:eqn:SKS1matchingWeyl}
 A^{(\gamma)} = -\frac{2 M^3}{r(u)^3}  \frac{L}{M^2} (z + \bar{z}) du \, , \quad  F^{(\gamma)} = -  \frac{2 M^3}{r(u)^3}  \frac{L}{M^2}  ( dz + d\bar{z}) \wedge du \, .
 \end{equation} 
-From the projections on the null frame given by\footnote{Observing that the Brinkmann coordinates are in Kerr-Schild form, the frame in \eqref{eqn:SKS1matchingWeyl} is the flat, single copy map of the gravitational plane wave frame defined in \eqref{eqn:udefplane}, \eqref{eqn:vdefplanewave}, and \eqref{eqn:mdefplanewave}. We avoid adding an additional ${}_{(\eta)}$ for obvious reasons.}
+From the projections on the null frame given by\footnote{Observing that the Brinkmann coordinates are in Kerr-Schild form, the frame in \eqref{Penrose:eqn:SKS1matchingWeyl} is the flat, single copy map of the gravitational plane wave frame defined in \eqref{Penrose:eqn:udefplane}, \eqref{Penrose:eqn:vdefplanewave}, and \eqref{Penrose:eqn:mdefplanewave}. We avoid adding an additional ${}_{(\eta)}$ for obvious reasons.}
 \begin{equation}
 k^{(\gamma)}_{\mu} dx^{\mu} =  du  \, , \quad n^{(\gamma)}_{\mu} dx^{\mu} = dv  \, , \quad m^{(\gamma)}_{\mu} dx^{\mu} = dz \, ,
 \end{equation}
@@ -773,11 +790,11 @@ we can again compute
 \begin{equation}
 F_{\mu \nu} n^{\mu}_{(\gamma)} \bar{m}^{\nu}_{(\gamma)} =   -\frac{2  M^3}{r(u)^3}  \frac{L}{M^2}  \, , \quad	0 = F_{\mu \nu} k^{\mu}_{(\gamma)} m^{\nu}_{(\gamma)} = \frac{F_{\mu \nu}}{2} \left(k_{(\gamma)}^{\mu} n_{(\gamma)}^{\nu} - m_{(\gamma)}^{\mu}\bar{m}_{(\gamma)}^{\nu}\right)   \, ,
 \end{equation}
-which, when translated into spinor components, matches \eqref{eqn:Sppscweyl}. Therefore, \eqref{eqn:SKS0matchingWeyl} and \eqref{eqn:SKS1matchingWeyl} indeed provide the Kerr-Schild single and zeroth copy of the plane wave consistent with the Weyl double copy, as opposed to \eqref{eqn:KSplanewaveoriginal} (the original Kerr-Schild double copy proposal \cite{Monteiro:2014cda}).
+which, when translated into spinor components, matches \eqref{Penrose:eqn:Sppscweyl}. Therefore, \eqref{Penrose:eqn:SKS0matchingWeyl} and \eqref{Penrose:eqn:SKS1matchingWeyl} indeed provide the Kerr-Schild single and zeroth copy of the plane wave consistent with the Weyl double copy, as opposed to \eqref{Penrose:eqn:KSplanewaveoriginal} (the original Kerr-Schild double copy proposal \cite{Monteiro:2014cda}).
 
 Note that one of the main reasons for us to connect back to the Kerr-Schild double copy of \cite{Monteiro:2014cda}, was to identify the flat space map such that the single copy equations of motion are satisfied. For the plane waves, we don't follow  \cite{Monteiro:2014cda} but these equations of motion are still satisfied with respect to the flat space metric in Brinkmann coordinates. 
 
-If we now apply the proposal \eqref{eqn:dcPenroselimit} for the Penrose limit of the single and zeroth copy to the Schwarzschild fields \eqref{eqn:Ssingle} (using also \eqref{eqn:Skillingspinorconserved}), we find exactly the plane wave result \eqref{eqn:Sppscweyl} as desired. The spinorial approach to the Penrose limit in conjunction with the Weyl double copy makes this procedure, summarized in Fig. \ref{fig:schematic}, look straightforward. On the other hand, from the perspective of the ``original'' Kerr-Schild double copy for the black hole and the ``original'' Penrose limit through adapted coordinates, the relation between the double copy of the black hole and that of the plane wave would not have been obvious at all.
+If we now apply the proposal \eqref{Penrose:eqn:dcPenroselimit} for the Penrose limit of the single and zeroth copy to the Schwarzschild fields \eqref{Penrose:eqn:Ssingle} (using also \eqref{Penrose:eqn:Skillingspinorconserved}), we find exactly the plane wave result \eqref{Penrose:eqn:Sppscweyl} as desired. The spinorial approach to the Penrose limit in conjunction with the Weyl double copy makes this procedure, summarized in Fig. \ref{Penrose:fig:schematic}, look straightforward. On the other hand, from the perspective of the ``original'' Kerr-Schild double copy for the black hole and the ``original'' Penrose limit through adapted coordinates, the relation between the double copy of the black hole and that of the plane wave would not have been obvious at all.
 
 \begin{figure}[h]
 	\begin{tikzcd}
@@ -785,7 +802,8 @@ If we now apply the proposal \eqref{eqn:dcPenroselimit} for the Penrose limit of
 		& \\
 			\makebox[\lenff em][c]{$\Psi^{(\gamma)}_{ABCD} = \left(S^5 |_{\gamma}\right) \beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D$} \arrow[r,leftrightarrow,shorten=-3mm, "\text{Weyl DC}"] & \makebox[\lenf em][c]{$f^{(\gamma)}_{AB} = \left(S^3 |_{\gamma}\right) \beta^{(\gamma)}_A \beta^{(\gamma)}_B$}
 	\end{tikzcd}
-	\caption{Schematic summary of the interplay between the Weyl double copy and the Penrose limit. The functional spacetime dependence is in some sense entirely controlled by the zeroth copy $S = -\frac{2M}{r}$ (for a Schwarzschild black hole) and its evaluation $S|_{\gamma}$ on the null geodesic $\gamma$, with respect to which the Penrose limit is taken. The spinorial structure on the other hand is fixed by the valence-2 Killing spinor $\chi_{AB}$ for the Petrov type D black hole while on the Petrov type N plane wave it is fixed by the Killing spinor $\beta^{(\gamma)}_A$.} \label{Penrose:fig:schematic}
+	\caption{Schematic summary of the interplay between the Weyl double copy and the Penrose limit. The
+        functional spacetime dependence is in some sense entirely controlled by the zeroth copy $S = -2M / r$ (for a Schwarzschild black hole) and its evaluation $S|_{\gamma}$ on the null geodesic $\gamma$, with respect to which the Penrose limit is taken. The spinorial structure on the other hand is fixed by the valence-2 Killing spinor $\chi_{AB}$ for the Petrov type D black hole while on the Petrov type N plane wave it is fixed by the Killing spinor $\beta^{(\gamma)}_A$.} \label{Penrose:fig:schematic}
 \end{figure}
 
 \subsection{The Kerr black hole}\label{Penrose:sec:Kerr}
@@ -794,7 +812,7 @@ We now add angular momentum to the black hole from the previous example and stud
 technical details are more algebraically involved for rotating black holes but these complications also highlight
 the added value of the two-spinor approach. As for the Schwarzschild black hole, we will want to work with
 Kerr-Schild coordinates for our discussion of the double copy. We nevertheless use the line element in
-Boyer-Lindquist coordinates as our starting point, because these coordinates are ubiquitous in applications, but it is safe to skip to  \eqref{eqn:KKSmetric} (skimming the definitions in \eqref{eqn:Sigma}).
+Boyer-Lindquist coordinates as our starting point, because these coordinates are ubiquitous in applications, but it is safe to skip to  \eqref{Penrose:eqn:KKSmetric} (skimming the definitions in \eqref{Penrose:eqn:Sigma}).
 
 In Boyer-Lindquist coordinates $\left\lbrace t, r, \theta, \phi \right\rbrace$, the Kerr metric for a black hole of mass $M$ and angular momentum $J = a M$ is given by \cite{boyer1967maximal}
 \begin{equation}
@@ -842,18 +860,18 @@ where the flat space line element $ds_{0}$ is given by
 \end{equation}
 The basic objects to construct the Kerr-Schild double copy for the Kerr black hole are thus
 \begin{equation}
-k_{\mu} = d\hat{\tau} + y^2 d\hat{\psi} \, , \quad \phi^{(\rm KS)} =  - \frac{2 M r}{\Sigma}  \, .
+k_{\mu} = d\hat{\tau} + y^2 d\hat{\psi} \, , \quad \phi^{(\mathrm{KS})} =  - \frac{2 M r}{\Sigma}  \, .
 \end{equation}
-A full Newman-Penrose principal null frame, supplementing $k_{\mu} = k^{(g)}_{\mu} = k^{(\eta)}_{\mu}$ as in Section \ref{sec:dcandPenrose} and the Schwarzschild example,  is given by
+A full Newman-Penrose principal null frame, supplementing $k_{\mu} = k^{(g)}_{\mu} = k^{(\eta)}_{\mu}$ as in Section \ref{Penrose:sec:dcandPenrose} and the Schwarzschild example,  is given by
 \begin{alignat}{3}
 k^{(g)}_{\mu}dx^{\mu} &= k^{(\eta)}_{\mu}dx^{\mu} &=& \quad  d\hat{\tau} + y^2 d\hat{\psi}\, , \nonumber \\
 n^{(g)}_{\mu}dx^{\mu} &= n^{(\eta)}_{\mu}dx^{\mu} -\frac{M r}{\Sigma} k^{(\eta)}_{\mu}dx^{\mu} \quad  &=& \quad  -dr+\frac{r^2+a^2}{2 \Sigma}\left(d\hat{\tau} + y^2 d\hat{\psi}\right)  - \frac{M r}{\Sigma} \left(d\hat{\tau} + y^2 d\hat{\psi}\right) \, , \nonumber \\
 m^{(g)}_{\mu}dx^{\mu} &= m^{(\eta)}_{\mu}dx^{\mu} &=& \quad  \sqrt{\frac{\Sigma}{2\Delta_y}}\left(dy+i \frac{\Delta_y}{\Sigma} \left(r^2 d\hat{\psi}-d\hat{\tau}-\frac{\Sigma}{\Delta_y}dy\right)\right)\, ,  \nonumber \\
 \bar{m}^{(g)}_{\mu}dx^{\mu} &=  \bar{m}^{(\eta)}_{\mu}dx^{\mu} &=&  \quad  \sqrt{\frac{\Sigma}{2\Delta_y}}\left(dy-i \frac{\Delta_y}{\Sigma} \left(r^2 d\hat{\psi}-d\hat{\tau}-\frac{\Sigma}{\Delta_y}dy\right)\right) \, . \label{Penrose:eqn:Kerrframe}
 \end{alignat}
-We will also again introduce the dyad $\left\lbrace o^A, \iota^A \right\rbrace$, with complex conjugate $\left\lbrace \bar{o}^{A'}, \bar{\iota}^{A'} \right\rbrace$, associated to Newman-Penrose frame as in \eqref{eqn:associateddyad}.
+We will also again introduce the dyad $\left\lbrace o^A, \iota^A \right\rbrace$, with complex conjugate $\left\lbrace \bar{o}^{A'}, \bar{\iota}^{A'} \right\rbrace$, associated to Newman-Penrose frame as in \eqref{Penrose:eqn:associateddyad}.
 
-The Kerr black hole is a vacuum Petrov type D spacetime. Thus the only non-trivial curvature projection withe respect to the principal Newman-Penrose frame \eqref{eqn:Kerrframe} is
+The Kerr black hole is a vacuum Petrov type D spacetime. Thus the only non-trivial curvature projection withe respect to the principal Newman-Penrose frame \eqref{Penrose:eqn:Kerrframe} is
 \begin{equation}\label{Penrose:eqn:KPsi2}
 \Psi_2 = -C_{\mu \nu \alpha \beta} k^{(g)}{}^{\mu} m^{(g)}{}^{\nu}\bar{m}^{(g)}{}^{\alpha} n^{(g)}{}^{\beta}= -\frac{M}{\zeta^3} \, \, , \quad \zeta = r - i y \, .
 \end{equation}
@@ -861,7 +879,7 @@ The Weyl spinor is thus given by
 \begin{equation}
 \Psi_{ABCD} = -\frac{6 M}{\zeta^3} o_{(A} o_B \iota_C \iota_{D)} \, ,
 \end{equation}
-which can be expressed in terms of a valence-2 Killing spinor $\chi_{AB}$, satisfying \eqref{eqn:valence2}, as
+which can be expressed in terms of a valence-2 Killing spinor $\chi_{AB}$, satisfying \eqref{Penrose:eqn:valence2}, as
 \begin{equation}\label{Penrose:eqn:KPsiABCD}
 \Psi_{ABCD} = -\frac{3 M^5}{\zeta^5}\chi_{(AB}\chi_{CD)} \, , \quad \chi_{AB} =  -\frac{\sqrt{2}\zeta}{M^2} o_{(A} \iota_{B)}  \, .
 \end{equation}
@@ -869,11 +887,11 @@ These expressions for the Weyl spinors are identical to those of the Schwarzschi
 and this relation underlies the so-called Newman-Janis trick \cite{Newman:1965tw}\footnote{For another, but
 related, point of view on the origin of the Newman-Janis trick see \cite{Arkani-Hamed:2019ymq,Guevara:2020xjx}.}. 
 
-We now continue to discuss relevant aspects of null geodesics on Kerr black holes and their Penrose limits. While most of the discussion is a review of well-known results, to the best of our knowledge, the two-spinor approach to the Penrose limit for a Kerr black hole has not been worked out explicitly and, while implicitly or formally known, the simple final expressions \eqref{eqn:KBrinkmannc} and \eqref{eqn:KBrinkmann} for Penrose limits of \emph{generic} null geodesics seem to not be readily available in the literature.
+We now continue to discuss relevant aspects of null geodesics on Kerr black holes and their Penrose limits. While most of the discussion is a review of well-known results, to the best of our knowledge, the two-spinor approach to the Penrose limit for a Kerr black hole has not been worked out explicitly and, while implicitly or formally known, the simple final expressions \eqref{Penrose:eqn:KBrinkmannc} and \eqref{Penrose:eqn:KBrinkmann} for Penrose limits of \emph{generic} null geodesics seem to not be readily available in the literature.
 
 \subsubsection{Null geodesics and Penrose limits}
 
-As for the Schwarzschild black hole, there are many excellent references on the (null) geodesics of  Kerr spacetimes \cite{Carter:1968rr,Bardeen:1973tla,Chandrasekhar:1985kt,Gralla:2019ceu,Compere:2021bkk,Cieslik:2023qdc} and we shall only review what we need. References on Penrose limits with respect to arbitrary null geodesics are somewhat more scarce but see \cite{Igata:2019pgb,Fransen:2023eqj,Hollowood:2009qz} for photon sphere and equatorial orbits. See also \cite{Papadopoulos:2020qik} for the construction of adapted coordinates and \cite{Kubiznak:2008zs} for the construction of a parallel propagated frame. \cite{Papadopoulos:2020qik} formally presents the Penrose limit of Kerr black holes for arbitrary geodesics in Rosen coordinates, while the form in Brinkmann coordinates can be more directly constructed from \cite{Kubiznak:2008zs} and \eqref{eqn:penroseframe}. 
+As for the Schwarzschild black hole, there are many excellent references on the (null) geodesics of  Kerr spacetimes \cite{Carter:1968rr,Bardeen:1973tla,Chandrasekhar:1985kt,Gralla:2019ceu,Compere:2021bkk,Cieslik:2023qdc} and we shall only review what we need. References on Penrose limits with respect to arbitrary null geodesics are somewhat more scarce but see \cite{Igata:2019pgb,Fransen:2023eqj,Hollowood:2009qz} for photon sphere and equatorial orbits. See also \cite{Papadopoulos:2020qik} for the construction of adapted coordinates and \cite{Kubiznak:2008zs} for the construction of a parallel propagated frame. \cite{Papadopoulos:2020qik} formally presents the Penrose limit of Kerr black holes for arbitrary geodesics in Rosen coordinates, while the form in Brinkmann coordinates can be more directly constructed from \cite{Kubiznak:2008zs} and \eqref{Penrose:eqn:penroseframe}. 
 
 As illustrated for the Schwarzschild example, the combination of the Brinkmann and Rosen form of the Penrose limit plane wave is equivalent to finding and solving the geodesic deviation equations. This problem of the geodesic deviation equations in Kerr has also been directly discussed in \cite{Cariglia:2018erv}. As a result, implicit in \cite{Cariglia:2018erv} are again both the Brinkmann and Rosen forms of the Penrose limit plane waves. Nevertheless, using the two-spinor approach we find a particularly simple form of the Penrose limit. Moreover, we can then directly build a parallel propagated Newman-Penrose frame from a dyad, as a complementary approach to \cite{Kubiznak:2008zs}.
 
@@ -902,7 +920,7 @@ A two-spinor formulation of $u^{\mu}$ in terms of the dyad $\left\lbrace o^A , \
 \alpha^A = & \left(\frac{\bar{\zeta}}{\zeta} \, \frac{\sqrt{2}(L_{\psi}+\hat{E}y^2)e^{-i\pi/4}+\Delta_y Y'}{\sqrt{2}(L_{\psi}+\hat{E}y^2)e^{i\pi/4}+\Delta_y Y'}\right)^{1/4}\left(\sqrt{\left|\frac{1}{2\Sigma }\left(2L_{\psi}-2\hat{E}r^2+\Delta_r R'\right)\right|}o^A  \right. \\  &- \left.\sqrt{\left|R'\right|} \left(\sqrt{2}(L_{\psi}+\hat{E}y^2)e^{i\pi/4}+\Delta_y Y'\right)\frac{\iota^A}{K \sqrt{\Delta_y}}  \right)\, .
 \end{aligned}
 \end{equation}
-In addition to squaring to the tangent $u^{\mu} \sigma_{\mu}^{AA'} = \alpha^A \bar{\alpha}^{A'}$, this spinor and its conjugate satisfy the parallel transport equations, as before \eqref{eqn:tangentspinor}
+In addition to squaring to the tangent $u^{\mu} \sigma_{\mu}^{AA'} = \alpha^A \bar{\alpha}^{A'}$, this spinor and its conjugate satisfy the parallel transport equations, as before \eqref{Penrose:eqn:tangentspinor}
 \begin{equation}
 u^{\mu} \nabla_{\mu} \alpha^A = 0 \, \quad  u^{\mu} \nabla_{\mu} \bar{\alpha}^A = 0 .
 \end{equation}
@@ -910,13 +928,13 @@ As a consequence of this parallel transport, and the valence-2 Killing spinor eq
 \begin{equation}\label{Penrose:eqn:Kkillingspinorconserved}
 \chi_{AB} \alpha^A \alpha^B =  -\frac{\zeta}{\sqrt{2} M^2} 2 o_{(A} \iota_{B)}\alpha^A \alpha^B = - \frac{K}{M^2} \, .
 \end{equation}
-It is in fact easiest to derive \eqref{eqn:Kalpha} by requiring that \eqref{eqn:Kkillingspinorconserved} should be constant, to avoid solving \eqref{eqn:tangentspinor}. We have nevertheless checked explicitly that \eqref{eqn:tangentspinor} is satisfied but leave the details to Appendix \ref{app:Kerr}.
+It is in fact easiest to derive \eqref{Penrose:eqn:Kalpha} by requiring that \eqref{Penrose:eqn:Kkillingspinorconserved} should be constant, to avoid solving \eqref{Penrose:eqn:tangentspinor}. We have nevertheless checked explicitly that \eqref{Penrose:eqn:tangentspinor} is satisfied but leave the details to Appendix \ref{Penrose:app:Kerr}.
 
-From the form of the Weyl spinor \eqref{eqn:KPsiABCD} and the spinor prescription to take the Penrose limit \eqref{eqn:penrosespinor}, we find
+From the form of the Weyl spinor \eqref{Penrose:eqn:KPsiABCD} and the spinor prescription to take the Penrose limit \eqref{Penrose:eqn:penrosespinor}, we find
 \begin{equation}\label{Penrose:eqn:KBrinkmannc}
 ds_{\gamma}^2 = 2 du dv - \frac{3 K^2}{M^4}\left(M^5\zeta^{-5} z^2 + M^5 \bar{\zeta}^{-5}\bar{z}^2\right) du^2 - 2 dz d\bar{z}  \, ,
 \end{equation}
-with $\zeta(u) = \zeta|_{\gamma} = r(u)-i y(u)$, and where $r(u)$, $y(u)$ satisfy the geodesic equations \eqref{eqn:Kgeod}. In terms of real transverse coordinates, as in \eqref{eqn:complexz}, the metric \eqref{eqn:KBrinkmannc} becomes 
+with $\zeta(u) = \zeta|_{\gamma} = r(u)-i y(u)$, and where $r(u)$, $y(u)$ satisfy the geodesic equations \eqref{Penrose:eqn:Kgeod}. In terms of real transverse coordinates, as in \eqref{Penrose:eqn:complexz}, the metric \eqref{Penrose:eqn:KBrinkmannc} becomes 
 \begin{equation}\label{Penrose:eqn:KBrinkmann}
 \begin{aligned}
 ds_{\gamma}^2 &= 2 du dv  - dx_1^2 - dx_2^2  \\
@@ -925,20 +943,20 @@ ds_{\gamma}^2 &= 2 du dv  - dx_1^2 - dx_2^2  \\
 \end{equation} 
 This result is consistent (up to rescaling of $u$ and $v$) with equatorial and photon sphere results presented in
 \cite{Igata:2019pgb,Fransen:2023eqj}, and with the eigenvalues of the ``wave profile'' ($H_{ab}$) presented in
-\cite{Hollowood:2009qz} for general Petrov type D spacetimes as well as for Kerr in particular.\footnote{In fact, \cite{Hollowood:2009qz} may be considered to give a full alternative derivation for \eqref{eqn:KBrinkmannc}  when, in the right places, expressions are kept complex and the transverse directions are interpreted in terms of $z$ and $\bar{z}$; see specifically their (7.46). However, this does not seem to have been what \cite{Hollowood:2009qz} had in mind.} 
+\cite{Hollowood:2009qz} for general Petrov type D spacetimes as well as for Kerr in particular.\footnote{In fact, \cite{Hollowood:2009qz} may be considered to give a full alternative derivation for \eqref{Penrose:eqn:KBrinkmannc}  when, in the right places, expressions are kept complex and the transverse directions are interpreted in terms of $z$ and $\bar{z}$; see specifically their (7.46). However, this does not seem to have been what \cite{Hollowood:2009qz} had in mind.} 
 
-We will not describe here a parallel propagated null frame, derived from a dyad $\lbrace\alpha,\beta \rbrace$, nor the adapted coordinate approach as we did for the Schwarzschild black hole. We do wish to note, that after we computed \eqref{eqn:KBrinkmannc} and \eqref{eqn:KBrinkmann}, we became aware of the reference \cite{penrose19952}, where Penrose performs essentially the same calculation of \eqref{eqn:penrosespinor} for vacuum Petrov type D spacetimes. However, Penrose doesn't discuss it in the context of the Penrose limit or the geodesic deviation equations but rather as representing the ``null datum'' for the characteristic initial value problem \cite{penrose1980golden}. Along the same lines, it was known (e.g. \cite{penrose1984spinors}, Section 5.11) that \eqref{eqn:penrosespinor} is a way to compute the ``astigmatic'', $\Psi(u)$, and ``anastigmatic'', $\Phi(u)$, part of the geodesic deviation but we are unaware of other sources than \cite{Tod:2019urw} emphasizing the simplicity of this approach, or actually using it to take a Penrose limit. 
+We will not describe here a parallel propagated null frame, derived from a dyad $\lbrace\alpha,\beta \rbrace$, nor the adapted coordinate approach as we did for the Schwarzschild black hole. We do wish to note, that after we computed \eqref{Penrose:eqn:KBrinkmannc} and \eqref{Penrose:eqn:KBrinkmann}, we became aware of the reference \cite{penrose19952}, where Penrose performs essentially the same calculation of \eqref{Penrose:eqn:penrosespinor} for vacuum Petrov type D spacetimes. However, Penrose doesn't discuss it in the context of the Penrose limit or the geodesic deviation equations but rather as representing the ``null datum'' for the characteristic initial value problem \cite{penrose1980golden}. Along the same lines, it was known (e.g. \cite{penrose1984spinors}, Section 5.11) that \eqref{Penrose:eqn:penrosespinor} is a way to compute the ``astigmatic'', $\Psi(u)$, and ``anastigmatic'', $\Phi(u)$, part of the geodesic deviation but we are unaware of other sources than \cite{Tod:2019urw} emphasizing the simplicity of this approach, or actually using it to take a Penrose limit. 
 
 %For a construction of an adapted coordinate system for the Kerr black hole see \cite{Papadopoulos:2020qik}. As illustrated in the Schwarzschild example, from the Penrose limit plane wave in Rosen coordinates, as directly obtained from an adapted coordinate system, solutions to the geodesic deviation equation can be found. It is not surprising that Jacobi vector fields can be found explicitly in spacetimes with integrable geodesics but these can nevertheless be very complicated, as is the case for the Kerr black hole \cite{Cariglia:2018erv}.
 
 \subsubsection{The double copy}\label{Penrose:sec:KdcPenrose}
 
-The Weyl double copy structure of the Kerr black hole, as described in \cite{Luna:2018dpt}, is a straightforward generalization of the Schwarzschild example presented in \eqref{eqn:Spsidc} and \eqref{eqn:Ssingle}
+The Weyl double copy structure of the Kerr black hole, as described in \cite{Luna:2018dpt}, is a straightforward generalization of the Schwarzschild example presented in \eqref{Penrose:eqn:Spsidc} and \eqref{Penrose:eqn:Ssingle}
 \begin{equation}\label{Penrose:eqn:Kpsidc}
 \Psi_{ABCD} = -\left(\frac{M}{\zeta}\right)^5 3\chi_{(AB}\chi_{CD)} \, , \quad f_{AB} =   -\left(\frac{M}{\zeta}\right)^3 2\chi_{AB} \, , \quad S = - 2\left(\frac{M}{\zeta}\right) \, .
 \end{equation}
-Similarly, the double copy of the plane wave \eqref{eqn:KBrinkmannc} is a straightforward generalization of
-\eqref{eqn:Sgammapsidc} and \eqref{eqn:Sppscweyl}. If we fix the type N ambiguity in the Weyl double copy by \eqref{eqn:Sppscweyl}, then the Weyl single copy of \eqref{eqn:KBrinkmann}, with Weyl scalar
+Similarly, the double copy of the plane wave \eqref{Penrose:eqn:KBrinkmannc} is a straightforward generalization of
+\eqref{Penrose:eqn:Sgammapsidc} and \eqref{Penrose:eqn:Sppscweyl}. If we fix the type N ambiguity in the Weyl double copy by \eqref{Penrose:eqn:Sppscweyl}, then the Weyl single copy of \eqref{Penrose:eqn:KBrinkmann}, with Weyl scalar
 \begin{equation}\label{Penrose:eqn:Kgammapsidc}
 	\Psi^{(\gamma)}_{ABCD} = -\left(\frac{M}{\zeta(u)}\right)^5 \frac{3 K^2}{M^4}  \beta^{(\gamma)}_A \beta^{(\gamma)}_B  \beta^{(\gamma)}_C  \beta^{(\gamma)}_D   \, ,
 \end{equation}
@@ -946,7 +964,7 @@ Similarly, the double copy of the plane wave \eqref{eqn:KBrinkmannc} is a straig
 \begin{equation}\label{Penrose:eqn:Kgammapsisc}
  f^{(\gamma)}_{AB} =\left(\frac{M}{\zeta(u)}\right)^3 \frac{2K}{M^2} \beta^{(\gamma)}_A \beta^{(\gamma)}_B \, , \quad S^{(\gamma)} = -\frac{2M}{\zeta(u)}  \, .
 \end{equation}
-Together with the conservation equation \eqref{eqn:Kkillingspinorconserved}, \eqref{eqn:Kpsidc} and \eqref{eqn:Kgammapsisc} immediately imply the validity of the proposed prescription \eqref{eqn:dcPenroselimit} for the single copy Penrose limit. Said differently, the Kerr black hole, just like the Schwarzschild black hole, behaves perfectly according to the schematic summary in Figure \ref{fig:schematic}.
+Together with the conservation equation \eqref{Penrose:eqn:Kkillingspinorconserved}, \eqref{Penrose:eqn:Kpsidc} and \eqref{Penrose:eqn:Kgammapsisc} immediately imply the validity of the proposed prescription \eqref{Penrose:eqn:dcPenroselimit} for the single copy Penrose limit. Said differently, the Kerr black hole, just like the Schwarzschild black hole, behaves perfectly according to the schematic summary in Figure \ref{Penrose:fig:schematic}.
 
 We will not repeat the full analysis of the relation to the Kerr-Schild double copy, which can be found in \cite{Monteiro:2014cda} for the black hole, and in \cite{Luna:2018dpt} for the plane wave.  The difference between \cite{Monteiro:2014cda} and \cite{Luna:2018dpt} for the plane wave, Kerr-Schild double copy was described in detail for the Schwarzschild example. We use the ``plane wave-to-plane wave'' rule of \cite{Luna:2018dpt}, and believe that the consistency with the Penrose limit of this rule adds some support for its validity.
 
@@ -958,11 +976,11 @@ The result is that the Kerr-Schild single copy of the Penrose limits of an arbit
 \end{equation}
 The zeroth copy is given by
 \begin{equation}\label{Penrose:eqn:Kzero}
-\phi^{(\rm KS)}_{(\gamma)} = - 2\left( M \zeta(u)^{-1} + M \bar{\zeta}(u)^{-1}\right) =- \frac{4 M r(u)}{r(u)^2+y(u)^2} \, .
+\phi^{(\mathrm{KS})}_{(\gamma)} = - 2\left( M \zeta(u)^{-1} + M \bar{\zeta}(u)^{-1}\right) =- \frac{4 M r(u)}{r(u)^2+y(u)^2} \, .
 \end{equation}
-Recall that the functions $r|_{\gamma} = r(u)$, and  $y|_{\gamma} = y(u)$ satisfy the geodesic equations \eqref{eqn:Kgeod}. 
+Recall that the functions $r|_{\gamma} = r(u)$, and  $y|_{\gamma} = y(u)$ satisfy the geodesic equations \eqref{Penrose:eqn:Kgeod}. 
 
-The canonical coordinates and the closely related Kerr-Schild coordinates for the Kerr black hole, used throughout this example and introduced in \eqref{eqn:canonicalcoord} and \eqref{eqn:KScoord}, are not well-suited to take the Schwarzschild limit $a \to 0$. However, taking $y \sim a \to 0$, the Penrose limit plane wave \eqref{eqn:KBrinkmann}, as well as the single copy \eqref{eqn:Ksingle} and zeroth copy \eqref{eqn:Kzero} readily reduce the their equivalents for the Schwarzschild black holes, respectively \eqref{eqnS:Brinkmann}, \eqref{eqn:SKS1matchingWeyl}, and \eqref{eqn:SKS0matchingWeyl}.
+The canonical coordinates and the closely related Kerr-Schild coordinates for the Kerr black hole, used throughout this example and introduced in \eqref{Penrose:eqn:canonicalcoord} and \eqref{Penrose:eqn:KScoord}, are not well-suited to take the Schwarzschild limit $a \to 0$. However, taking $y \sim a \to 0$, the Penrose limit plane wave \eqref{Penrose:eqn:KBrinkmann}, as well as the single copy \eqref{Penrose:eqn:Ksingle} and zeroth copy \eqref{Penrose:eqn:Kzero} readily reduce the their equivalents for the Schwarzschild black holes, respectively \eqref{Penrose:eqnS:Brinkmann}, \eqref{Penrose:eqn:SKS1matchingWeyl}, and \eqref{Penrose:eqn:SKS0matchingWeyl}.
 
 
 \subsection{Vacuum Petrov type D spacetimes}\label{Penrose:sec:typeD}
@@ -977,23 +995,23 @@ where $\chi_{AB}$ is a valence-2 Killing spinor, $\zeta$ is a non-trivial functi
 \begin{equation}\label{Penrose:eqn:generaltypeDexamples}
 \tilde{M} = M-iN \, , \quad \zeta = -\frac{q-ip}{1-pq} \, .
 \end{equation}
-We will  not actually need these expressions for $\tilde{M}$ and $\zeta$ here. Instead, we refer to Appendix \ref{app:PlebanskiDemianski} for some additional details, such as the definition\footnote{$\zeta$ and $\bar{\zeta}$ are arguably the more fundamental quantities. Therefore, (the inversion of) \eqref{eqn:generaltypeDexamples} can actually be viewed as giving a more invariant meaning to the coordinates $p$ and $q$.} of the (real) coordinates $p$ and $q$. 
+We will  not actually need these expressions for $\tilde{M}$ and $\zeta$ here. Instead, we refer to Appendix \ref{Penrose:app:PlebanskiDemianski} for some additional details, such as the definition\footnote{$\zeta$ and $\bar{\zeta}$ are arguably the more fundamental quantities. Therefore, (the inversion of) \eqref{Penrose:eqn:generaltypeDexamples} can actually be viewed as giving a more invariant meaning to the coordinates $p$ and $q$.} of the (real) coordinates $p$ and $q$. 
 
-The Weyl single and zeroth copy of vacuum Petrov type D spacetimes \eqref{eqn:dcD}, in our conventions, are minimally different from the Kerr example \eqref{eqn:Kpsidc} 
+The Weyl single and zeroth copy of vacuum Petrov type D spacetimes \eqref{Penrose:eqn:dcD}, in our conventions, are minimally different from the Kerr example \eqref{Penrose:eqn:Kpsidc} 
 \begin{equation}\label{Penrose:eqn:zcD}
 f_{AB} = -\left(\frac{\tilde{M}}{\zeta}\right)^3 2 \chi_{AB} \, , \quad S = - \frac{2 \tilde{M}}{\zeta} \, .
 \end{equation}
-Note that the inverse of $\zeta$ always represents the spacetime dependent piece of the zeroth copy and $\zeta^2 \propto \chi_{AB} \chi^{AB}$, as illustrated by the Schwarzschild \eqref{eqn:Schi} and Kerr \eqref{eqn:KPsiABCD} examples. The entire structure and consistency of the Weyl double copy for this class of vacuum Petrov type D spacetimes is thus based on the Killing spinor $\chi_{AB}$.
+Note that the inverse of $\zeta$ always represents the spacetime dependent piece of the zeroth copy and $\zeta^2 \propto \chi_{AB} \chi^{AB}$, as illustrated by the Schwarzschild \eqref{Penrose:eqn:Schi} and Kerr \eqref{Penrose:eqn:KPsiABCD} examples. The entire structure and consistency of the Weyl double copy for this class of vacuum Petrov type D spacetimes is thus based on the Killing spinor $\chi_{AB}$.
 
-%The importance of $\chi_{AB}$ to the Weyl double is particularly clear if the single copy and zeroth copy are interpreted as living on the curved spacetime. In this ``curved background'' double copy, one can simply appeal to an old observation (see for instance \cite{Penrose:1986ca}) that $\chi^{AB}$ acts as a spin-lowering operator, relating solutions to the massless free field equations of different spin, to argue that the Bianchi identities for \eqref{eqn:dcD} imply the field equations for \eqref{eqn:zcD} and \eqref{eqn:scD}. In the terminology of \cite{penrose1984spinors,Penrose:1986ca}, a massless free field equation is in general an equation of the form
+%The importance of $\chi_{AB}$ to the Weyl double is particularly clear if the single copy and zeroth copy are interpreted as living on the curved spacetime. In this ``curved background'' double copy, one can simply appeal to an old observation (see for instance \cite{Penrose:1986ca}) that $\chi^{AB}$ acts as a spin-lowering operator, relating solutions to the massless free field equations of different spin, to argue that the Bianchi identities for \eqref{Penrose:eqn:dcD} imply the field equations for \eqref{Penrose:eqn:zcD} and \eqref{Penrose:eqn:scD}. In the terminology of \cite{penrose1984spinors,Penrose:1986ca}, a massless free field equation is in general an equation of the form
 %\begin{equation}\label{Penrose:eqn:masslessfree}
 %\nabla_{AA'}\lambda^{A A_1 \ldots A_{n-1}} = 0\, .
 %\end{equation} 
-%Despite the terminology, $\Psi_{ABCD}$ satisfies \eqref{eqn:masslessfree} with $n=4$ when the vacuum Einstein equations are imposed. Then, from the valence-2 Killing spinor equation \eqref{eqn:valence2} together with the symmetry of $\Psi_{ABCD}$, the source-free Maxwell equation (which is equivalent to \eqref{eqn:masslessfree} with $n=2$) follows
+%Despite the terminology, $\Psi_{ABCD}$ satisfies \eqref{Penrose:eqn:masslessfree} with $n=4$ when the vacuum Einstein equations are imposed. Then, from the valence-2 Killing spinor equation \eqref{Penrose:eqn:valence2} together with the symmetry of $\Psi_{ABCD}$, the source-free Maxwell equation (which is equivalent to \eqref{Penrose:eqn:masslessfree} with $n=2$) follows
 %\begin{equation}
 %	\nabla_{AA'} f^{AB} \propto 	\left(\nabla_{AA'} \Psi^{ABCD}\right)\chi_{CD} +  \Psi^{ABCD} \nabla_{AA'} \chi_{CD} = 0   \, .
 %\end{equation}
-%To show that the field equations for $S$ are satisfied on the curved background, which is not strictly of the form \eqref{eqn:masslessfree}, note that \eqref{eqn:masslessfree} is equivalent to \cite{penrose1984spinors} (2.5.24)
+%To show that the field equations for $S$ are satisfied on the curved background, which is not strictly of the form \eqref{Penrose:eqn:masslessfree}, note that \eqref{Penrose:eqn:masslessfree} is equivalent to \cite{penrose1984spinors} (2.5.24)
 %\begin{equation}\label{Penrose:eqn:masslessfree2}
 %\nabla^{B}_{B'}\lambda^{A A_1 \ldots A_{n-1}} = \nabla^{(B}_{B'}\lambda^{A A_1 \ldots A_{n-1})}\, .
 %\end{equation} 
@@ -1002,7 +1020,7 @@ Note that the inverse of $\zeta$ always represents the spacetime dependent piece
 % \nabla^{CC'} \nabla_{CC'} S \propto  \nabla^{CC'} \nabla_{CC'} \left(f^{AB} \chi_{AB}\right)    =0 \, .
 %\end{equation}
 %As was emphasized already in \cite{Luna:2018dpt}, much of the early results of classical double copy, especially when the single and zeroth copy are interpreted as being defined on the curved background\footnote{See also \cite{Han:2022ubu}.}, were anticipated in the general relativity literature without using the double copy language. Similarly, our main result, interpreted the curved background,  can be summarized as a judicious combination of the Weyl double copy of \cite{Luna:2018dpt} and the spinorial Penrose limit of \cite{Tod:2019urw} as well as its Penrose-G\"uven extension.
-The existence of the valence-2 Killing spinors is also enough for the null geodesic equations to separate \cite{Walker:1970un}. We will not go through this explicitly again, but rather assume a null geodesic $\gamma$ and a tangent spinor $\alpha^A$ were found as in the previous examples. Then we have the conserved quantity\footnote{For discussions on the relation between the conserved quantity in \eqref{eqn:chialphalpha} to the Carter constant, see for instance the original work \cite{Walker:1970un}, the review \cite{Frolov:2017kze} (Appendix F, focused on the relation to the Killing-Yano tensor), or \cite{Aksteiner:2014zyp} (beginning of Chapter 5, with an eye towards a field theory generalization).} (defined by analogy with \eqref{eqn:Kkillingspinorconserved})
+The existence of the valence-2 Killing spinors is also enough for the null geodesic equations to separate \cite{Walker:1970un}. We will not go through this explicitly again, but rather assume a null geodesic $\gamma$ and a tangent spinor $\alpha^A$ were found as in the previous examples. Then we have the conserved quantity\footnote{For discussions on the relation between the conserved quantity in \eqref{Penrose:eqn:chialphalpha} to the Carter constant, see for instance the original work \cite{Walker:1970un}, the review \cite{Frolov:2017kze} (Appendix F, focused on the relation to the Killing-Yano tensor), or \cite{Aksteiner:2014zyp} (beginning of Chapter 5, with an eye towards a field theory generalization).} (defined by analogy with \eqref{Penrose:eqn:Kkillingspinorconserved})
 \begin{equation}\label{Penrose:eqn:chialphalpha}
 \chi_{AB} \alpha^{A}\alpha^{B} = - \frac{\tilde{K}}{\tilde{M}^2} \, ,
 \end{equation}
@@ -1014,15 +1032,15 @@ Explicitly, the Penrose limit plane wave for an arbitrary null geodesic in a vac
 \begin{equation}\label{Penrose:eqn:DBrinkmannc}
 ds_{\gamma}^2 = 2 du dv - \left\lbrack \left(\frac{3\tilde{K}^2}{\tilde{M}^4} \left(\frac{\tilde{M}}{\zeta(u)}\right)^5\right) z^2 + \left(\frac{3\tilde{K}^2}{\tilde{M}^4} \left(\frac{\tilde{M}}{\zeta(u)}\right)^5\right)^* \bar{z}^2\right\rbrack du^2 - 2 dz d\bar{z}  \, .
 \end{equation}
-Here, we have left implicit that $\zeta(u) = \zeta|_{\gamma}$ is to be evaluated along the geodesic, which will generically mean that the $u$-dependence of \eqref{eqn:DBrinkmannc} will be rather complicated in practice.
+Here, we have left implicit that $\zeta(u) = \zeta|_{\gamma}$ is to be evaluated along the geodesic, which will generically mean that the $u$-dependence of \eqref{Penrose:eqn:DBrinkmannc} will be rather complicated in practice.
 
-The single copy of the plane wave spacetime \eqref{eqn:DBrinkmannc} is given by
+The single copy of the plane wave spacetime \eqref{Penrose:eqn:DBrinkmannc} is given by
 \begin{equation}
 f_{AB}^{(\gamma)} = \left(\frac{\tilde{M}}{\zeta(u)}\right)^3 \frac{\tilde{K}}{\tilde{M}^2} 2 \beta^{(\gamma)}_{A}\beta_B^{(\gamma)} \, , \quad S^{(\gamma)} = - \frac{2 \tilde{M}}{\zeta(u)} \, .
 \end{equation}
-consistent with the proposed Weyl double copy of the Penrose limit. Let us conclude our discussion of the vacuum Petrov type D cases by reiterating, in Figure \ref{fig:schematicD}, the general schematic structure of the results Figure \ref{fig:schematic} explicitly in terms of the key valence-2 Killing spinor. 
+consistent with the proposed Weyl double copy of the Penrose limit. Let us conclude our discussion of the vacuum Petrov type D cases by reiterating, in Figure \ref{Penrose:fig:schematicD}, the general schematic structure of the results Figure \ref{Penrose:fig:schematic} explicitly in terms of the key valence-2 Killing spinor. 
 
-Note for the normalizations that, in addition to the overall, constant ambiguity in the Weyl double copy $(S, f_{AB}) \to (C_{W}^2 S, C_{W} f_{AB})$ for a constant $C_{W}$, the normalization of the valence-2 Killing spinor is not fixed a priori, so we can also rescale $\chi_{AB} \to C_{\chi}\chi_{AB}$ for constant $C_{\chi}$. Finally, a different choice of affine time of the null geodesic will rescale $\alpha$ and therefore $\beta^{(\gamma)}$ (to preserve the dyad basis normalization \eqref{eqn:dyadnorm}). On the other hand, both the normalization of tangent spinor (and related $\beta^{(\gamma)}$) , as well as that of $\chi_{AB}$ enter into $\tilde{K}$,  say $(\beta^{(\gamma)}, \tilde{K}) \to (C_u \beta^{(\gamma)}, \frac{C_{\chi}}{C_u^2}\tilde{K})$. All in all, we have the following rescaling freedom
+Note for the normalizations that, in addition to the overall, constant ambiguity in the Weyl double copy $(S, f_{AB}) \to (C_{W}^2 S, C_{W} f_{AB})$ for a constant $C_{W}$, the normalization of the valence-2 Killing spinor is not fixed a priori, so we can also rescale $\chi_{AB} \to C_{\chi}\chi_{AB}$ for constant $C_{\chi}$. Finally, a different choice of affine time of the null geodesic will rescale $\alpha$ and therefore $\beta^{(\gamma)}$ (to preserve the dyad basis normalization \eqref{Penrose:eqn:dyadnorm}). On the other hand, both the normalization of tangent spinor (and related $\beta^{(\gamma)}$) , as well as that of $\chi_{AB}$ enter into $\tilde{K}$,  say $(\beta^{(\gamma)}, \tilde{K}) \to (C_u \beta^{(\gamma)}, \frac{C_{\chi}}{C_u^2}\tilde{K})$. All in all, we have the following rescaling freedom
 \begin{equation}
 \Psi_{ABCD} \to C^{-3}_{\chi} \Psi_{ABCD} \, , \quad f_{AB} \to C_{W} C^{-2}_{\chi} f_{AB} \, , \quad  S \to C_{W}^2 C^{-1}_{\chi} S \, ,
 \end{equation}
@@ -1030,13 +1048,13 @@ Therefore, we are indeed free to impose, by our choice of $\chi_{AB}$ and the We
 \begin{equation}\label{Penrose:eqn:typeDclean}
 \Psi_{ABCD} =  \frac{\chi_{(AB} \chi_{CD)}}{\left(\chi_{EF}\chi^{EF}\right)^{5/2}} \, , \quad f_{AB} = \frac{\chi_{AB}}{\left(\chi_{EF}\chi^{EF}\right)^{3/2}} , \quad S = \left(\chi_{EF}\chi^{EF}\right)^{-1/2}  \, .
 \end{equation}
-Then, from the definition of $\tilde{K}$ in \eqref{eqn:chialphalpha}, it follows that
+Then, from the definition of $\tilde{K}$ in \eqref{Penrose:eqn:chialphalpha}, it follows that
 \begin{equation}
 \begin{aligned}
 \Psi^{(\gamma)}_{ABCD} &=  \left(\frac{\tilde{K}}{\tilde{M}^2}\right)^2 \frac{\beta^{(\gamma)}_A \beta^{(\gamma)}_B \beta^{(\gamma)}_C \beta^{(\gamma)}_D}{\left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{5/2}\right\rbrack \right |_{\gamma}}  \, , \quad f^{(\gamma)}_{AB} = -\left(\frac{\tilde{K}}{\tilde{M}^2}\right) \frac{\beta^{(\gamma)}_A \beta^{(\gamma)}_B}{\left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{3/2}\right\rbrack \right|_{\gamma}} , \\ S^{(\gamma)} &= \left.\left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{-1/2}\right\rbrack \right|_{\gamma}  \, .
 \end{aligned}
 \end{equation}
-On the other hand, rescaling $\chi_{AB}$ while keeping $\tilde{M}$ fixed, will implicitly change the definition of $\zeta$. In particular examples, like the previously discussed Schwarzschild and Kerr black holes, we preferred not to include extra combinatorial factors into this quantity such the reality is slightly less clean than \eqref{eqn:typeDclean}.
+On the other hand, rescaling $\chi_{AB}$ while keeping $\tilde{M}$ fixed, will implicitly change the definition of $\zeta$. In particular examples, like the previously discussed Schwarzschild and Kerr black holes, we preferred not to include extra combinatorial factors into this quantity such the reality is slightly less clean than \eqref{Penrose:eqn:typeDclean}.
 
 
 From the plane wave perspective, one can absorb $\tilde{K}/\tilde{M}^2$ into the plane wave coordinate $u$. However, from our understanding of the plane wave as arising from a Penrose limit, we know that $\tilde{K}/\tilde{M}^2$ is not independent of this choice of affine time. Therefore, we prefer to keep it.
@@ -1060,7 +1078,7 @@ From the plane wave perspective, one can absorb $\tilde{K}/\tilde{M}^2$ into the
 		 	f^{(\gamma)}_{AB} &=& - \left(\frac{\tilde{K}}{\tilde{M}^2}\right) \frac{\beta^{(\gamma)}_A \beta^{(\gamma)}_B}{ \left. \left\lbrack\left(\chi_{EF}\chi^{EF}\right)^{3/2}\right\rbrack \right|_{\gamma}}  
 		 \end{aligned}$}  
 	\end{tikzcd}
-	\caption{The Weyl double copy and Penrose limit of general vacuum Petrov type D spacetimes, in  terms of the valence-2 Killing spinor $\chi_{AB}$ and the associated constant of motion $\tilde{K}/\tilde{M}^2$ of the null geodesic $\gamma$, as defined in \eqref{eqn:chialphalpha}.} \label{Penrose:fig:schematicD} 
+	\caption{The Weyl double copy and Penrose limit of general vacuum Petrov type D spacetimes, in  terms of the valence-2 Killing spinor $\chi_{AB}$ and the associated constant of motion $\tilde{K}/\tilde{M}^2$ of the null geodesic $\gamma$, as defined in \eqref{Penrose:eqn:chialphalpha}.} \label{Penrose:fig:schematicD} 
 \end{figure}
 
 \subsection{Type N examples} \label{Penrose:sec:typeN}
@@ -1074,7 +1092,7 @@ The Weyl spinors for type N spacetimes are of the form
 \begin{equation}\label{Penrose:eqn:WeyltypeN}
 \Psi_{ABCD} = \Psi(x^{\mu}) \, \iota_A \iota_B \iota_C \iota_D \, ,
 \end{equation}
-for some function $\Psi(x^{\mu})$ on the spacetime and with $\iota_A$ a principal spinor. In keeping with our convention for the plane wave (see \eqref{eqn:NPsi} and also \eqref{eqn:psidefs}), the form of \eqref{eqn:WeyltypeN} is such that only the Weyl scalar $\Psi_0 = \Psi(x^{\mu})$ is non-vanishing with respect to a dyad $\left\lbrace o^A, \iota^A \right\rbrace$. The Weyl double copy implies the existence of a scalar $S$ and Maxwell spinor $f_{AB}$ of the form
+for some function $\Psi(x^{\mu})$ on the spacetime and with $\iota_A$ a principal spinor. In keeping with our convention for the plane wave (see \eqref{Penrose:eqn:NPsi} and also \eqref{Penrose:eqn:psidefs}), the form of \eqref{Penrose:eqn:WeyltypeN} is such that only the Weyl scalar $\Psi_0 = \Psi(x^{\mu})$ is non-vanishing with respect to a dyad $\left\lbrace o^A, \iota^A \right\rbrace$. The Weyl double copy implies the existence of a scalar $S$ and Maxwell spinor $f_{AB}$ of the form
 \begin{equation}\label{Penrose:eqn:ftypeN}
 f_{AB} = f(x^{\mu}) \, \iota_A \iota_B \, . 
 \end{equation}
@@ -1086,11 +1104,11 @@ A condition on $S$ for the compatibility of the Bianchi identity for $\Psi$ with
 
 Focusing then on the non-twisting spacetimes with single copies on flat space, these type N metrics can naturally
 be given in terms of an adapted coordinate system\footnote{In the example of the plane wave, the Brinkmann
-coordinates \eqref{eqn:Brinkmann} are an adapted coordinate system for the principal, null geodesic congruence
-$\partial_v$. Hence, we avoid using the notation of  \eqref{eqn:adapted} for adapted coordinate systems in which we would have $(U,V,X_1,X_2) = (v,u,x_1,x_2)$.} (of the form \eqref{eqn:adapted}) to the principal null geodesic congruence. A null affine time $v$ along the principal null geodesic congruence is then used as a coordinate time and the principal null spinor can be chosen such that $(\partial_v)^{AA'} = \iota^A \bar{\iota}^{A'}$. Fixing the principal null spinor, it was shown in \cite{Godazgar:2020zbv} that the functional ambiguity of the Weyl double copy can not in general be fixed by choices like \eqref{eqn:typeNscaling} or \eqref{eqn:oldtypeNscaling}. 
+coordinates \eqref{Penrose:eqn:Brinkmann} are an adapted coordinate system for the principal, null geodesic congruence
+$\partial_v$. Hence, we avoid using the notation of  \eqref{Penrose:eqn:adapted} for adapted coordinate systems in which we would have $(U,V,X_1,X_2) = (v,u,x_1,x_2)$.} (of the form \eqref{Penrose:eqn:adapted}) to the principal null geodesic congruence. A null affine time $v$ along the principal null geodesic congruence is then used as a coordinate time and the principal null spinor can be chosen such that $(\partial_v)^{AA'} = \iota^A \bar{\iota}^{A'}$. Fixing the principal null spinor, it was shown in \cite{Godazgar:2020zbv} that the functional ambiguity of the Weyl double copy can not in general be fixed by choices like \eqref{Penrose:eqn:typeNscaling} or \eqref{Penrose:eqn:oldtypeNscaling}. 
 
 On the other hand, the choice of principal null spinor is not unique. If we only impose that $o^A$ is such that
-\eqref{eqn:WeyltypeN} holds, $\iota_A$ can be rescaled by an arbitrary scalar function. We will call this rescaling
+\eqref{Penrose:eqn:WeyltypeN} holds, $\iota_A$ can be rescaled by an arbitrary scalar function. We will call this rescaling
 a Geroch-Held-Penrose (GHP) transformation \cite{geroch1973space}, after the GHP, or compacted spin-coefficient,
 formalism in which one works covariantly with respect to such rescalings \cite{penrose1984spinors}. We will say a
 quantity $X$ has boost-weight $b$ and spin-weight $s$ if under $o^A \to \lambda e^{i \varphi}o^A$ and $\iota^A \to
@@ -1099,7 +1117,7 @@ s \varphi}  X$. The zeroth copy scalar $S$, the field strength spinor $f_{AB}$, 
 are invariant under GHP transformations but the (spacetime) scalars $f$ and $\Psi$ have boost-and spin weight $1$
 and $2$ respectively. Moreover, the governing Bianchi and Maxwell equations for $\Psi$ and $f$ in \cite{Godazgar:2020zbv} are GHP-covariant, although they were not written in a manifestly covariant way\footnote{The GHP-covariance is one way to understand the ``clear structure'' in these massless free field equations for $\Psi$ an $f$ remarked upon in \cite{Godazgar:2020zbv}.}. 
 
-Therefore, while in Section \ref{sec:ambiguity} we discussed the functional ambiguity in the double copy for type N spacetimes with a focus on plane waves, the choices \eqref{eqn:oldtypeNscaling} and \eqref{eqn:typeNscaling} of the form
+Therefore, while in Section \ref{Penrose:sec:ambiguity} we discussed the functional ambiguity in the double copy for type N spacetimes with a focus on plane waves, the choices \eqref{Penrose:eqn:oldtypeNscaling} and \eqref{Penrose:eqn:typeNscaling} of the form
 \begin{equation}\label{Penrose:eqn:typeNscalingN}
 \Psi = S^{2a+1} \, , \quad f = S^{a+1} \, , 
 \end{equation}
@@ -1107,34 +1125,34 @@ can be made for general type N spacetimes. Simply let $\iota^A \to \left(\frac{\
 Then, $\Psi \to S^{2a+1}$ and $f \to S^{a+1}$. The GHP-covariance ensures the equations of motion for $\Psi$ and
 $f$ are still satisfied while the spacetime tensors and spinors associated to $\Psi$ and $f$ are GHP-invariant.
 Thus, the flat space wave equations are also still satisfied. Of course, in this way the choices
-\eqref{eqn:oldtypeNscaling} and \eqref{eqn:typeNscaling} don't actually fix the ambiguity in the double copy, which
+\eqref{Penrose:eqn:oldtypeNscaling} and \eqref{Penrose:eqn:typeNscaling} don't actually fix the ambiguity in the double copy, which
 exists on the level of a functional freedom for zeroth copy $S$. In explicit examples, we will see that there seems
 to be natural choices in between an a priori fixed $\iota^A$, such as can be imposed for plane waves, and the
 arbitrariness that the full GHP-covariance allows.\footnote{With regards to the type D examples, note that
 $\Psi_2$, contrary to $\Psi_0$ or $\Psi_4$, is GHP-invariant.}
 
-As before, given a geodesic $\gamma$ and a parallel transported tangent spinor $\alpha^A$,  the spinor approach to the Penrose limit \eqref{eqn:penrosespinor} yields the plane wave equivalents of $\Psi$, $f$ and $S$
+As before, given a geodesic $\gamma$ and a parallel transported tangent spinor $\alpha^A$,  the spinor approach to the Penrose limit \eqref{Penrose:eqn:penrosespinor} yields the plane wave equivalents of $\Psi$, $f$ and $S$
 \begin{equation}\label{Penrose:eqn:gammatypeN}
 \Psi^{(\gamma)} =\left. \left\lbrack \Psi \left(\iota_A \alpha^A\right)^4\right\rbrack  \right|_{\gamma}  \, , \quad f^{(\gamma)} = \left. \left\lbrack  f  \left(\iota_A \alpha^A\right)^2 \right\rbrack \right|_{\gamma}\, , \quad S^{(\gamma)} = S|_{\gamma} \, .
 \end{equation}
-Therefore, \eqref{eqn:typeNdc} implies that the Weyl double copy relationship is also satisfied for the Penrose limit plane waves
+Therefore, \eqref{Penrose:eqn:typeNdc} implies that the Weyl double copy relationship is also satisfied for the Penrose limit plane waves
 \begin{equation}\label{Penrose:eqn:typeNdcpenrose}
 \Psi^{(\gamma)} = \frac{\left(f^{(\gamma)}\right)^2}{S^{(\gamma)}} \, .
 \end{equation}
-However, contrary to the type D examples, the choice \eqref{eqn:typeNscalingN} isn't necessarily preserved, up to a constant, by the Penrose limit. 
+However, contrary to the type D examples, the choice \eqref{Penrose:eqn:typeNscalingN} isn't necessarily preserved, up to a constant, by the Penrose limit. 
 
-One way to understand that, say, the choice \eqref{eqn:typeNscaling} to fix the functional ambiguity in type N spacetimes can not generally be imposed for both the original type N spacetime and the Penrose limit plane wave is an obstruction to choosing an affine ``light-cone gauge'' coordinate $\tau$ along the null geodesic for which
+One way to understand that, say, the choice \eqref{Penrose:eqn:typeNscaling} to fix the functional ambiguity in type N spacetimes can not generally be imposed for both the original type N spacetime and the Penrose limit plane wave is an obstruction to choosing an affine ``light-cone gauge'' coordinate $\tau$ along the null geodesic for which
 \begin{equation}\label{Penrose:eqn:lightconegauge}
 |\iota_A \alpha^A|^2 = \frac{d u}{d \tau} = \text{constant} \, ,
 \end{equation}
-with $u$ playing the role of $V$ in the adapted coordinate system \eqref{eqn:adapted} with respect to the principal
-null geodesic congruence $\partial_v$ (instead of $\partial_U$ in \eqref{eqn:adapted}). One can try to nevertheless
-impose \eqref{eqn:typeNscaling}, by letting go of the affine coordinates either on the level of general type N
-background, generalizing the adapted coordinates to \eqref{eqn:adaptedmod}, or on the level of the Penrose limit,
+with $u$ playing the role of $V$ in the adapted coordinate system \eqref{Penrose:eqn:adapted} with respect to the principal
+null geodesic congruence $\partial_v$ (instead of $\partial_U$ in \eqref{Penrose:eqn:adapted}). One can try to nevertheless
+impose \eqref{Penrose:eqn:typeNscaling}, by letting go of the affine coordinates either on the level of general type N
+background, generalizing the adapted coordinates to \eqref{Penrose:eqn:adaptedmod}, or on the level of the Penrose limit,
 by a GHP-transformation of the plane wave principal spinor. Nevertheless, for both of these options, the interplay
 between the Penrose limit and the Weyl double copy comes out a little less naturally than in the type D examples and their associated Penrose limit plane waves.
 
-The only class of type N spacetimes for which \eqref{eqn:lightconegauge} can be chosen to be unity in general, are the so-called pp-waves. We shall discuss this class of metrics first and subsequently comment on other explicit type N spacetimes. 
+The only class of type N spacetimes for which \eqref{Penrose:eqn:lightconegauge} can be chosen to be unity in general, are the so-called pp-waves. We shall discuss this class of metrics first and subsequently comment on other explicit type N spacetimes. 
 
 \subsubsection{pp-waves} \label{Penrose:sec:ppwaves}
 
@@ -1157,9 +1175,9 @@ Let $\tau$ be the affine parameter along the chosen null geodesic $\gamma$, from
 Without loss of generality, we can rotate $\iota^A \to e^{i \lambda} \iota^A$ and $\bar{\iota}^A \to e^{-i \lambda} \bar{\iota}^A$, for a constant $\lambda$, such that $c$ is real. Then, the resulting Penrose limit is indeed the plane wave we started with, up to a rescaling of the coordinates $(\tau,\tau',z,\bar{z}) \to (c^{-2} u, c^{2} v,z,\bar{z})$. The only exception occurs for $c = 0$, when $\alpha^{A}$ becomes proportional to $\iota^A$. In this case of a null geodesic along the principal null direction, the plane wave degenerates to flat space in the Penrose limit. 
 
 For general pp-waves, the main difference compared to plane waves is that, in the equivalent of
-\eqref{eqn:psiNplane}, the functions $\Psi$ and $\Phi$ can still depend on the transverse coordinates. That is,
-coordinates $(u,v,z,\bar{z})$ exist for pp-waves such that the metric generalizes \eqref{eqn:Brinkmannc}
-to\footnote{\eqref{eqn:Brinkmanncpp} is not the most general pp-wave; we can also introduce a non-trivial metric on
+\eqref{Penrose:eqn:psiNplane}, the functions $\Psi$ and $\Phi$ can still depend on the transverse coordinates. That is,
+coordinates $(u,v,z,\bar{z})$ exist for pp-waves such that the metric generalizes \eqref{Penrose:eqn:Brinkmannc}
+to\footnote{\eqref{Penrose:eqn:Brinkmanncpp} is not the most general pp-wave; we can also introduce a non-trivial metric on
 the transverse space if we do not impose the vacuum Einstein equation.}
 \begin{equation}\label{Penrose:eqn:Brinkmanncpp}
 ds_{\gamma}^2 = 2 du dv -H(z,\bar{z},u) du^2  - 2 dz d\bar{z}  \, ,
@@ -1176,9 +1194,9 @@ are still dependent on $z$, $\bar{z}$ in general. Therefore, the Penrose limit n
 \begin{equation}
 \frac{d^2 z(\tau)}{d \tau^2} = \frac{c^2}{2}\left(\partial_z H\right)|_{\gamma}\, .
 \end{equation}
-On the other hand, for a null geodesic $\gamma$ and parallel transported tangent spinor $\alpha^A$, the conservation of $\alpha_{A} \iota^{A}$ along the null geodesic as well as  \eqref{eqn:dtaudu} still hold.
+On the other hand, for a null geodesic $\gamma$ and parallel transported tangent spinor $\alpha^A$, the conservation of $\alpha_{A} \iota^{A}$ along the null geodesic as well as  \eqref{Penrose:eqn:dtaudu} still hold.
 
-Restricting ourselves to the vacuum case, \eqref{eqn:ppcurvaturespinors} implies that the wave profile is of the form
+Restricting ourselves to the vacuum case, \eqref{Penrose:eqn:ppcurvaturespinors} implies that the wave profile is of the form
 \begin{equation}
 H(u,z,\bar{z}) = -2h(u,z)-2\bar{h}(u,\bar{z})\, ,
 \end{equation}
@@ -1186,11 +1204,11 @@ for arbitrary ``holomorphic'' and ``anti-holomorphic'' functions $h(u,z)$ and $\
 \begin{equation}
 S = S(u,z)  \, , \quad f = \sqrt{S(u,z)\partial_z^2 h} \, .
 \end{equation}
-In particular, as in \eqref{eqn:typeNscaling}, we are free to choose  $S = \left(\partial_z^2 h\right)^{1/5}$ such that 
+In particular, as in \eqref{Penrose:eqn:typeNscaling}, we are free to choose  $S = \left(\partial_z^2 h\right)^{1/5}$ such that 
 \begin{equation}\label{Penrose:eqn:ppchoice}
 S = \left(\partial_z^2 h\right)^{1/5}  \, , \quad f =  \left(\partial_z^2 h\right)^{3/5} \, , \quad \Psi =  \partial_z^2 h \, .
 \end{equation}
-With the choice \eqref{eqn:ppchoice} to fix the remaining functional ambiguity of the Weyl double copy, we summarize the results for the interplay between the Weyl double and the Penrose limit for pp-waves in Figure \ref{fig:schematicpp}. 
+With the choice \eqref{Penrose:eqn:ppchoice} to fix the remaining functional ambiguity of the Weyl double copy, we summarize the results for the interplay between the Weyl double and the Penrose limit for pp-waves in Figure \ref{Penrose:fig:schematicpp}. 
 
 \begin{figure}[t!]
 	\begin{tikzcd}
@@ -1217,7 +1235,7 @@ With the choice \eqref{eqn:ppchoice} to fix the remaining functional ambiguity o
 
 The pp-waves fall into the broader Kundt class of type N spacetimes, which are characterized by a vanishing expansion and twist of the principal null geodesic
 congruence. Compared to pp-waves, even in this slightly broader Kundt class, a subtlety already arises in the
-application of \eqref{eqn:typeNscaling} to fix the functional ambiguity of the double copy. As was shown in \cite{Godazgar:2020zbv}, for the Kundt class metrics of the form (adapted to the null geodesic congruence $\partial_v$)
+application of \eqref{Penrose:eqn:typeNscaling} to fix the functional ambiguity of the double copy. As was shown in \cite{Godazgar:2020zbv}, for the Kundt class metrics of the form (adapted to the null geodesic congruence $\partial_v$)
 \begin{equation}\label{Penrose:eqn:otherkundt}
 ds^2 = 2du dv - (z+\bar{z})\left(2h(u,z)+2\bar{h}(u,\bar{z}) +\frac{v^2}{(z+\bar{z})^3}\right)du^2 -\frac{4v  \, du dz}{z+\bar{z}} -\frac{4v \, du d\bar{z}}{z+\bar{z}}  -dz d\bar{z} \, ,
 \end{equation}
@@ -1226,20 +1244,20 @@ the single and zeroth copy that satisfy the flat space wave equation are given b
 S = \frac{S_0(u,z)}{z+\bar{z}}  \, , \quad f = \sqrt{S_0(u,z)\partial_z^2 h} \, ,
 \end{equation}
 for arbitrary $S_0(u,z)$. On the other hand, $\Psi =  (z+\bar{z})\partial_z^2 h$ is such that we can not impose
-\eqref{eqn:typeNscaling} in the formulation of \cite{Godazgar:2020zbv}. However, this result depends on a choice of principal null frame. 
+\eqref{Penrose:eqn:typeNscaling} in the formulation of \cite{Godazgar:2020zbv}. However, this result depends on a choice of principal null frame. 
 
 Using $\left(z+\bar{z}\right)^3\partial_v$ instead of $\partial_v$ as part of the principal null frame, which moreover is still geodesic,
 we find $\Psi =  (z+\bar{z})^{-5} \partial_z^2 h$. Therefore, we can set
 \begin{equation}
 S = (\Psi)^{1/5} = \frac{(\partial_z^2 h)^{1/5}}{(z+\bar{z})} \, , \quad f = (\Psi)^{3/5} = \frac{(\partial_z^2 h)^{3/5}}{(z+\bar{z})^3} \, .
 \end{equation}
-The form of the  $S$ is unchanged compared to \eqref{eqn:kundtsc}, such that it satisfies the flat space wave equation. Similarly, while $f$ of course has been rescaled, the associated field strength tensor is unchanged
+The form of the  $S$ is unchanged compared to \eqref{Penrose:eqn:kundtsc}, such that it satisfies the flat space wave equation. Similarly, while $f$ of course has been rescaled, the associated field strength tensor is unchanged
 \begin{equation}
 F_{\mu \nu}  = 2 f n^{(g)}_{[\mu} \bar{m}^{(g)}_{\nu]} \, ,
 \end{equation} 
 and thus the single copy field equations are also still satisfied on the flat background.
 
-For the general type N case, \eqref{eqn:oldtypeNscaling} typically seems a better choice in relation to the Penrose limit. This choice can be achieved for \eqref{eqn:otherkundt} using $\left(z+\bar{z}\right)^2\partial_v$, such that $\Psi =  (z+\bar{z})^{-3} \partial_z^2 h$ and 
+For the general type N case, \eqref{Penrose:eqn:oldtypeNscaling} typically seems a better choice in relation to the Penrose limit. This choice can be achieved for \eqref{Penrose:eqn:otherkundt} using $\left(z+\bar{z}\right)^2\partial_v$, such that $\Psi =  (z+\bar{z})^{-3} \partial_z^2 h$ and 
 \begin{equation}
 S = (\Psi)^{1/3} = \frac{(\partial_z^2 h)^{1/3}}{(z+\bar{z})} \, , \quad f = (\Psi)^{2/3} = \frac{(\partial_z^2 h)^{2/3}}{(z+\bar{z})^2} \, ,
 \end{equation}
@@ -1251,7 +1269,7 @@ S = (\Psi)^{1/3} = \frac{(\partial_z^2 h)^{1/3}}{(z+\bar{z})} \, , \quad f = (\P
 %\begin{equation}
 %\phi^{(KS)} \propto S + \bar{S} \, .
 %\end{equation}
-%Using \eqref{eqn:kkundtalt}, we find 
+%Using \eqref{Penrose:eqn:kkundtalt}, we find 
 %\begin{equation}
 %S = \frac{S_0(u,z)}{z+\bar{z}} \, , \quad f = \frac{\sqrt{S_0 \partial_z^2 h }}{z+\bar{z}} \, , \quad \Psi = \frac{\partial_z^2 h}{z+\bar{z}} \, .
 %\end{equation}
@@ -1267,12 +1285,12 @@ for an integration constant $K_0$. Therefore
 \begin{equation}\label{Penrose:eqn:penrosekundtother}
 S^{(\gamma)}  = \left. \left(\frac{\partial_z^2 h}{(z+\bar{z})^3}\right)^{1/3} \right|_{\gamma} \, , \quad f^{(\gamma)}  =  \left. K(\tau)\left(\frac{\partial_z^2 h}{(z+\bar{z})^3}\right)^{2/3} \right|_{\gamma}\, , \quad \Psi^{(\gamma)}  = \left. \left(K(\tau)\right)^2 \left(\frac{\partial_z^2 h}{(z+\bar{z})^3}\right)\right|_{\gamma} \, .
 \end{equation}
-As expected from the general type N discussion, \eqref{eqn:penrosekundtother} does not exactly preserve the scaling \eqref{eqn:typeNscaling} as a result of the contribution from \eqref{eqn:oalphakundtother}.
-% In order to better understand why \eqref{eqn:kundtscaledframe} may be preferable to \eqref{eqn:oterhkundtframe}, let us make more explicit the Kerr-Schild form of \eqref{eqn:otherkundt} by introducing the coordinate
+As expected from the general type N discussion, \eqref{Penrose:eqn:penrosekundtother} does not exactly preserve the scaling \eqref{Penrose:eqn:typeNscaling} as a result of the contribution from \eqref{Penrose:eqn:oalphakundtother}.
+% In order to better understand why \eqref{Penrose:eqn:kundtscaledframe} may be preferable to \eqref{Penrose:eqn:oterhkundtframe}, let us make more explicit the Kerr-Schild form of \eqref{Penrose:eqn:otherkundt} by introducing the coordinate
 %\begin{equation}
 %	v = \tilde{v} (z+\bar{z})^2\, .
 %\end{equation}
-%The metric \eqref{eqn:otherkundt} takes the form
+%The metric \eqref{Penrose:eqn:otherkundt} takes the form
 %\begin{equation}\label{Penrose:eqn:otherkundt2}
 %ds^2 = ds^2_0 - 2 (z+\bar{z})  \left(h(u,z)+\bar{h}(u,\bar{z})\right) du^2 \, ,
 %\end{equation}
@@ -1280,7 +1298,7 @@ As expected from the general type N discussion, \eqref{eqn:penrosekundtother} do
 %\begin{equation}
 %ds^2_0 = 2 (z+\bar{z})^2 du d\tilde{v} -2 \tilde{v}^2 (z+\bar{z})^3 du^2 -dz d\bar{z}  \, .
 %\end{equation}
-%In the Robinson-Trautman class of type N spacetimes, where the principal null congruence has vanishing twist but non-zero expansion, one can similarly change the GHP-frame compared to \cite{Godazgar:2020zbv}, in order to impose \eqref{eqn:typeNscaling} or \eqref{eqn:oldtypeNscaling}. Explicitly, type N Robinson-Trautman metric can be written as \cite{Godazgar:2020zbv}
+%In the Robinson-Trautman class of type N spacetimes, where the principal null congruence has vanishing twist but non-zero expansion, one can similarly change the GHP-frame compared to \cite{Godazgar:2020zbv}, in order to impose \eqref{Penrose:eqn:typeNscaling} or \eqref{Penrose:eqn:oldtypeNscaling}. Explicitly, type N Robinson-Trautman metric can be written as \cite{Godazgar:2020zbv}
 %\begin{equation}
 %ds^2 = \left(k-2r \partial_u \log\left(P(u,z,\bar{z})\right) \right) du^2 + 2 du dr - \frac{2r^2}{P(u,z,\bar{z})^2} dz d\bar{z} \, ,
 %\end{equation}
@@ -1292,7 +1310,7 @@ As expected from the general type N discussion, \eqref{eqn:penrosekundtother} do
 
 In the Robinson-Trautman class of type N spacetimes, where the principal null congruence has vanishing twist but
 non-zero expansion, one can similarly change the GHP-frame compared to \cite{Godazgar:2020zbv}, in order to impose
-\eqref{eqn:typeNscaling} or \eqref{eqn:oldtypeNscaling}. Moreover, there is again a natural split between the
+\eqref{Penrose:eqn:typeNscaling} or \eqref{Penrose:eqn:oldtypeNscaling}. Moreover, there is again a natural split between the
 functional dependence of the GHP-transformations and the freedom allowed by the wave equations for the single -and
 zeroth copy, comparable to the powers $(z+\bar{z})^a$ as opposed to the arbitrary ``holomorphic'' $S_0(u,z)$ in the Kundt example.
 
@@ -1303,9 +1321,9 @@ To summarize, we have given an account of the interplay between Penrose limits o
 structure. In cases where the full spacetime has an exact double copy structure (such as type D spacetimes), we
 have shown that the natural-seeming Penrose-Güven limit of the single and zeroth copies is indeed consistent with
 the Penrose limit of the double copy. That is, when the geodesic $\gamma$ is identified across the double copy as
-in section \ref{sec:dcandPenrose}, diagrams such as Figures \ref{fig:schematic}, \ref{fig:schematicD}, and \ref{fig:schematicpp} commute.
+in section \ref{Penrose:sec:dcandPenrose}, diagrams such as Figures \ref{Penrose:fig:schematic}, \ref{Penrose:fig:schematicD}, and \ref{Penrose:fig:schematicpp} commute.
 
-Along the way, we observed in section \ref{sec:ambiguity} how the Penrose limit provides a new perspective on the
+Along the way, we observed in section \ref{Penrose:sec:ambiguity} how the Penrose limit provides a new perspective on the
 scaling ambiguity of the type N double copy. Specifically, starting from a spacetime with no scaling ambiguity in
 its double copy structure leads to a ``natural'' choice for its Penrose limit single copy that is distinct from the
 one suggested by \cite{Luna:2018dpt}. Starting from a type N spacetime, which itself has an ambiguity in the double
@@ -1323,13 +1341,13 @@ orders to future work.
 
 While our focus in this paper was on four dimensional spacetimes, the Penrose limit in adapted coordinates can be
 taken for spacetimes in any number of higher dimensions. We are unaware of any literature performing the
-Penrose limit in higher dimensions using spinors as in \eqref{eqn:penrosespinor}, but an analogous computation in
+Penrose limit in higher dimensions using spinors as in \eqref{Penrose:eqn:penrosespinor}, but an analogous computation in
 higher dimensions should be possible. In five dimensions, the spinorial approach taken in
 \cite{Chawla:2022ogv,Monteiro:2018xev} might be useful. We leave details of such a computation to future work.
 
 Our results could also be generalized by considering background spacetimes with sources,
 whose double copy structure was proposed in \cite{Easson:2021asd,Easson:2022zoh}. In particular, for the pp-waves
-considered in section \ref{sec:ppwaves}, allowing for a non-zero source would loosen the assumption that
+considered in section \ref{Penrose:sec:ppwaves}, allowing for a non-zero source would loosen the assumption that
 $\Phi_{ABC'D'} = 0$. Considering non-vacuum spacetimes would also entail an examination of how the Penrose limit
 acts on the fields that source the double copy metric.
 
@@ -1337,7 +1355,9 @@ It would be interesting to see if the double copy discussed here, with the exten
 
 Another rich source of applications of the Penrose limit has been the discovery that plane waves are exact, solvable perturbative string theory backgrounds \cite{Gueven:1987ad,Amati:1988sa,Horowitz:1989bv,Horowitz:1990sr,Kiritsis:1993jk,Russo:2002rq,Papadopoulos:2002bg,Berenstein:2002jq,Eberhardt:2018exh}. This discovery has stimulated extensive use of the Penrose limit to study spacetime singularities and the behavior (or break-down) of effective field theories under significant tidal effects \cite{Horowitz:1990sr,Blau:2003dz,Blau:2004yi,Giddings:2007bw,Hollowood:2007ku,Craps:2008bv,Hollowood:2009qz,Hollowood:2011yh,Martinec:2020cml,Bena:2020iyw,Dodelson:2020lal,Nishii:2021ylb,Balivada:2023akk,Horowitz:2024dch,Guo:2024pvv}. In addition, in the context of the AdS/CFT correspondence \cite{Maldacena:1997re,Witten:1998qj,Aharony:1999ti}, it has been found that perturbative string theory on a Penrose limit in the gravitational ``bulk'' theory is dual to a large R-charge sector of the ``boundary'' supersymmetric Yang-Mills theory \cite{Berenstein:2002jq,Plefka:2003nb,Sadri:2003pr}. Especially given the origin of the double copy in the KLT relations between open and closed strings \cite{Kawai:1985xq}, it would be worthwhile to reconnect to these string theory applications of the Penrose limit in future work. 
 
-\acknowledgments
-S.C. and C.K.  are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2818. C.K. would additionally like to thank the Aspen Center for Physics, which is supported by National Science Foundation grant PHY-1607611, for support during the completion of this work. K.F. is supported by the Heising-Simons Foundation grant \#2021-2819.  
-
-
+%\acknowledgments
+\textit{S.C. and C.K.  are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the
+Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2818. C.K. would
+additionally like to thank the Aspen Center for Physics, which is supported by National Science Foundation grant
+PHY-1607611, for support during the completion of this work. K.F. is supported by the Heising-Simons Foundation
+grant \#2021-2819.  }

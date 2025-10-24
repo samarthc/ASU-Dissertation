@@ -41,6 +41,7 @@
 \usepackage{calc}					              % Calculate text widths; used in page layout
                                         %   changes
 
+\input{papers/Preamble}             % Additional packages and settings for various chapters.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page, input
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,7 +115,6 @@
 \usepackage{amssymb,mathtools}          % For AMS-LaTeX, see here for more:
                                         %     http://www.ams.org/publications/authors/tex/amslatex
                                         % ('mathtools' loads and extends 'amsmath')
-\usepackage{bbm}                        % Needed for mathbbm fonts.
 \usepackage{ifxetex,ifluatex}           % Can check if XeTeX or LuaTeX was used to typeset
 \usepackage{fixltx2e}                   % Provides \textsubscript
 \IfFileExists{upquote.sty}%             % Use upquote if available, for
@@ -146,33 +146,30 @@
   %
   % Sometimes something simple like the following will work:
   %
-  %  \setmainfont{Garamond}
+    %\setmainfont{Garamond}
   %
   % But often the easiest solution is to move font files (*.otf or *.ttf) into
   % a sub-directory and provide the direct path to them here.
   %
   % See `fontspec` documentation for more on using local font files.
   %
-  %\setmainfont{EBGaramond}[           %_<Set the main font; make sure the font is correct
-                                        %%%   for the font size (See ASU Style Guide)
-    %Path          = /Library/Fonts/,
-    %Extension     = .ttf,
-    %UprightFont   = *-Regular,
-    %ItalicFont    = *-Italic,
-    %BoldFont      = *-Bold,
+  %\setmainfont{EBGaramond12}[           %<Set the main font; make sure the font is correct
+                                        %%   for the font size (See ASU Style Guide)
+    %Path          = /usr/share/fonts/opentype/ebgaramond/,
+    %Extension     = .otf ,
+    %UprightFont   = *-Regular ,
+    %ItalicFont    = *-Italic ,
     %% Notice that bold is missing here because the Docker image does not have
     %% a bold typeface for Garamond; it would probably be possible to find
     %% one on your local system or online.
   %]
-  \setmainfont{EBGaramond12}[           %<Set the main font; make sure the font is correct
-                                        %   for the font size (See ASU Style Guide)
-    Path          = /usr/share/fonts/opentype/ebgaramond/,
-    Extension     = .otf ,
-    UprightFont   = *-Regular ,
-    ItalicFont    = *-Italic ,
-    % Notice that bold is missing here because the Docker image does not have
-    % a bold typeface for Garamond; it would probably be possible to find
-    % one on your local system or online.
+  \setmainfont{Georgia}[                %_<Set the main font; make sure the font is correct
+    Path          = /usr/share/fonts/truetype/msttcorefonts/,%%   for the font size (See ASU Style Guide)
+    Extension     = .ttf,
+    UprightFont   = *,
+    ItalicFont    = *_Italic,
+    BoldFont      = *_Bold,
+    BoldItalicFont= *_Bold_Italic
   ]
 
 %  \setmathfont(Digits,Latin,Greek)%     %~Uncomment two lines to set a font for math%
@@ -1194,8 +1191,10 @@
                                         % \subsubsection
                                         % \paragraph
                                         % \subparagraph
-\chapter{Aligned Fields Double Copy to Kerr-NUT-(A)dS}
-\input{papers/5D}
+\include{papers/5D}
+\include{papers/Horizons}
+\include{papers/Penrose}
+%\include{papers/PenroseExpansion}
 \iftoggle{sample}{%
   \include{src/sample/chapter}%
 }{}
@@ -1291,6 +1290,9 @@
 %\input{appendix3}% etc.                 %   All heading commands are the same as above,
                                          %   e.g., \chapter, \section, etc.
 \input{papers/5DAppendices}
+\input{papers/HorizonsAppendices}
+\input{papers/PenroseAppendices}
+%\input{papers/PenroseExpansionAppendices}
 \iftoggle{sample}{%
   \input{src/sample/appendix}%
 }{}
