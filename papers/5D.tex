@@ -19,7 +19,7 @@ As we show, the single copy for the full class of these spacetimes is an `aligne
 
 Specifically in five dimensions, we additionally show that our proposed single-copy field matches the Weyl double copy.  In the Weyl double copy, a single copy field strength and zeroth copy scalar are proposed which combine to form the Weyl tensor directly.  Following the first proposal for Petrov type D spacetimes in \cite{Luna:2018dpt}, the Weyl double copy was extended to other Petrov types \cite{Godazgar:2020zbv} and has found justification from amplitudes directly \cite{Elor:2020nqe,Farnsworth:2021wvs,White:2020sfn,Chacon:2021wbr,Chacon:2021lox,Han:2022ubu,Easson:2021asd,Luna:2022dxo,Monteiro:2020plf}.  Aside from the spinor formalism (extended to five dimensions in \cite{Monteiro:2018xev}), we additionally verify our five-dimensional copy via the Weyl doubling formula of \cite{Alawadhi:2020jrv}.  For $D\geq 6$, we leave a thorough exploration of a Weyl double copy to future work.
 
-In the next section, we review the classical double copy and the spinor formalism needed for its Weyl formulation, as well as the  Kerr-NUT-(A)dS spacetimes and their properties. In Section \ref{sec:FiveDDoubleCopy}, we construct the five-dimensional single copy using the Weyl spinor, and show its equivalence to the multi-Kerr-Schild ansatz.  We additionally note that this field is aligned to the principal tensor of the spacetime.  In Section \ref{sec:GeneralDSingleCopy}, we use a multi-Kerr-Schild approach, showing that the single copy of any Kerr-NUT-(A)dS spacetime is an aligned field.  Finally, in Section \ref{sec:discussion}, we discuss our results and directions for future work.  
+In the next section, we review the classical double copy and the spinor formalism needed for its Weyl formulation, as well as the  Kerr-NUT-(A)dS spacetimes and their properties. In Section \ref{5D:sec:FiveDDoubleCopy}, we construct the five-dimensional single copy using the Weyl spinor, and show its equivalence to the multi-Kerr-Schild ansatz.  We additionally note that this field is aligned to the principal tensor of the spacetime.  In Section \ref{5D:sec:GeneralDSingleCopy}, we use a multi-Kerr-Schild approach, showing that the single copy of any Kerr-NUT-(A)dS spacetime is an aligned field.  Finally, in Section \ref{5D:sec:discussion}, we discuss our results and directions for future work.  
 
 \section{Review}\label{5D:sec:review}
 
@@ -157,7 +157,7 @@ tensor. The existence of a principal tensor is a nontrivial constraint on spacet
 Kerr-NUT-(A)dS metric is (locally) the most general vacuum spacetime which admits a principal tensor
 \cite{Houri:2007xz, Frolov:2017kze}. %
 In terms of the orthornormal coframe, the principal tensor for the geometry
-\eqref{KNAmetricInCanonicalCoordinatesGeneralD} is
+\eqref{5D:KNAmetricInCanonicalCoordinatesGeneralD} is
 %
 \begin{equation} \label{5D:PrincipalTensorInDarbouxCoFrame} 
     \mathbf{h} = \sum_{k = 1}^{n} x_{k} \mathbf{e}^{k} \wedge \mathbf{\hat{e}}^{k}.
@@ -252,10 +252,10 @@ tensor.
 
 \subsubsection{Multi-Kerr-Schild form} \label{5D:sec:MultiKerrSchild} 
 
-A spacetime whose metric is in the Kerr-Schild form \eqref{Kerr-SchildMetric} has a simple proposal for its
+A spacetime whose metric is in the Kerr-Schild form \eqref{5D:Kerr-SchildMetric} has a simple proposal for its
 single copy. The vacuum Einstein equations further guarantee that the single copy field is on-shell.
 %
-The Kerr-NUT-(A)dS metric \eqref{KNAmetricInCanonicalCoordinatesGeneralD} can be written in a similar way: a multi-Kerr-Schild
+The Kerr-NUT-(A)dS metric \eqref{5D:KNAmetricInCanonicalCoordinatesGeneralD} can be written in a similar way: a multi-Kerr-Schild
 form about a flat (or dS/AdS for nonzero $\lambda$) background metric
 $\mathring{\mathbf{g}}$ as%
 %
@@ -271,7 +271,7 @@ flat limit of derivatives.}
 \end{equation}
 %
 where the 1-forms $ \boldsymbol{\mu}^{k}$ are null and geodesic. Note that these 1-forms are unrelated to the
-Myers-Perry latitude coordinates $\mu_{i}$ despite their usage of the same symbol. Their explicit form in terms of the orthonormal coframe \eqref{DarbouxCoFrame}
+Myers-Perry latitude coordinates $\mu_{i}$ despite their usage of the same symbol. Their explicit form in terms of the orthonormal coframe \eqref{5D:DarbouxCoFrame}
 is
 %
 \begin{equation} \label{5D:MuDefn} 
@@ -292,13 +292,13 @@ $\mathbf{\hat{\epsilon}}^{0}$.}
     \varepsilon\ \mathbf{\hat{e}}^{0} \mathbf{\hat{e}}^{0}.
 \end{equation}
 %
-Since the single copy and zeroth copy fields (usually, see footnote \ref{FlatVCurvedFootnote}) solve equations of motion on
+Since the single copy and zeroth copy fields (usually, see footnote \ref{5D:FlatVCurvedFootnote}) solve equations of motion on
 a flat background, an unambiguous definition of the flat metric is needed. The multi-Kerr-Schild form of the metric
 provides an unambiguous flat (or dS/AdS) limit of geometric quantities. In particular, the flat limit of covariant
 derivatives ($ \nabla^{(0)}_{\mu}$) is defined as the covariant derivative with respect to $\mathbf{\mathring{g}}$.
 
 
-In section \ref{sec:GeneralDSingleCopy}, we will use the multi-Kerr-Schild form to propose a single copy gauge
+In section \ref{5D:sec:GeneralDSingleCopy}, we will use the multi-Kerr-Schild form to propose a single copy gauge
 field for the generic Kerr-NUT-(A)dS black hole in arbitrary dimensions.
 \subsubsection{Type D}
 %
@@ -355,12 +355,12 @@ for the basis choice
 \end{equation}
 %
 The vectors $\mathbf{k}$ and $\mathbf{n}$ are real null vectors, since $\mathbf{\hat{e}}_{n}$ is imaginary once the Wick rotation to Lorentzian signature is
-carried out. We will refer to any basis that satisfies \eqref{TypeDConditions} as a Weyl-aligned frame.
+carried out. We will refer to any basis that satisfies \eqref{5D:TypeDConditions} as a Weyl-aligned frame.
 
 \subsection{Spinors in five dimensions} \label{5D:sec:ReviewSpinors5D} 
 In four dimensions, the Weyl formulation of the double copy is most compactly expressed using spinor representations
 of the Weyl tensor and the Maxwell field strength. This continues to hold in five dimensions, as we demonstrate in
-section \ref{sec:FiveDDoubleCopy}. The following is a summary of relevant spinor definitions from
+section \ref{5D:sec:FiveDDoubleCopy}. The following is a summary of relevant spinor definitions from
 \cite{Monteiro:2018xev}. See \cite{Cheung:2009dc,Caron-Huot:2010nes,Czech:2011dk,Boels:2012ie} for more on the
 spinor-helicity formalism in higher dimensions.
 
@@ -414,8 +414,8 @@ The convention used for the two-dimensional Levi-Civita symbol $\epsilon_{ab}$ i
 raise spinor indices.
 
 This definition does not uniquely fix a basis relative to a particular null frame $(k^{\mu}, n^{\mu}, m^{\mu}, 
-\overline{m}^{\mu}, e_{0}^{\mu})$. Any two bases which satisfy \eqref{SpinorBasisDefn} and
-\eqref{SpinorBasisNormalization} are related by an $SU(2)$ action on lowercase latin indices.
+\overline{m}^{\mu}, e_{0}^{\mu})$. Any two bases which satisfy \eqref{5D:SpinorBasisDefn} and
+\eqref{5D:SpinorBasisNormalization} are related by an $SU(2)$ action on lowercase latin indices.
 This $SU(2)$ is referred to as the little group.
 
 Contractions of any spinor with the spinor basis will carry $SU(2)$ indices and
@@ -453,7 +453,7 @@ respective irreducible representations (irreps) under $SU(2)$.
 
 Since the spacetimes we will consider are type D, we note that the only nonzero little
 group object is $\Psi^{(2)}_{abcd}$ if $k^{\mu}$ and $n^{\mu}$ are chosen such that the type D conditions
-\eqref{TypeDConditions} hold; see Appendix \ref{SpinorConventions}. The irreps contained within
+\eqref{5D:TypeDConditions} hold; see Appendix \ref{5D:SpinorConventions}. The irreps contained within
 $\Psi^{(2)}_{abcd}$ are the fully symmetric objects $\psi^{(2)_{abcd}}$ and $\chi^{(2)}_{ab}$, and the scalar
 $\Psi^{(2)}_{\mathrm{tr}}$. In terms of these irreps, $\Psi^{(2)}_{abcd}$ is
 %
@@ -528,7 +528,7 @@ tensor $ W_{\mu \nu \rho \sigma}$ using
     g_{\mu \sigma}).
 \end{multline}
 %
-In the Darboux basis \eqref{DarbouxCoFrame} the Weyl tensor is
+In the Darboux basis \eqref{5D:DarbouxCoFrame} the Weyl tensor is
 %
 \begin{equation} \label{5D:WeylInFormNotation5D} 
     \begin{split}
@@ -586,7 +586,7 @@ given by
     \sum_{i = 1}^{n} - \frac{1}{x_{i}} \partial_{i}\hat{Q}.
 \end{equation}
 %
-$ \hat{Q}$ is defined in terms of metric functions \eqref{KNAmetricFunctions} as\footnote{Our definition of
+$ \hat{Q}$ is defined in terms of metric functions \eqref{5D:KNAmetricFunctions} as\footnote{Our definition of
     $\hat{Q}$ is consistent with the definitions of the similarly named functions $Q_{T}$ in even dimensions and
 $\hat{Q}_{T}$ in odd dimensions in \cite{Hamamoto:2006zf}.}
 %
@@ -595,32 +595,32 @@ $\hat{Q}_{T}$ in odd dimensions in \cite{Hamamoto:2006zf}.}
     \varepsilon} a_{j}^{2}}{ \prod_{i  = 1}^{n} x_{i}^{2}}.
 \end{equation}
 %
-The Weyl tensor \eqref{WeylInFormNotation5D}  for Kerr-NUT-(A)dS exhibits extra algebraic symmetries beyond those required of all Weyl curvature tensors. For instance, swapping
+The Weyl tensor \eqref{5D:WeylInFormNotation5D}  for Kerr-NUT-(A)dS exhibits extra algebraic symmetries beyond those required of all Weyl curvature tensors. For instance, swapping
 $\mathbf{e}^{i}$ and $\mathbf{\hat{e}}^{i}$ leaves the Weyl tensor unchanged.
 
 
 We show in the next section that the $D = 5$ Weyl spinor exhibits these
 extra symmetries in a particularly simple form. A straightforward argument then shows that a
-well-defined square root $f_{AB}$ in the sense of \eqref{WeylSpinorDoubleCopyRelation} exists, which allows for
+well-defined square root $f_{AB}$ in the sense of \eqref{5D:WeylSpinorDoubleCopyRelation} exists, which allows for
 its interpretation as a single copy field. 
 
 \subsection{Constructing the single copy}
 
 Since the spinor definitions used are dimension-dependent, we now specialize to the five dimensional case
 throughout this section. We follow the conventions of \cite{Monteiro:2018xev}, and provide a brief review in
-section \ref{sec:ReviewSpinors5D} with a few further details in Appendix \ref{SpinorConventions}.
+section \ref{5D:sec:ReviewSpinors5D} with a few further details in Appendix \ref{5D:SpinorConventions}.
 
-As mentioned in section \ref{sec:WeylSpinorLittleGroupObjects} and shown explicitly in Appendix
-\ref{SpinorConventions}, for a type D spacetime in a Weyl-aligned frame (i.e. a frame that satisfies the type D
-conditions \eqref{TypeDConditions}) the only nonzero little group object is $\Psi^{(2)}$
-\eqref{WeylLittleGroupObjects}. Thus, in the $(k^{a}_{A}, n^{a}_{A})$ basis the Weyl spinor is 
+As mentioned in section \ref{5D:sec:WeylSpinorLittleGroupObjects} and shown explicitly in Appendix
+\ref{5D:SpinorConventions}, for a type D spacetime in a Weyl-aligned frame (i.e. a frame that satisfies the type D
+conditions \eqref{5D:TypeDConditions}) the only nonzero little group object is $\Psi^{(2)}$
+\eqref{5D:WeylLittleGroupObjects}. Thus, in the $(k^{a}_{A}, n^{a}_{A})$ basis the Weyl spinor is 
 %
 \begin{equation} \label{5D:TypeDWeylSpinorInSpinorBasis} 
     \Psi_{ABCD} = 6 \Psi^{(2)}_{abcd} k^{a}_{(A} k^{b}_{B} n^{c}_{C} n^{d}_{D)}.
 \end{equation}
 %%
 
-The irreps \eqref{LittleGroup2Irreps} of $\Psi^{(2)}_{ABCD}$ are
+The irreps \eqref{5D:LittleGroup2Irreps} of $\Psi^{(2)}_{ABCD}$ are
 \begin{equation} 
     \begin{split}
     \psi^{(2)}_{abcd} &= \frac{128(M-N)x_{1}^{2}}{(r^{2} + x_{1}^{2})^{3}} 
@@ -647,7 +647,7 @@ where
 In the $(\alpha_{a}, \beta_{a})$ basis, the symmetric four-index object $\psi^{(2)}_{(abcd)}$ has a component only along $\alpha_{(a}
 \alpha_{b} \beta_{c} \beta_{d)}$ and $\chi^{(2)}_{(ab)}$ is only along $\alpha_{(a} \beta_{b)}$.
 In terms of the
-general expansion of $\psi^{(2)}$ and $\chi^{(2)}$ \eqref{IrrepExpansion}, the only nonzero components are $\psi^{(2)}_{2}$ and
+general expansion of $\psi^{(2)}$ and $\chi^{(2)}$ \eqref{5D:IrrepExpansion}, the only nonzero components are $\psi^{(2)}_{2}$ and
 $\chi^{(2)}_{1}$. Additionally, $\psi^{(2)}$ is the ``square'' of
 $\chi^{(2)}$: $\psi^{(2)}_{abcd} \sim \chi^{(2)}_{(ab} \chi^{(2)}_{cd)}$. 
 
@@ -681,7 +681,7 @@ Its form suggests the single copy
 \end{equation}
 %
 Here, $S$ is the scalar factor that appears in the double copy relation
-\eqref{WeylSpinorDoubleCopyRelation}, which we fix%
+\eqref{5D:WeylSpinorDoubleCopyRelation}, which we fix%
 %
 \footnote{Our procedure to fix $S$ closely follows the treatment for type N spacetimes in \cite{Godazgar:2020zbv},
 which also finds a set of first order differential equations for $S$ that are integrable. This approach differs
@@ -721,7 +721,7 @@ With this solution for $S$, the field strength $F_{\mu \nu}$ becomes
 This field strength belongs to a class of field strengths known in the
 Kerr-NUT-(A)dS literature as \emph{aligned fields}. These are on-shell electromagnetic
 fields that, in the orthonormal coframe, have the same structure as the principal tensor
-\eqref{PrincipalTensorInDarbouxCoFrame}. That is, they have the expansion \cite{Krtous:2007xg}
+\eqref{5D:PrincipalTensorInDarbouxCoFrame}. That is, they have the expansion \cite{Krtous:2007xg}
 %
 \begin{equation} \label{5D:AlignedFieldExpansion} 
     \mathbf{F} = \sum_{k = 1}^{n} f_{k} \mathbf{e}^{k} \wedge \mathbf{\hat{e}}^{k},
@@ -741,7 +741,7 @@ general depend on $n$ parameters $e_{k}$; the constant $q$ here corresponds to $
 e_{2})$. 
 
 Also, we find that the scalar $S$ satisfies the source-free wave equation only in the flat limit (defined in terms of the multi-Kerr-Schild expansion
-\eqref{MultiKerrSchildMetric}) 
+\eqref{5D:MultiKerrSchildMetric}) 
 %
  \begin{equation} 
      \left(\square^{(0)} - 4 \lambda\right) S = 0,
@@ -806,7 +806,7 @@ in \cite{Alawadhi:2020jrv} also agrees with our single copy prescription found u
     \frac{2ir}{(x_{1}^{2} + r^{2})^{2}} (e_{2} - e_{1}) \mathbf{e}^{2} \wedge \mathbf{\hat{e}}^{2},
 \end{equation}
 %
-and plug it into the Weyl doubling relation \eqref{WeylDoublingRelation}. We find that the relation is
+and plug it into the Weyl doubling relation \eqref{5D:WeylDoublingRelation}. We find that the relation is
 satisfied for the scalar choice
 %
 \begin{equation} 
@@ -826,7 +826,7 @@ The single copy of the Kerr solution is the gauge field \cite{Luna:2018dpt}%
     \mathring{\phi})$, whose relation to the Kerr-Schild coordinates $(x_{k},
     \mathring{\psi}_{j})$ defined in equation (4.77) of
     \cite{Frolov:2017kze} parallels the transformation to Boyer-Lindquist coordinates from canonical
-    coordinates \eqref{TransformAzimuthalAnglesFromCanonicalToMyersPerry}. Then, we can 
+    coordinates \eqref{5D:TransformAzimuthalAnglesFromCanonicalToMyersPerry}. Then, we can 
    view $\mathbf{A}$ as living on the flat background with metric
 $\mathbf{\mathring{g}}$.
 Written in these coordinates, the gauge potential takes precisely the form in \cite{Luna:2018dpt} with no parameter
@@ -871,13 +871,13 @@ class are aligned fields too. These observations lead us to ask: is the single c
 hole always an aligned field?
 
 One way to propose a single copy is to use the Kerr-Schild prescription. We start with the multi-Kerr-Schild form of the Kerr-NUT-(A)dS metric
-\eqref{MultiKerrSchildMetric} and propose the single copy gauge field
+\eqref{5D:MultiKerrSchildMetric} and propose the single copy gauge field
 %
 \begin{equation} \label{5D:singleCopyMultiKerrSchild} 
     \mathbf{A} = \sum_{k = 1}^{n} \frac{2Q_{k}x_{k}^{1-\varepsilon}}{U_{k}} \boldsymbol{\mu}^{k},
 \end{equation}
 %
-where $ \boldsymbol{\mu}^{k}$ are the null geodesic $1$-forms \eqref{MuDefn} and $Q_{k}$ are constant parameters which satisfy
+where $ \boldsymbol{\mu}^{k}$ are the null geodesic $1$-forms \eqref{5D:MuDefn} and $Q_{k}$ are constant parameters which satisfy
 $Q_k=Q M_k,$ where $Q$ is an arbitrary proportionality constant.
 
 Expanding each $ \boldsymbol{\mu}^{k}$ in canonical
@@ -903,7 +903,7 @@ copy was extended to allow for the single copy of the $D=4$ Taub-NUT spacetime i
 gauge field is the multi-Kerr-Schild prescription for the single copy of Kerr-NUT-(A)dS in any dimension. 
 
 The zeroth copy is built by peeling off the $1$-forms $ \boldsymbol{\mu}^{k}$ from the single copy
-\eqref{singleCopyMultiKerrSchild},
+\eqref{5D:singleCopyMultiKerrSchild},
 \begin{equation} \label{5D:zerothCopyMultiKerrSchild} 
     S = \sum_{k = 1}^{n} \frac{2Q_{k}x_{k}^{1-\varepsilon}}{U_{k}}.
 \end{equation}
@@ -911,7 +911,7 @@ Each term of this scalar separately solves the massive Klein-Gordon equation on 
 $\mathring{\mathbf{g}}$ with a mass\footnote{The equation of motion was computed explicitly for $D = 4$
 through $7$ using Mathematica. We expect the general result of a cosmological-constant-dependent mass to continue
 to hold for higher dimensions. However, we do not expect the mass to coincide with the conformal scalar mass
-$ D(D-2)\lambda/4$ for dimensions other than $D = 4$ or $D=6$.} of $2(D-3) \lambda$. As pointed out previously in section \ref{sec:FiveDDoubleCopy}, such an equation of
+$ D(D-2)\lambda/4$ for dimensions other than $D = 4$ or $D=6$.} of $2(D-3) \lambda$. As pointed out previously in section \ref{5D:sec:FiveDDoubleCopy}, such an equation of
 motion for the zeroth copy was also found in \cite{Luna:2015paa} for $D = 4$. In $D = 4$ and $D = 6$, the mass
 terms coincides with the coupling expected for a conformal scalar.
 
@@ -921,13 +921,13 @@ single copy gauge field is then exactly the same as the one proposed as the sing
 dimensional Kerr spacetimes in \cite{Monteiro:2014cda}.
 
 We now use our successful proposal to test a straightforward extension of the Weyl doubling prescription
-\eqref{WeylDoublingRelation}. However, plugging in the Weyl tensor components \eqref{WeylInFormNotation5D} and the
-components of the aligned field from \eqref{AlignedFieldExpansion} and \eqref{AlignedFieldComponents}, there is no
-scalar that satisfies \eqref{WeylDoublingRelation} for any value of aligned field parameters $Q_{k}$ given
+\eqref{5D:WeylDoublingRelation}. However, plugging in the Weyl tensor components \eqref{5D:WeylInFormNotation5D} and the
+components of the aligned field from \eqref{5D:AlignedFieldExpansion} and \eqref{5D:AlignedFieldComponents}, there is no
+scalar that satisfies \eqref{5D:WeylDoublingRelation} for any value of aligned field parameters $Q_{k}$ given
 arbitrary mass and NUT charges. Even setting all NUT charges to zero (where our proposal matches
 \cite{Monteiro:2014cda}), there is no zeroth copy scalar which satisfies the Weyl doubling prescription
-\eqref{WeylDoublingRelation}. Since our proposed single copy field \eqref{singleCopyMultiKerrSchild} and zeroth
-copy \eqref{zerothCopyMultiKerrSchild} are well-defined and satisfy the expected equations of motion, we thus
+\eqref{5D:WeylDoublingRelation}. Since our proposed single copy field \eqref{5D:singleCopyMultiKerrSchild} and zeroth
+copy \eqref{5D:zerothCopyMultiKerrSchild} are well-defined and satisfy the expected equations of motion, we thus
 conclude that the Weyl doubling formula of \cite{Alawadhi:2020jrv} may need additional terms in $D > 5$ in order to
 describe the Weyl double copy structure of Kerr-NUT-(A)dS. 
 
@@ -964,7 +964,8 @@ tensor are always algebraically special.  Nevertheless, we hope that our work he
 We additionally hope our work may provide a framework to further study gravitational transformations and dualities in the double copy \cite{Bahjat-Abbas:2020cyb,Arkani-Hamed:2019ymq,Alawadhi:2019urr,Banerjee:2019saj,Huang:2019cja,Emond:2020lwi}, since it includes the full class of Kerr-NUT-(A)dS spacetimes.  Similarly, perhaps the principal tensor can be studied in the single-copy picture, just as NUT charges, geodesics, and Ricci flow have been \cite{Alfonsi:2020lub,Alawadhi:2022gwy,Gonzo:2021drq,Alawadhi:2021uie}.  Finally, for, the Kerr-NUT solutions in our family, we would be interested to see if the Weyl double copy in general dimensions can be understood asymptotically, as at null infinity in four dimensions \cite{Godazgar:2021iae,Luna:2016due,Gonzo:2022tjm,Chacon:2021hfe,Adamo:2021dfg,Campiglia:2021srh}.
 
 
-\acknowledgments
+%\acknowledgments       %< Commented because this is a command provided by JHEP. Decide whether to redefine this or
+%remove acknowledgements from individual chapters.
 
-The authors thank Damien Easson, Andres Luna, Tucker Manton, and Silvia Nagy for helpful discussions. The authors are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the Heising-Simons Foundation “Observational Signatures of Quantum Gravity” collaboration grant 2021-2818.
+%The authors thank Damien Easson, Andres Luna, Tucker Manton, and Silvia Nagy for helpful discussions. The authors are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the Heising-Simons Foundation “Observational Signatures of Quantum Gravity” collaboration grant 2021-2818.
 

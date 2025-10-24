@@ -1,13 +1,11 @@
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
-
-\section{Little group structure of type D Weyl spinor} \label{5D:SpinorConventions} 
+\chapter{Little group structure of type D Weyl spinor} \label{5D:SpinorConventions} 
 %
-This brief appendix is a companion to section \ref{sec:ReviewSpinors5D} and gives details of calculations that
+This brief appendix is a companion to section \ref{5D:sec:ReviewSpinors5D} and gives details of calculations that
 use the spinor set-up used in this paper. As an illustrative exercise in the spinor conventions used, we will lay out an argument for why
 only $\Psi^{(2)} \neq 0$ for a type D spacetime.
 
 First, we describe how the spinor basis $(k^{A}_{a}, n^{A}_{a})$ can be used to give back members of the null
-frame \eqref{NullFrameMetric}. Effectively, this inverts the definition of the basis \eqref{SpinorBasisDefn} in
+frame \eqref{5D:NullFrameMetric}. Effectively, this inverts the definition of the basis \eqref{5D:SpinorBasisDefn} in
 terms of the null frame. The vectors $k^{\mu}$ and $n^{\mu}$ can be obtained by contracting two copies of
 $k^{A}_{a}$ and $n^{A}_{a}$ respectively with gamma matrices
 %
@@ -35,22 +33,22 @@ which, following \cite{Monteiro:2018xev}, we dub the polarization tensor $\varep
 Next, we explain how to compute the components of the spinor Lorentz generators
 in the $(k^{A}_{a}, n^{A}_{a})$ basis. Take, as an example, the contraction
 $\sigma^{\mu \nu}_{AB} k^{A}_{a} k^{B}_{b}$. Noting the definition of the Lorentz generators in terms of gamma
-matrices \eqref{SpinorLorentzGeneratorsDefn}, we have
+matrices \eqref{5D:SpinorLorentzGeneratorsDefn}, we have
 %
 \begin{equation} \label{5D:SigmaComponentsStepOne} 
         \sigma_{AB}^{\mu \nu} k^{A}_{a} k^{a}_{b} = \gamma^{[\mu}_{AE} \gamma^{\nu]}_{FB} \Omega^{EF}
         k^{A}_{a} k^{B}_{b}.
 \end{equation}
 %
-The normalization of the spinor basis \eqref{SpinorBasisNormalization} is equivalent to the following
+The normalization of the spinor basis \eqref{5D:SpinorBasisNormalization} is equivalent to the following
 expansion of $\Omega^{AB}$ 
 %
 \begin{equation} \label{5D:OmegaExpansion} 
     \Omega^{AB} = \epsilon^{ab}\left(k^{A}_{a} n^{B}_{b} + n^{A}_{a} k^{B}_{b}\right).
 \end{equation}
 %
-Substituting this back in \eqref{SigmaComponentsStepOne}, and keeping in mind \eqref{GammaContractionsPartOne}
-and \eqref{GammaContractionsPartTwo} we obtain
+Substituting this back in \eqref{5D:SigmaComponentsStepOne}, and keeping in mind \eqref{5D:GammaContractionsPartOne}
+and \eqref{5D:GammaContractionsPartTwo} we obtain
 \begin{equation} \label{5D:SigmaComponentsPartOne} 
     \begin{split}
         \sigma_{AB}^{\mu \nu} k^{A}_{a} k^{B}_{b} &= \epsilon^{cd} \gamma^{[\mu}_{AE} \gamma^{\nu]}_{FB}
@@ -79,7 +77,7 @@ Similarly the other components are
 \end{equation}
 
 We are now prepared to tackle the little group structure of a type D Weyl spinor. Inverting the expansion of
-$\Psi_{ABCD}$ \eqref{WeylLittleGroupObjects}, we obtain
+$\Psi_{ABCD}$ \eqref{5D:WeylLittleGroupObjects}, we obtain
 %
 \begin{equation} 
     \begin{split}
@@ -91,7 +89,7 @@ $\Psi_{ABCD}$ \eqref{WeylLittleGroupObjects}, we obtain
     \end{split}
 \end{equation}
 %
-Next, we rewrite $\Psi_{ABCD}$ in terms of the Weyl tensor $W_{\mu \nu \rho \lambda}$ using \eqref{WeylSpinorDefn} 
+Next, we rewrite $\Psi_{ABCD}$ in terms of the Weyl tensor $W_{\mu \nu \rho \lambda}$ using \eqref{5D:WeylSpinorDefn} 
 %
 \begin{equation} 
     \begin{split}
@@ -104,7 +102,7 @@ Next, we rewrite $\Psi_{ABCD}$ in terms of the Weyl tensor $W_{\mu \nu \rho \lam
 \end{equation}
 %
 Finally, substituting the components of $\sigma^{\mu \nu}_{AB}$ we just found in
-\eqref{SigmaComponentsStepOne}, \eqref{SigmaComponentsPartTwo},
+\eqref{5D:SigmaComponentsStepOne}, \eqref{5D:SigmaComponentsPartTwo},
 \begin{equation} 
     \begin{split}
         \Psi^{(0)}_{abcd} &= 8 W_{\mu \nu \rho \lambda} k^{\mu} \varepsilon^{\nu}_{ab} k^{\rho}
@@ -122,5 +120,5 @@ Finally, substituting the components of $\sigma^{\mu \nu}_{AB}$ we just found in
     \end{split}
 \end{equation}
 Now, remembering that $\varepsilon^{\mu}_{ab}$ is orthogonal to both $k^{\mu}$ and $n^{\mu}$, a comparison with
-\eqref{TypeDConditions} shows that with a properly chosen null frame $\Psi^{(0)}, \Psi^{(1)}, \Psi^{(3)}$ and
+\eqref{5D:TypeDConditions} shows that with a properly chosen null frame $\Psi^{(0)}, \Psi^{(1)}, \Psi^{(3)}$ and
 $\Psi^{(4)}$ all vanish for a type D spacetime.
