@@ -223,18 +223,18 @@
 	The coordinate transformation between \eqref{Expansion:eqn:app:SmetricKS} and \eqref{Expansion:eqn:app:Sadapted} is given by \cite{Chawla:2024mse}
 	\begin{equation}\label{Expansion:eqn:app:Schwarzschildadapted}
 	\begin{aligned}
-	U &= \int^{r(U)}_{r_{\rm ref}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)}   \, , \\ 
-	\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, , \\
+	U &= \int^{r(U)}_{r_{\textrm ref}} \frac{d\rho}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)}   \, , \\ 
+	\hat{t}(U,\hat{t}_0) &= \hat{t}_0 + \int^{r(U)}_{r_{\textrm ref}} d\rho \, \frac{\hat{E}+\frac{2M}{\rho} \left(\hat{E}+ R'(\rho)\right)}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, , \\
 	\theta_0(V,\hat{t}_0) &= \frac{1}{L}\left(\hat{E}\hat{t}_0  - V\right) \, , \\
-	\theta(U,V, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\rm ref}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
+	\theta(U,V, \hat{t}_0) &= \theta_0(V,\hat{t}_0)+ L\int^{r(U)}_{r_{\textrm ref}} d\rho \, \frac{1}{\rho^2}\frac{1}{R'(\rho) -\frac{2M}{\rho} \left(\hat{E}+R'(\rho)\right)} \, ,\\
 	\phi(U,V,\phi_0,\hat{t}_0) &= \phi_0  \, ,
 	\end{aligned}
 	\end{equation}
-	where $r_{\rm ref}$ is an arbitrary constant while $r(U) = r(U;\hat{E},L^2)$ is a radial solution to the geodesic equations. Explicitly, $r(U)$ satisfies
+	where $r_{\textrm ref}$ is an arbitrary constant while $r(U) = r(U;\hat{E},L^2)$ is a radial solution to the geodesic equations. Explicitly, $r(U)$ satisfies
 	\begin{equation}
 	\frac{dr}{dU} = \left(1-\frac{2M}{r(U)}\right)R'(r(U)) - \frac{2M \hat{E}}{r(U)} \, , 
 	\end{equation}
-	with initial condition $r(0) = r_{\rm ref}$ and where $R(r)$ satisfies
+	with initial condition $r(0) = r_{\textrm ref}$ and where $R(r)$ satisfies
 	\begin{equation}\label{Expansion:eqn:uschwarzschild}
 	\begin{aligned}
 	-L^2 &= -r^2 \hat{E}^2+r^2 \left(R'(r)\right)^2-2 M r \left(R'(r)+\hat{E}\right)^2 \, . \\
@@ -446,3 +446,4 @@
 	\end{aligned}
 	\end{equation}
 	Here, all quantities are implicitly evaluated at $X^i = V = 0$. For instance, $B_i = B_i(U,0,0,0)$ etc. Note that, despite the notation, $T_{2}^{(1)}(U)$ is a second order quantity. There is no obstruction to finding a first order solution to the equation involving $T_{1}^{(1)}(U)$ by itself. On the other hand, such solutions do not generically extend to higher orders. In that sense, this could be viewed as a ``linearization instability''.
+
