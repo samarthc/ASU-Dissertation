@@ -41,6 +41,26 @@
 \usepackage{calc}					              % Calculate text widths; used in page layout
                                         %   changes
 
+\usepackage{widows-and-orphans}
+\usepackage{ifplatform}                 % Includes conditionals for testing OS that was used to compile. Requires
+                                        % use of ``shell-escape'' option when compiling. Used to test if this was
+                                        % compiled inside the template's provided Docker container (linux/Debian),
+                                        % or on my local machine (MacOS). This is of course not robust enough for
+                                        % general use - it fails in the case when the local system is running Linux
+
+                                        % Why this exists: 
+                                        % 1) sometimes I include additional packages from CTAN for
+                                        %    testing, and I would rather not rebuild the Docker image each time. I
+                                        %    test additional packages on my local machine, and if deemed necessary,
+                                        %    add those packages to the latexmk Dockerfile and rebuild.
+                                        % 2) to select the correct location of the relevant font file.
+
+                                        % A robust way of checking it would maybe be to modify the Dockerfile to
+                                        % set a certain environment variable, then write a LaTeX conditional to
+                                        % check the existence/value of the environment variable? Or perhaps check
+                                        % for the existence of a certain file that would only exist in the Docker
+                                        % coontainer?
+
 \input{papers/Preamble}             % Additional packages and settings for various chapters.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page, input
@@ -127,7 +147,7 @@
                                         %
                                         %_~Set up your font in pdftex here
                                         %
-\else 									                % If xetex or luatex
+\else 				        % If xetex or luatex
   \ifxetex                              % If xetex
     \usepackage{mathspec}               % Matches non-math open-type font to math
                                         %   open-type font (use 'mathspec' if you want to
@@ -163,14 +183,19 @@
     %% a bold typeface for Garamond; it would probably be possible to find
     %% one on your local system or online.
   %]
-  \setmainfont{Georgia}[                %_<Set the main font; make sure the font is correct
-    Path          = /usr/share/fonts/truetype/msttcorefonts/,%%   for the font size (See ASU Style Guide)
-    Extension     = .ttf,
-    UprightFont   = *,
-    ItalicFont    = *_Italic,
-    BoldFont      = *_Bold,
-    BoldItalicFont= *_Bold_Italic
-  ]
+  \iflinux
+      \setmainfont{Georgia}[                %_<Set the main font; make sure the font is correct
+        Path          = /usr/share/fonts/truetype/msttcorefonts/,%%   for the font size (See ASU Style Guide)
+        Extension     = .ttf,
+        UprightFont   = *,
+        ItalicFont    = *_Italic,
+        BoldFont      = *_Bold,
+        BoldItalicFont= *_Bold_Italic
+      ]
+  \else \ifmacosx
+      \setmainfont{Georgia}
+      \fi
+  \fi
 
 %  \setmathfont(Digits,Latin,Greek)%     %~Uncomment two lines to set a font for math%
 %    {MATHFONT}
