@@ -831,9 +831,10 @@
 \iftoggle{usebiblatex}{%                % Settings for citation package
 %                                       % Settings for 'biblatex' or a version of
 %                                       %   'biblatex'
-  \usepackage[style=phys,%              % Style option for AIP style
+  \usepackage[style=phys,%              % Style option for AIP (default) or APS style
               %authordate,%
               backend=biber,%           % Recommend to use 'biber' instead of 'bibtex'
+              pageranges=false,
               %doi=only,%               % Avoid printing URLs
               biblabel=brackets,%       % Use brackets for inline citations instead of
                                         % the default superscript option
@@ -841,6 +842,7 @@
                         ]%              
               {biblatex}                %_~Other possibilities include: 'biblatex',
                                         %   'biblatex-apa', and 'biblatex-mla'
+              \DeclareFieldFormat[article,inprceedings,thesis,unpublished]{title}{#1\isdot}
   \bibliography{\bibfilename}
   \setlength{\bibitemsep}%              % Set vertical distance between
     {0.5\baselineskip}%                 %   bibliography entries
