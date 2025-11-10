@@ -61,7 +61,12 @@
                                         % for the existence of a certain file that would only exist in the Docker
                                         % coontainer?
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author-defined preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{papers/Preamble}             % Additional packages and settings for various chapters.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page, input
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -565,10 +570,11 @@
 \newcounter{totfigures}                 % Collect the total number of figures
 \newcounter{tottables}                  % Collect the total number of tables
 
-\providecommand\totfig{}                % Retrieve the total number of figures
-\providecommand\tottab{}                % Retrieve the total number of tables
+\providecommand\totfig{0}                % Retrieve the total number of figures
+\providecommand\tottab{0}                % Retrieve the total number of tables
 
 \makeatletter
+
 \AtEndDocument{%                        % Store the totals
   \addtocounter{totfigures}{%
     \value{figure}%
