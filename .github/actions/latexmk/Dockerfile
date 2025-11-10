@@ -1,7 +1,7 @@
-FROM debian:bullseye AS ASUDIS
+FROM debian:trixie AS ASUDIS
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN echo "deb http://deb.debian.org/debian bullseye contrib" > /etc/apt/sources.list.d/contrib.list
+RUN echo "deb http://deb.debian.org/debian trixie contrib" > /etc/apt/sources.list.d/contrib.list
 
 # From the old blang/latex:ubuntu
 RUN apt-get update -q && apt-get install -qy \
