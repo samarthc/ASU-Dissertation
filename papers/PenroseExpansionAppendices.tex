@@ -1,4 +1,4 @@
-	\chapter{Spinor conventions and Newman-Penrose formalism}\label{Expansion:app:NP}
+	\chapter{Penrose Expansion: Spinor conventions and Newman-Penrose formalism}\label{Expansion:app:NP}
 	
 	Our conventions are identical to those used in \cite{Chawla:2024mse} but we include them here to be
 	self-contained. We borrow our spinor conventions predominantly from \cite{Penrose:1985bww} and \cite{Stephani:2003tm}. Wherever the
@@ -205,7 +205,7 @@
 	Newman-Penrose tetrad. Thus, the leading order scalings for the spin coefficients laid out in
 	\eqref{Expansion:eqn:spincoeffsscaling} continues to hold for the rescaled tetrad.
 	
-	\paragraph{Schwarzschild black hole in adapted coordinates} 
+	\paragraph*{Schwarzschild black hole in adapted coordinates} 
 	
 	We provide here some further details on the adapted coordinates and coordinate transformations that are discussed in section \ref{Expansion:sec:example:Schwarzschild} in the main text, for the example of Schwarzschild black hole. We do so to be self-contained but a pedagogic derivation of the adapted coordinates is already given in \cite{blau2011plane} and most of the results below more generally, in the same conventions as ours, are already presented in \cite{Chawla:2024mse}. Therefore, we omit derivations of the results.
 	
@@ -364,7 +364,7 @@
 	
 	\chapter{Field equations: solutions and effective sources}\label{Expansion:app:leadingequations}
 	
-	In Section \ref{Expansion:eqn:curvedlocal}, we have discussed a particular class of solutions to the wave equations order-by-order on the leading order plane wave background. Specifically, we have made the ansatz \eqref{Expansion:eqn:Sexpansion}-\eqref{Expansion:eqn:fexpansion}, which is expected to arise from the Penrose expansion of a full solution. On the other hand, the plane wave equations of motion are simple enough to describe the full solutions which we will do here explicitly for the scalar equation, while indicating how a similar calculation would work for the Maxwell equations. We then give an example of the source terms at second subleading order. \\
+	In Section \ref{Expansion:eqn:curvedlocal}, we have discussed a particular class of solutions to the wave equations order-by-order on the leading order plane wave background. Specifically, we have made the ansatz \eqref{Expansion:eqn:Sexpansion}-\eqref{Expansion:eqn:fexpansion}, which is expected to arise from the Penrose expansion of a full solution. On the other hand, the plane wave equations of motion are simple enough to describe the full solutions which we will do here explicitly for the scalar equation, while indicating how a similar calculation would work for the Maxwell equations. We then give an example of the source terms at second subleading order.
 	
 	First, in order to describe the scalar wave equation in full generality it is useful to note that the inverse of \eqref{Expansion:eqn:adapted} is given by
 	\begin{equation}
@@ -396,7 +396,7 @@
 	\end{align}
 	Here, we will not use the specific forms of the non-trivial (leading order) spin-coefficients $\rho^{(0)}$, $\epsilon^{(0)}$, and $\sigma^{(0)}$ but use that they are only functions of $U$. As a result, we will not write down solutions as explicitly as for the scalar case but it is still clear that after going to Fourier-space for $X^i$ and $V$, we are left with two  coupled first order linear ordinary differential equations in $\tilde{f}^{(k)}_{1,k_V,k_i}$ and $\tilde{f}^{(k)}_{2,k_V,k_i}$ together with two (algebraic) constraints. See for instance \cite{mason1989ward} for a more complete discussion on solutions to the wave equation on plane wave spacetimes, generalizing the scalar wave discussion in \cite{Ward:1987ws}.
 	
-	\paragraph{Second order source terms}
+	\paragraph*{Second order source terms}
 	
 	We present explicitly the sources $T^{(1)}(U)$ as defined and discussed around \eqref{Expansion:eqn:Meqns}
 	\begin{equation}\label{Expansion:eqn:app:Meqns}
@@ -417,7 +417,12 @@
 	We find for $T^{(1)}(U)$
 	\begin{equation}
 	\begin{aligned}
-	T_{1}^{(1)}(U) &= \frac{a^{(0)}_{S,0,0,0}}{\sqrt{a^{(0)}_{\Psi_0,0,0,0} a^{(0)}_{S,0,0,0}}} \left( -\frac{da^{(1)}_{\Psi_1,0,0,0}}{dU}   -  a^{(1)}_{\Psi_1,0,0,0} \frac{d \log a^{(0)}_{S,0,0,0}}{2 dU}+a^{(1)}_{\Psi_1,0,0,0} \frac{d\log C}{2 dU} \right. \\ & \left. +\frac{i \overline{m}_{1} }{2 \sqrt{C}}  a^{(1)}_{\Psi_0,0,0,1}  -\frac{i \overline{m}_{2}}{2 \sqrt{C}}  a^{(1)}_{\Psi_0,0,1,0}+a^{(1)}_{\Psi_1,0,0,0}\frac{d \log a^{(0)}_{\Psi_0,0,0,0}}{2 dU}+\frac{i}{\sqrt{C}} (\partial_{1}\overline{m}_{2}-\partial_{2}\overline{m}_{1})a^{(0)}_{\Psi_0,0,0,0} \right)  \, ,
+	T_{1}^{(1)}(U) &= \frac{a^{(0)}_{S,0,0,0}}{\sqrt{a^{(0)}_{\Psi_0,0,0,0} a^{(0)}_{S,0,0,0}}} \left(
+        -\frac{da^{(1)}_{\Psi_1,0,0,0}}{dU}   -  a^{(1)}_{\Psi_1,0,0,0} \frac{d \log a^{(0)}_{S,0,0,0}}{2
+    dU}+a^{(1)}_{\Psi_1,0,0,0} \frac{d\log C}{2 dU} \right. \\ & \left. +\frac{i \overline{m}_{1} }{2 \sqrt{C}}
+a^{(1)}_{\Psi_0,0,0,1}  -\frac{i \overline{m}_{2}}{2 \sqrt{C}}
+a^{(1)}_{\Psi_0,0,1,0}+a^{(1)}_{\Psi_1,0,0,0}\frac{d \log a^{(0)}_{\Psi_0,0,0,0}}{2 dU} \right. \\
+                                                               & \left. +\frac{i}{\sqrt{C}} (\partial_{1}\overline{m}_{2}-\partial_{2}\overline{m}_{1})a^{(0)}_{\Psi_0,0,0,0} \right)  \, ,
 	\end{aligned}
 	\end{equation}
 	and for $T_{2}^{(1)}(U)$

@@ -1,4 +1,4 @@
-\chapter{Spinor identities and conventions}\label{Penrose:app:conventions}
+\chapter{Penrose Limit: spinor identities and conventions}\label{Penrose:app:conventions}
 
 As much as possible, we will follow the conventions of Penrose and Rindler \cite{penrose1984spinors}. On matters of curvature however, we will deviate from \cite{penrose1984spinors} by a sign. The reason is that the definition of \cite{penrose1984spinors} for the curvature is equivalent to 
 \begin{equation}
@@ -127,7 +127,7 @@ C^{(\mathrm{Weyl \, DC})}_{\alpha \beta \gamma \delta} = \frac{1}{S}f_{(AB} f_{C
 
 Various curvature and connection components with respect to a null basis have been conventionally associated to particular notations in what is usually called the Newman-Penrose formalism. While we will not lean on this heavily, we next summarize these symbols as used in the main text.
 
-\section{Newman-Penrose formalism}\label{Penrose:app:NP}
+\section{Newman-Penrose Formalism}\label{Penrose:app:NP}
 
 We now introduce our conventions for the Newman-Penrose formalism, which is mostly an exercise in decomposing spinors into the dyad $\left\lbrace o^A, \iota^A \right \rbrace$ and tensors into the Newman-Penrose frame $\left\lbrace k^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu} \right \rbrace$. 
 
@@ -322,7 +322,7 @@ Note that by \eqref{Penrose:eqn:uisalpha2}, \eqref{Penrose:eqn:Seqn} can be writ
 u^{\mu} \nabla_{\mu} S  - i \tilde{\epsilon} = 0\, .
 \end{equation}
 
-\section{The Schwarzschild black hole}\label{Penrose:app:Schwarzschild}
+\section{The Schwarzschild Black Hole}\label{Penrose:app:Schwarzschild}
 
 In this section, for completeness, we provide some additional details related to the Schwarzschild example in Section \ref{Penrose:sec:Schwarzschild}. First, using the frame \eqref{Penrose:eqn:SPNframe} and definitions \eqref{Penrose:eqn:spincoeffssymbols}, the spin coefficients are given by 
 \begin{alignat}{7}
@@ -423,7 +423,7 @@ Our choice of adapted coordinates is to use $V$ instead of $\theta_0$
 \end{equation}
 In summary, \eqref{Penrose:eqn:SrUapp}, \eqref{Penrose:eqn:StUapp}, and  \eqref{Penrose:eqn:theta0app} together are presented as \eqref{Penrose:eqn:Schwarzschildadapted} in the main text. 
 
-\section{The Kerr black hole}\label{Penrose:app:Kerr}
+\section{The Kerr Black Hole}\label{Penrose:app:Kerr}
 
 In this section, for completeness, we provide some additional details related to the Kerr example in Section \ref{Penrose:sec:Kerr}. First, using the frame \eqref{Penrose:eqn:Kerrframe} and definitions \eqref{Penrose:eqn:spincoeffssymbols}, the spin coefficients are given by 
 \begin{alignat}{3}
@@ -446,21 +446,31 @@ and allowing for the additional, non-vanishing spin coefficients in \eqref{Penro
 \left(\sqrt{\frac{a^2-y^2}{r^2+y^2}}\frac{d}{d\theta} + \sqrt{2} \tau\right)\chi_{01} = 0 \, .
 \end{aligned}
 \end{equation}
-As a result, $\chi_{01} \propto r-iy = \zeta$ as desired. \\
+As a result, $\chi_{01} \propto r-iy = \zeta$ as desired.
 
 Next, we will provide a first step in checking that the tangent two-spinor $\alpha^A$, given in \eqref{Penrose:eqn:Kalpha}, is indeed parallel transported along the null geodesic with tangent given in \eqref{Penrose:eqn:ukerr}.
 \begin{equation}\label{Penrose:eqn:Kalphaequations}
 \begin{aligned}
--\iota_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = \left\lbrack  |\alpha^o|^2  \left(-\frac{\partial \alpha^o}{\partial r} - \tau' \alpha^{\iota}+\epsilon \alpha^o \right) + |\alpha^{\iota}|^2 \left( \frac{\Delta_r}{2 (r^2+y^2)} \frac{\partial \alpha^{o}}{\partial r} - \epsilon' \alpha^{o} \right)\right \rbrack \\
-+  \left\lbrack \alpha^o\bar{\alpha}^{\iota'} \left(-\sqrt{\frac{a^2-y^2}{2 (r^2+y^2)}}\frac{\partial \alpha^o}{\partial y} -\rho' \alpha^{\iota} + \beta \alpha^o \right)+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^o}{\partial y} -\beta' \alpha^o \right) \right\rbrack \, , \\
-o_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = \left\lbrack -|\alpha^o|^2  \left(\frac{\partial \alpha^{\iota}}{\partial r}+\epsilon \alpha^{\iota} \right) + |\alpha^{\iota}|^2 \left( \frac{\Delta_r}{2(r^2+y^2)}  \frac{\partial \alpha^{\iota}}{\partial r} + \epsilon' \alpha^{\iota} - \tau \alpha^{o}\right) \right \rbrack  \\
-+ \left\lbrack \alpha^o\bar{\alpha}^{\iota'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^{\iota}}{\partial y} -\beta \alpha^{\iota}\right)+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^{\iota}}{\partial y} +\beta' \alpha^{\iota} - \rho \alpha^o \right) \right\rbrack \, .
+-\iota_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = &\left\lbrack  |\alpha^o|^2
+\left(-\frac{\partial \alpha^o}{\partial r} - \tau' \alpha^{\iota}+\epsilon \alpha^o \right) + |\alpha^{\iota}|^2
+\left( \frac{\Delta_r}{2 (r^2+y^2)} \frac{\partial \alpha^{o}}{\partial r} - \epsilon' \alpha^{o} \right)\right
+\rbrack \\
+                                                                &+  \left\lbrack \alpha^o\bar{\alpha}^{\iota'}
+                                                                \left(-\sqrt{\frac{a^2-y^2}{2
+                                                                (r^2+y^2)}}\frac{\partial \alpha^o}{\partial y}
+                                                            -\rho' \alpha^{\iota} + \beta \alpha^o \right) \right. \\
+                                                            &\left.+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^o}{\partial y} -\beta' \alpha^o \right) \right\rbrack \, , \\
+o_A	\alpha^B \bar{\alpha}^{B'} \nabla_{BB'}\alpha^A = &\left\lbrack -|\alpha^o|^2  \left(\frac{\partial \alpha^{\iota}}{\partial r}+\epsilon \alpha^{\iota} \right) + |\alpha^{\iota}|^2 \left( \frac{\Delta_r}{2(r^2+y^2)}  \frac{\partial \alpha^{\iota}}{\partial r} + \epsilon' \alpha^{\iota} - \tau \alpha^{o}\right) \right \rbrack  \\
+                                                        &+  \left\lbrack \alpha^o\bar{\alpha}^{\iota'}
+                                                        \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial
+                                                        \alpha^{\iota}}{\partial y} -\beta \alpha^{\iota}\right) \right. \\
+                                                           &\left.+  \alpha^{\iota}\bar{\alpha}^{o'} \left(-\sqrt{\frac{a^2-y^2}{2(r^2+y^2)}}\frac{\partial \alpha^{\iota}}{\partial y} +\beta' \alpha^{\iota} - \rho \alpha^o \right) \right\rbrack \, .
 \end{aligned}
 \end{equation}
 At this point, it serves no purpose to continue to write down the calculation, which is uninformative. However, we have verified that the equations \eqref{Penrose:eqn:Kalphaequations} are satisfied by \eqref{Penrose:eqn:Kalpha}.
 
 
-\section{Vacuum Petrov type D spacetimes}\label{Penrose:app:PlebanskiDemianski}
+\section{Vacuum Petrov Type D Spacetimes}\label{Penrose:app:PlebanskiDemianski}
 
 In this section, we provide some additional details related to the vacuum Petrov type D spacetimes example in Section \ref{Penrose:sec:typeD}. From the build-up towards this general case, it is clear that for the general structure of the double copy and the Penrose limit, the main ingredient that we need is the existence of the Killing spinor $\chi_{AB}$. On the other hand, in practice, one would still need to be more explicitly about, say, the Kerr-Schild form and geodesics. We will therefore present here for completeness the (uncharged) Plebanski-Demianski line element \cite{Kinnersley:1969zza,Plebanski:1976gy}, which is the most general Petrov type D solution of the vacuum Einstein equations. However, see \cite{Griffiths:2005qp} for more details.
 

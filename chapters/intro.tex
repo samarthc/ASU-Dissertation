@@ -1,0 +1,267 @@
+\chapter{Introduction}
+
+\section{Invitation}
+
+The study of physics since its modern formulation in the times of Newton
+and Galileo has found ever greater explanatory power in finding unifying
+principles that relate seemingly disparate phenomena. While this insight
+is not novel, the discovery of \emph{dualities} between physical
+theories is a more recent take on the paradigm of unification, which has
+spurred several lines of inquiry in theoretical physics. 
+
+One such duality that arose from the study of amplitudes is \textbf{color-kinematics duality}, also known as \textbf{BCJ
+duality} \cite{Bern:2008qj}\footnote{The two names are used interchangeably throughout this dissertation.}. BCJ
+duality shows up as a relationship between amplitudes in Yang-Mills theories and gravitational theories --- in a
+Feynman diagram expansion of Yang-Mills amplitudes, performing a term-by-term replacement of factors that
+carry all the color information by a kinematic factor results in a gravitational amplitude with the same external
+kinematics.
+
+For instance, at tree level, a four-point scattering amplitude in pure Yang-Mills theory can be written as
+\cite{Bern:2008qj}
+\begin{equation} \label{intro:eq:YM4point} 
+    \mathcal{A}^{\text{tree}}_{4} = g^{2} \left( \frac{n_{s}c_{s}}{s} + \frac{n_{t}c_{t}}{t} +
+    \frac{n_{u}c_{u}}{u}\right),
+\end{equation}
+where the three terms represent contributions from the $s$-, $t$-, and $u$-channel diagrams
+respectively.\footnote{In the usual Feynman diagram expansion, there is another diagram from the four-point vertex
+    of a non-Abelian Yang-Mills theory. It turns out that the fourth diagram can be written as the sum of three
+terms, which can be absorbed appropriately into the three terms above.} The
+denominators $s,t,u$ are the usual Mandelstam variables, $s = (p_{1} + p_{2})^{2}, t = (p_{1} + p_{4})^{2}, u =
+(p_{1} + p_{3})^{2}$, where $p_{i}$ are the external gluon momenta. The terms in the numerator are split into
+\textit{color factors} $c_{i}$, which depend only on the Yang-Mills symmetry group, and \textit{kinematic factors}
+$n_{i}$, which depend only on external momenta and polarizations.
+
+A detailed account of the expressions $c_{i}$ and $n_{i}$ could be given here, but since the primary focus of this
+dissertation will be on the ramifications of BCJ duality on classical solutions, we will state only that they
+satisfy the identities,
+\begin{equation} \label{} 
+    c_{s} + c_{t} + c_{u} = 0, 
+\end{equation}
+which follows from the Jacobi identity of the Yang-Mills group, and 
+\begin{equation} \label{} 
+    n_{s} + n_{t} + n_{u} = 0,
+\end{equation}
+which follows from putting external momenta on-shell, and is sometimes termed the \textit{kinematic Jacobi
+identity}\footnote{It is the existence of such kinematic factors, which satisfy all corresponding color factor
+identities, that leads to the proposal of a duality between color and kinematics.}. Hence, performing the replacement $c_{i} \to n_{i}$, along with replacing the gauge theory coupling,
+leads to the tree-level four point amplitude of a different field theory,
+\begin{equation} \label{} 
+    \mathcal{M}^{\text{tree}}_{4} = \kappa^{2} \left( \frac{n_{s}^{2}}{s} + \frac{n_{t}^{2}}{t} +
+    \frac{n_{u}^{2}}{u}\right).
+\end{equation}
+This is in fact the tree level amplitude for four-point graviton scattering. Since the amplitude has two copies of
+the kinematic factor in the numerator, it is called the \textit{double copy} of the Yang-Mills amplitude
+\eqref{intro:eq:YM4point}. It is also customary to refer to gravitational theory itself as the \textit{double copy}
+of the Yang-Mills theory, and to refer to the Yang-Mills theory as the \textit{single copy}. The duality between color and kinematics can also be applied in the other direction, $n_{i} \to \tilde{c}_{i}$,
+\begin{equation} \label{} 
+    \mathcal{A}_{4}^{\text{tree}} \to y^{2}\left( \frac{c_{s}\tilde{c}_{s}}{s} + \frac{c_{t}\tilde{c}_{t}}{t} +
+    \frac{c_{u}\tilde{c}_{u}}{u} \right),
+\end{equation}
+which results in the four-point amplitude for a massless \textit{biadjoint scalar field}. A biadjoint scalar
+transforms in the adjoint representation of two (possibly different) gauge groups, with coupling constant $y$.
+This biadjoint scalar theory is usually dubbed the \textit{zeroth copy}.
+
+Such double copy relations between gauge and gravity amplitudes have been proven at tree level \cite{Bern:2010yg},
+and are conjectured to hold to all loop orders, with an ever-expanding set of examples (see, for instance, chapter
+6 of the review \cite{Bern:2019prr}). The double copy, therefore, has shown us how to construct amplitudes for a wide
+range of theories (scalar, gauge, gravity) from a common set of building blocks in a way that does not obviously
+follow from the Lagrangians themselves. While our interest in the double copy paradigm was motivated by probing the
+extent of the double copy proposal and hopefully learn something fundamental about the nature of gravitational
+theories, the double copy has also given rise to applications to other fields of physics \cite{Adamo:2022dcm}.
+
+\section{From Quantum Amplitudes to Classical Physics}
+
+%\begin{itemize}
+    %\item  Duality extends to
+%classical physics --- the double copy. 
+    %\item  Perturbative double copy ==
+%color-kinematics of tree level 
+%\item  \st{Exact solution approaches:} 
+    %\begin{itemize}
+        %\item \st{Kerr-Schild} 
+        %\item  \st{Weyl} 
+        %\item \st{Newman-Penrose} 
+        %\item  \st{Twistors --- in cases where linearized solutions are enough to construct exact solution}
+    %\end{itemize}
+%\item  Why study the classical limit? 
+%\item GW inspiral waveforms can be recast
+%as classical limits of quantum amplitudes 
+%\item Other gravitational observables from (limits of?) on-shell quantum amplitudes cf. Kosower, Maybee, O'Connell
+    %\href{https://www.arxiv.org/abs/1811.10950}{1811.10950} 
+%\item New tool for
+%systematic study of exact solutions in gravity 
+%\item Curiosity
+%\end{itemize}
+
+The discovery of a double copy structure in the amplitudes computed in gauge and gravity theories naturally leads
+to a similar structure in their respective classical limits. Since the Feynman diagram series with an increasing
+number of loops is effectively an expansion in increasing powers of $\hbar$, taking the classical limit of an
+amplitude generally corresponds to keeping only the tree-level terms and discarding
+all diagrams with loops. See the recent review \cite{Kosower:2022yvp} for a comprehensive description of how the
+classical double copy emerges from the double copy of amplitudes.
+
+The study of the classical double copy via amplitudes expanded beyond
+the amplitudes perspective and took on a life of its own after a seminal paper \cite{Monteiro:2014cda}
+that described how a certain class of spacetimes (Kerr-Schild spacetimes) could be constructed
+\emph{exactly} from solutions in the corresponding electromagnetic and
+scalar theories. Kerr-Schild solutions are distinguished by the ability of the
+metric to be written as 
+\begin{equation} \label{} 
+g_{\mu \nu} = \eta_{\mu \nu} + \phi k_{\mu} k_{\nu},
+\end{equation}
+where $k_{\mu}$ is a null vector field tangent everywhere to affinely parametrized geodesics, $\phi$ is a scalar
+function, and $\eta_{\mu \nu}$ is the Minkowski metric. The authors of \cite{Monteiro:2014cda} showed that the corresponding single and zeroth copies are,
+\begin{equation} \label{Intro:Kerr-SchildSingleZerothCopies} 
+    A_{\mu} = \phi k_{\mu}, \qquad \Phi = \phi,
+\end{equation}
+which satisfy equations of motion (for a $U(1)$ gauge field and a massless scalar field) when considered to be
+fields on Minkowski spacetime with metric $\eta_{\mu \nu}$. Since this proposal of the \textit{Kerr-Schild double
+copy}, there have been proposals for other formulations that extend the classical double copy in various ways. The
+most notable of these for our purposes is the \textit{Weyl double copy} \cite{Luna:2018dpt, Godazgar:2020zbv}.
+
+This dissertation is a collection of our attempts to extend the double copy in various directions, and to probe the
+limits of its applicability. The following section gives an outline of the subsequent chapters, which each tackle a
+specific way of extending the double copy
+
+\section{Extensions}
+
+\subsection{Higher Dimensions}
+%\begin{itemize}
+%\tightlist
+%\item
+  %Why study higher dimensions?
+
+  %\begin{itemize}
+  %\tightlist
+  %\item
+    %See {[}{[}Meeting with Cindy Jan 15\#Why higher dimensions?{]}{]}
+  %\end{itemize}
+%\item
+    %\st{Kerr-Schild formalism works in arbitrary dimension, but (spinor) Weyl
+  %needs dimension-specific spinor formalisms.}
+  
+%\item
+  %\st{Showed that for Kerr-NUT-(A)dS, the previously discovered aligned
+  %fields did in fact double copy to the spacetime when considered on an
+%appropriate background.}
+%\item
+    %\st{Point to chapter 2.}
+%\end{itemize}
+Our first interest was in extending the classical double copy to higher dimensions. The Kerr-Schild formalism as
+described above (eq \eqref{Intro:Kerr-SchildSingleZerothCopies}) generalizes easily to higher dimensions, which is
+an advantage of the formalism. What we give up in
+return is gauge invariance;
+%demonstrating that the metric is of Kerr-Schild type is usually done via
+%transforming to a specific coordinate system in which $\eta_{\mu \nu}$ takes the usual (Cartesian) form,
+%\begin{equation} \label{} 
+    %[\eta_{\mu \nu}] = 
+    %\begin{pmatrix}
+        %-1 & 0 & 0 & 0 \\
+        %0 & 1 & 0 & 0 \\
+        %0 & 0 & 1 & 0 \\
+        %0 & 0 & 0 & 1
+    %\end{pmatrix}.
+%\end{equation}
+%Arguably, this is not mandatory. It can in principle be shown in any coordinate system that the $\eta_{\mu \nu}$
+%term represents a flat metric. 
+%At the level of the single copy however,
+the prescription for $A_{\mu}$ in \ref{Intro:Kerr-SchildSingleZerothCopies} makes an explicit gauge choice. After a
+generic gauge transformation,
+\begin{equation} \label{} 
+    A_{\mu} \to A_{\mu} + \partial_{\mu} \alpha,
+\end{equation}
+$A_{\mu}$ can no longer be expressed as being proportional to a null geodesic vector field. 
+
+The Weyl double copy proposed in \cite{Luna:2018dpt} remedies the gauge dependence of the Kerr-Schild
+approach by working with the electromagnetic field strength $F_{\mu \nu}$ instead of the gauge field
+$A_{\mu}$, and the Weyl tensor $W_{\mu \nu \rho \sigma}$ instead of the metric $g_{\mu \nu}$. It turns out that the
+Weyl double copy is most naturally stated in terms of the spinor representation of these tensors, and in $D = 4$
+the Weyl double copy is
+\begin{equation} \label{} 
+    \Psi_{ABCD} = \frac{1}{S} f_{(AB} f_{CD)},
+\end{equation}
+where $\Psi_{ABCD}$ is the Weyl spinor, $f_{AB}$ is the electromagnetic field strength, $S$ is a scalar related to
+the zeroth copy, and $A, B, C, D = 1, 2$ are spinor indices.
+
+While the gauge independence of this formalism is desirable, its reliance on a spinorial representation makes it
+dimension-specific. In chapter \ref{chap:5D}, we explain a proposal for the five-dimensional version of the spinor Weyl
+double copy. We demonstrate the double copy structure of the Kerr-NUT-(A)dS class of spacetimes --- in arbitrary
+dimension using the Kerr-Schild double copy, and in five dimensions using our proposal for the spinor Weyl double
+copy. We find that our results are consistent with previously known examples in the Kerr-Schild and Weyl spinor
+formalisms.
+
+\subsection{\texorpdfstring{Horizons }{Horizons }}
+
+%\begin{itemize}
+%\tightlist
+%\item
+  %If we had discovered double copy before classical GR, could we have
+  %discovered black hole spacetimes (in particular their causal
+  %horizons?)
+%\item
+  %Classical double copy formalisms (exact formulations) are local maps
+  %=\textgreater{} First study local horizons i.e.~apparent horizons.
+%\item
+  %Kerr-Schild result in a remarkably simple map, but necessarily
+  %involves the zeroth copy.
+%\item
+  %Also, the single copy appears in a gauge-dependent way. Not
+  %necessarily bad since the double copy prescription also needs
+  %gauge-fixing, but hard to interpret the horizon map.
+%\item
+  %Point to chapter 3.
+%\end{itemize}
+
+A rich area of inquiry within the double copy paradigm is building out the double copy dictionary beyond simply
+calculating the gravitational, gauge, and scalar fields themselves. However, a question remained: how do black hole
+horizons emerge from the double copy structure of black hole spacetimes? If the double copy proposal is to be taken seriously, in that gravitational physics is entirely constructible from
+the same building blocks as the physics of a gauge field (plus an associated biadjoint scalar), there must be a way to
+identify the presence of a horizon from the single and zeroth copy theories.
+
+For instance, the single copy of the Schwarzschild black hole is the Coulomb potential of a static point charge,
+and the zeroth copy (scalar field) is proportional to $1 / r$. From these fields, it is not immediately obvious how
+the double copy's horizon at $r = GM$ could be diagnosed. In particular, the gauge potential and the scalar field
+are smooth everywhere except $r = 0$.
+
+We explore this question in chapter \ref{chap:Horizons}, where we give a proposal for finding trapped surfaces in
+the gravitational solution using quantities that can be computed using the gauge field, the associated scalar, and
+the supposition of a Kerr-Schild solution that is their double copy. The relevant quantities involve both the gauge
+field and the scalar field together, but they are not invariant under gauge transformations of the gauge potential.
+
+\subsection{\texorpdfstring{The Penrose limit
+}{The Penrose limit }}
+
+So far, we relied on double copy proposals for classical gravity that were both
+\textit{exact}, and \textit{local} in position space. These methods are known to work for special classes of
+spacetimes, one of which (Kerr-Schild metrics) we have already mentioned. The Weyl double copy in its exact form
+requires the spacetime to be \textit{algebraically special}, which is a condition on the \textit{principal null
+directions} of the Weyl tensor. More precise statements about algebraic speciality are made in \ref{ssec:5DTypeD}.
+
+The pursuit of ever more general examples of the double copy remains a fruitful endeavor. However, recent work
+\cite{Luna:2022dxo} showed that the two formalisms we have been working with (Kerr-Schild and Weyl) are expected to
+fail for algebraically general spacetimes. More than a failure of exactness, the authors of \cite{Luna:2022dxo} set
+out to answer why the classical double copy was local in the fields anyway --- the amplitudes double copy seems to
+imply that the double copy should be local in momentum space, not in position space. It turns out that the
+existence of a local double copy relies strongly on algebraic specialitay. 
+
+It seems then that there is more to be gained from a perturbative approach. The perturbative classical double copy
+arising from the amplitudes paradigm is naturally expressed as a perturbation about Minkowski spacetime. Now, with the
+knowledge of exact classical double copies, we had the opportunity to deal with expansions about other background
+spacetimes. One such approach was taken by \cite{Godazgar:2021iae}, where the Weyl spinor was expanded around null
+infinity in an asymptotically flat spacetime. The Weyl spinor is algebraically special to leading orders in $1 /
+r$, which allows for application of the Weyl double copy near null infinity.
+
+Our motivation was to pursue a related line of inquiry: what happens if, instead of expanding about a null
+boundary, we expand the Weyl spinor around a null
+geodesic in the bulk? The limiting spacetime (the \textit{Penrose limit}) at any null geodesic in any spacetime was
+shown to be a plane wave by Penrose \cite{penrose1976any}, which is an algebraically special spacetime.
+
+Chapters \ref{chap:Penrose} and \ref{chap:PenroseExpansion} lay out our investigations in expanding about null
+geodesics. Chapter \ref{chap:Penrose} is specifically about whether the process of taking the Penrose limit
+commutes with the double copy map, which we expected on physical grounds but nevertheless had to explicitly check.
+Chapter \ref{chap:PenroseExpansion} then examines how the double copy structure of a spacetime decomposes into
+various terms in an expansion about the null geodesic. This allowed us to examine at what order in the Penrose
+expansion the existence of a local double copy breaks down for generic spacetimes.
+
+\nobibintoc
+\printbibliography[heading=subbibliography]

@@ -42,7 +42,7 @@
                                         %   changes
 
 \usepackage{widows-and-orphans}
-\usepackage{ifplatform}                 % Includes conditionals for testing OS that was used to compile. Requires
+%\usepackage{ifplatform}                 % Includes conditionals for testing OS that was used to compile. Requires
                                         % use of ``shell-escape'' option when compiling. Used to test if this was
                                         % compiled inside the template's provided Docker container (linux/Debian),
                                         % or on my local machine (MacOS). This is of course not robust enough for
@@ -65,15 +65,16 @@
 % Author-defined preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\input{chapters/Preamble}
 \input{papers/Preamble}             % Additional packages and settings for various chapters.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page, input
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \listadd{\titlelines}%
-  {Explorations in the Classical Double Copy}             %_<Enter the title of the dissertation
+  {Explorations in the Classical Double Copy:}             %_<Enter the title of the dissertation
 \listadd{\titlelines}%
-  {(Working Title)}            % If you want to
+{Higher Dimensions, Horizons and Penrose Limits}            % If you want to
                                         %   split the title across lines,
                                         %   use another \listadd command for the
                                         %   second line
@@ -82,7 +83,7 @@
   {Dissertation}                        %_<Enter the type of document (capitalized)
 \newcommand*{\degreename}
   {Doctor of Philosophy}                %_<Enter the type of degree (capitalized)
-\newcommand*\defdate{January 2026}        %_<Give month (written out fully) and year of
+\newcommand*\defdate{April 2026}        %_<Give month (written out fully) and year of
                                         %   the oral defense
 \listadd{\committeechair}{Cynthia Keeler}   %_<Enter committee chair name; use \listadd for
 %\listadd{\committeechair}{Another name}%   for additional names
@@ -188,20 +189,21 @@
     %% a bold typeface for Garamond; it would probably be possible to find
     %% one on your local system or online.
   %]
-  \iflinux
-      \setmainfont{Georgia}[                %_<Set the main font; make sure the font is correct
-        Path          = /usr/share/fonts/truetype/msttcorefonts/,%%   for the font size (See ASU Style Guide)
-        Extension     = .ttf,
-        UprightFont   = *,
-        ItalicFont    = *_Italic,
-        BoldFont      = *_Bold,
-        BoldItalicFont= *_Bold_Italic
-      ]
-  \else \ifmacosx
-      \setmainfont{Georgia}
-      \fi
-  \fi
+  %\iflinux
+      %\setmainfont{Georgia}[                %_<Set the main font; make sure the font is correct
+        %Path          = /usr/share/fonts/truetype/msttcorefonts/,%%   for the font size (See ASU Style Guide)
+        %Extension     = .ttf,
+        %UprightFont   = *,
+        %ItalicFont    = *_Italic,
+        %BoldFont      = *_Bold,
+        %BoldItalicFont= *_Bold_Italic
+      %]
+  %\else \ifmacosx
+      %\setmainfont{Georgia}
+      %\fi
+  %\fi
 
+  \setmainfont{Georgia}
 %  \setmathfont(Digits,Latin,Greek)%     %~Uncomment two lines to set a font for math%
 %    {MATHFONT}
 \fi
@@ -296,6 +298,54 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Heading styles
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titlecaps}                  % Set up headline style for captions in the
+                                        %   lists of tables and figures
+                                        % Note: ASU style guide does not provide
+                                        %   comprehensive guidelines for headlines, so
+                                        %   Chicago style for headline style is used
+                                        % Note: Last word in title is not explicitly
+                                        %   capitalized; in general, these settings are
+                                        %   broadly correct, but captions should be
+                                        %   reviewed to ensure they are being capitalized
+                                        %   properly
+\Resetlcwords
+\Addlcwords{a an the}                   % Leave articles lowercase
+\Addlcwords{and but for or nor}         % Leave conjunctions lowercase
+\Addlcwords{aboard about above across % % Leave all prepositions lowercase
+  after against along amid among anti % %   (This is a [non-exhaustive] list of common
+  around as at before behind below %    %   one-word prepositions)
+  beneath beside besides between %
+  beyond but by concerning considering %
+  despite down during except excepting %
+  excluding following for from in %
+  inside into like minus near of off %
+  on onto opposite outside over past %
+  per plus regarding round save since %
+  than through to toward towards under %
+  underneath unlike until up upon %
+  versus vs via with within without}
+\Addlcwords{ according\space{to} %      % Leave two-word conjunctions lowercase
+  ahead\space{of} apart\space{from} %   %   (This is a [non-exhaustive] list of common
+  as\space{for} as\space{of} %          %   two-word prepositions.)
+  as\space{per} as\space{regards} %
+  aside\space{from} astern\space{of} %
+  back\space{to} because\space{of} %
+  close\space{to} due\space{to} %
+  except\space{for} far\space{from} %
+  in\space{to} inside\space{of} %
+  instead\space{of} left\space{of} %
+  near\space{to} next\space{to} %
+  on\space{to} opposite\space{of} %
+  opposite\space{to} out\space{from} %
+  out\space{of} outside\space{of} %
+  owing\space{to} prior\space{to} %
+  pursuant\space{to} rather\space{than} %
+  regardless\space{of} right\space{of} %
+  subsequent\space{to} such\space{as} %
+  thanks\space{to} that\space{of} %
+  up\space{to}}
+
 % Note: memoir also has \book and \part commands; do not use these
 \makechapterstyle{ASU}{%                % Define chapter heading style
   \renewcommand*{\chapterheadstart}{}   % Chapter title flush with top margin
@@ -384,6 +434,7 @@
 \settocdepth{subparagraph}              % Include 5 levels deep (all levels) in TOC
 
 %%% Fonts %%%
+
 \makeatletter%
 \patchcmd{\l@part}%                     % Patch the command that writes part-level entries
     {\cftpartfont {#1}}%                %   to the table of contents, so they are in
@@ -416,57 +467,23 @@
 
 % If not using 'hyperref', use the following commands to adjust 'part' and 'chapter'
 %   level headings in the TOC
-%\renewcommand*{\cftpartfont}%          % Uppercase 'part' and 'chapter' headings
-%  {\normalfont\MakeTextUppercase}      % Note: Sending \MakeTextUppercase to the TOC
-%\renewcommand*{\cftchapterfont}%       %   conflicts with hyperref and breaks it!
-%  {\normalfont\MakeTextUppercase}%
+%
+% UPDATE: As of August 2025, hyperref is no longer an issue
 
-\usepackage{titlecaps}                  % Set up headline style for captions in the
-                                        %   lists of tables and figures
-                                        % Note: ASU style guide does not provide
-                                        %   comprehensive guidelines for headlines, so
-                                        %   Chicago style for headline style is used
-                                        % Note: Last word in title is not explicitly
-                                        %   capitalized; in general, these settings are
-                                        %   broadly correct, but captions should be
-                                        %   reviewed to ensure they are being capitalized
-                                        %   properly
-\Resetlcwords
-\Addlcwords{a an the}                   % Leave articles lowercase
-\Addlcwords{and but for or nor}         % Leave conjunctions lowercase
-\Addlcwords{aboard about above across % % Leave all prepositions lowercase
-  after against along amid among anti % %   (This is a [non-exhaustive] list of common
-  around as at before behind below %    %   one-word prepositions)
-  beneath beside besides between %
-  beyond but by concerning considering %
-  despite down during except excepting %
-  excluding following for from in %
-  inside into like minus near of off %
-  on onto opposite outside over past %
-  per plus regarding round save since %
-  than through to toward towards under %
-  underneath unlike until up upon %
-  versus vs via with within without}
-\Addlcwords{ according\space{to} %      % Leave two-word conjunctions lowercase
-  ahead\space{of} apart\space{from} %   %   (This is a [non-exhaustive] list of common
-  as\space{for} as\space{of} %          %   two-word prepositions.)
-  as\space{per} as\space{regards} %
-  aside\space{from} astern\space{of} %
-  back\space{to} because\space{of} %
-  close\space{to} due\space{to} %
-  except\space{for} far\space{from} %
-  in\space{to} inside\space{of} %
-  instead\space{of} left\space{of} %
-  near\space{to} next\space{to} %
-  on\space{to} opposite\space{of} %
-  opposite\space{to} out\space{from} %
-  out\space{of} outside\space{of} %
-  owing\space{to} prior\space{to} %
-  pursuant\space{to} rather\space{than} %
-  regardless\space{of} right\space{of} %
-  subsequent\space{to} such\space{as} %
-  thanks\space{to} that\space{of} %
-  up\space{to}}
+\renewcommand*{\cftpartfont}%          % Uppercase 'part' and 'chapter' headings
+  {\normalfont\MakeTextUppercase}      % Note: Sending \MakeTextUppercase to the TOC
+\renewcommand*{\cftchapterfont}%       %   conflicts with hyperref and breaks it!
+  {\normalfont\MakeTextUppercase}%
+\renewcommand{\cftsectionfont}%
+  %{\normalfont\titlecap}%              % Intended to make section, subsection and 
+%\renewcommand{\cftsubsectionfont}%     % subsubsection headings in titlecase, but
+  %{\normalfont\titlecap}%              % does not work...
+%\renewcommand{\cftsubsubsectionfont}%
+  %{\normalfont\titlecap}
+
+
+%\renewcommand\cftsectionaftersnumb{\titlecap} % Also did not work
+
 
 \renewcommand{\cfttableaftersnumb}%     % Put table captions in List of Tables in title
   {\titlecap}%                          %   case
@@ -825,7 +842,7 @@
 }%                                      %   the text. God help you if you're doing
                                         %   citations manually.
 
-\newcommand{\bibheading}{References}    %_<Enter the heading for the references section:
+\newcommand{\bibheading}{Bibliography}    %_<Enter the heading for the references section:
                                         %   'References', 'Works Cited', or 'Bibliography'
 
 \providetoggle{usebiblatex}             % True = a biblatex package is being used;
@@ -845,11 +862,18 @@
               biblabel=brackets,%       % Use brackets for inline citations instead of
                                         % the default superscript option
               %isbn=false               % Don't print ISBN numbers
+              backref=true%
                         ]%              
               {biblatex}                %_~Other possibilities include: 'biblatex',
                                         %   'biblatex-apa', and 'biblatex-mla'
               \DeclareFieldFormat[article,inprceedings,thesis,unpublished]{title}{#1\isdot}
   \bibliography{\bibfilename}
+
+  \newcommand\RefList{}
+  \newcommand\AddToRefList[1]{\xdef\RefList{\RefList,#1}}
+
+  \AtEveryCitekey{\AddToRefList{\thefield{entrykey}}}
+
   \setlength{\bibitemsep}%              % Set vertical distance between
     {0.5\baselineskip}%                 %   bibliography entries
   \setcounter{biburlnumpenalty}{9000}   % Break URLs in bibliography across lines
@@ -954,7 +978,7 @@
 \widowpenalty=10000
 \vfuzz \hfuzz
 
-%%% Create metadata strings
+%%%% Create metadata strings
 \usepackage{hyperxmp}                   % For metadata
 \renewcommand*{\do}[1]{#1\ }%           % Build title string to output to pdf document
 \newcommand*{\onelinetitle}{%
@@ -993,7 +1017,7 @@
   Requirements for a \degreename\space
   from Arizona State University}
 
-%%% Enter metadata and other settings
+%%%% Enter metadata and other settings
 \hypersetup{                            % Set pdf metadata
   pdftitle={\theonelinetitle},          % Title
   pdfauthor={\Author},                  % Author
@@ -1001,8 +1025,9 @@
  %pdfproducer={},                       % Let 'pdfproducer' be filled automatically
   pdfsubject={\pdfsummary},             % Subject of the document
   pdfkeywords=\thepdfkeywordsstring,    % List of keywords
-  hidelinks={true},                     % Links look like regular text (no colors, boxes)
+  %hidelinks={false},                     % Links are highlighted (changed by me)
   breaklinks={true},                    % Allow links to break across lines
+  bookmarksdepth=subparagraph
 }
 \ifxetex                                % If processing with XeTeX
   \hypersetup{unicode=true}             % Must use 'true' in XeTeX
@@ -1131,20 +1156,20 @@
 \frontmatter
 
 \chapter*{Abstract}                     % Abstract is required
-\input{src/sample/abstract}             %<Enter the name of the .tex file containing your
+\input{chapters/abstract}               %<Enter the name of the .tex file containing your
                                         %   your abstract or omit this line and type in
                                         %   your abstract here.
 
-\chapter*{Dedication}                   %_~Dedication is optional
+%\chapter*{Dedication}                   %_~Dedication is optional
 %\clearpage                             %_~If you don't wish to display the heading
                                         %   'Dedication', comment out the previous line
                                         %   and use this one instead.
-\input{src/sample/dedication}           %<Enter the name of the .tex file containing your
+%\input{src/sample/dedication}           %<Enter the name of the .tex file containing your
                                         %   your dedication or omit this line and type in
                                         %   your dedication here.
 
 \chapter*{Acknowledgments}              %_~Acknowledgments are optional
-\input{src/sample/acknowledgments}      %<Enter the name of the .tex file containing your
+\input{chapters/acknowledgements}   %<Enter the name of the .tex file containing your
                                         %   acknowledgments or omit this line and type in
                                         %   your acknowledgments here.
 
@@ -1224,10 +1249,19 @@
                                         % \subsubsection
                                         % \paragraph
                                         % \subparagraph
+
+\newrefsection
+\include{chapters/intro.tex}
+\newrefsection
 \include{papers/5D}
+\newrefsection
 \include{papers/Horizons}
+\newrefsection
 \include{papers/Penrose}
+\newrefsection
 \include{papers/PenroseExpansion}
+\endrefsection
+\include{chapters/conclusion}
 \iftoggle{sample}{%
   \include{src/sample/chapter}%
 }{}
@@ -1272,7 +1306,9 @@
 %  {\protect\markboth{\bibheading}{Page}}%   the bibliography heading (unlikely since
 %                                        %   the appendices follow quickly)
 \iftoggle{usebiblatex}{%                % Output the bibliography
-  \printbibliography[heading=none]      % Using a 'biblatex' package; do not let
+  \newrefcontext[sorting=nty]
+  \nocite{\RefList}
+  \printbibliography[heading=none,section=0]      % Using a 'biblatex' package; do not let
                                         %   'biblatex' output a heading
 }{%
   \renewcommand\bibsection{}            % Do not let 'natbib' output a heading
@@ -1326,6 +1362,7 @@
 \input{papers/HorizonsAppendices}
 \input{papers/PenroseAppendices}
 \input{papers/PenroseExpansionAppendices}
+\input{chapters/authorpermissions}
 \iftoggle{sample}{%
   \input{src/sample/appendix}%
 }{}

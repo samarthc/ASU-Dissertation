@@ -1,4 +1,12 @@
-\chapter{Black Hole Horizons from the Double Copy}
+\chapter{Black Hole Horizons from the Double Copy} \label{chap:Horizons}
+
+The contents of this chapter first appeared in Classical and Quantum Gravity \cite{Chawla:2023bsu}.
+
+\textit{We describe a procedure for locating black hole horizons in Kerr-Schild
+spacetimes in the double copy paradigm. Using only single- and zeroth-copy data on
+flat spacetime, our procedure predicts the existence of trapped surfaces in the double-
+copy gravitational solution. We show explicitly how this procedure locates the horizon
+of the Schwarzschild black hole and the general Myers-Perry black hole.}
 
 \section{Introduction} \label{Horizons:sec:intro} 
 
@@ -104,7 +112,7 @@ global structure of spacetime, while the Kerr-Schild double copy is a local map.
 the double copy we thus need a local definition of black hole horizons, which we briefly review in the next
 section.
 
-\subsection{Local definitions of black hole horizons} \label{Horizons:sec:localHorizonDefs}
+\subsection{Local Definitions of Black Hole Horizons} \label{Horizons:sec:localHorizonDefs}
 
 Various local definitions of black hole horizons have been advanced in the literature. 
 In this section we review relevant material from \cite{Gourgoulhon:2008pu}. All local horizon definitions therein
@@ -142,7 +150,7 @@ spacetime. If the outermost condition is not satisfied, $\mathcal{H}$ could stil
 the other definitions outlined in \cite{Gourgoulhon:2008pu}. For simplicity, in this paper we pick examples where
 the notion of FOTH suffices.
 
-\section{Finding horizons in a Kerr-Schild spacetime} \label{Horizons:sec:setup}
+\section{Finding Horizons in a Kerr-Schild Spacetime} \label{Horizons:sec:setup}
 
 In this section we describe, for a Kerr-Schild spacetime, how to search for the existence of horizons using
 quantities calculated on a flat spacetime. We do so by foliating a given hypersurface into co-dimension $2$
@@ -151,7 +159,7 @@ their null expansions, again using only flat spacetime quantities. This auxiliar
 one that appears in \eqref{Horizons:kerrSchildMetric} and serves as the background spacetime for the single and zeroth copy
 theories.
 
-\subsection{The geometry of hypersurface foliations}
+\subsection{The Geometry of Hypersurface Foliations}
 In flat spacetime, let us pick an arbitrary hypersurface $\mathcal{H}$ with normal one-form $\tilde{H}_{\mu}$.
 We will foliate $\mathcal{H}$ into spacelike surfaces $\mathcal{S}_{\lambda}$ parametrized by $\lambda$, with each
 leaf of the foliation of co-dimension $2$ with respect to the background spacetime. At every point on a
@@ -242,7 +250,7 @@ out that $h_{\mu \nu} = \mathring{h}_{\mu \nu}$.}
     \end{split}
 \end{equation}
 
-\subsection{The dynamics of hypersurface foliations}
+\subsection{The Dynamics of Hypersurface Foliations}
 Having described the choice of foliation, we now examine how each leaf $\mathcal{S}_{\lambda}$ evolves along its 
 null normals. We specifically look at the expansion, defined as in \eqref{Horizons:expansionDefn}.
 Using the induced metric from \eqref{Horizons:flatInducedMetric} we can write the expansions as
@@ -264,7 +272,7 @@ Here, the two may have the same sign. We are interested in spacetimes where $\th
 $\theta^{(l)} \geq 0$ near asymptotic infinity. Regions where $\theta^{(l)} < 0$ are trapped, and the boundary of
 such regions, where $\theta^{(l)} = 0$, are trapping horizons.
 
-\subsection{The double copy relation} \label{Horizons:sec:doubleCopyRelation}
+\subsection{The Double Copy Relation} \label{Horizons:sec:doubleCopyRelation}
 An explicit computation of the expansions using the metric \eqref{Horizons:kerrSchildMetric} (outlined in appendix
 \ref{Horizons:app:ExpansionCalculation}) shows that for Kerr-Schild spacetimes the expansions on the $\eta_{\mu \nu}$ and
 the $g_{\mu \nu}$ background are related via
@@ -312,7 +320,7 @@ general dimensions is given in \cite{Monteiro:2014cda}. We first demonstrate the
 Schwarzschild horizon, which we hope illustrates our approach more transparently than the somewhat messier
 expressions which arise in our analysis of the more general Myers-Perry metric.
 
-\subsection{Schwarzschild black hole}
+\subsection{Schwarzschild Black Hole}
 We write the Schwarzschild metric in Kerr-Schild coordinates as
 \begin{equation} \label{Horizons:SchMetricKerrSchild} 
     ds^{2} = -d\tau^{2} + dr^{2} + r^{2}d\theta^{2} + r^{2}\sin^{2}\theta d\phi^{2} + \frac{2M}{r} \left(-d\tau
@@ -449,7 +457,7 @@ the past horizon of the eternal Schwarzschild black hole at $r = 2M$. The intere
 discussion of the various Kerr-Schild coordinate patches in \cite{Boyer:1966qh} useful. We omit delving into this
 issue at present, and instead move on to the more general Myers-Perry class of black holes.
 
-\subsection{Myers-Perry black holes}
+\subsection{Myers-Perry Black Holes}
 The Myers-Perry spacetimes in arbitrary dimension $D \geq 4$ generalize the $D = 4$ Kerr black hole to arbitrary
 dimension. Its double copy description first appeared in \cite{Monteiro:2014cda}, which we re-state here. Just as
 for the Kerr black hole, Myers-Perry spacetimes have in general two horizons, an outer event horizon and an inner
@@ -560,3 +568,7 @@ For the vacuum Schwarzschild, Kerr, and Myers-Perry black holes we investigated,
 \textit{The authors thank Kwinten Fransen, Damien Easson, Tucker Manton, and Raphaela Wutte for helpful discussions.
         The authors are supported by the U.S. Department of Energy under grant number DE-SC0019470 and by the
         Heising-Simons Foundation ``Observational Signatures of Quantum Gravity'' collaboration grant 2021-2818.}
+
+\nobibintoc
+
+\printbibliography[heading=subbibliography]
