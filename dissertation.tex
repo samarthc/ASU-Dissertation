@@ -470,11 +470,11 @@
 %
 % UPDATE: As of August 2025, hyperref is no longer an issue
 
-\renewcommand*{\cftpartfont}%          % Uppercase 'part' and 'chapter' headings
-  {\normalfont\MakeTextUppercase}      % Note: Sending \MakeTextUppercase to the TOC
-\renewcommand*{\cftchapterfont}%       %   conflicts with hyperref and breaks it!
-  {\normalfont\MakeTextUppercase}%
-\renewcommand{\cftsectionfont}%
+%\renewcommand*{\cftpartfont}%          % Uppercase 'part' and 'chapter' headings
+  %{\normalfont\MakeTextUppercase}      % Note: Sending \MakeTextUppercase to the TOC
+%\renewcommand*{\cftchapterfont}%       %   conflicts with hyperref and breaks it!
+  %{\normalfont\MakeTextUppercase}%
+%\renewcommand{\cftsectionfont}%
   %{\normalfont\titlecap}%              % Intended to make section, subsection and 
 %\renewcommand{\cftsubsectionfont}%     % subsubsection headings in titlecase, but
   %{\normalfont\titlecap}%              % does not work...
@@ -1025,7 +1025,7 @@
  %pdfproducer={},                       % Let 'pdfproducer' be filled automatically
   pdfsubject={\pdfsummary},             % Subject of the document
   pdfkeywords=\thepdfkeywordsstring,    % List of keywords
-  %hidelinks={false},                     % Links are highlighted (changed by me)
+  hidelinks,                            % Links highlighting turned off
   breaklinks={true},                    % Allow links to break across lines
   bookmarksdepth=subparagraph
 }
