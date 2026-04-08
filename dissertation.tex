@@ -854,19 +854,83 @@
 \iftoggle{usebiblatex}{%                % Settings for citation package
 %                                       % Settings for 'biblatex' or a version of
 %                                       %   'biblatex'
-  \usepackage[style=phys,%              % Style option for AIP (default) or APS style
+  \usepackage[style=phys,%              % Style option for AIP/APS style
               %authordate,%
               backend=biber,%           % Recommend to use 'biber' instead of 'bibtex'
-              pageranges=false,
-              %doi=only,%               % Avoid printing URLs
-              biblabel=brackets,%       % Use brackets for inline citations instead of
+              pageranges=false,%        % APS style requires only first page of journal 
+                                        % article, not the full range.
+              biblabel=brackets,%       % APS style requires bracketed citations, not
                                         % the default superscript option
-              %isbn=false               % Don't print ISBN numbers
-              backref=true%
-                        ]%              
-              {biblatex}                %_~Other possibilities include: 'biblatex',
+              %doi=only,%               % Avoid printing URLs [default false for AIP/APS]
+              %isbn=false               % Don't print ISBN numbers [default false for 
+                                        % AIP/APS]
+              arxiv=abs,%               % Ensure arXiv links are to the abs page, not 
+                                        % the pdf page.
+  ]%              
+  {biblatex}                            %_~Other possibilities include: 'biblatex',
                                         %   'biblatex-apa', and 'biblatex-mla'
-              \DeclareFieldFormat[article,inprceedings,thesis,unpublished]{title}{#1\isdot}
+
+  % Need to redefine the BibliographyDriver for @online entries, which is the default 
+  % type for arXiv preprints. The default driver includes unnecessary information, like
+  % the full url, url access date and publication status ("pre-published").
+  % Bibliography driver based on the driver definition for @article, from phys.bbx, and
+  % the definition for @online, from biblatex/standard.bbx
+
+  \ExecuteBibliographyOptions[online]{eprint=true}
+
+  \DeclareFieldFormat[online]{title}{%
+      \iftoggle{bbx:articletitle}
+        {\mkbibquote{#1\isdot}}
+        {}%
+  }
+  
+  \renewbibmacro*{doi+eprint+url}{%
+    \iftoggle{bbx:eprint}{%
+        \usebibmacro{eprint}
+        \iffieldundef{eprint}{%
+          \printfield{doi}
+          \iffieldundef{doi}{%
+            \printfield{url}
+          }{}%
+        }{}%
+    }{%
+        \iftoggle{bbx:doi}{%
+            \printfield{doi}
+            \iffieldundef{doi}{%
+              \printfield{url}
+            }{}%
+        }{%
+            \iftoggle{bbx:url}{%
+              \printfield{url}
+            }{}%
+        }
+    }
+  }
+  \DeclareBibliographyDriver{online}{%
+      \usebibmacro{bibindex}%
+      \usebibmacro{begentry}%
+      \usebibmacro{author/editor+others/translator+others}%
+      \setunit{\labelnamepunct}\newblock
+      \usebibmacro{title}%
+      \newunit
+      \printlist{language}%
+      \newunit\newblock
+      \usebibmacro{byauthor}%
+      \newunit\newblock
+      \usebibmacro{byeditor+others}%
+      \newunit\newblock
+      \printfield{version}%
+      \newunit
+      \printfield{note}%
+      \setunit{\bibpagespunct}%
+      \printfield{pages}%
+      \newunit\newblock
+      \printlist{organization}%
+      \newunit\newblock
+      \usebibmacro{doi+eprint+url}%
+      \usebibmacro{finentry}%
+  }%
+
   \bibliography{\bibfilename}
 
   \newcommand\RefList{}
