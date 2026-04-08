@@ -1,6 +1,6 @@
 \chapter{Penrose Limit: spinor identities and conventions}\label{Penrose:app:conventions}
 
-As much as possible, we will follow the conventions of Penrose and Rindler \cite{penrose1984spinors}. On matters of curvature however, we will deviate from \cite{penrose1984spinors} by a sign. The reason is that the definition of \cite{penrose1984spinors} for the curvature is equivalent to 
+As much as possible, we will follow the conventions of Penrose and Rindler \cite{Penrose:1985bww}. On matters of curvature however, we will deviate from \cite{Penrose:1985bww} by a sign. The reason is that the definition of \cite{Penrose:1985bww} for the curvature is equivalent to 
 \begin{equation}
 [\nabla_{\alpha}, \nabla_{\beta}]V^{\delta} = R^{(PR)}{}_{\alpha \beta \gamma}{}^{\delta}V^{\gamma} \, ,
 \end{equation}
@@ -8,7 +8,7 @@ while we use
 \begin{equation}
 [\nabla_{\alpha}, \nabla_{\beta}]V^{\delta} = R^{\delta}{}_{\gamma \alpha \beta}{}V^{\gamma} \, .
 \end{equation}
-Otherwise, the conventions of \cite{penrose1984spinors} imply that we work in a mostly minus signature $(+,\,-,\,-,\,-)$ and we take the anti-symmetric $\epsilon_{AB} = - \epsilon_{BA}$ to lower spinor indices ``left'' and raise ``right''
+Otherwise, the conventions of \cite{Penrose:1985bww} imply that we work in a mostly minus signature $(+,\,-,\,-,\,-)$ and we take the anti-symmetric $\epsilon_{AB} = - \epsilon_{BA}$ to lower spinor indices ``left'' and raise ``right''
 \begin{equation}
 \kappa^A \epsilon_{AB} = \kappa_B \, , \quad \kappa^A = \epsilon^{AB}\kappa_B \, .
 \end{equation}
@@ -16,7 +16,7 @@ We shall refer to a spin frame or dyad as a pair $\left\lbrace o^A, \iota^A \rig
 \begin{equation}\label{Penrose:eqn:dyadnorm}
 \epsilon_{AB} o^A \iota^B = 1\, .
 \end{equation}
-Further implications of these spinor conventions are discussed in detail in \cite{penrose1984spinors}.
+Further implications of these spinor conventions are discussed in detail in \cite{Penrose:1985bww}.
 %or
 %\begin{equation}
 %o_A \iota^A = 1 =-\iota_A o^A \, . 
@@ -144,7 +144,7 @@ where we will use ``cc'' to abbreviate the complex conjugate piece of the expres
 f_2 = - F_{\alpha \beta} n^{\alpha} \bar{m}^{\beta} \, , \quad f_1 = - \frac{1}{2}F_{\alpha \beta} \left(n^{\alpha} k^{\beta}+  m^{\alpha} \bar{m}^{\beta}\right) \, , \quad f_0 =  F_{\alpha \beta} k^{\alpha} m^{\beta} \, .
 \end{equation}
 
-The analogous procedure for the Riemann tensor is somewhat more (algebraically) complicated but is reviewed in detail in Chapter 4 of \cite{penrose1984spinors}. First, introduce the curvature spinors $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ as well as their complex conjugates and the scalar $\Lambda$ by the decomposition
+The analogous procedure for the Riemann tensor is somewhat more (algebraically) complicated but is reviewed in detail in Chapter 4 of \cite{Penrose:1985bww}. First, introduce the curvature spinors $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ as well as their complex conjugates and the scalar $\Lambda$ by the decomposition
 \begin{equation}
 \begin{aligned}
 -R_{\alpha \beta \gamma \delta} = \left(\Psi_{ABCD} 	+ \Lambda  \left(\epsilon_{AC}\epsilon_{BD}+\epsilon_{AD}\epsilon_{BC}\right) \right)\bar{\epsilon}_{A'B'}\bar{\epsilon}_{C'D'} + \Phi_{ABC'D'} \bar{\epsilon}_{A'B'} \epsilon_{CD}
@@ -152,7 +152,7 @@ The analogous procedure for the Riemann tensor is somewhat more (algebraically) 
 %\bar{\Psi}_{A'B'C'D'} \epsilon_{AB}\epsilon_{CD} + \bar{\Phi}_{A'B'CD} \epsilon_{AB} \bar{\epsilon}_{C'D'}
 \end{aligned}
 \end{equation}
-Now, the Weyl and Ricci scalars are again essentially just components of $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ with respect to the dyad $\left\lbrace o^A, \iota^A \right \rbrace$, similar to \eqref{Penrose:eqn:FinNP} for the Maxwell scalars\footnote{Let us emphasize again that these are identical to the definitions of \cite{penrose1984spinors}, given that we introduce an extra minus sign to correct for the different curvature convention (see (4.11.9) and (4.11.10)). On the other hand, these differ in sign from say \cite{Pound:2021qin}, where a mostly plus signature is used.}
+Now, the Weyl and Ricci scalars are again essentially just components of $\Psi_{ABCD}$ and $\Phi_{ABC'D'}$ with respect to the dyad $\left\lbrace o^A, \iota^A \right \rbrace$, similar to \eqref{Penrose:eqn:FinNP} for the Maxwell scalars\footnote{Let us emphasize again that these are identical to the definitions of \cite{Penrose:1985bww}, given that we introduce an extra minus sign to correct for the different curvature convention (see (4.11.9) and (4.11.10)). On the other hand, these differ in sign from say \cite{Pound:2021qin}, where a mostly plus signature is used.}
 \begin{equation}\label{Penrose:eqn:psidefs}
 \begin{aligned}
 \Psi_0 &= \Psi_{ABCD} o^Ao^Bo^Co^D =- C_{\alpha \beta \gamma \delta} k^{\alpha}m^{\beta}k^{\gamma} m^{\delta} \, , \\
@@ -253,7 +253,7 @@ such that in particular
 &= \left(\partial_{\mu}\kappa^o  + \gamma_{\mu o}{}^{o}\kappa^o + \gamma_{\mu \iota}{}^{o}\kappa^{\iota}\right) o^A + \left(\partial_{\mu} \kappa^{\iota}+ \gamma_{\mu o}{}^{\iota}\kappa^o + \gamma_{\mu \iota}{}^{\iota}\kappa^{\iota} \right) \iota^A \, .
 \end{aligned}
 \end{equation}
-One way to compute \eqref{Penrose:eqn:spinorspincoeffs} is using the associated Newman-Penrose frame. Introducing first the Newman-Penrose spin coefficient symbols of \cite{penrose1984spinors,Penrose:1986ca}, which give names to the individual components,
+One way to compute \eqref{Penrose:eqn:spinorspincoeffs} is using the associated Newman-Penrose frame. Introducing first the Newman-Penrose spin coefficient symbols of \cite{Penrose:1985bww,Penrose:1986ca}, which give names to the individual components,
 \begin{alignat}{5}
 \kappa &= m^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha} \, , \quad \epsilon&=& \frac{1}{2}\left(n^{\alpha} k^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} k^{\mu} \nabla_{\mu} \bar{m}_{\alpha}\right) \, , \quad &\gamma'&= \frac{1}{2}\left(k^{\alpha} k^{\mu} \nabla_{\mu} n_{\alpha} + \bar{m}^{\alpha} k^{\mu} \nabla_{\mu} m_{\alpha}\right) \, , \nonumber \\
 \rho &= m^{\alpha} \bar{m}^{\mu} \nabla_{\mu} k_{\alpha} \, , \quad \alpha &=& \frac{1}{2}\left(n^{\alpha} \bar{m}^{\mu} \nabla_{\mu} k_{\alpha} + m^{\alpha} \bar{m}^{\mu} \nabla_{\mu} \bar{m}_{\alpha}\right) \, , \quad &\beta'&  = \frac{1}{2}\left(k^{\alpha} \bar{m}^{\mu} \nabla_{\mu} n_{\alpha} + \bar{m}^{\alpha} \bar{m}^{\mu} \nabla_{\mu} m_{\alpha}\right) \, , \nonumber \\
@@ -268,7 +268,7 @@ then
 \gamma_{o\iota' o}{}^{o} &= \beta \, , \quad \gamma_{o\iota' o}{}^{\iota} &=& -\sigma \, , \quad \gamma_{o\iota' \iota}{}^{o} &=& -\rho' \, , \quad \gamma_{o\iota' \iota}{}^{\iota} &=& \alpha'  \nonumber  \\
 \gamma_{\iota \iota' o}{}^{o} &= \gamma \, , \quad \gamma_{\iota \iota' o}{}^{\iota} &=& -\tau \, , \quad \gamma_{\iota \iota' \iota}{}^{o} &=& -\kappa' \, , \quad \gamma_{\iota \iota' \iota}{}^{\iota} &=& \epsilon'  \, .  \label{Penrose:eqn:spincoeffs}
 \end{alignat}
-Although we will not generally need the expressions \eqref{Penrose:eqn:spincoeffs} and symbols \eqref{Penrose:eqn:spincoeffssymbols} in the main text, they are useful performing explicit calculations for the examples. Moreover, the expressions above quoted from \cite{penrose1984spinors,Penrose:1986ca} retain the possibility to work with an unnormalized dyad, while we always impose \eqref{Penrose:eqn:dyadnorm}. Therefore
+Although we will not generally need the expressions \eqref{Penrose:eqn:spincoeffs} and symbols \eqref{Penrose:eqn:spincoeffssymbols} in the main text, they are useful performing explicit calculations for the examples. Moreover, the expressions above quoted from \cite{Penrose:1985bww,Penrose:1986ca} retain the possibility to work with an unnormalized dyad, while we always impose \eqref{Penrose:eqn:dyadnorm}. Therefore
 \begin{equation}
 \epsilon = - \gamma' \, , \quad \alpha = -\beta' \, , \quad \beta = - \alpha' \, , \quad \gamma = - \epsilon' \, .
 \end{equation}
@@ -549,7 +549,7 @@ which is the quantity of relevance for the discussion of the Weyl double copy in
 %\begin{equation}\label{Penrose:eqn:Sachsflat}
 %	(k_{\mu}, n_{\mu},m_{\mu},\tilde{m}_{\mu}) \to 	(m_{\mu}, -\tilde{m}_{\mu},-k_{\mu},n_{\mu}) \, , 
 %\end{equation}
-%which is sometimes called the Sachs operation \cite{penrose1984spinors,BenTov:2017kyf}, acts on %the curved metric frame in the same way provided one also exchanges $M$ and $N$ as well as $p$,$u$ %and $q$, $v$ in a particular way. Explicitly, \eqref{Penrose:eqn:Sachsflat} implies
+%which is sometimes called the Sachs operation \cite{Penrose:1985bww,BenTov:2017kyf}, acts on %the curved metric frame in the same way provided one also exchanges $M$ and $N$ as well as $p$,$u$ %and $q$, $v$ in a particular way. Explicitly, \eqref{Penrose:eqn:Sachsflat} implies
 %\begin{equation}
 %(k^{(g)}_{\mu}, n^{(\eta)}_{\mu},m^{(g)}_{\mu},\tilde{m}^{(\eta)}_{\mu}) \to 	(m^{(g)}_{\mu}, %-\tilde{m}^{(g)}_{\mu},-k^{(g)}_{\mu},n^{(g)}_{\mu}) \, ,
 %\end{equation}
