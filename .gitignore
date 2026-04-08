@@ -11,6 +11,9 @@
 ## Exclude folder containing Billy's dissertation
 Billy\ Dissertation/
 
+## Exclude dissertation defense presentation
+presentation.key
+
 # source: https://github.com/github/gitignore/blob/master/TeX.gitignore
 
 ## Core latex/pdflatex auxiliary files:
