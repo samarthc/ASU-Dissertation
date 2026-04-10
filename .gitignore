@@ -3,8 +3,10 @@
 ## MacOS config file
 .DS_Store
 
-## I don't want to sync the PDF with Git.
+## I don't want to sync the output PDF with Git.
 *.pdf
+## But the pdf files in img are required for including figures!
+!img/*.pdf
 
 ## Exclude folder containing Billy's dissertation
 Billy\ Dissertation/
