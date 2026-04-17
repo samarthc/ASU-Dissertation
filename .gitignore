@@ -11,6 +11,10 @@
 ## Exclude folder containing Billy's dissertation
 Billy\ Dissertation/
 
+Diff/*
+!Diff/*.sh
+!Diff/*.pdf
+
 ## Exclude dissertation defense presentation
 presentation.key
 
